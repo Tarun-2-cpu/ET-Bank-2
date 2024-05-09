@@ -69,7 +69,6 @@ html,body{
     background:#ffff;
     font-family: "Noto Sans" ,sans-serif;
 }
-
 nav{
     height:50.47px;
     padding:40px 58px;
@@ -703,6 +702,125 @@ object-fit: cover;
     font-size:25px;
     color:#000000b4;
 }
+
+
+
+@media (max-width:992px){
+    
+    nav{
+        height:50.47px;
+        padding:40px 58px;
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        position:fixed;
+        top:0;
+        width:100%;
+        z-index:10;
+    }
+    .nav-link{
+        display:flex;
+        align-items:center;
+        justify-content: center;
+    }
+    .nav-link a{ 
+     font-size:16px;
+     color:#fff;
+     gap:8px;
+     padding:12px 16px;
+     text-decoration: none;
+    }
+    nav img{
+        width:250px;
+    }
+    .nav-right{
+        display:flex;
+        gap:8px;
+        align-items:center;
+    }
+    .menu{
+        display: none;
+    }
+    .nav-right a{
+        font-size:16px;
+        color:#fff;
+        text-decoration: none;
+        margin-right:8px;
+        padding:12px;
+    }
+    
+    .started{
+        font-size:16px;
+        padding:12px;
+        background-color:#00D47E;
+        color:#000000;
+        border-radius:8px;
+        border:none;
+        outline:none;
+        cursor:pointer;
+    }
+    
+    .hero-section img{
+        width:100%;
+        background-position:cover;
+    }
+    .hero-section{
+        position:relative;
+    }
+    
+    .hero-description{
+        position:absolute;
+        top:410px;
+        margin-left:56px;
+    }
+    
+    .bank-beyond{
+        font-size:62px;
+        color:#fff;
+    }
+    
+    .typewriter{
+        font-size:62px;
+        color:#00D47E;
+        margin:32px 0;
+    }
+    
+    .subtitle{
+        font-size:16px;
+    }
+    
+    .hero-section-buttons{
+        margin:32px 0;
+    }
+    
+    .get-started{
+        color:#1B5962;
+        background:#00D47E;
+        font-size:16px;
+        padding:12px;
+        margin-right:8px;
+        border-radius:8px;
+    }
+    
+    .learn-more{
+        background:transparent;
+        border:1px solid #fff;
+        color:#fff;
+        padding:12px;
+        font-size:16px;
+        border-radius:8px;
+        cursor:pointer;
+    }
+    .subtitle{
+        font-size:16px;
+        color:#fff;
+    }
+
+
+}
+
+@media (max-width:768px){}
+
 
 
 @media (max-width:400px){

@@ -1,9 +1,6 @@
 .container {
     width: 1280px;
     margin: 0 auto;
-    position: relative;
-    background-size: cover;
-    background-position: center;
 }
 
 .row{
@@ -97,7 +94,6 @@ nav img{
     width:250px;
 }
 
-
 .nav-right{
     display:flex;
     gap:8px;
@@ -113,7 +109,6 @@ nav img{
     margin-right:8px;
     padding:12px;
 }
-
 .started{
     font-size:16px;
     padding:12px;
@@ -132,7 +127,6 @@ nav img{
 .hero-section{
     position:relative;
 }
-
 .hero-description{
     position:absolute;
     top:410px;
@@ -184,7 +178,6 @@ nav img{
 .next-gen{
     padding-top:132px;
     padding-bottom:113px;
-    position: relative;
 }
 .vector-1{
     position:absolute;
@@ -195,7 +188,7 @@ nav img{
 }
 .next-gen-right-top{
     position:relative;
-    z-index:2;
+    z-index:1;
     background-color: #FFFFFF;
 }
 .vector-4{
@@ -222,7 +215,6 @@ nav img{
 .next-gen-heading{
     align-items:end;
     justify-content:space-between;
-    
 }
 
 .next-gen-left-section{
@@ -429,7 +421,6 @@ nav img{
 
 .optimize-middle .optimize-image{
     padding-top:246px;
-    position:relative;
 }
 .optimize-middle .vector-3{
     position:absolute;
@@ -703,9 +694,12 @@ object-fit: cover;
     color:#000000b4;
 }
 
+@media (max-width:1280){
+
+}
 
 
-@media (max-width:992px){
+@media (max-width:1024px){
     
     nav{
         height:50.47px;
@@ -823,7 +817,7 @@ object-fit: cover;
 
 
 
-@media (max-width:400px){
+@media (max-width:480px){
     *{
         overflow-x: hidden;
     }
@@ -899,7 +893,7 @@ object-fit: cover;
     
     .hero-description{
         position:absolute;
-        top:290px;
+        top:333px;
         margin-left:10px;
         margin-right:10px;
     }
@@ -945,7 +939,6 @@ object-fit: cover;
     .next-gen{
         padding-top:42px;
         padding-bottom:113px;
-        position: relative;
         width:100%;
     }
     .next-gen-right-top{
@@ -1306,7 +1299,6 @@ object-fit: cover;
     }
     .optimize-middle .optimize-image{
         padding-top:24px;
-        position:relative;
     }
     .optimize-bottom .optimize-text{
         margin-top:15px;
@@ -1435,7 +1427,6 @@ object-fit: cover;
         font-weight:600;
         margin:29px 0;
     }
-
 
     .footer{
         padding-top:25px;

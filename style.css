@@ -1039,7 +1039,7 @@ object-fit: cover;
     .nav-link{
         display:none;
     }
-    av img{
+    nav img{
         width:150px;
     }
     

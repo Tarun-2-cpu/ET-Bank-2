@@ -96,9 +96,8 @@ nav {
  text-decoration: none;
 }
 nav img{
-    width:250px;
+    width:220px;
 }
-
 .nav-right{
     display:flex;
     gap:8px;
@@ -697,6 +696,9 @@ object-fit: cover;
 }
 
 @media (max-width:1280px){
+    nav img{
+        width:180px;
+    }
     .next-gen{
         padding-bottom:90px;
     }
@@ -1034,13 +1036,11 @@ object-fit: cover;
         width:97%;
         z-index:10;
     }
-    
     .nav-link{
         display:none;
     }
-    
-    nav img{
-        width:160px;
+    av img{
+        width:150px;
     }
     
     .nav-right{

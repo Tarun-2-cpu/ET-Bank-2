@@ -66,18 +66,23 @@ html,body{
     background:#ffff;
     font-family: "Noto Sans" ,sans-serif;
 }
-nav{
-    height:50.47px;
-    padding:40px 58px;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    position:fixed;
-    top:0;
-    width:100%;
-    z-index:10;
+header{
+    margin:0 20px;
+    margin-right:40px;
 }
-
+nav {
+    padding: 15px 39px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 2%;
+    width: 97%;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+}
 .nav-link{
     display:flex;
     align-items:center;
@@ -276,12 +281,10 @@ nav img{
     margin-top:150px;
     margin-left:-50px;
 }
-
 .next-gen-right-top p:last-of-type{
     font-size:16px;
     color:#000000;
 }
-
 
 .next-gen-right-bottom{
   background-color:#B4F6DB;
@@ -306,7 +309,6 @@ nav img{
     height:fit-content;
     padding:15px;
 }
-
 .do-more-card p:first-of-type{
     font-size:24px;
     color:#000000;
@@ -694,15 +696,210 @@ object-fit: cover;
     color:#000000b4;
 }
 
-@media (max-width:1280){
-
+@media (max-width:1280px){
+    .next-gen{
+        padding-bottom:90px;
+    }
+    .next-gen-heading{
+        align-items:end;
+        justify-content:space-between;
+        padding:0 20px;
+    }
+    .next-gen-right-bottom{
+        margin-top:10px;
+        margin-right:35px;
+    }
+    .slider-container {
+        background-color: #F5F5F5;
+        border-radius: 20px;
+        width: 100%;
+    }
+    .slider-section{
+        padding-bottom:140px;
+    }
+    .do-more-card p:first-of-type{
+        font-size:24px;
+        color:#000000;
+        margin-bottom:15px;
+    }
+    .do-more-card p:last-of-type{
+        font-size:16px;
+        color:#000000;
+    }
+    .do-more-card .col-4{
+        width:60%;
+        padding:0;
+    }
+    .do-more-card .col-5{
+        width:80%;
+        padding:0;
+    }
+    .do-more-section{
+        padding-top:0;
+        padding-bottom:100px;
+    }
+    .card-1{
+        padding-bottom:40px;
+        padding-right:46px;
+        word-wrap:break-word;
+    }
+    .last-card{
+        padding-right:48px;
+    }
+    .product{
+        padding:0px 46px;
+    }
+    .product{
+        padding:57px 20px;
+    }
+    .product-inner-top{
+        justify-content: space-between;
+        margin-bottom: 85px;
+        padding:0 20px;
+    }
+    .next-gen-top-right{
+        width:40%;
+    }
+    .card-text{
+        bottom:55px;
+        margin:0 20px;
+        margin-right:40px;
+    }
+    .last-product-card{
+        margin-right:55px;
+    }
+    .optimize-section{
+        padding-top:80px;
+    }
+    .optimize-top-title{
+        font-size:60px;
+    }
+    .optimize-text .subtitle{
+        color:black;
+        margin-top:25px;
+    }
+    .optimize-top .optimize-text{
+        margin-top:110px;
+        padding-bottom:47px;
+        padding-left:40px;
+    }
+    .optimize-top,
+    .optimize-middle{
+        gap:20px;
+    }
+    .optimize-middle .optimize-top-title{
+        font-size:60px;
+    }
+    .optimize-bottom .optimize-top-title{
+        font-size:60px;
+    }
+    .optimize-bottom .col-6{
+        padding-left:15px;
+        padding-right:0px;
+    }
+    .optimize-middle .optimize-image{
+        padding-top:200px;
+    }
+    .optimize-middle .vector-3{
+        position:absolute;
+        top:15%;
+        left:-9%;
+        z-index:-1;
+    }
+    .optimize-middle .optimize-text{
+        margin-top:315px;
+        margin-left:60px;
+        padding-right:0;
+    }
+    .optimize-bottom .optimize-text{
+        margin-top:200px;
+        margin-right:30px;
+        margin-left:10px;
+    }
+    .optimize-bottom .optimize-image{
+        margin-top:226px;
+        margin-bottom:230px;
+    }
+    
+    .optimize-top,
+    .optimize-middle,
+    .optimize-bottom{
+        justify-content: space-between;
+        margin-right:20px;
+    }
+    .plan-card{
+        margin:0 auto;
+        text-align: center;
+    }
+    
+    .plan-card .grow{
+        font-size:20px;
+        letter-spacing: -3%;
+        color:#000000;
+        margin-bottom:24px;
+    }
+    .plan-card .grow span{
+        background-color: #00D47E;
+        color:#1B5962;
+        font-size:12px;
+        padding:4px;
+        border-radius:4px;
+    }
+    .plan-card .free{
+        font-size:40px; 
+        letter-spacing: -3%;
+    }
+    
+    .plan-card .col-3{
+        width:60%;
+        margin:0 auto;
+    }
+    .plan-card .description,
+    .free span{
+        font-size:16px;
+        color:#1a191e62;
+        margin:24px auto;
+    }
+    .plan-card button{
+        margin-top:24px;
+    }
+    .plan-bottom{
+        margin-top:132px;
+    }
+    .plan-bottom .col-4{
+        padding:0;
+    }
+    .plan{
+        padding-bottom:200px;
+    }
+    .banner-left{
+        padding-left:80px;
+        padding-right:2px;
+    }
+    .banner-right{
+        margin-right:0;
+    }
+    .footer{
+        padding-right:20px;
+        padding-left:20px;
+    }
+    .footer-icon{
+        margin-top:165px;
+        justify-content: space-evenly;
+    }
+    .footer .col-3{
+        padding:0px;
+    }
+    .footer-menu .col-4{
+        width:100%;
+        padding:0;
+    }
 }
 
 
 @media (max-width:1024px){
     
     nav{
-        height:50.47px;
         padding:40px 58px;
         display:flex;
         align-items:center;
@@ -828,14 +1025,13 @@ object-fit: cover;
         flex-wrap:wrap;
     }
     nav{
-        height:50px;
         padding:9px;
         display:flex;
         align-items:center;
         justify-content:space-between;
         position:fixed;
-        top:0;
-        width:100%;
+        top:1%;
+        width:97%;
         z-index:10;
     }
     
@@ -864,7 +1060,9 @@ object-fit: cover;
     .menu i{
         color:white;
     }
-
+    header{
+        margin:0 6px;
+    }
     .started{
         font-size:16px;
         padding:12px;
@@ -877,10 +1075,11 @@ object-fit: cover;
     }
     .hero-section{
         width:100%;
-        height:527px;
+        height:100vh;
+        overflow:auto;
     }
     .hero-section img{
-        height:527px;
+        height:100%;
         object-fit:cover;
         position:left;
         display: flex;
@@ -891,11 +1090,12 @@ object-fit: cover;
         position:relative;
     }
     
-    .hero-description{
-        position:absolute;
-        top:333px;
-        margin-left:10px;
-        margin-right:10px;
+    .hero-description {
+        position: absolute;
+        top: 58%;
+        margin-left: 10px;
+        margin-right: 10px;
+        overflow-y: auto; /* Enable vertical scrollbar */
     }
     
     .bank-beyond{
@@ -1187,9 +1387,13 @@ object-fit: cover;
     }
     .card-1{
         padding-bottom:1px;
+        padding-right:0;
     }
     .last-card{
         margin-top:40px;
+    }
+    .last-product-card{
+        margin-right:0px;
     }
     .product{
         padding:0px 16px;
@@ -1267,6 +1471,11 @@ object-fit: cover;
     .optimize-top,
     .optimize-middle{
         gap:20px;
+    }
+    .optimize-bottom,
+    .optimize-top,
+    .optimize-middle{
+        margin-right:0px;
     }
     .optimize-middle{
         flex-direction: column-reverse;

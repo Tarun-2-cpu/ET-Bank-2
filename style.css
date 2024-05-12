@@ -1625,11 +1625,9 @@ object-fit: cover;
         margin:0 auto;
         padding:0 33px;
     }
-    .plan-card .description,
-    .free span{
-        font-size:16px;
-        color:#1a191e62;
-        margin:14px auto;
+    .plan-card .description{
+        margin:15px auto;
+        text-align:center;
     }
     .plan-card button{
         margin-top:24px;

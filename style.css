@@ -1564,7 +1564,6 @@ object-fit: cover;
     .hero-section{
         position:relative;
     }
-    
     .hero-description {
         position: absolute;
         top: 58%;
@@ -1572,12 +1571,10 @@ object-fit: cover;
         margin-right: 10px;
         overflow-y: auto; /* Enable vertical scrollbar */
     }
-    
     .bank-beyond{
         font-size:30px;
         font-weight:600;
     }
-    
     .typewriter{
         font-size:30px;
         overflow:auto;

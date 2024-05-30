@@ -218,7 +218,7 @@ nav img{
 .next-gen-right-title{
     font-size:16px;
     color:#000000;
-
+    padding:0px;
 }
 
 .next-gen-heading{
@@ -293,7 +293,7 @@ nav img{
 .next-gen-right-bottom{
   background-color:#B4F6DB;
   padding:0 40px;
-  padding-top:90px;
+  padding-top:75px;
   border-radius:20px;
   padding-bottom:40px;
   margin-top:20px;
@@ -317,6 +317,9 @@ nav img{
     font-size:24px;
     color:#000000;
 }
+.do-more-first-card .next-gen-left-title{
+    margin-bottom:20px;
+}
 
 .do-more-card p:last-of-type{
     font-size:16px;
@@ -327,7 +330,9 @@ nav img{
     width:60%;
     padding:0;
 }
-
+.last-card img{
+    margin-top:15px;
+}
 .do-more-card .col-5{
     width:80%;
     padding:0;
@@ -446,7 +451,7 @@ nav img{
 }
 .optimize-bottom .optimize-image{
     margin-top:226px;
-    margin-bottom:448px;
+    margin-bottom:250px;
 }
 
 .optimize-top,
@@ -487,6 +492,9 @@ nav img{
     text-align:left;
     padding-left:30px;
 }
+.plan-card .description-1{
+    padding-left:42px;
+}
 .plan-card .description li{
     font-size: 16px;
     color:#000;
@@ -508,7 +516,7 @@ nav img{
 .banner{
     margin:0 20px;
     border-radius:8px;
-    padding:20px;
+    padding:0px;
     background: url(images/banner-lines.png);
     background-repeat:no-repeat;
     bottom:0;
@@ -596,13 +604,17 @@ nav img{
     color:white;
 }
 
-.footer-input .subscribe-icon{
+.footer-input .subscribe-icon {
     background-color: #00D47E;
-    height:fit-content;
-    width:fit-content;
-    padding:5px;
-    padding-right:10px;
-    border-radius:50%;
+    height: fit-content;
+    width: fit-content;
+    padding: 11px;
+    padding-right: 16px;
+    padding-left: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
 }
 .footer-input i{
     color:#1B5962;
@@ -1165,7 +1177,12 @@ object-fit: cover;
     flex-direction:column;
     gap:5px;
 }
-
+.digital-footer-outer{
+    padding:0 20px;
+}
+.digital-footer{
+    border-radius:20px;
+}
 .address p{
     font-weight:300;
 }
@@ -1194,6 +1211,124 @@ object-fit: cover;
 }
 
 
+
+
+/*******************      Card Desktop                 *************************/
+
+.card-desktop .typewriter{
+    margin: 0px;
+    font-size: 60px;
+}
+span, .weight{
+    font-weight:700;
+}
+.text-center{
+    text-align: center;
+}
+.hero-text-right{
+    padding:40px 26px;
+    padding-right:28px;
+    height:fit-content;
+    background-color: #ffffffdc;
+    margin-right:40px;
+    border-radius: 15px;
+}
+.hero-text-right p:first-of-type{
+    font-size:24px;
+    margin-bottom:40px;
+}
+.hero-text-right p:last-of-type{
+    font-size:16px;
+}
+.hero-section-text{
+    height:fit-content;
+    align-items:end;
+}
+.mastercard{
+    padding-top:175px;
+}
+.mastercard-right{
+    margin-top:116px;
+    margin-left:90px;
+    padding-right:80px;
+}
+.radius{
+    border-radius:20px;
+}
+.mastercard .typewriter{
+    margin-bottom:15px;
+}
+.card-title{
+    font-size:24px;
+    margin-bottom:8px;
+}
+.see-more{
+    font-size:22px;
+}
+.card-subtitle{
+    font-size: 16px;
+    margin-bottom:8px;
+}
+.facility-card{
+    border:1px solid #D9D9D9;
+    
+}
+.facilities{
+    padding-top:220px;
+}
+.card-description{
+    padding-left:32px;
+    padding-bottom:30px;
+    padding-top:42px;
+}
+.mastercard .see-more{
+    margin-top:15px;
+}
+.mastercard .typewriter{
+    margin-top:20px;
+}
+.mastercard-shaded .typewriter{
+    color:#D9D9D9 !important;
+    line-height: normal;
+}
+.mastercard-right .new{
+    font-size:30px;
+    color:#00D47E;
+    margin-bottom:8px;
+    font-weight:700;
+}
+.mastercard p{
+    line-height:normal;
+}
+.last-2 .mastercard-right{
+    margin-top:0;
+}
+.mastercard img{
+    width:100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.last-2 .typewriter{
+    margin-top:10px;
+    margin-bottom:10px;
+}
+.last-2 img{
+    height:100%;
+}
+.last-2 .mastercard-img{
+    height:100%;
+}
+.last-2{
+    height:fit-content;
+}
+.last .mastercard-right{
+    margin-left:0px;
+    margin-right:30px;
+    padding-right: 0px;
+}
+.last{
+    margin-bottom:300px;
+}
 
 @media (max-width:1280px){
     nav img{
@@ -1247,6 +1382,12 @@ object-fit: cover;
     }
     .last-card{
         padding-right:48px;
+    }
+    .last-card .effort{
+        margin-top:200px;
+    }
+    .do-more-card .effort{
+        margin-top:12px !important;
     }
     .product{
         padding:0px 46px;
@@ -2029,6 +2170,7 @@ object-fit: cover;
         font-size:30px;
         font-weight:600;
     }
+    .card-desktop .typewriter,
     .typewriter{
         font-size:30px;
         overflow:auto;
@@ -2300,7 +2442,7 @@ object-fit: cover;
     }
     .do-more-first-card .next-gen-left-title{
         margin-bottom:15px;
-        font-size:33px;        
+        font-size:33px;
     }
     .do-more-first-card{
         width:100%;
@@ -3012,12 +3154,6 @@ object-fit: cover;
         font-size:12px;
     }
 
-
-
-
-
-
-
     .products{
         padding-top:100px;
     }
@@ -3158,5 +3294,133 @@ object-fit: cover;
     .last-link{
         margin:auto;
         width:100%;
+    }
+
+
+    /***************************   card-desktop       *********************************************/
+
+    .card-desktop{
+        top:65%;
+    }
+    .card-desktop
+    .hero-text-left
+    .col-9{
+        width:100%;
+    }
+    .card-desktop
+    .hero-text-right{
+        display: none;
+    }
+    .mastercard{
+        padding-top:100px;
+    }
+    .mastercard-right{
+        margin-top:30px;
+        margin-left:10px;
+        padding-right:80px;
+    }
+    .radius{
+        border-radius:20px;
+    }
+    .mastercard .typewriter{
+        margin-bottom:15px;
+    }
+    .card-title{
+        font-size:24px;
+        margin-bottom:8px;
+    }
+    .see-more{
+        font-size:22px;
+        margin-top:30px;
+    }
+    .card-subtitle{
+        font-size: 16px;
+        margin-bottom:8px;
+    }
+    .facility-card{
+        border:1px solid #D9D9D9;
+        margin-bottom:30px;
+    }
+    .facilities{
+        padding-top:100px;
+    }
+    .cards .col-4{
+        width:100%;
+    }
+    .card-description{
+        padding-left:20px;
+        padding-bottom:30px;
+        padding-top:42px;
+        padding-right:40px;
+    }
+    .facility-title p{
+        margin-left:20px;
+        margin-bottom:30px;
+    }
+    .mastercard .see-more{
+        margin-top:30px;
+    }
+    .mastercard .typewriter{
+        margin-top:1px;
+    }
+    .mastercard-shaded .typewriter{
+        color:#D9D9D9 !important;
+        line-height: normal;
+    }
+    .mastercard-right .new{
+        font-size:30px;
+        color:#00D47E;
+        margin-bottom:8px;
+        font-weight:700;
+    }
+    .mastercard p{
+        line-height:normal;
+    }
+    .last-2 .mastercard-right{
+        margin-top:0;
+    }
+    .mastercard img{
+        width:100%;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+    .last-2 .typewriter{
+        margin-top:10px;
+        margin-bottom:10px;
+    }
+    .last-2 img{
+        height:100%;
+    }
+    .last-2 .mastercard-img{
+        height:100%;
+    }
+    .last-2{
+        height:fit-content;
+    }
+    .last .mastercard-right{
+        margin-left:0px;
+        margin-right:30px;
+        padding-right: 0px;
+    }
+    .last{
+        margin-bottom:100px;
+    }
+
+    .master-right-1 .mastercard-right{
+        margin-top:0px;
+        margin-bottom:40px;
+    }
+    .master-right-2 .mastercard-img{
+        padding-top:40px;
+        margin-bottom:40px;
+    }
+    .master-right-1,
+    .master-right-2,
+    .master-right-3{
+        padding-top:40px;
+    }
+
+    .master-right-3 .mastercard-right{
+        margin-bottom:40px;
     }
 }

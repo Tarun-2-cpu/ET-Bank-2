@@ -802,7 +802,7 @@ object-fit: cover;
     justify-content: space-between;
 }
 .swipper-card{
-    border:1px solid black;
+    border:1px solid #D9D9D9;
     border-radius:20px;
     padding-top:68px;
     padding-left:33px;
@@ -1063,7 +1063,7 @@ object-fit: cover;
 }
 
 .questions{
-    padding-top:370px;
+    padding-top:150px;
 }
 .questions-title{
     font-size:66px;
@@ -1075,7 +1075,7 @@ object-fit: cover;
     padding:20px 15px;
     justify-content: space-between;
     align-items: center;
-    margin:15px;
+    margin:15px 0px;
     border-radius:16px;
 }
 .questions-title{
@@ -1086,11 +1086,12 @@ object-fit: cover;
     margin-left:20px;
 }
 .question-list{
-    margin-top:122px;
+    margin-top:86px;
 }
 
 .products{
-    padding-top:377px;
+    padding-top:200px;
+    border-radius:20px;
 }
 .product-dropdown{
     background-color:#ffffffdc;
@@ -1291,7 +1292,8 @@ span, .weight{
     color:#D9D9D9 !important;
     line-height: normal;
 }
-.mastercard-right .new{
+.mastercard-right .new,
+.new{
     font-size:30px;
     color:#00D47E;
     margin-bottom:8px;
@@ -1329,6 +1331,181 @@ span, .weight{
 .last{
     margin-bottom:300px;
 }
+
+
+/****************    Business Card       *********************/
+
+.business-card .typewriter:first-of-type{
+    font-size:28px;
+}
+
+.business-card .typewriter:last-of-type{
+    font-size:56px;
+}
+.img-brightness-50{
+    filter:brightness(40%)
+}
+.business-card .swipper-card{
+
+    border:1px solid #D9D9D9;
+    border-radius:20px;
+    padding-top:30px;
+    padding-left:32px;
+    padding-right:24px;
+}
+.text-light{
+    color:white;
+}
+.simple-right{
+    border-radius:20px;
+    height:100%;
+}
+.simple-right img{
+    width:100%;
+    object-fit: cover;
+    border-radius:20px;
+    height: 100%;
+}
+.simple-left .typewriter{
+    font-size:55px;
+    margin-bottom:25px;
+    overflow-y: auto;
+}
+.simple-container{
+    gap:30px;
+    padding:46px;
+    border-radius: 20px;
+}
+.simple-left{
+    padding-left:70px;
+    padding-bottom:47px;
+    overflow-y: auto;
+}
+.simple .see-more{
+    margin-top:15px;
+}
+.simple-right{
+    margin-right:46px;
+}
+.simple{
+    margin-top:120px;
+}
+.business .save-right-most{
+    margin-top:200px;
+}
+.business .save .typewriter{
+    font-size:60px;
+}
+.business
+.save-right img{
+    width:100%;
+}
+.business .save-left{
+    padding-top:100px;
+}
+.business .questions-title{
+    margin-top: 0;
+}
+.business .save{
+    padding-top: 150px;
+}
+.business .save-subtitle{
+    margin-bottom:20px;
+}
+
+.business .product-text .title{
+    font-size:23px;
+    text-align:center;
+}
+.business .dropdown-option{
+    font-size:14px;
+}
+.dropdown-option{
+    align-items: center;
+}
+.dropdown-option .option{
+    padding:0;
+}
+.business .product-dropdown{
+    padding:40px 25px;
+}
+.business .products-text{
+    justify-content: flex-end;
+}
+.business .products img{
+    border-radius:20px;
+}
+.business .product-text .title{
+    margin-bottom:40px;
+}
+.digital-footer{
+    margin-top: 150px;
+}
+.business .product-dropdown{
+    margin-right:40px;
+    margin-bottom:40px;
+}
+.purchase{
+    margin-top: 150px;
+    border:1px solid #D9D9D9;
+    padding-left:117px;
+    padding-right:120px;
+    padding-top:85px;
+    padding-bottom:52px;
+    text-align: center;
+    border-radius: 20px;
+}
+.purchase .typewriter{
+    font-size:55px;
+    margin-bottom:100px;
+}
+.tab p{
+    font-size:24px;
+    color:#adadad;
+    font-weight: 700;
+}
+.tabs {
+    display: flex;
+    border-bottom: 2px solid #D9D9D9;
+    margin-bottom: 20px;
+}
+
+.tab {
+    padding: 10px 20px;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s;
+}
+
+.tab:hover {
+    border-bottom: 2px solid #D9D9D9;
+}
+
+.tab.active {
+    border-bottom: 2px solid #00D47E;
+}
+.tab.active p{
+    color:#00D47E;
+}
+
+.tab-content .content {
+    display: none;
+}
+
+.tab-content .content.active {
+    display: block;
+}
+.see-more {
+    cursor: pointer;
+}
+.tab-content{
+    padding:50px 200px;
+}
+.tab-content .see-more{
+    margin-top:40px;
+}
+
+
 
 @media (max-width:1280px){
     nav img{
@@ -2340,11 +2517,15 @@ span, .weight{
         background: #fff;
         width:100%;
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
         position: relative;
     }
-    
+    .swiper-slide .swiper-img{
+        width:100%;
+    }
+
     .swiper-slide img {
         display: block;
         max-width: 100%;
@@ -2368,14 +2549,14 @@ span, .weight{
         font-size: 14px; 
     }
     .slider-text {
-        position: absolute;
+        position: static;
         left: 0;
-        padding-top: 450px;
-        padding-bottom: 60px; 
+        padding-top: 10px;
+        padding-bottom: 10px; 
         width: 100%;
         text-align: left;
         padding-left: 15px;
-        background: linear-gradient(rgba(255, 255, 255, 0.027) 60%, rgba(0, 0, 0, 0.87));
+        background: linear-gradient(rgba(255, 255, 255, 0.027) 7%, rgba(0, 0, 0, 1));
     }
     .slider-container {
         background-color: #F5F5F5;
@@ -3156,6 +3337,7 @@ span, .weight{
 
     .products{
         padding-top:100px;
+
     }
     .products img{
         width:100%;
@@ -3423,4 +3605,171 @@ span, .weight{
     .master-right-3 .mastercard-right{
         margin-bottom:40px;
     }
+ 
+    /********************     Business   Card             ***********************/
+
+    .business-card .typewriter:last-of-type{
+        font-size:32px;
+    }
+    .business-card .typewriter:first-of-type{
+        font-size:28px;
+    }
+    .img-brightness-50{
+        filter:brightness(40%)
+    }
+    
+    .simple-left .text-light{
+        font-size: 16px;
+    }
+
+    .simple-left .typewriter{
+        font-size:32px;
+        margin-bottom:25px;
+        overflow-y: auto;
+    }
+    .simple-container{
+        gap:30px;
+        padding:20px;
+        border-radius: 20px;
+    }
+    .simple-left{
+        padding-left:30px;
+        padding-bottom:47px;
+        overflow-y: auto;
+    }
+    .simple .see-more{
+        margin-top:25px;
+    }
+    .simple-right{
+        margin-right:1px;
+    }
+    .simple{
+        margin-top:100px;
+    }
+    .business .save-right-most{
+        margin-top:70px;
+    }
+    .business .save .typewriter{
+        font-size:32px;
+    }
+    .business
+    .save-right img{
+        width:100%;
+    }
+    .business .save-left{
+        padding-top:1px;
+    }
+    .business .questions-title{
+        margin-top: 0;
+    }
+    .business .col-4,
+    .business .col-3{
+        width:100%;
+    }
+    .business .save{
+        padding-top: 100px;
+    }
+    .business .save-subtitle{
+        margin-bottom:20px;
+    }
+    .business .mastercard .col-6{
+        width:100%;
+    }
+    .business .mastercard-right{
+        padding-right:20px;
+    }
+    .business .product-text .title{
+        font-size:23px;
+        text-align:left;
+    }
+    .business .dropdown-option{
+        font-size:14px;
+    }
+    .dropdown-option{
+        align-items: center;
+    }
+    .dropdown-option .option{
+        padding:0;
+    }
+    .business .product-dropdown{
+        padding:20px 1px;
+    }
+    .business .products-text{
+        justify-content: flex-end;
+    }
+    .business .products img{
+        border-radius:20px;
+    }
+    .business .product-text .title{
+        margin-bottom:25px;
+    }
+    .digital-footer{
+        margin-top: 100px;
+    }
+    .business .product-dropdown{
+        margin-right:1px;
+        margin-bottom:1px;
+    }
+    .purchase{
+        margin-top: 100px;
+        padding-left:25px;
+        padding-right:25px;
+        padding-top:40px;
+        padding-bottom:40px;
+        text-align: left;
+        border-radius: 20px;
+    }
+    .purchase .typewriter{
+        font-size:32px;
+        margin-bottom:100px;
+    }
+    .tab p{
+        font-size:14px;
+        color:#adadad;
+        font-weight: 700;
+    }
+    .tabs {
+        display: flex;
+        border-bottom: 2px solid #D9D9D9;
+        margin-bottom: 20px;
+    }
+    
+    .tab {
+        padding: 19px;
+        cursor: pointer;
+        border-bottom: 2px solid transparent;
+        transition: border-bottom 0.3s;
+    }
+    
+    .tab:hover {
+        border-bottom: 2px solid #D9D9D9;
+    }
+    
+    .tab.active {
+        border-bottom: 2px solid #00D47E;
+    }
+    .tab.active p{
+        color:#00D47E;
+    }
+    
+    .tab-content .content {
+        display: none;
+    }
+    .tab-content .content.active {
+        display: block;
+    }
+    .see-more {
+        cursor: pointer;
+    }
+    .tab-content{
+        padding:40px 20px;
+    }
+    .tab-content .see-more{
+        margin-top:40px;
+    }
+    .business .dropdown-option .option{
+        width:90%;
+    }
 }
+
+

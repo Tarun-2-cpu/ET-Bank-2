@@ -23,19 +23,21 @@
     <body>
         <header>
             <nav>
-                <img src="./images/Header-logo.png" alt="">
-                <div class="nav-link">
-                    <a href="">Home</a>
-                    <a href="digital-account-desktop.html">Digital Account</a>
-                    <a href="business-card-desktop.html">Business card</a>
-                    <a href="card-desktop.html">Credit Card</a>
-                </div>
-                <div class="nav-right">
-                    <a href="https://app.etbank.com/login">Login</a>
-                    <button class="started"><a href="https://onboarding.etbank.com/register/">Get started</a></button>
-                </div>
-                <div class="menu">
-                    <i class="ri-menu-line"></i>
+                <div class="nav-top">
+                    <img src="./images/Header-logo.png" alt="Logo">
+                    <div class="menu">
+                        <i class="ri-menu-line"></i>
+                        <div class="nav-link">
+                            <a href="index.html">Home</a>
+                            <a href="digital-account-desktop.html">Digital Account</a>
+                            <a href="business-card-desktop.html">Business card</a>
+                            <a href="card-desktop.html">Credit Card</a>
+                        </div>
+                        <div class="nav-right">
+                            <a href="https://app.etbank.com/login">Login</a>
+                            <button class="started"><a href="https://onboarding.etbank.com/register/">Get started</a></button>
+                        </div>
+                    </div>
                 </div>
             </nav>
         </header>
@@ -378,38 +380,34 @@
         </footer>
 
         <script>
-            document.addEventListener('DOMContentLoaded', function() {
-                const tabs = document.querySelectorAll('.tab');
-                const contents = document.querySelectorAll('.content');
-    
-                tabs.forEach(tab => {
-                    tab.addEventListener('click', function() {
-                        tabs.forEach(t => t.classList.remove('active'));
-                        contents.forEach(c => c.classList.remove('active'));
-                        
-                        this.classList.add('active');
-                        document.querySelector(`#content-${this.id.split('-')[0]}`).classList.add('active');
-                    });
+            const knowMoreButtons = document.querySelectorAll('.starteded');
+            const cardContainer = document.querySelector('.card-container');
+        
+            knowMoreButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    cardContainer.style.display = 'block';
                 });
             });
-
-            document.addEventListener("DOMContentLoaded", function() {
-    const menuIcon = document.querySelector('.menu i');
-    const nav = document.querySelector('nav');
-
-    menuIcon.addEventListener('click', function() {
-        nav.classList.toggle('show-menu');
-    });
-});
-
-
-
-
-
-
+        
+            const closeButtons = document.querySelectorAll('.close-btn');
+            closeButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    cardContainer.style.display = 'none';
+                });
+            });
+    
+    
+            const menu = document.querySelector('.menu');
+            const navLinks = document.querySelector('.nav-link');
+    
+            menu.addEventListener('click', function() {
+                console.log('Menu clicked');
+                navLinks.classList.toggle('show');
+                console.log(navLinks.classList);
+            });
+    
+    
         </script>
-
-
 
 
     </body>

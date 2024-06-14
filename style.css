@@ -2470,7 +2470,7 @@ span, .weight{
         top: 58%;
         margin-left: 10px;
         margin-right: 10px;
-        overflow-y: auto; /* Enable vertical scrollbar */
+        overflow-y: auto;
     }
     .bank-beyond{
         font-size:30px;
@@ -2483,7 +2483,6 @@ span, .weight{
         margin:0;
         font-weight:600;
     }
-    
     .subtitle{
         font-size:12px;
     }
@@ -2514,6 +2513,7 @@ span, .weight{
         padding-top:42px;
         padding-bottom:113px;
         width:100%;
+        flex-wrap: wrap;
     }
     .next-gen-right-top{
         position:relative;
@@ -2525,18 +2525,21 @@ span, .weight{
         font-weight:550;
         padding-right:0;
         word-wrap:wrap;
+        width:100%;
     }
     
     .next-gen-right-title{
         font-size:11px;
         color:#000000;
         margin-top:20px;
+        width:100%;
     }
     
     .next-gen-heading{
         align-items:end;
         justify-content:space-between;
         width:100%;
+        flex-wrap: wrap;
     }
     
     .next-gen-left-section{
@@ -2860,7 +2863,7 @@ span, .weight{
         width:100%;
     }
     .optimize-middle .optimize-top-title{
-        font-size:34px;
+        font-size:30px;
     }
     .optimize-bottom .optimize-top-title{
         font-size:30px;
@@ -2877,6 +2880,9 @@ span, .weight{
     }
     .optimize-image img{
         width:100%;
+    }
+    .optimize-bottom .optimize-text p:first-of-type {
+        font-size: 30px;
     }
     .optimize-middle .optimize-text{
         margin-top:40px;
@@ -2900,6 +2906,7 @@ span, .weight{
         margin-bottom:40px;
         padding-right:16px;
     }
+    
     .optimize-bottom .col-11{
         width:100%;
         padding-right:0;
@@ -3078,7 +3085,7 @@ span, .weight{
     }
     .footer-input .subscribe-icon{
         background-color: #00D47E;
-        height:fit-content;
+        height:40px;
         width:fit-content;
         padding:5px;
         padding-right:10px;

@@ -1822,6 +1822,9 @@ span, .weight{
     .do-more-card{
         padding-right: 50px;
     }
+    .do-more-3-card{
+        padding-right:30px;
+    }
     .do-more-card .col-4{
         width:60%;
         padding:0;
@@ -1942,7 +1945,6 @@ span, .weight{
         left:-9%;
         z-index:-1;
     }
-    
     .optimize-middle .optimize-text{
         margin-top:185px;
         margin-left:90px;
@@ -2001,7 +2003,6 @@ span, .weight{
         color:#000;
         margin:8px 0;
     }
-    
     .plan-card .img{
         width:100%;
     }
@@ -2018,7 +2019,22 @@ span, .weight{
 
     /******************  DIGITAL ACCOUNT DESKTOP   **********************************/
 
-
+    .digital .hero-description{
+        top:40%;
+    }
+    .digital .typewriter{
+        font-size:50px;
+    }
+    .benefit-container-img{
+        width:100%;
+    }
+    .benefit-container-img img{
+        width:100%;
+    }
+    .benefint-container{
+        padding-right:70px;
+        margin:0 auto;
+    }
     .benefit-text p{
         font-size:55px;
         color:#1B5962;
@@ -2033,7 +2049,6 @@ span, .weight{
     .benefit{
         padding-top:53px;
     }
-
     .swipper-title{
         font-size:24px;
         font-weight:700;
@@ -2057,7 +2072,7 @@ span, .weight{
         padding-right:10px;
     }
     .card-2 .swipper-subtitle{
-        padding-bottom:40px;
+        padding-bottom:20px;
     }
     .card-3 .swipper-subtitle{
         padding-bottom: 20px;
@@ -2133,6 +2148,7 @@ span, .weight{
         color:#000000;
     }
     .debit-outer{
+        padding:0 50px;
         padding-top:153px;
     }
     .debit-outer img{
@@ -2230,10 +2246,11 @@ span, .weight{
         color:#000000;
     }
     .save-left{
-        padding-top:200px;
+        padding-top:250px;
     }
     .save-right{
-        padding:0 40px;
+        padding:0 60px;
+        padding-top:120px;
     }
     .save-right img{
         width:100%;
@@ -2253,6 +2270,7 @@ span, .weight{
         color:#1B5962;
     }
     .cost{
+        padding:0 60px;
         padding-top:110px;
     }
     .cost-title p{
@@ -2266,6 +2284,7 @@ span, .weight{
         border-bottom:1px solid #00D47E;
         padding:15px 0;
         margin-top:25px;
+        width:94%;
     }
     .cost-detail p{
         font-size:20px;
@@ -2289,7 +2308,11 @@ span, .weight{
         margin:20px auto;
     }
     .priority{
+        padding:0 40px;
         padding-top:130px;
+    }
+    .top-priority-img{
+        border-radius:20px;
     }
     .priority-text{
         text-align:center;
@@ -2320,7 +2343,8 @@ span, .weight{
     }
 
     .questions{
-        padding-top:150px;
+        padding:0 40px;
+        padding-top:120px;
     }
     .questions-title{
         font-size:66px;
@@ -2470,16 +2494,35 @@ span, .weight{
 
         /****************** Card Desktop   ***************************************/
 
+    .card-desktop {
+        top:32%;
+    }
     .card-desktop .typewriter{
         margin: 0px;
-        font-size: 58px;
+        font-size: 50px;
         width:80%;
     }
     .last{
         margin-bottom:170px;
     }
+    .digital-footer,
+    .digital-footer-middle,
+    .digital-footer-bottom{
+        padding:0 40px;
+    }
+    .social-media{
+        width:22%;
+    }
     /*********** Business card desktop **********/
-    
+    .business .hero-description{
+        top:37%;
+    }
+    .business-card .typewriter:first-of-type {
+        font-size: 28px;
+    }
+    .business-card .typewriter:last-of-type {
+        font-size: 49px;
+    }
     .swipper-1 .swipper-title{
         padding-bottom:30px;
     }

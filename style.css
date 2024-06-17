@@ -8594,7 +8594,12 @@ span, .weight{
     .product-dropdown{
         border-radius:20px;
     }
+    /*** BUsiness card**/
 
+    .business .hero-description{
+        top:55%;
+        left:2%;
+    }
 }
 
 

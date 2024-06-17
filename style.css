@@ -395,6 +395,7 @@ nav img {
 .product-inner-top{
     justify-content: space-between;
     margin-bottom: 85px;
+    align-items: end;
 }
 .next-gen-top-right p{
     margin-bottom:16px;
@@ -467,6 +468,12 @@ nav img {
 }
 .optimize-middle .optimize-image{
     padding-top:  120px;
+    border-radius:20px;
+}
+.optimize-middle .optimize-image img,
+.optimize-bottom .optimize-image img{
+    border-radius:20px;
+    width:100%;
 }
 .optimize-middle .vector-3{
     position:absolute;

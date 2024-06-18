@@ -6729,6 +6729,7 @@ span, .weight{
         top: 65%;
         margin-left: 10px;
         margin-right: 10px;
+        width:100%;
         overflow-y: auto;
     }
     .bank-beyond{
@@ -6744,6 +6745,7 @@ span, .weight{
     }
     .subtitle{
         font-size:12px;
+        width:100%;
     }
     
     .hero-section-buttons{
@@ -7400,7 +7402,7 @@ span, .weight{
     }
     .typewriter,
     .everything{
-        font-size:30px;
+        font-size:29px;
     }
     .col-8,.col-6{
         width:100%;

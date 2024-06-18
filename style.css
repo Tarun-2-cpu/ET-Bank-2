@@ -2769,6 +2769,9 @@ span, .weight{
         object-fit: cover;
         border-radius:20px;
     }
+    .benefint-container{
+        padding-right:0px;
+    }
     .benefit-container-img{
         width:90%;
         border-radius:20px;

@@ -7230,6 +7230,7 @@ span, .weight{
     }
     .plan-bottom .col-4{
         width:100%;
+        padding:0px;
     }
     .plan{
         padding-bottom:46px;

@@ -561,19 +561,20 @@ nav img {
 .plan{
     padding-bottom:246px;
 }
-.banner{
-    margin:0 20px;
-    border-radius:8px;
-    padding:0px;
-    background: url(images/banner-lines.png), url(images/Vector\ 2.png);
-    background-repeat:no-repeat;
-    background-size:contain;
-    bottom:0;
-    right:0;
-    background-color:#D2FEE1;
-    left:0;
-    background-size: cover;
+.banner {
+    margin: 0 20px;
+    border-radius: 8px;
+    padding: 0px;
+    background-image: url(images/banner-lines.png), url(images/Vector\ 2.png);
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover, contain;
+    background-position: center, center;
+    background-color: #D2FEE1;
+    bottom: 0;
+    right: 0;
+    left: 0;
 }
+
 .banner-left .Are{
     font-size:24px;
     font-weight:600;

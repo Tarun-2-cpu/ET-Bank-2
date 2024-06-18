@@ -565,8 +565,9 @@ nav img {
     margin:0 20px;
     border-radius:8px;
     padding:0px;
-    background: url(images/banner-lines.png);
+    background: url(images/banner-lines.png), url(images/Vector\ 2.png);
     background-repeat:no-repeat;
+    background-size:contain;
     bottom:0;
     right:0;
     background-color:#D2FEE1;

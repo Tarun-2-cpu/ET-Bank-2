@@ -77,8 +77,12 @@ html,body{
 .secondary-background{
     background-color: #00D47E !important;
 }
-
-
+.dark{
+    color:#000 !important;
+}
+.weight-700{
+    font-weight: 700 !important;
+}
 header {
     margin: 0 20px;
     margin-right: 40px;
@@ -139,7 +143,7 @@ nav img {
 .menu i{
     display: none;
 }
-.nav-right a {
+.nav-right .login{
     font-size: 16px;
     color: #fff;
     text-decoration: none;
@@ -157,7 +161,9 @@ nav img {
     outline: none;
     cursor: pointer;
 }
-
+.started a{
+    text-decoration: none;
+}
 .hero-section img{
     width:100%;
     background-position:cover;
@@ -1606,7 +1612,7 @@ span, .weight{
     .menu i{
         display: none;
     }
-    .nav-right a {
+    .nav-right .login {
         font-size: 15px;
         color: #fff;
         text-decoration: none;
@@ -3572,7 +3578,7 @@ span, .weight{
         display:block;
     }
     
-    .nav-right a{
+    .nav-right .login{
         font-size:14px;
         color:#fff;
         text-decoration: none;

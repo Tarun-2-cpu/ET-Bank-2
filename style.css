@@ -13630,9 +13630,6 @@ span, .weight{
         border-radius:20px;
     }
 
-
-
-
     .digital-footer{
         margin-top:20px;
     }
@@ -13733,22 +13730,31 @@ span, .weight{
         width:100%;
     }
     .business-card .typewriter:last-of-type{
-        font-size:28px;
+        font-size:25px;
         font-weight:700;
         width:100%;
     }
     .business-card .typewriter:first-of-type{
-        font-size:24px;
+        font-size:19px;
         font-weight:700;
         width:100%;
     }
-    
+    .business-card .benefit-text {
+        margin-bottom: 30px;
+    }
+    .benefit-text p {
+        font-size: 20px;
+        color: #1B5962;
+        font-weight: 700;
+        margin-top: 22px;
+        text-align: left;
+    }
     .simple-left .text-light{
         font-size: 16px;
     }
 
     .simple-left .typewriter {
-        font-size: 24px;
+        font-size: 19px;
         font-weight: 700;
         margin-bottom: 25px;
         overflow-y: auto;
@@ -13761,7 +13767,7 @@ span, .weight{
         border-radius: 20px;
     }
     .simple-left{
-        padding-left:15px;
+        padding-left:0px;
         padding-bottom:47px;
         overflow-y: auto;
     }
@@ -13777,11 +13783,14 @@ span, .weight{
     .business .save-right-most{
         margin-top:70px;
     }
+    .business .save-right {
+        padding: 0 30px;
+    }
     .business .see-more {
         font-size: 18px;
     }
     .business .save .typewriter{
-        font-size:32px;
+        font-size:25px;
     }
     .business
     .save-right img{
@@ -13792,7 +13801,7 @@ span, .weight{
     }
     .business .questions-title{
         margin-top: 0;
-        font-size:30px;
+        font-size:23px;
     }
     .business .col-4,
     .business .col-3{
@@ -13863,12 +13872,12 @@ span, .weight{
         border-radius: 20px;
     }
     .purchase .typewriter{
-        font-size:26px;
+        font-size:16px;
         font-weight:700;
         margin-bottom:100px;
     }
     .tab p{
-        font-size:14px;
+        font-size:10px;
         color:#adadad;
         font-weight: 700;
     }
@@ -13879,7 +13888,7 @@ span, .weight{
     }
     
     .tab {
-        padding: 19px 10px;
+        padding: 19px 8px;
         cursor: pointer;
         border-bottom: 2px solid transparent;
         transition: border-bottom 0.3s;
@@ -13906,7 +13915,7 @@ span, .weight{
         cursor: pointer;
     }
     .tab-content{
-        padding:40px 20px;
+        padding:40px 0px;
     }
     .tab-content .see-more{
         margin-top:40px;

@@ -10372,6 +10372,148 @@ span, .weight{
         width:90%;
     }
 
+
+    /***************************   card-desktop       *********************************************/
+
+    .card-desktop{
+        top:65%;
+        width:90%;
+    }
+    .card-desktop .typewriter{
+        font-size:28px;
+    }
+    .card-desktop
+    .hero-text-left
+    .col-9{
+        width:100%;
+    }
+    .card-desktop
+    .hero-text-right{
+        display: none;
+    }
+    .mastercard{
+        padding:0px;
+        padding-top:100px;
+    }
+    .mastercard-right{
+        margin-top:30px;
+        margin-left:10px;
+        padding-right:10px;
+    }
+    .radius{
+        border-radius:20px;
+    }
+    .mastercard .typewriter{
+        margin-bottom:15px;
+    }
+    .card-title{
+        font-size:24px;
+        margin-bottom:8px;
+    }
+    .see-more{
+        font-size:22px;
+        margin-top:30px;
+    }
+    .card-subtitle{
+        font-size: 16px;
+        margin-bottom:8px;
+    }
+    .facility-card{
+        border:1px solid #D9D9D9;
+        margin-bottom:30px;
+    }
+    .facilities {
+        padding: 0px;
+    }
+    .facilities{
+        padding-top:100px;
+    }
+    .cards .col-4{
+        width:100%;
+    }
+    .card-description{
+        padding-left:20px;
+        padding-bottom:30px;
+        padding-top:42px;
+        padding-right:40px;
+    }
+    .facility-title p{
+        margin-left:0px;
+        font-size:30px;
+        margin-bottom:0px;
+    }
+    .mastercard .see-more{
+        margin-top:30px;
+    }
+    .mastercard .typewriter{
+        margin-top:1px;
+    }
+    .mastercard-shaded .typewriter{
+        color:#D9D9D9 !important;
+        line-height: normal;
+    }
+    .mastercard-right .new{
+        font-size:30px;
+        color:#00D47E;
+        margin-bottom:8px;
+        font-weight:700;
+    }
+    .mastercard p{
+        line-height:normal;
+    }
+    .last-2 .mastercard-right{
+        margin-top:0;
+    }
+    .master-right-1,
+    .master-right-3{
+        flex-wrap: wrap-reverse;
+    }
+    .mastercard img{
+        width:100%;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+    .last-2 .typewriter{
+        margin-top:10px;
+        margin-bottom:10px;
+    }
+    .last-2 img{
+        height:100%;
+    }
+    .last-2 .mastercard-img{
+        height:100%;
+    }
+    .last-2{
+        height:fit-content;
+    }
+    .last .mastercard-right{
+        margin-left:0px;
+        margin-right:30px;
+        padding-right: 0px;
+    }
+    .last{
+        margin-bottom:0px;
+    }
+    .master-right-1 .mastercard-right{
+        margin-top:30px;
+        margin-left:30px;
+        margin-bottom:40px;
+    }
+    .master-right-2 .mastercard-img{
+        padding-top:40px;
+        margin-bottom:40px;
+    }
+    .master-right-1,
+    .master-right-2,
+    .master-right-3{
+        padding-top:40px;
+    }
+
+    .master-right-3 .mastercard-right{
+        margin-left:20px;
+        margin-bottom:40px;
+    }
+
     
 }
 
@@ -11645,6 +11787,10 @@ span, .weight{
 
     .card-desktop{
         top:65%;
+        left:1%;
+    }
+    .card-desktop .typewriter{
+        font-size:25px;
     }
     .card-desktop
     .hero-text-left
@@ -11654,6 +11800,10 @@ span, .weight{
     .card-desktop
     .hero-text-right{
         display: none;
+    }
+    .mastercard .col-6{
+        padding-left:0px;
+        padding-right:0px;
     }
     .mastercard{
         padding-top:100px;
@@ -11692,14 +11842,15 @@ span, .weight{
         width:100%;
     }
     .card-description{
-        padding-left:20px;
+        padding-left:15px;
         padding-bottom:30px;
         padding-top:42px;
-        padding-right:40px;
+        padding-right:15px;
     }
     .facility-title p{
-        margin-left:20px;
-        margin-bottom:30px;
+        margin-left:0px;
+        margin-bottom:0px;
+        font-size:35px;
     }
     .mastercard .see-more{
         margin-top:30px;
@@ -11746,7 +11897,7 @@ span, .weight{
         height:fit-content;
     }
     .last .mastercard-right{
-        margin-left:0px;
+        margin-left:15px;
         margin-right:30px;
         padding-right: 0px;
     }
@@ -11754,7 +11905,8 @@ span, .weight{
         margin-bottom:100px;
     }
      .master-right-1 .mastercard-right{
-        margin-top:0px;
+        margin-top:20px;
+        margin-left:15px;
         margin-bottom:40px;
     }
     .master-right-2 .mastercard-img{

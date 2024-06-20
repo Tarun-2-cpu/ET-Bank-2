@@ -1291,7 +1291,9 @@ nav img {
 
 
 /*******************      Card Desktop                 *************************/
-
+.card-desktop{
+    top:45%;
+}
 .card-desktop .typewriter{
     margin: 0px;
     font-size: 60px;
@@ -1327,7 +1329,7 @@ span, .weight{
 .mastercard-right{
     margin-top:116px;
     margin-left:90px;
-    padding-right:80px;
+    padding-right:38px;
 }
 .radius{
     border-radius:20px;
@@ -1351,12 +1353,15 @@ span, .weight{
     
 }
 .facilities{
-    padding-top:220px;
+    padding-top:150px;
 }
 .card-description{
     padding-left:32px;
     padding-bottom:30px;
     padding-top:42px;
+}
+.card-des-last{
+    padding-bottom:22px;
 }
 .mastercard .see-more{
     margin-top:15px;
@@ -1405,7 +1410,7 @@ span, .weight{
     padding-right: 0px;
 }
 .last{
-    margin-bottom:300px;
+    margin-bottom:0px;
 }
 
 
@@ -2462,6 +2467,7 @@ span, .weight{
         justify-content: space-between;
         align-items: center;
         margin-top:23px;
+        padding:0 49px;
     }
     .digital-footer-top a{
         color:#fff;
@@ -2481,6 +2487,7 @@ span, .weight{
         flex-wrap:wrap;
         gap:0px;
         text-align: left;
+        padding:0 20px;
     }
     .digital-footer-links{
         margin-top:100px;
@@ -2507,6 +2514,9 @@ span, .weight{
         font-size:16px;
         color:#fff;
     }
+    .social-media{
+        width:20%;
+    }
     .social-media i{
         color:#fff;
         font-size:21px;
@@ -2522,28 +2532,143 @@ span, .weight{
         margin-top:114px;
         justify-content: space-evenly;
         margin-bottom:30px;
+        padding:0 20px;
     }
 
         /****************** Card Desktop   ***************************************/
 
-    .card-desktop {
-        top:32%;
+    /*******************      Card Desktop                 *************************/
+    .card-desktop{
+        top:34%;
     }
     .card-desktop .typewriter{
         margin: 0px;
-        font-size: 50px;
-        width:80%;
+        font-size: 45px;
+    }
+    span, .weight{
+        font-weight:700;
+    }
+    .text-center{
+        text-align: center;
+    }
+    .hero-text-right{
+        padding:40px 26px;
+        padding-right:28px;
+        height:fit-content;
+        background-color: #ffffffdc;
+        margin-right:40px;
+        border-radius: 15px;
+    }
+    .hero-text-right p:first-of-type{
+        font-size:24px;
+        margin-bottom:40px;
+    }
+    .hero-text-right p:last-of-type{
+        font-size:16px;
+    }
+    .hero-section-text{
+        height:fit-content;
+        align-items:end;
+    }
+    .mastercard{
+        padding:0 60px;
+        padding-top:175px;
+    }
+    .mastercard-right{
+        margin-top:70px;
+        margin-left:90px;
+        padding-right:38px;
+    }
+    .radius{
+        border-radius:20px;
+    }
+    .mastercard .typewriter{
+        margin-bottom:15px;
+    }
+    .card-title{
+        font-size:24px;
+        margin-bottom:8px;
+    }
+    .see-more{
+        font-size:22px;
+    }
+    .card-subtitle{
+        font-size: 16px;
+        margin-bottom:8px;
+    }
+    .facility-card{
+        border:1px solid #D9D9D9;
+        
+    }
+    .facilities{
+        padding:0 60px;
+        padding-top:150px;
+    }
+    .card-description{
+        padding-left:32px;
+        padding-bottom:30px;
+        padding-top:42px;
+    }
+    .card-des-first{
+        padding-bottom:25px;
+    }
+    .card-des-first .see-more{
+        margin-top:35px;
+    }
+    .card-des-last{
+        padding-bottom:27px;
+    }
+    .mastercard .see-more{
+        margin-top:15px;
+    }
+    .mastercard{
+        padding-top:120px;
+    }
+    .mastercard .typewriter{
+        margin-top:20px;
+    }
+    .mastercard-shaded .typewriter{
+        color:#D9D9D9 !important;
+        line-height: normal;
+    }
+    .mastercard-right .new,
+    .new{
+        font-size:30px;
+        color:#00D47E;
+        margin-bottom:8px;
+        font-weight:700;
+    }
+    .mastercard p{
+        line-height:normal;
+    }
+    .last-2 .mastercard-right{
+        margin-top:0;
+    }
+    .mastercard img{
+        width:100%;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+    .last-2 .typewriter{
+        margin-top:20px;
+        margin-bottom:10px;
+    }
+    .last-2 img{
+        height:100%;
+    }
+    .last-2 .mastercard-img{
+        height:100%;
+    }
+    .last-2{
+        height:fit-content;
+    }
+    .last .mastercard-right{
+        margin-left:0px;
+        margin-right:30px;
+        padding-right: 0px;
     }
     .last{
-        margin-bottom:170px;
-    }
-    .digital-footer,
-    .digital-footer-middle,
-    .digital-footer-bottom{
-        padding:0 40px;
-    }
-    .social-media{
-        width:22%;
+        margin-bottom:0px;
     }
 
 
@@ -3333,7 +3458,38 @@ span, .weight{
 
     /**************** Card Desktop  **********************/
 
-
+    .card-desktop{
+        top:29%;
+    }
+    .card-desktop .typewriter{
+        margin: 0px;
+        font-size: 38px;
+    }
+    span, .weight{
+        font-weight:700;
+    }
+    .text-center{
+        text-align: center;
+    }
+    .hero-text-right{
+        padding:33px 22px;
+        padding-right:28px;
+        height:fit-content;
+        background-color: #ffffffdc;
+        margin-right:40px;
+        border-radius: 15px;
+    }
+    .hero-text-right p:first-of-type{
+        font-size:24px;
+        margin-bottom:40px;
+    }
+    .hero-text-right p:last-of-type{
+        font-size:16px;
+    }
+    .hero-section-text{
+        height:fit-content;
+        align-items:end;
+    }
     .card-title{
         font-size:24px;
         margin-bottom:8px;
@@ -3347,6 +3503,9 @@ span, .weight{
     }
     .facility-card{
         border:1px solid #D9D9D9;
+    }
+    .card-des-first .see-more {
+        margin-top: 18px;
     }
     .card-description{
         padding-left:32px;
@@ -3396,19 +3555,23 @@ span, .weight{
     }
     .last .mastercard-right{
         margin-left:0px;
+        margin-top:60px;
         margin-right:30px;
         padding-right: 0px;
     }
     .last{
-        margin-bottom:120px;
+        margin-bottom:0px;
     }
     .digital-footer{
         padding-left:30px;
         padding-right:30px;
     }
-
-
-
+    .digital-footer-top {
+        padding: 0px;
+    }
+    .last-2 .mastercard-right {
+        margin-top: 40px;
+    }
     .card-desktop .typewriter{
         font-size:52px;
     }
@@ -3434,7 +3597,7 @@ span, .weight{
         padding-left:40px;
     }
     .mastercard-right{
-        padding-left:75px;
+        padding-left:25px;
     }
 
     /****************    Business Card       *********************/
@@ -7987,6 +8150,7 @@ span, .weight{
 
     .card-desktop{
         top:65%;
+        width:90%;
     }
     .card-desktop
     .hero-text-left
@@ -7998,6 +8162,7 @@ span, .weight{
         display: none;
     }
     .mastercard{
+        padding:0px;
         padding-top:100px;
     }
     .mastercard-right{
@@ -8026,6 +8191,9 @@ span, .weight{
     .facility-card{
         border:1px solid #D9D9D9;
         margin-bottom:30px;
+    }
+    .facilities {
+        padding: 0px;
     }
     .facilities{
         padding-top:100px;
@@ -8093,10 +8261,11 @@ span, .weight{
         padding-right: 0px;
     }
     .last{
-        margin-bottom:100px;
+        margin-bottom:0px;
     }
-     .master-right-1 .mastercard-right{
-        margin-top:0px;
+    .master-right-1 .mastercard-right{
+        margin-top:30px;
+        margin-left:30px;
         margin-bottom:40px;
     }
     .master-right-2 .mastercard-img{
@@ -8110,6 +8279,7 @@ span, .weight{
     }
 
     .master-right-3 .mastercard-right{
+        margin-left:20px;
         margin-bottom:40px;
     }
     

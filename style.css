@@ -7957,7 +7957,7 @@ span, .weight{
     }
     .social-media{
         margin-top:20px;
-        width:59%;
+        width:70%;
     }
     .digital-footer-bottom img{
         width:100px;
@@ -7966,7 +7966,7 @@ span, .weight{
     .bottom-address{
         margin-left:0px;
         width:100%;
-        padding:0 40px;
+        padding:0 20px;
     }
     .digital-footer-bottom{
         margin-top:114px;
@@ -9946,7 +9946,7 @@ span, .weight{
         font-weight:600;
     }
     .digital-footer-middle .col-3{
-        width:44%;
+        width:100%;
     }
     .digital-footer-middle{
         margin-top:40px;
@@ -9982,7 +9982,7 @@ span, .weight{
     }
     .social-media{
         margin-top:20px;
-        width:59%;
+        width:97%;
     }
     .digital-footer-bottom img{
         width:100px;
@@ -9991,7 +9991,7 @@ span, .weight{
     .bottom-address{
         margin-left:0px;
         width:100%;
-        padding:0 9.3vw;
+        padding:0px;
     }
     .digital-footer-bottom{
         margin-top:114px;
@@ -10006,6 +10006,200 @@ span, .weight{
     }
     .digital-footer-middle .last-link{
         width:100%;
+    }
+
+
+    /********************     Business   Card             ***********************/
+    .business-card.hero-description{
+        width:100%;
+    }
+    .business-card .typewriter:last-of-type{
+        font-size:28px;
+        font-weight:700;
+        width:100%;
+    }
+    .business-card .typewriter:first-of-type{
+        font-size:24px;
+        font-weight:700;
+        width:100%;
+    }
+    
+    .simple-left .text-light{
+        font-size: 16px;
+    }
+
+    .simple-left .typewriter {
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 25px;
+        overflow-y: auto;
+    }
+
+
+    .simple-container{
+        gap:30px;
+        padding:20px;
+        border-radius: 20px;
+    }
+    .simple-left{
+        padding-left:15px;
+        padding-bottom:47px;
+        overflow-y: auto;
+    }
+    .simple-right{
+        margin-right:1px;
+    }
+    .simple{
+        margin-top:100px;
+    }
+    .business .save-right-most{
+        margin-top:70px;
+    }
+    .business .see-more {
+        font-size: 15px;
+    }
+    .business .save .typewriter{
+        font-size:32px;
+    }
+    .business
+    .save-right img{
+        width:100%;
+    }
+    .business .save-left{
+        padding-top:1px;
+    }
+    .business .questions-title{
+        margin-top: 0;
+        font-size:29px;
+    }
+    .business .col-4,
+    .business .col-3{
+        width:100%;
+    }
+    .business .save{
+        padding-top: 100px;
+    }
+    .business .save-subtitle{
+        margin-bottom:20px;
+    }
+    .business .mastercard .col-6{
+        width:100%;
+    }
+    .business .mastercard-right{
+        padding-right:20px;
+    }
+    .business .mastercard-img{
+        padding-left:0px;
+        padding-right:0px;
+    }
+    .business .mastercard {
+        padding-right: 0px;
+        padding-top: 110px;
+        padding-left: 0px;
+    }
+
+    .business .last-2 .mastercard-right {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    .business-product {
+        padding: 0px 15px;
+    }
+    .business .product-text .title{
+        font-size:23px;
+        text-align:left;
+    }
+    .business .dropdown-option{
+        font-size:14px;
+    }
+    .dropdown-option{
+        align-items: center;
+    }
+    .dropdown-option .option{
+        padding:0;
+    }
+    .business .product-dropdown{
+        padding:20px 1px;
+    }
+    .business .products-text{
+        justify-content: flex-end;
+    }
+    .business .products img{
+        border-radius:20px;
+    }
+    .business .product-text .title{
+        margin-bottom:25px;
+    }
+    .digital-footer{
+        margin-top: 100px;
+    }
+    .business .product-dropdown{
+        margin-right:1px;
+        margin-bottom:1px;
+    }
+    .purchase{
+        margin-top: 100px;
+        padding-left:15px;
+        padding-right:15px;
+        padding-top:40px;
+        padding-bottom:40px;
+        text-align: left;
+        border-radius: 20px;
+    }
+    .purchase .typewriter{
+        font-size:26px;
+        font-weight:700;
+        margin-bottom:100px;
+    }
+    .tabb {
+        padding: 0 15px;
+    }
+    .tab p{
+        font-size:14px;
+        color:#adadad;
+        font-weight: 700;
+    }
+    .tabs {
+        display: flex;
+        border-bottom: 2px solid #D9D9D9;
+        margin-bottom: 20px;
+    }
+    
+    .tab {
+        padding: 19px 10px;
+        cursor: pointer;
+        border-bottom: 2px solid transparent;
+        transition: border-bottom 0.3s;
+    }
+    
+    .tab:hover {
+        border-bottom: 2px solid #D9D9D9;
+    }
+    
+    .tab.active {
+        border-bottom: 2px solid #00D47E;
+    }
+    .tab.active p{
+        color:#00D47E;
+    }
+    
+    .tab-content .content {
+        display: none;
+    }
+    .tab-content .content.active {
+        display: block;
+    }
+    .see-more {
+        cursor: pointer;
+    }
+    .tab-content{
+        padding:40px 20px;
+    }
+    .tab-content .see-more{
+        margin-top:40px;
+    }
+    .business .dropdown-option .option{
+        width:90%;
     }
 
     
@@ -11269,7 +11463,7 @@ span, .weight{
         justify-content: center;
     }
     .digital-footer-middle .col-3{
-        width:30%;
+        width:100%;
     }
     .last-link{
         margin:auto;
@@ -11413,18 +11607,19 @@ span, .weight{
     /********************     Business   Card             ***********************/
 
     .business-card .typewriter:last-of-type{
-        font-size:32px;
+        font-size:30px;
     }
     .business-card .typewriter:first-of-type{
-        font-size:28px;
+        font-size:25px;
     }
-    
+    .simple {
+        padding: 0px 15px;
+    }
     .simple-left .text-light{
-        font-size: 16px;
+        font-size: 13px;
     }
-
     .simple-left .typewriter{
-        font-size:32px;
+        font-size:22px;
         margin-bottom:25px;
         overflow-y: auto;
     }
@@ -11434,7 +11629,7 @@ span, .weight{
         border-radius: 20px;
     }
     .simple-left{
-        padding-left:30px;
+        padding-left:0px;
         padding-bottom:47px;
         overflow-y: auto;
     }
@@ -11443,6 +11638,7 @@ span, .weight{
     }
     .simple-right{
         margin-right:1px;
+        padding:0px;
     }
     .simple{
         margin-top:100px;
@@ -11451,7 +11647,7 @@ span, .weight{
         margin-top:70px;
     }
     .business .save .typewriter{
-        font-size:32px;
+        font-size:29px;
     }
     .business
     .save-right img{
@@ -11468,7 +11664,7 @@ span, .weight{
         width:100%;
     }
     .business .save{
-        padding-top: 100px;
+        padding-top: 60px;
     }
     .business .save-subtitle{
         margin-bottom:20px;
@@ -11503,6 +11699,7 @@ span, .weight{
     }
     .business .product-text .title{
         margin-bottom:25px;
+        font-size:21px;
     }
     .digital-footer{
         margin-top: 100px;
@@ -11521,11 +11718,11 @@ span, .weight{
         border-radius: 20px;
     }
     .purchase .typewriter{
-        font-size:32px;
+        font-size:20px;
         margin-bottom:100px;
     }
     .tab p{
-        font-size:14px;
+        font-size:12px;
         color:#adadad;
         font-weight: 700;
     }
@@ -11536,7 +11733,7 @@ span, .weight{
     }
     
     .tab {
-        padding: 19px;
+        padding: 19px 8px;
         cursor: pointer;
         border-bottom: 2px solid transparent;
         transition: border-bottom 0.3s;
@@ -11563,7 +11760,10 @@ span, .weight{
         cursor: pointer;
     }
     .tab-content{
-        padding:40px 20px;
+        padding:40px 0px;
+    }
+    .tab-content .subtitle{
+        padding:0px;
     }
     .tab-content .see-more{
         margin-top:40px;
@@ -11571,7 +11771,12 @@ span, .weight{
     .business .dropdown-option .option{
         width:90%;
     }
-
+    .business .see-more {
+        font-size: 14px;
+    }
+    .digital-footer, .digital-footer-middle, .digital-footer-bottom {
+        padding: 0 15px;
+    }
 
 
     /******************  DIGITAL ACCOUNT DESKTOP   **********************************/
@@ -13518,6 +13723,195 @@ span, .weight{
         width:100%;
     }
     .social-media{
+        width:90%;
+    }
+
+
+
+    /********************     Business   Card             ***********************/
+    .business-card.hero-description{
+        width:100%;
+    }
+    .business-card .typewriter:last-of-type{
+        font-size:28px;
+        font-weight:700;
+        width:100%;
+    }
+    .business-card .typewriter:first-of-type{
+        font-size:24px;
+        font-weight:700;
+        width:100%;
+    }
+    
+    .simple-left .text-light{
+        font-size: 16px;
+    }
+
+    .simple-left .typewriter {
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 25px;
+        overflow-y: auto;
+    }
+
+
+    .simple-container{
+        gap:30px;
+        padding:20px;
+        border-radius: 20px;
+    }
+    .simple-left{
+        padding-left:15px;
+        padding-bottom:47px;
+        overflow-y: auto;
+    }
+    .simple .see-more{
+        margin-top:25px;
+    }
+    .simple-right{
+        margin-right:1px;
+    }
+    .simple{
+        margin-top:100px;
+    }
+    .business .save-right-most{
+        margin-top:70px;
+    }
+    .business .see-more {
+        font-size: 18px;
+    }
+    .business .save .typewriter{
+        font-size:32px;
+    }
+    .business
+    .save-right img{
+        width:100%;
+    }
+    .business .save-left{
+        padding-top:1px;
+    }
+    .business .questions-title{
+        margin-top: 0;
+        font-size:30px;
+    }
+    .business .col-4,
+    .business .col-3{
+        width:100%;
+    }
+    .business .save{
+        padding-top: 100px;
+    }
+    .business .save-subtitle{
+        margin-bottom:20px;
+    }
+    .business .mastercard .col-6{
+        width:100%;
+    }
+    .business .mastercard-right{
+        padding-right:20px;
+    }
+    .business .mastercard-img{
+        padding-left:0px;
+        padding-right:0px;
+    }
+    .business .last-2 .mastercard-right {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    .business-product {
+        padding: 0px 15px;
+    }
+    .business .product-text .title{
+        font-size:23px;
+        text-align:left;
+    }
+    .business .dropdown-option{
+        font-size:14px;
+    }
+    .dropdown-option{
+        align-items: center;
+    }
+    .dropdown-option .option{
+        padding:0;
+    }
+    .business .product-dropdown{
+        padding:20px 1px;
+    }
+    .business .products-text{
+        justify-content: flex-end;
+    }
+    .business .products img{
+        border-radius:20px;
+    }
+    .business .product-text .title{
+        margin-bottom:25px;
+    }
+    .digital-footer{
+        margin-top: 100px;
+    }
+    .business .product-dropdown{
+        margin-right:1px;
+        margin-bottom:1px;
+    }
+    .purchase{
+        margin-top: 100px;
+        padding-left:15px;
+        padding-right:15px;
+        padding-top:40px;
+        padding-bottom:40px;
+        text-align: left;
+        border-radius: 20px;
+    }
+    .purchase .typewriter{
+        font-size:26px;
+        font-weight:700;
+        margin-bottom:100px;
+    }
+    .tab p{
+        font-size:14px;
+        color:#adadad;
+        font-weight: 700;
+    }
+    .tabs {
+        display: flex;
+        border-bottom: 2px solid #D9D9D9;
+        margin-bottom: 20px;
+    }
+    
+    .tab {
+        padding: 19px 10px;
+        cursor: pointer;
+        border-bottom: 2px solid transparent;
+        transition: border-bottom 0.3s;
+    }
+    
+    .tab:hover {
+        border-bottom: 2px solid #D9D9D9;
+    }
+    
+    .tab.active {
+        border-bottom: 2px solid #00D47E;
+    }
+    .tab.active p{
+        color:#00D47E;
+    }
+    
+    .tab-content .content {
+        display: none;
+    }
+    .tab-content .content.active {
+        display: block;
+    }
+    .see-more {
+        cursor: pointer;
+    }
+    .tab-content{
+        padding:40px 20px;
+    }
+    .tab-content .see-more{
+        margin-top:40px;
+    }
+    .business .dropdown-option .option{
         width:90%;
     }
 }

@@ -1414,6 +1414,9 @@ span, .weight{
 .business-card .typewriter:first-of-type{
     font-size:28px;
 }
+.business .hero-description{
+    top:50%;
+}
 
 .business-card .typewriter:last-of-type{
     font-size:56px;
@@ -1458,7 +1461,7 @@ span, .weight{
     margin-top:15px;
 }
 .simple-right{
-    margin-right:46px;
+    margin-right:0px;
 }
 .simple{
     margin-top:120px;
@@ -1520,7 +1523,7 @@ span, .weight{
 }
 .purchase{
     margin-top: 150px;
-    border:1px solid #D9D9D9;
+    border:3px solid #D9D9D9;
     padding-left:117px;
     padding-right:120px;
     padding-top:85px;
@@ -1577,7 +1580,10 @@ span, .weight{
 .tab-content .see-more{
     margin-top:40px;
 }
-
+.products img{
+    border-radius:20px ;
+    width:100%;
+}
 
 
 
@@ -2539,6 +2545,12 @@ span, .weight{
     .social-media{
         width:22%;
     }
+
+
+
+
+
+
     /*********** Business card desktop **********/
     .business .hero-description{
         top:37%;
@@ -2550,14 +2562,22 @@ span, .weight{
         font-size: 49px;
     }
     .swipper-1 .swipper-title{
-        padding-bottom:30px;
+        padding-bottom:3px;
+    }
+    .business-card .swipper-title{
+        font-size:20px;
+    }
+    .simple{
+        padding:0 50px;
+    }
+    .simple-container{
+        width:100%;
     }
     .simple-left .typewriter {
-        font-size: 50px;
+        font-size: 46px;
         margin-bottom: 25px;
         overflow-y: auto;
     }
-
     .business .save .typewriter{
         font-size: 47px;
     }
@@ -2570,7 +2590,30 @@ span, .weight{
     .save{
             padding: 0 50px;
     }
-
+    .business .save-right{
+        padding:0px;
+    }
+    .purchase .typewriter{
+        font-size: 50px;
+    }
+    .business .questions-title{
+        font-size:55px;
+    }
+    .business-product{
+        padding:60px;
+    }
+    .business-product .container{
+        width:100%;
+    }
+    .business-product .products{
+        padding-top:120px;
+    }
+    .tabb{
+        padding:0 40px;
+    }
+    .tabb .container{
+        width:100%;
+    }
 }
 
 
@@ -3409,17 +3452,20 @@ span, .weight{
         font-size:45px;
     }
     .business-card .swipper-card{
-    border:1px solid #D9D9D9;
+        border:1px solid #D9D9D9;
         border-radius:20px;
         padding-top:30px;
         padding-left:32px;
         padding-right:24px;
     }
+    .business-card .swipper-title{
+        font-size:19px;
+    }
     .text-light{
         color:white;
     }
     .simple{
-        padding:0px;
+        padding:60px;
     }
     .simple-right{
         border-radius:20px;
@@ -3432,8 +3478,8 @@ span, .weight{
         height: 100%;
     }
     .simple-left .typewriter{
-        font-size:50px;
-        margin-bottom:25px;
+        font-size:42px;
+        margin-bottom:30px;
         overflow-y: auto;
     }
     .simple-container{
@@ -3447,10 +3493,10 @@ span, .weight{
         overflow-y: auto;
     }
     .simple .see-more{
-        margin-top:15px;
+        margin-top:30px;
     }
     .simple-right{
-        margin-right:46px;
+        margin-right:0px;
     }
     .simple{
         margin-top:120px;
@@ -3515,6 +3561,9 @@ span, .weight{
         margin-right:40px;
         margin-bottom:40px;
     }
+    .business-product{
+        padding:0 60px;
+    }
     .purchase{
         margin-top: 150px;
         border:1px solid #D9D9D9;
@@ -3526,8 +3575,12 @@ span, .weight{
         border-radius: 20px;
     }
     .purchase .typewriter{
-        font-size:55px;
+        font-size:50px;
         margin-bottom:100px;
+    }
+    .business .last-2 .mastercard-right{
+        padding-right:50px;
+        padding-left:50px;
     }
     .tab p{
         font-size:22px;
@@ -4610,7 +4663,7 @@ span, .weight{
         width:97%;
     }
     .social-media{
-        width:35%;
+        width:38%;
     }
 
 
@@ -4775,14 +4828,20 @@ span, .weight{
     border:1px solid #D9D9D9;
         border-radius:20px;
         padding-top:30px;
-        padding-left:32px;
-        padding-right:24px;
+        padding-left:15px;
+        padding-right:15px;
+    }
+    .business-card .swipper-card .swipper-title{
+        font-size:16px;
+    }
+    .business-card .swipper-1{
+        padding-bottom:0px;
     }
     .text-light{
         color:white;
     }
     .simple{
-        padding:0px;
+        padding:0px 40px;
     }
     .simple-right{
         border-radius:20px;
@@ -4795,7 +4854,7 @@ span, .weight{
         height: 100%;
     }
     .simple-left .typewriter{
-        font-size:38px;
+        font-size:34px;
         margin-bottom:25px;
         overflow-y: auto;
     }
@@ -4809,11 +4868,15 @@ span, .weight{
         padding-bottom:47px;
         overflow-y: auto;
     }
+    .simple-left p:nth-of-type(2){
+        font-size:15px;
+    }
     .simple .see-more{
-        margin-top:15px;
+        margin-top:30px;
+        font-size:18px;
     }
     .simple-right{
-        margin-right:46px;
+        margin-right:0px;
     }
     .simple{
         margin-top:120px;
@@ -4830,6 +4893,12 @@ span, .weight{
     }
     .business .save-left{
         padding-top:30px;
+    }
+    .business .save-subtitle{
+        font-size:16px;
+    }
+    .business .see-more{
+        font-size:20px;
     }
     .business .questions-title{
         margin-top: 0;
@@ -4857,13 +4926,14 @@ span, .weight{
         padding:0;
     }
     .business-product{
-        padding:0px;
+        padding:0px 40px;
     }
     .business .product-dropdown{
-        padding:40px 25px;
+        padding:40px 15px;
     }
     .business .products-text{
         justify-content: flex-end;
+        bottom:0;
     }
     .business .products img{
         border-radius:20px;
@@ -4876,7 +4946,7 @@ span, .weight{
     }
     .business .product-dropdown{
         margin-right:40px;
-        margin-bottom:40px;
+        margin-bottom:15px;
         width:35%;
     }
     .purchase{
@@ -6451,18 +6521,19 @@ span, .weight{
     .business .hero-description {
         position: absolute;
         top: 65%;
-        margin-left: 20px;
+        margin-left: 13px;
         width:80%;
     }
     .business .hero-description .col-6{
         width:100%;
     }
     .business-card .typewriter:first-of-type{
-        font-size:28px;
+        font-size:26px;
     }
 
     .business-card .typewriter:last-of-type{
-        font-size:40px;
+        font-size:38px;
+        font-weight: 700;
     }
     .business-card .swipper-card{
         border:1px solid #D9D9D9;
@@ -6478,7 +6549,7 @@ span, .weight{
         color:white;
     }
     .simple{
-        padding:0px;
+        padding:0px 30px;
     }
     .simple-right{
         border-radius:20px;
@@ -6521,6 +6592,9 @@ span, .weight{
     .simple{
         margin-top:120px;
     }
+    .business .save-right{
+        padding:0 90px;
+    }
     .business .save-right-most{
         margin-top:50px;
         width:100%;
@@ -6535,8 +6609,13 @@ span, .weight{
     .business .save-left{
         padding-top:30px;
     }
+    .business .last-2 .mastercard-right {
+        padding-right: 50px;
+        padding-left: 0px;
+    }
     .business .questions-title{
         margin-top: 0;
+        font-size:40px;
     }
     .business .question-list{
         margin-top:50px;
@@ -6563,10 +6642,10 @@ span, .weight{
         width:90%;
     }
     .business-product{
-        padding:0px;
+        padding:0px 40px;
     }
     .business .product-dropdown{
-        padding:40px 25px;
+        padding:40px 0px;
         padding-bottom:0px;
         width:100%;
     }
@@ -6653,7 +6732,9 @@ span, .weight{
     .last-2 .typewriter{
         font-size:30px ;
     }
-
+    .business-product .products-text{
+        padding:0px;
+    }
 
 }
 
@@ -8034,30 +8115,39 @@ span, .weight{
     
  
     /********************     Business   Card             ***********************/
-
+    .business-card.hero-description{
+        width:100%;
+    }
     .business-card .typewriter:last-of-type{
-        font-size:32px;
+        font-size:28px;
+        font-weight:700;
+        width:100%;
     }
     .business-card .typewriter:first-of-type{
-        font-size:28px;
+        font-size:24px;
+        font-weight:700;
+        width:100%;
     }
     
     .simple-left .text-light{
         font-size: 16px;
     }
 
-    .simple-left .typewriter{
-        font-size:32px;
-        margin-bottom:25px;
+    .simple-left .typewriter {
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 25px;
         overflow-y: auto;
     }
+
+
     .simple-container{
         gap:30px;
         padding:20px;
         border-radius: 20px;
     }
     .simple-left{
-        padding-left:30px;
+        padding-left:15px;
         padding-bottom:47px;
         overflow-y: auto;
     }
@@ -8073,6 +8163,9 @@ span, .weight{
     .business .save-right-most{
         margin-top:70px;
     }
+    .business .see-more {
+        font-size: 18px;
+    }
     .business .save .typewriter{
         font-size:32px;
     }
@@ -8085,6 +8178,7 @@ span, .weight{
     }
     .business .questions-title{
         margin-top: 0;
+        font-size:30px;
     }
     .business .col-4,
     .business .col-3{
@@ -8101,6 +8195,17 @@ span, .weight{
     }
     .business .mastercard-right{
         padding-right:20px;
+    }
+    .business .mastercard-img{
+        padding-left:0px;
+        padding-right:0px;
+    }
+    .business .last-2 .mastercard-right {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    .business-product {
+        padding: 0px 15px;
     }
     .business .product-text .title{
         font-size:23px;
@@ -8136,15 +8241,16 @@ span, .weight{
     }
     .purchase{
         margin-top: 100px;
-        padding-left:25px;
-        padding-right:25px;
+        padding-left:15px;
+        padding-right:15px;
         padding-top:40px;
         padding-bottom:40px;
         text-align: left;
         border-radius: 20px;
     }
     .purchase .typewriter{
-        font-size:32px;
+        font-size:26px;
+        font-weight:700;
         margin-bottom:100px;
     }
     .tab p{
@@ -8159,7 +8265,7 @@ span, .weight{
     }
     
     .tab {
-        padding: 19px;
+        padding: 19px 10px;
         cursor: pointer;
         border-bottom: 2px solid transparent;
         transition: border-bottom 0.3s;
@@ -8672,6 +8778,7 @@ span, .weight{
 
     .business .hero-description{
         top:55%;
+        width:95%;
         left:2%;
     }
 }

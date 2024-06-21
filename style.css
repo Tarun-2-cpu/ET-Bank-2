@@ -604,10 +604,11 @@ nav img {
 }
 .footer-icon{
     gap:20px;
-    margin-top:191px;
+    margin-top:160px;
 }
 .footer-icon i{
     font-size:26px;
+    color:#1B5962;
 }
 .footer-nav a{
     font-size:16px;
@@ -671,12 +672,13 @@ nav img {
 }
 .footer{
     justify-content: space-between;
-    padding-bottom:200px;
+    padding-bottom:100px;
     
 }
 
 .footer-menu .col-4{
-    width:90%;
+    width:100%;
+    padding:0px;
 }
 
 .swiper {
@@ -1557,22 +1559,18 @@ span, .weight{
     border-bottom: 2px solid transparent;
     transition: border-bottom 0.3s;
 }
-
 .tab:hover {
     border-bottom: 2px solid #D9D9D9;
 }
-
 .tab.active {
     border-bottom: 2px solid #00D47E;
 }
 .tab.active p{
     color:#00D47E;
 }
-
 .tab-content .content {
     display: none;
 }
-
 .tab-content .content.active {
     display: block;
 }
@@ -4260,7 +4258,7 @@ span, .weight{
     }
     .footer-icon{
         gap:15px;
-        margin-top:130px;
+        margin-top:135px;
     }
     .footer-icon i{
         font-size:21px;
@@ -4322,7 +4320,7 @@ span, .weight{
     }
     .footer{
         justify-content: space-between;
-        padding-bottom:200px;
+        padding-bottom:70px;
     }
     
     .footer-menu .col-4{
@@ -5502,7 +5500,6 @@ span, .weight{
     .swiper-button-prev::after {
         content: "";
     }
-    
     .swiper-button-next {
         background: #F5F5F5;
         border-radius: 50%;
@@ -5510,7 +5507,6 @@ span, .weight{
         width: 40px;
         padding: 8px;
     }
-    
     .swiper-button-prev {
         background: #F5F5F5;
         border-radius: 50%;
@@ -5930,9 +5926,11 @@ span, .weight{
     .footer .col-3,
     .footer .col-5,
     .footer .footer-icon,
-    .footer .footer-menu
-    {
+    .footer{
         width:100%;
+    }
+    .footer-menu{
+        width:50%;
     }
     .footer .footer-subscribe{
         width:60%;
@@ -14330,6 +14328,7 @@ span, .weight{
     }
     .mastercard .see-more{
         margin-top:30px;
+        font-size:18px;
     }
     .mastercard .typewriter{
         margin-top:1px;
@@ -14394,14 +14393,12 @@ span, .weight{
     .master-right-3{
         padding-top:40px;
     }
-
     .master-right-3 .mastercard-right{
         margin-bottom:40px;
     }
     .social-media{
-        width:55%;
+        width:80%;
     }
-
 }
 
 

@@ -382,7 +382,7 @@
 
 
         <footer>
-            <div class="footer row container">
+            <div class="footer row conqtainer">
                 <div class="footer-icon row col-3">
                     <i class="ri-reddit-line"></i>
                     <i class="ri-instagram-line"></i>
@@ -416,33 +416,37 @@
 
 
         <script>
-            const knowMoreButtons = document.querySelectorAll('.starteded');
-            const cardContainer = document.querySelector('.card-container');
-        
-            knowMoreButtons.forEach(button => {
-                button.addEventListener('click', () => {
-                    cardContainer.style.display = 'block';
+            document.addEventListener('DOMContentLoaded', (event) => {
+                const knowMoreButtons = document.querySelectorAll('.starteded');
+                const cardContainer = document.querySelector('.card-container');
+                const menu = document.querySelector('.menu');
+                const navLinks = document.querySelector('.nav-link');
+                const menuIcon = menu.querySelector('i');
+    
+                knowMoreButtons.forEach(button => {
+                    button.addEventListener('click', () => {
+                        cardContainer.style.display = 'block';
+                    });
+                });
+    
+                const closeButtons = document.querySelectorAll('.close-btn');
+                closeButtons.forEach(button => {
+                    button.addEventListener('click', () => {
+                        cardContainer.style.display = 'none';
+                    });
+                });
+    
+                menu.addEventListener('click', function() {
+                    navLinks.classList.toggle('show');
+                    if (navLinks.classList.contains('show')) {
+                        menuIcon.classList.remove('ri-menu-line');
+                        menuIcon.classList.add('ri-close-line');
+                    } else {
+                        menuIcon.classList.remove('ri-close-line');
+                        menuIcon.classList.add('ri-menu-line');
+                    }
                 });
             });
-        
-            const closeButtons = document.querySelectorAll('.close-btn');
-            closeButtons.forEach(button => {
-                button.addEventListener('click', () => {
-                    cardContainer.style.display = 'none';
-                });
-            });
-    
-    
-            const menu = document.querySelector('.menu');
-            const navLinks = document.querySelector('.nav-link');
-    
-            menu.addEventListener('click', function() {
-                console.log('Menu clicked');
-                navLinks.classList.toggle('show');
-                console.log(navLinks.classList);
-            });
-    
-    
         </script>
 
 

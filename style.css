@@ -2,6 +2,10 @@
     width: 1280px;
     margin: 0 auto;
 }
+.cont{
+    width:100%;
+    padding:0 60px;
+}
 .row{
     display:flex;
 }
@@ -80,6 +84,15 @@ html,body{
 .dark{
     color:#000 !important;
 }
+.dark-text{
+    color:#000 !important;
+}
+.text-light{
+    color:#fff;
+}
+.light-text{
+    color:#fff;
+}
 .weight-500{
     font-weight: 500 !important;
 }
@@ -88,6 +101,9 @@ html,body{
 }
 .weight-700{
     font-weight: 700 !important;
+}
+.weight-800{
+    font-weight: 800 !important;
 }
 header {
     margin: 0 20px;
@@ -1589,7 +1605,669 @@ span, .weight{
 }
 
 
+/**********  tap to pay    ************/
 
+
+.tap .hero-description{
+    top:unset;
+    bottom:0px;
+}
+.tap .hero-description .business-card .typewriter{
+    padding:0px;
+    font-size:55px;
+}
+.tap .hero-description .subtitle{
+    font-size:24px;
+}
+.tap .hero-section-text{
+    padding-top:230px;
+}
+.tap .benefit-swipper .card-2 p{
+    margin-bottom:40px;
+}
+.hero-img{
+    margin-right:40px;
+}
+.hero-img img{
+    width:100%;
+}
+.vis{
+    padding:0 60px;
+    padding-top:55px;
+}
+.visa{
+    border-radius:20px;
+    padding-top:100px;
+    padding-bottom:130px;
+}
+.visa-title{
+    text-align:center;
+    font-size:55px;
+    font-weight:800;
+}
+.visa-card{
+    margin-top:100px;
+    margin-bottom:100px;
+}
+.v-card{
+    background:#fff;
+    border-radius:20px;
+    text-align:center;
+    padding-top:20px;
+    padding-bottom:40px;
+}
+.v-bottom-left{
+    gap:20px;
+    justify-content: center;
+    align-items:center;
+}
+.visa-bottom{
+    justify-content: space-evenly;
+    align-items:center;
+}
+.tap .mastercard-right .sub{
+    font-size:24px;
+    font-weight:600;
+}
+.tap .mastercard-img{
+    border-radius:20px;
+}
+.tap .mastercard-img img{
+    border-radius:20px;
+    width:100%;
+}
+.tap .save-left .typewriter{
+    font-size:58px;
+    color:#fff;
+}
+.tap .save-right{
+    border-radius:20px;
+}
+.tap .save-right img{
+    width:100%;
+}
+.tap .save-right-most .save-subtitle{
+    font-size:24px;
+    font-weight:600px;
+}
+.tap .save-left{
+    padding:0px;
+    height:fit-content;
+    padding:94px 60px;
+    margin-top:200px;
+}
+.tap .save-right,
+.tap .save-right-most{
+    padding:0px;
+    height:fit-content;
+}
+.tap .save-right-most{
+    padding:94px 60px;
+}
+.tap .business .save{
+    justify-content: unset;
+    gap:0px;
+}
+.tap.save .col-4{
+    padding:0px;
+}
+.tap .save-right img{
+    width:100%;
+    object-fit: cover;
+}
+.tap-product .p-title{
+    font-size:55px;
+    font-weight:800;
+    text-align:center;
+    color:#1B5962;
+    margin-bottom:25px;
+}
+.tap-product{
+    padding-top:45px;
+}
+.tap-product .products {
+    padding-top: 20px;
+}
+.tap-product .p-subtitle{
+    font-size:24px;
+    font-weight:600;
+    text-align:center;
+    color:#1B5962;
+}
+.p-text{
+    border-bottom:2px solid #00D47E;
+    margin:0 auto;
+    padding-bottom:15px;
+}
+.tap .business{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+
+
+/************ business account ***************/
+
+.bus-ac-right,
+.bus-ac-left{
+    padding:0px;
+}
+.benefit-text span{
+    color:#00D47E;
+}
+.bus-ac-right .subtitle{
+    font-size:24px;
+    margin:0 auto;
+}
+.bus-ac-right .title{
+    font-size:44px;
+    padding:0px;
+    margin:0 auto;
+}
+.bus-ac-right{
+    padding-top:140px;
+}
+.right-box{
+    background:#fff;
+    padding:38px;
+    margin:0 140px;
+    margin-top:57px;
+    border-radius: 8px;
+}
+.right-box .subtitle{
+    text-align:center;
+}
+.right-box input{
+    margin:0 auto;
+    margin-top:46px;
+    margin-bottom:20px;
+    width:80%;
+    padding:10px 20px;
+    border: none;
+    outline: none;
+}
+.right-box button{
+    padding:12px 55px;
+    border:none;
+    outline:none;
+    border-radius:8px;
+}
+.new-buss{
+    padding-left:0px;
+    padding-right:0px;
+}
+.bus-ac .benefit-text{
+    width:100%;
+}
+.bus-ac .benefit-text p{
+    margin:0 auto;
+}
+.benefit-des-bg{
+    background-image: url(images/sol.png);
+    background-size: cover;
+}
+.b-des-left .des-top{
+    font-size:22px;
+}
+.b-des-left .typewriter{
+    font-size:50px;
+}
+.b-des-left .subtitle{
+    font-size:18px;
+    margin-top:25px;
+}
+.b-des-right img{
+    width:100%;
+}
+.b-des-right{
+    display:flex;
+    align-items:end;
+    justify-content: flex-end;
+    padding:0px;
+}
+.des-bottom{
+    margin-top:41px;
+    margin-bottom:69px;
+}
+.des-bottom a{
+    text-decoration: none;
+    font-size:22px;
+}
+.des-bottom button{
+    border-radius:8px;
+    padding:15px;
+    outline:none;
+    border:none;
+}
+.des-bottom .col-6{
+    padding:0px;
+}
+.bus-ac .org{
+    font-size:22px;
+    font-weight:800px;
+}
+.bus-ac .mastercard-right .typewriter{
+    font-size:50px;
+}
+.bus-ac .mastercard-right .ms-subtitle{
+    font-size:18px;
+}
+.bus-ac .mastercard-right button{
+    padding:12px;
+    border-radius:8px;
+    border:none;
+    outline:none;
+    margin-top:20px;
+}
+.bus-ac .mastercard-right li{
+    color:#1B5962;
+    font-weight: 800;
+    font-size:18px;
+}
+.bus-ac .mastercard-right ul{
+    margin:20px 0;
+}
+.bus-ac .b-des-left-detail{
+    font-size:18px;
+    font-weight: 600;
+    color:#1B5962;
+}
+.benefit-des .b-des-left-detail{
+    margin-bottom:25px;
+    gap:10px;
+}
+.benefit-des .b-des-left-detail img{
+    object-fit: contain;
+}
+.b-des-left button{
+    color:#1B5962;
+    background-color:#00D47E;
+    padding:12px;
+    border-radius:8px;
+    border:none;
+    outline:none;
+}
+.bus-ac .b-des-ad .b-des-right{
+    border-radius:20px;
+}
+.bus-ac .b-des-ad .b-des-right img{
+    border-radius:20px;
+}
+.ad-bg{
+    background-color:#f0f0f0;
+    padding-top:93px;
+    padding-bottom:83px;
+    border-radius: 20px;
+}
+.saved{
+    padding:112px 0px;
+    border-radius: 20px;
+}
+.saved p:first-of-type{
+    font-size:50px;
+    text-align:center;
+}
+.saved p:nth-of-type(2){
+    font-size:65px;
+    margin:20px auto;
+}
+.saved p:last-of-type{
+    font-size:18px;
+    margin-bottom:50px;
+    margin:0 auto;
+}
+.saved button{
+    color:#1B5962;
+    background:#00D47E;
+    border-radius:8px;
+    padding:12px;
+    border:none;
+    outline:none;
+    cursor:pointer;
+    margin:0 auto;
+}
+.saved .col-10{
+    margin:0 auto;
+}
+.saved .col-5{
+    margin:0 auto;
+}
+.saved .saved-bottom{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    margin-top:50px;
+}
+.saved-full{
+    padding-top: 50px;
+}
+.bus-ac .mastercard-right li{
+    margin:20px 0;
+}
+.review{
+    padding-top:40px;
+    padding-bottom:55px;
+}
+.review .review-left .title{
+    font-size:50px;
+}
+.apply{
+    color:#1B5962;
+    background-color: #00D47E;
+    border-radius:8px;
+    border:none;
+    outline:none;
+    padding:12px;
+}
+.rate{
+    border:1px solid #D9D9D9;
+    border-radius:20px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+    padding:15px 4px;
+    background:#FFFFFF;
+}
+.rate p:first-of-type{
+    font-size:48px;
+}
+.rate span{
+    font-size:24px;
+    color:#BCB7B7;
+}
+.r-1 img{
+    margin-bottom:8px;
+}
+.review-right{
+    padding:25px 35px;
+    border-radius: 20px;
+    border: 1px solid #D9D9D9;
+    background: #FFF;
+}
+.review-right img{
+    margin-top:35px;
+}
+.review-right .subtitle{
+    font-size:18px;
+    padding-right:102px;
+}
+.review-right .review-right-bottom{
+    margin-top:41px;
+}
+.review-right .title{
+    font-size:24px;
+}
+.review-right img{
+    margin-bottom:35px;
+}
+.join .join-inner{
+    border-radius:20px;
+}
+.join-right .title{
+    text-align: right;
+    font-family: "Noto Sans";
+    font-size: 50px;
+}
+.join-right button{
+    margin-left:45%;
+    padding:12px;
+    font-size:16px;
+    margin-top:55px;
+}
+.join-right{
+    margin:auto 0;
+}
+.bus-acc .col-9{
+    margin:0 auto;
+}
+.bus-acc .questions-title{
+    text-align:center;
+}
+.bus-acc .business .product-dropdown{
+    padding:40px 25px;
+}
+.bus-acc .product-text .title{
+    color: #1B5962;
+    text-align: center;
+    font-size: 19px;
+}
+
+/*  Future Built */
+
+.future .hero-description {
+    top: 35%;
+    bottom: unset;
+}
+.future .hero-section-text {
+    padding-top:0px;
+}
+.future .typewriter{
+    font-weight:900;
+}
+.roles .typewriter{
+    font-size:55px;
+    margin-bottom:39px;
+}
+.role-right{
+    padding-top:139px;
+    padding-bottom:139px;
+}
+.role-bottom{
+    margin-top:75px;
+}
+.limit .typewriter{
+    font-size:55px;
+    text-align:center;
+    margin:0 auto;
+    margin-bottom:30px;
+}
+.limit .subtitle{
+    text-align:center;
+    font-size:22px;
+    margin:0 auto;
+    padding:0px;
+}
+.limit-cards{
+    margin-top:130px;
+    margin-bottom:100px;
+}
+.limit-card{
+    background: #00d47f4b;
+    border-radius:8px;
+    padding:40px 20px;
+    padding-right:50px;
+    justify-content:space-between;
+}
+.limit-card p{
+    font-weight: 600;
+    font-size: 22px;
+    margin-left:30px;
+}
+.limit-card  img{
+    width:150px;
+}
+.last-limit img{
+    width:140px;
+}
+.client{
+    margin-top:80px;
+}
+.client p{
+    font-size:40px;
+    margin-left:190px;
+}
+
+.client-bottom{
+    justify-content: space-around;
+    padding-top:30px;
+    padding-bottom:50px;
+}
+.client-bottom p{
+    font-size:40px;
+}
+.client-img{
+    border:10px solid #1B5962;
+    margin-top:-5%;
+}
+.cpf{
+    padding:0 40px;
+    padding-top:93px;
+    padding-bottom:49px;
+    background:#ffffff;
+    width:100%;
+    border-radius:20px;
+    margin-top:-5%;
+}
+.cpf input{
+    border:none;
+    outline:none;
+    margin-bottom:30px;
+}
+.want{
+    padding-top:55px;
+}
+.want-bg{
+    background-color: #F0F0F0;
+    padding-top:23px;
+    padding-bottom:75px;
+    border-radius:20px;
+}
+.want-bg .typewriter{
+    text-align:center;
+    margin-bottom:55px;
+}
+.want-bottom{
+    justify-content: space-evenly;
+    align-items: center;
+}
+.bus-ac .col-9{
+    width:0 auto;
+}
+
+
+    /* PIX */
+
+.pix .hero-text-right{
+    padding:0;
+    background-color:unset;
+}
+.pix .hero-text-left .text{
+    font-size:35px;
+    font-weight: 600;
+}
+.pix .cpf input{
+    border-bottom:1px solid black;
+    padding:12px;
+    width:90%;
+}
+.pix .cpf{
+    padding-top:114px;
+    padding-bottom:37px;
+    border-radius:8px;
+}
+.pix .mastercard{
+    padding: - 0px;
+}
+.pix .mastercard .ms-subtitle{
+    font-size:30px;
+    padding-right:100px;
+}
+.pix-card .cont{
+    padding:25px;
+}
+.pix-card-bottom{
+    background:#C6F8E380;
+    padding:40px 140px;
+    padding-right:60px;
+}
+.pix-detail p:first-of-type{
+    font-size:35px;
+}
+.pix-detail p:first-of-type{
+    font-size:24px;
+}
+.pixes{
+    flex-wrap:wrap;
+    gap:100px 0;
+}
+.pix-b{
+    margin-top:100px;
+}
+.pix-detail{
+    width:50%;
+}
+.pixes .pix-right{
+    padding-left:50px;
+}
+.keys{
+    margin-top:67px;
+}
+.keys-inner-img{
+    width:50%;
+}
+.keys-inner-img img{
+    width:100%;
+}
+.keys-right{
+    width:50%;
+    padding-left:50px;
+    padding-top:43px;
+    padding-bottom:49px;
+    padding-right:120px;
+}
+.keys-right .title{
+    font-size:55px;
+}
+.keys-right .sub{
+    font-size:30px;
+    margin-top:40px;
+    margin-bottom:16px;
+}
+.keys-right .sub-1{
+    font-size:33px;
+    margin-bottom:40px;
+}
+.key-register .register-text{
+    font-size:23px;
+}
+.key-register .key-1{
+    width:100%;
+    justify-content:space-around;
+    gap:24px 0;
+}
+.key-register .key-1 p{
+    width:50%;
+}
+.key-register .key-last{
+    margin-top:24px;
+}
+.pix-master .mastercard-right .typewriter {
+    font-size: 55px;
+}
+.pix-master .ms-subtitle{
+    font-size:30px;
+    font-weight:600;
+}
+.pix-master button{
+    font-size:16px;
+}
+.pix-master{
+    padding-bottom:90px;
+}
+.weight-600{
+    font-weight:600;
+}
+.keys-abs{
+    position:relative;
+    z-index:1;
+}
+.keys-abs .keys-inner-img{
+    position:absolute;
+    left:40px;
+    z-index:4;
+}
 
 @media(max-width:1366px){
 
@@ -2265,7 +2943,6 @@ span, .weight{
         margin-top:88px;
     }
 
-
     .save{
         padding:0 60px;
         padding-top:150px;
@@ -2737,6 +3414,579 @@ span, .weight{
     .tabb .container{
         width:100%;
     }
+
+    /**********  tap to pay    ************/
+
+    .cont{
+        width:100%;
+        padding:0 30px;
+    }
+    .tap .hero-description{
+        top:unset;
+        bottom:0px;
+    }
+    .tap .hero-description .business-card .typewriter{
+        padding:0px;
+        font-size:45px;
+    }
+    .tap .hero-description .subtitle{
+        font-size:19px;
+    }
+    .tap .hero-section-text{
+        padding-top:170px;
+    }
+    .tap .benefit-swipper .card-2 p{
+        margin-bottom:31px;
+    }
+    .hero-img{
+        margin-right:40px;
+    }
+    .hero-img img{
+        width:100%;
+    }
+    .tap .benefit-text p{
+        font-size:50px;
+    }
+    .vis{
+        padding:0 30px;
+        padding-top:55px;
+    }
+    .visa{
+        border-radius:20px;
+        padding-top:90px;
+        padding-bottom:100px;
+    }
+    .visa-title{
+        text-align:center;
+        font-size:50px;
+        font-weight:800;
+    }
+    .visa-card{
+        margin-top:90px;
+        margin-bottom:90px;
+    }
+    .v-card{
+        text-align:center;
+        padding-top:20px;
+        padding-bottom:40px;
+    }
+    .v-bottom-left{
+        gap:20px;
+        justify-content: center;
+        align-items:center;
+    }
+    .visa-bottom{
+        justify-content: space-evenly;
+        align-items:center;
+    }
+    .tap .mastercard{
+        padding-left:0px;
+        padding-right:0px;
+    }
+    .tap .mastercard-right .sub{
+        font-size:20px;
+        font-weight:600;
+    }
+    .tap .mastercard-img{
+        border-radius:20px;
+    }
+    .tap .mastercard-img img{
+        border-radius:20px;
+        width:100%;
+    }
+    .tap-full,
+    .tap .save-left,
+    .tap .save-right,
+    .tap .save-right-most,
+    .tap .save{
+        padding-left:0px;
+        padding-right:0px;
+    }
+    .tap .save-left .typewriter{
+        font-size:48px;
+        color:#fff;
+    }
+    .tap .save-right{
+        border-radius:20px;
+    }
+    .tap .save-right img{
+        width:100%;
+    }
+    .tap .save-right-most .save-subtitle{
+        font-size:21px;
+        font-weight:600px;
+    }
+    .tap .save-right-most {
+        margin-top: 200px;
+    }
+    .tap .save-left{
+        padding:0px;
+        height:fit-content;
+        padding:94px 60px;
+        margin-top:200px;
+    }
+    .tap .save-right,
+    .tap .save-right-most{
+        padding:0px;
+        height:fit-content;
+    }
+    .tap .save-right-most{
+        padding:70px 60px;
+        padding-top:80px;
+    }
+    .tap .business .save{
+        justify-content: unset;
+        gap:0px;
+    }
+    .tap.save .col-4{
+        padding:0px;
+    }
+    .tap .save-right img{
+        width:100%;
+        object-fit: cover;
+    }
+    .tap-product .p-title{
+        font-size:55px;
+        font-weight:800;
+        text-align:center;
+        color:#1B5962;
+        margin-bottom:25px;
+    }
+    .tap-product{
+        padding-top:60px;
+        padding-left:30px;
+        padding-right:30px;
+    }
+    .tap-product .products {
+        padding-top: 20px;
+    }
+    .tap-product .p-subtitle{
+        font-size:24px;
+        font-weight:600;
+        text-align:center;
+        color:#1B5962;
+    }
+    .p-text{
+        border-bottom:2px solid #00D47E;
+        margin:0 auto;
+        padding-bottom:15px;
+    }
+    .tap .business{
+        display: flex;
+        justify-content: center;
+        align-items:center;
+    }
+    .tap-product .product-text .title {
+        font-size: 18px;
+        text-align: center;
+    }
+
+
+    /************ business account ***************/
+
+    .bus-ac-right,
+    .bus-ac-left{
+        padding:0px;
+    }
+    .benefit-text span{
+        color:#00D47E;
+    }
+    .bus-ac-right .subtitle{
+        font-size:21px;
+        margin:0 auto;
+    }
+    .bus-ac-right .title{
+        font-size:34px;
+        padding:0px;
+        margin:0 auto;
+    }
+    .bus-ac-right{
+        padding-top:140px;
+    }
+    .right-box{
+        background:#fff;
+        padding:26px;
+        margin:0 110px;
+        margin-top:40px;
+        border-radius:8px;
+    }
+    .right-box .subtitle{
+        text-align:center;
+    }
+    .right-box input{
+        margin:0 auto;
+        margin-top:39px;
+        margin-bottom:20px;
+        width:80%;
+        padding:10px 20px;
+        border: none;
+        outline: none;
+    }
+    .right-box button{
+        padding:12px 55px;
+        border:none;
+        outline:none;
+        border-radius:8px;
+    }
+    .new-buss{
+        padding-left:0px;
+        padding-right:0px;
+    }
+    .bus-ac .benefit-text{
+        width:100%;
+    }
+    .bus-ac .benefit-text p{
+        margin:0 auto;
+    }
+    .benefit-des-bg{
+        background-image: url(images/sol.png);
+        background-size: cover;
+    }
+    .b-des-left .des-top{
+        font-size:20px;
+    }
+    .b-des-left .typewriter{
+        font-size:48px;
+    }
+    .b-des-left .subtitle{
+        font-size:16px;
+        margin-top:20px;
+    }
+    .des-bottom{
+        margin-top:41px;
+        margin-bottom:69px;
+    }
+    .des-bottom a{
+        text-decoration: none;
+        font-size:19px;
+    }
+    .des-bottom button{
+        border-radius:8px;
+        padding:15px;
+        outline:none;
+        border:none;
+    }
+    .des-bottom .col-6{
+        padding:0px;
+    }
+    .bus-ac .org{
+        font-size:21px;
+        font-weight:800px;
+    }
+    .bus-ac .mastercard-right .typewriter{
+        font-size:38px;
+    }
+    .bus-ac .mastercard-right .ms-subtitle{
+        font-size:15px;
+    }
+    .bus-ac .mastercard-right button{
+        padding:12px;
+        border-radius:8px;
+        border:none;
+        outline:none;
+        margin-top:20px;
+    }
+    .bus-ac .mastercard-right li{
+        color:#1B5962;
+        font-weight: 800;
+        font-size:15px;
+    }
+    .bus-ac .mastercard-right ul{
+        margin:10px 0;
+    }
+    .bus-ac .b-des-left-detail{
+        font-size:15px;
+        font-weight:600;
+        color:#1B5962;
+        flex-wrap:nowrap;
+    }
+    .master-2 .mastercard-right{
+        margin-left:0px;
+    }
+    .bus-ac .mastercard{
+        padding-right:0px;
+        padding-left:0px;
+    }
+    .benefit-des .b-des-left-detail{
+        margin-bottom:25px;
+        gap:10px;
+    }
+    .benefit-des .b-des-left-detail img{
+        object-fit:contain;
+    }
+    .b-des{
+        gap:50px;
+    }
+    .b-des-left button{
+        color:#1B5962;
+        background-color:#00D47E;
+        padding:12px;
+        border-radius:8px;
+        border:none;
+        outline:none;
+    }
+    .bus-ac .b-des-ad .b-des-right{
+        border-radius:20px;
+    }
+    .bus-ac .b-des-ad .b-des-right img{
+        border-radius:20px;
+    }
+    .ad-bg{
+        background-color:#f0f0f0;
+        padding-top:73px;
+        padding-bottom:63px;
+        border-radius: 20px;
+    }
+    .saved{
+        padding:90px 0px;
+        border-radius: 20px;
+    }
+    .saved p:first-of-type{
+        font-size:45px;
+        text-align:center;
+    }
+    .saved p:nth-of-type(2){
+        font-size:55px;
+        margin:20px auto;
+    }
+    .saved p:last-of-type{
+        font-size:14px;
+        margin-bottom:50px;
+        margin:0 auto;
+    }
+    .saved button{
+        color:#1B5962;
+        background:#00D47E;
+        border-radius:8px;
+        padding:12px;
+        border:none;
+        outline:none;
+        cursor:pointer;
+        margin:0 auto;
+        width:18%;
+    }
+    .saved .col-10{
+        margin:0 auto;
+    }
+    .saved .col-5{
+        margin:0 auto;
+    }
+    .saved .saved-bottom{
+        display:flex;
+        align-items:center;
+        justify-content: center;
+        margin-top:50px;
+    }
+    .saved-full{
+        padding-top:50px;
+    }
+    .bus-ac .mastercard-right li{
+        margin:20px 0;
+    }
+    .review{
+        padding-top:50px;
+        padding-bottom:55px;
+    }
+    .review .review-left .title{
+        font-size:35px;
+    }
+    .apply{
+        color:#1B5962;
+        background-color: #00D47E;
+        border-radius:8px;
+        border:none;
+        outline:none;
+        padding:12px;
+    }
+    .rate{
+        border:1px solid #D9D9D9;
+        border-radius:20px;
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content:center;
+        padding:15px 4px;
+        background:#FFFFFF;
+    }
+    .rate p:first-of-type{
+        font-size:35px;
+    }
+    .rate p:last-of-type{
+        font-size:12px;
+    }
+    .rate span{
+        font-size:20px;
+        color:#BCB7B7;
+    }
+    .r-1 img{
+        margin-bottom:8px;
+    }
+    .review-left{
+        width:40%;
+    }
+    .review-right{
+        padding:25px 35px;
+        border-radius: 20px;
+        border: 1px solid #D9D9D9;
+        background: #FFF;
+        width:60%;
+    }
+    .review-right img{
+        margin-top:20px;
+    }
+    .review-right .subtitle{
+        font-size:16px;
+        padding-right:20px;
+    }
+    .review-right .review-right-bottom{
+        margin-top:25px;
+    }
+    .review-right .title{
+        font-size:24px;
+    }
+    .review-right img{
+        margin-bottom:20px;
+    }
+    .join .join-inner{
+        border-radius:20px;
+    }
+    .join-right .title{
+        text-align: right;
+        font-family: "Noto Sans";
+        font-size: 46px;
+    }
+    .join-right button{
+        margin-left:40%;
+        padding:12px;
+        font-size:16px;
+        margin-top:55px;
+    }
+    .join-right{
+        margin:auto 0;
+    }
+    .bus-acc .col-9{
+        margin:0 auto;
+    }
+    .bus-acc .questions-title{
+        text-align:center;
+    }
+    .bus-acc .product-dropdown{
+        padding:25px;
+        width:30%;
+    }
+    .bus-acc .product-text .title{
+        color: #1B5962;
+        text-align: center;
+        font-size: 16px;
+    }
+    .business-product{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+
+    /*  Future Built */
+
+    .future .hero-description {
+        top: 35%;
+        bottom: unset;
+    }
+    .future .hero-section-text {
+        padding-top:0px;
+    }
+    .roles .typewriter{
+        font-size:45px;
+        margin-bottom:30px;
+    }
+    .role-right{
+        padding-top:139px;
+        padding-bottom:139px;
+    }
+    .role-bottom{
+        margin-top:60px;
+    }
+    .limit{
+        padding-top:50px;
+    }
+    .limit .typewriter{
+        font-size:45px;
+        margin-bottom:30px;
+    }
+    .limit .subtitle{
+        text-align:center;
+        font-size:22px;
+        margin:0 auto;
+        padding:0px;
+    }
+    .limit-cards{
+        margin-top:130px;
+        margin-bottom:100px;
+    }
+    .limit-card{
+        padding:40px 20px;
+        padding-right:30px;
+        justify-content:space-between;
+    }
+    .limit-card p{
+        font-weight: 600;
+        font-size: 20px;
+        margin-left:30px;
+    }
+    .limit-card  img{
+        width:160px;
+    }
+    .last-limit img{
+        width:140px;
+    }
+    .client-full{
+        padding:0px;
+    }
+    .client{
+        margin-top:80px;
+    }
+    .client p{
+        font-size:40px;
+        margin-left:190px;
+    }
+    .client-bottom{
+        justify-content: space-around;
+        padding-top:30px;
+    }
+    .client-bottom p{
+        font-size:37px;
+        width:32%;
+    }
+    .client-img{
+        border:10px solid #1B5962;
+        margin-top:-5%;
+    }
+    .want{
+        padding:0 60px;
+        padding-top:55px;
+    }
+    .want .container{
+        width:100%;
+    }
+    .want-bg{
+        padding-top:23px;
+        padding-bottom:75px;
+        border-radius:20px;
+    }
+    .want-bg .typewriter{
+        text-align:center;
+        margin-bottom:55px;
+    }
+    .want-bottom{
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .bus-ac .questions{
+        width:60%;
+        margin:0 auto;
+    }
+
+
+
 }
 
 
@@ -3786,7 +5036,175 @@ span, .weight{
         margin-top:40px;
     }
 
-    
+    /**********  tap to pay    ************/
+
+    .cont{
+        width:100%;
+        padding:0 30px;
+    }
+    .tap .hero-description{
+        top:unset;
+        bottom:0px;
+    }
+    .tap .hero-description .business-card .typewriter{
+        padding:0px;
+        font-size:45px;
+    }
+    .tap .hero-description .subtitle{
+        font-size:19px;
+    }
+    .tap .hero-section-text{
+        padding-top:170px;
+    }
+    .tap .benefit-swipper .card-2 p{
+        margin-bottom:31px;
+    }
+    .hero-img{
+        margin-right:40px;
+    }
+    .hero-img img{
+        width:100%;
+    }
+    .tap .benefit-text p{
+        font-size:50px;
+    }
+    .vis{
+        padding:0 30px;
+        padding-top:55px;
+    }
+    .visa{
+        border-radius:20px;
+        padding-top:90px;
+        padding-bottom:100px;
+    }
+    .visa-title{
+        text-align:center;
+        font-size:50px;
+        font-weight:800;
+    }
+    .visa-card{
+        margin-top:90px;
+        margin-bottom:90px;
+    }
+    .v-card{
+        text-align:center;
+        padding-top:20px;
+        padding-bottom:40px;
+    }
+    .v-bottom-left{
+        gap:20px;
+        justify-content: center;
+        align-items:center;
+    }
+    .visa-bottom{
+        justify-content: space-evenly;
+        align-items:center;
+    }
+    .tap .mastercard{
+        padding-left:0px;
+        padding-right:0px;
+    }
+    .tap .mastercard-right .sub{
+        font-size:20px;
+        font-weight:600;
+    }
+    .tap .mastercard-img{
+        border-radius:20px;
+    }
+    .tap .mastercard-img img{
+        border-radius:20px;
+        width:100%;
+    }
+    .tap-full,
+    .tap .save-left,
+    .tap .save-right,
+    .tap .save-right-most,
+    .tap .save{
+        padding-left:0px;
+        padding-right:0px;
+    }
+    .tap .save-left .typewriter{
+        font-size:48px;
+        color:#fff;
+    }
+    .tap .save-right{
+        border-radius:20px;
+    }
+    .tap .save-right img{
+        width:100%;
+    }
+    .tap .save-right-most .save-subtitle{
+        font-size:21px;
+        font-weight:600px;
+    }
+    .tap .save-right-most {
+        margin-top: 200px;
+    }
+    .tap .save-left{
+        padding:0px;
+        height:fit-content;
+        padding:94px 60px;
+        margin-top:200px;
+    }
+    .tap .save-right,
+    .tap .save-right-most{
+        padding:0px;
+        height:fit-content;
+    }
+    .tap .save-right-most{
+        padding:70px 60px;
+        padding-top:80px;
+    }
+    .tap .business .save{
+        justify-content: unset;
+        gap:0px;
+    }
+    .tap.save .col-4{
+        padding:0px;
+    }
+    .tap .save-right img{
+        width:100%;
+        object-fit: cover;
+    }
+    .tap-product .p-title{
+        font-size:53px;
+        font-weight:800;
+        text-align:center;
+        color:#1B5962;
+        margin-bottom:25px;
+    }
+    .tap-product{
+        padding-top:80px;
+        padding-left:40px;
+        padding-right:40px;
+    }
+    .tap-product .products {
+        padding-top: 20px;
+    }
+    .tap-product .p-subtitle{
+        font-size:22px;
+        font-weight:600;
+        text-align:center;
+        color:#1B5962;
+    }
+    .p-text{
+        border-bottom:2px solid #00D47E;
+        margin:0 auto;
+        padding-bottom:15px;
+    }
+    .tap .business{
+        display: flex;
+        justify-content: center;
+        align-items:center;
+    }
+    .tap-product .product-text .title {
+        font-size: 18px;
+        text-align: center;
+    }
+    .tap .questions-title{
+        font-size:50px;
+    }
+
 }
 
 
@@ -5173,6 +6591,177 @@ span, .weight{
         font-size:30px ;
     }
 
+
+    /**********  tap to pay    ************/
+
+    .cont{
+        width:100%;
+        padding:0 30px;
+    }
+    .tap .hero-description{
+        top:unset;
+        bottom:0px;
+    }
+    .tap .hero-description .business-card .typewriter{
+        padding:0px;
+        font-size:40px;
+        width:52%;
+    }
+    .tap .hero-description .subtitle{
+        font-size:19px;
+        width:90%;
+    }
+    .tap .hero-section-text{
+        padding-top:210px;
+    }
+    .tap .benefit-swipper .card-2 p{
+        margin-bottom:28px;
+    }
+    .hero-img{
+        margin-right:40px;
+    }
+    .hero-img img{
+        width:100%;
+    }
+    .tap .benefit-text p{
+        font-size:45px;
+    }
+    .vis{
+        padding:0 30px;
+        padding-top:45px;
+    }
+    .visa{
+        border-radius:20px;
+        padding-top:90px;
+        padding-bottom:100px;
+    }
+    .visa-title{
+        text-align:center;
+        font-size:45px;
+        font-weight:800;
+    }
+    .visa-card{
+        margin-top:70px;
+        margin-bottom:70px;
+    }
+    .v-card{
+        text-align:center;
+        padding-top:20px;
+        padding-bottom:30px;
+    }
+    .v-bottom-left{
+        gap:20px;
+        justify-content: center;
+        align-items:center;
+    }
+    .visa-bottom{
+        justify-content: space-evenly;
+        align-items:center;
+    }
+    .tap .mastercard{
+        padding-left:0px;
+        padding-right:0px;
+    }
+    .tap .mastercard-right .sub{
+        font-size:18px;
+        font-weight:600;
+    }
+    .tap .mastercard-img{
+        border-radius:20px;
+    }
+    .tap .mastercard-img img{
+        border-radius:20px;
+        width:100%;
+    }
+    .tap-full,
+    .tap .save-left,
+    .tap .save-right,
+    .tap .save-right-most,
+    .tap .save{
+        padding-left:0px;
+        padding-right:0px;
+    }
+    .tap .save-left .typewriter{
+        font-size:35px;
+        color:#fff;
+    }
+    .tap .save-right{
+        border-radius:20px;
+    }
+    .tap .save-right img{
+        width:100%;
+    }
+    .tap .save-right-most .save-subtitle{
+        font-size:18px;
+        font-weight:600px;
+    }
+    .tap .save-right-most {
+        margin-top: 200px;
+    }
+    .tap .save-left{
+        padding:0px;
+        height:fit-content;
+        padding:94px 60px;
+        margin-top:200px;
+    }
+    .tap .save-right,
+    .tap .save-right-most{
+        padding:0px;
+        height:fit-content;
+    }
+    .tap .save-right-most{
+        padding:25px 60px;
+        padding-top:50px;
+    }
+    .tap .business .save{
+        justify-content: unset;
+        gap:0px;
+    }
+    .tap.save .col-4{
+        padding:0px;
+    }
+    .tap .save-right img{
+        width:100%;
+        object-fit: cover;
+    }
+    .tap-product .p-title{
+        font-size:42px;
+        text-align:center;
+        margin-bottom:25px;
+    }
+    .tap-product{
+        padding-top:80px;
+        padding-left:30px;
+        padding-right:30px;
+    }
+    .tap-product .products {
+        padding-top:20px;
+    }
+    .tap-product .p-subtitle{
+        font-size:20px;
+        font-weight:600;
+        text-align:center;
+    }
+    .p-text{
+        margin:0 auto;
+        padding-bottom:15px;
+    }
+    .tap .business{
+        display: flex;
+        justify-content: center;
+        align-items:center;
+    }
+    .tap-product .product-text .title {
+        font-size: 18px;
+        text-align: center;
+    }
+    .tap .questions-title{
+        font-size:40px;
+    }
+    .tap .questions{
+        width:80%;
+    }
+
 }
 
 @media (max-width:767px){
@@ -6508,10 +8097,9 @@ span, .weight{
         font-size:40px;
         color:#fff;
     }
-    .card-desktop .hero-text-right {
+    .card-desktop .hero-text-right{
         display:none;
     }
-    
     .card-desktop .typewriter{
         font-size:20px;
         margin:15px 0;
@@ -6895,6 +8483,663 @@ span, .weight{
     }
     .business-product .products-text{
         padding:0px;
+    }
+
+
+    /**********  tap to pay    ************/
+
+    .con{
+        width:100%;
+        padding:0 30px;
+    }
+    .tap .hero-description{
+        top:unset;
+        bottom:0px;
+        flex-wrap:nowrap;
+    }
+    .tap .hero-description .business-card .typewriter{
+        padding:0px;
+        font-size:40px;
+        width:80%;
+    }
+    .tap .hero-description .subtitle{
+        font-size:16px;
+        width:100%;
+        padding-right:0px;
+    }
+    .tap .hero-section-text{
+        padding-top:60px;
+        width:50%;
+    }
+    .tap .hero-img{
+        width:50%;
+    }
+    .tap .benefit-swipper .card-2 p{
+        margin-bottom:28px;
+    }
+    .hero-img{
+        margin-right:40px;
+    }
+    .hero-img img{
+        width:100%;
+    }
+    .tap .benefit-text p{
+        font-size:40px;
+    }
+    .vis{
+        padding:0 30px;
+        padding-top:45px;
+    }
+    .visa{
+        border-radius:20px;
+        padding-top:90px;
+        padding-bottom:100px;
+    }
+    .visa-title{
+        text-align:center;
+        font-size:40px;
+    }
+    .visa-card{
+        margin-top:70px;
+        margin-bottom:70px;
+        gap:30px;
+        justify-content: center;
+    }
+    .visa-card .col-3{
+        width:40%;
+    }
+    .v-card{
+        text-align:center;
+        padding-top:20px;
+        padding-bottom:30px;
+    }
+    .v-bottom-left{
+        gap:20px;
+        justify-content:center;
+        align-items:center;
+    }
+    .visa-bottom{
+        justify-content: space-evenly;
+        align-items:center;
+        gap:20px;
+    }
+    .tap .mastercard{
+        padding-left:0px;
+        padding-right:0px;
+    }
+    .tap .mastercard-right .sub{
+        font-size:18px;
+        font-weight:600;
+    }
+    .tap .mastercard-img{
+        border-radius:20px;
+    }
+    .tap .mastercard-img img{
+        border-radius:20px;
+        width:100%;
+    }
+    .tap-full .business .save {
+        padding-top: 0px;
+    }
+    .tap-full,
+    .tap .save-left,
+    .tap .save-right,
+    .tap .save-right-most,
+    .tap .save{
+        padding-left:0px;
+        padding-right:0px;
+    }
+    .tap .save-left .typewriter{
+        font-size:35px;
+        color:#fff;
+    }
+    .tap .save-right{
+        border-radius:20px;
+        width:30%;
+        margin:0 auto;
+        margin-top:70px;
+    }
+    .tap .save-right img{
+        width:100%;
+    }
+    .tap .save-right-most .save-subtitle{
+        font-size:18px;
+        font-weight:600px;
+    }
+    .tap .save-right-most {
+        margin-top: 80px;
+    }
+    .tap .save-left{
+        padding:0px;
+        height:fit-content;
+        padding:94px 60px;
+        margin-top:100px;
+    }
+    .tap .save-right,
+    .tap .save-right-most{
+        padding:0px;
+        height:fit-content;
+    }
+    .tap .save-right-most{
+        padding:25px 60px;
+        padding-top:50px;
+    }
+    .tap .business .save{
+        justify-content: unset;
+        gap:0px;
+    }
+    .tap.save .col-4{
+        padding:0px;
+    }
+    .tap .save-right img{
+        width:100%;
+        object-fit: cover;
+    }
+    .tap-product .p-text{
+        width:90%;
+    }
+    .tap-product .p-title{
+        font-size:38px;
+        text-align:center;
+        margin-bottom:25px;
+    }
+    .tap-product{
+        padding-top:80px;
+        padding-left:30px;
+        padding-right:30px;
+    }
+    .tap-product .products {
+        padding-top:20px;
+    }
+    .tap-product .p-subtitle{
+        font-size:20px;
+        font-weight:600;
+        text-align:center;
+    }
+    .p-text{
+        margin:0 auto;
+        padding-bottom:15px;
+    }
+    .tap .business{
+        display: flex;
+        justify-content: center;
+        align-items:center;
+    }
+    .tap-product .product-text .title {
+        font-size: 18px;
+        text-align: left;
+    }
+    .tap .questions-title{
+        font-size:40px;
+    }
+    .tap .questions{
+        width:100%;
+        padding:0px;
+        margin-top:40px;
+    }
+
+
+
+    /************ business account ***************/
+
+    .bus-ac-right,
+    .bus-ac-left{
+        padding:0px;
+    }
+    .benefit-text span{
+        color:#00D47E;
+    }
+    .bus-ac-right .subtitle{
+        font-size:14px;
+        margin:0 auto;
+    }
+    .bus-ac-right .title{
+        font-size:21px;
+        padding:0px;
+        margin:0 auto;
+    }
+    .bus-ac-right{
+        padding-top:120px;
+    }
+    .right-box{
+        background:#fff;
+        padding:16px;
+        margin:0 70px;
+        margin-top:25px;
+        border-radius:8px;
+        width:70%;
+    }
+    .right-box .subtitle{
+        text-align:center;
+        padding-right:0px;
+    }
+    .right-box input{
+        margin:0 auto;
+        margin-top:20px;
+        margin-bottom:20px;
+        width:100%;
+        padding:10px;
+        border: none;
+        outline: none;
+    }
+    .right-box button{
+        padding:14px;
+        border:none;
+        outline:none;
+        border-radius:8px;
+        font-size:12px;
+        width:100%;
+    }
+    .new-buss{
+        padding-left:0px;
+        padding-right:0px;
+    }
+    .bus-ac .benefit-text{
+        width:100%;
+    }
+    .bus-ac .benefit-text .col-9{
+        width:100%;
+    }
+    .bus-ac .benefit-text p{
+        margin:0 auto;
+    }
+    .benefit-des-bg{
+        background-image: url(images/sol.png);
+        background-size: cover;
+    }
+    .b-des-left{
+        width:100%;
+    }
+    .b-des-right{
+        width:100%;
+    }
+    .b-des-left .des-top{
+        font-size:20px;
+    }
+    .b-des-left .typewriter{
+        font-size:32px;
+    }
+    .b-des-left .subtitle{
+        font-size:16px;
+        margin-top:20px;
+    }
+    .des-bottom{
+        margin-top:41px;
+        margin-bottom:69px;
+    }
+    .des-bottom a{
+        text-decoration: none;
+        font-size:21px;
+    }
+    .des-bottom button{
+        border-radius:8px;
+        padding:15px;
+        outline:none;
+        border:none;
+    }
+    .des-bottom .col-6{
+        padding:0px;
+    }
+    .card-full .cont{
+        padding:0px;
+    }
+    .bus-ac .org{
+        font-size:21px;
+        font-weight:800px;
+    }
+    .bus-ac .mastercard-right .typewriter{
+        font-size:32px;
+    }
+    .bus-ac .mastercard-right .ms-subtitle{
+        font-size:15px;
+    }
+    .bus-ac .mastercard-right button{
+        padding:12px;
+        border-radius:8px;
+        border:none;
+        outline:none;
+        margin-top:20px;
+        margin-bottom:20px;
+    }
+    .bus-ac .mastercard-right li{
+        color:#1B5962;
+        font-weight: 800;
+        font-size:15px;
+    }
+    .bus-ac .mastercard-right ul{
+        margin:10px 0;
+    }
+    .bus-ac .b-des-left-detail{
+        font-size:15px;
+        font-weight:600;
+        color:#1B5962;
+    }
+    .master-2 .mastercard-right{
+        margin-left:0px;
+        padding-left:25px;
+    }
+    .bus-ac .mastercard{
+        padding-right:0px;
+        padding-left:0px;
+    }
+    .benefit-des .b-des-left-detail{
+        margin-bottom:25px;
+        gap:10px;
+    }
+    .benefit-des .b-des-left-detail img{
+        object-fit:contain;
+    }
+    .b-des{
+        gap:50px;
+    }
+    .b-des-left button{
+        color:#1B5962;
+        background-color:#00D47E;
+        padding:12px;
+        border-radius:8px;
+        border:none;
+        outline:none;
+    }
+    .bus-ac .b-des-ad .b-des-right{
+        border-radius:20px;
+    }
+    .bus-ac .b-des-ad .b-des-right img{
+        border-radius:20px;
+    }
+    .ad-bg{
+        background-color:#f0f0f0;
+        padding-top:43px;
+        padding-bottom:53px;
+        border-radius: 20px;
+    }
+    .ad-bg .benefit-text{
+        padding:0px;
+    }
+    .ad-bg .benefit-text p{
+        padding:0px;
+        padding-left:20px;
+        text-align:left;
+    }
+    .saved{
+        padding:90px 0px;
+        border-radius: 20px;
+    }
+    .saved-full .cont{
+        padding:15px;
+    }
+    .saved p:first-of-type{
+        font-size:35px;
+        text-align:center;
+        width:100%;
+    }
+    .saved p:nth-of-type(2){
+        font-size:45px;
+        margin:20px auto;
+        width:60%;
+    }
+    .saved p:last-of-type{
+        font-size:14px;
+        margin-bottom:50px;
+        margin:0 auto;
+        width:55%;
+    }
+    .saved button{
+        color:#1B5962;
+        background:#00D47E;
+        border-radius:8px;
+        padding:12px;
+        border:none;
+        outline:none;
+        cursor:pointer;
+        margin:0 auto;
+        width:32%;
+    }
+    .saved .col-10{
+        margin:0 auto;
+    }
+    .saved .col-5{
+        margin:0 auto;
+    }
+    .saved .saved-bottom{
+        display:flex;
+        align-items:center;
+        justify-content: center;
+        margin-top:50px;
+    }
+    .saved-full{
+        padding-top:50px;
+    }
+    .bus-ac .mastercard-right li{
+        margin:20px 0;
+    }
+    .review{
+        padding-top:50px;
+        padding-bottom:55px;
+    }
+    .review .review-left .title{
+        font-size:35px;
+    }
+    .ratings{
+        margin-top:40px;
+    }
+    .apply{
+        color:#1B5962;
+        background-color: #00D47E;
+        border-radius:8px;
+        border:none;
+        outline:none;
+        padding:12px;
+    }
+    .rate{
+        border:1px solid #D9D9D9;
+        border-radius:20px;
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content:center;
+        padding:15px 4px;
+        background:#FFFFFF;
+    }
+    .rate p:first-of-type{
+        font-size:35px;
+    }
+    .rate p:last-of-type{
+        font-size:12px;
+    }
+    .rate span{
+        font-size:20px;
+        color:#BCB7B7;
+    }
+    .r-1 img{
+        margin-bottom:8px;
+    }
+    .review-left{
+        width:100%;
+        margin-bottom:30px;
+    }
+    .review-right{
+        padding:25px 35px;
+        border-radius: 20px;
+        border: 1px solid #D9D9D9;
+        background: #FFF;
+        width:100%;
+    }
+    .review-right img{
+        margin-top:20px;
+    }
+    .review-right .subtitle{
+        font-size:16px;
+        padding-right:20px;
+    }
+    .review-right .review-right-bottom{
+        margin-top:25px;
+    }
+    .review-right .title{
+        font-size:24px;
+    }
+    .review-right img{
+        margin-bottom:20px;
+    }
+    .join .join-inner{
+        border-radius:20px;
+    }
+    .join-right .title{
+        text-align: right;
+        font-family: "Noto Sans";
+        font-size: 46px;
+    }
+    .join-right button{
+        margin-left:40%;
+        padding:12px;
+        font-size:16px;
+        margin-top:40px;
+        margin-bottom:20px;
+    }
+    .join-right{
+        margin:auto 0;
+        width:100%;
+    }
+    .bus-acc .col-9{
+        margin:0 auto;
+    }
+    .bus-acc .questions-title{
+        text-align:center;
+    }
+    .bus-acc .product-dropdown{
+        padding:25px;
+        width:100%;
+    }
+    .bus-acc .product-text .title{
+        color: #1B5962;
+        text-align: left;
+        font-size: 20px;
+    }
+    .business-product{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    /*  */
+
+    /*  Future Built */
+
+    .future .hero-description {
+        top: 45%;
+        bottom: unset;
+    }
+    .future .hero-section-text {
+        padding-top:0px;
+        width:70%;
+    }
+    .role{
+        flex-wrap: wrap;
+    }
+    .role img{
+        width:100%;
+    }
+    .role .role-right{
+        width:100%;
+    }
+    .roles .typewriter{
+        font-size:45px;
+        margin-bottom:30px;
+    }
+    .role-right{
+        padding-top:100px;
+        padding-bottom:100px;
+    }
+    .role-bottom{
+        margin-top:60px;
+    }
+    .limit{
+        padding-top:50px;
+    }
+    .limit .typewriter{
+        font-size:40px;
+        margin-bottom:30px;
+        width:80%;
+    }
+    .limit .subtitle{
+        text-align:center;
+        font-size:20px;
+        margin:0 auto;
+        padding:0px;
+        width:90%;
+    }
+    .limit-cards{
+        margin-top:130px;
+        margin-bottom:100px;
+        gap:40px;
+    }
+    .limit-cards .col-4{
+        width:100%;
+    }
+    .limit-card{
+        padding:40px 20px;
+        padding-right:30px;
+        justify-content:space-between;
+        flex-wrap: nowrap;
+    }
+    .limit-card p{
+        font-weight: 600;
+        font-size: 20px;
+        margin-left:30px;
+    }
+    .limit-card  img{
+        width:100px;
+    }
+    .last-limit img{
+        width:100px;
+    }
+    .swipe .typewriter{
+        width:90%;
+    }
+    .client-full{
+        padding:0px;
+    }
+    .client{
+        margin-top:50px;
+    }
+    .client p{
+        font-size:35px;
+        margin-left:50px;
+    }
+    .client-bottom{
+        justify-content: space-around;
+        padding-top:30px;
+    }
+    .client-bottom p{
+        font-size:30px;
+        width:34%;
+    }
+    .client-img{
+        border:10px solid #1B5962;
+        margin-top:0%;
+    }
+    .want{
+        padding:0 30px;
+        padding-top:55px;
+    }
+    .want .container{
+        width:100%;
+    }
+    .want-bg{
+        padding-top:23px;
+        padding-bottom:75px;
+        border-radius:20px;
+    }
+    .want-bg .typewriter{
+        text-align:center;
+        margin-bottom:55px;
+        font-weight: 800;
+    }
+    .want-bottom{
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .bus-ac .questions{
+        width:80%;
+        margin:0 auto;
+        margin-bottom:40px;
     }
 
 }
@@ -8949,7 +11194,660 @@ span, .weight{
         width:95%;
         left:2%;
     }
+
+
+    /**********  tap to pay    ************/
+
+    .cont{
+        width:100%;
+        padding:0 15px;
+    }
+    .tap .hero-description{
+        top:unset;
+        bottom:0px;
+        flex-wrap:wrap;
+    }
+    .tap .hero-description .business-card .typewriter {
+        padding: 0px;
+        font-size: 36px;
+        width: 86%;
+    }
+    .tap .hero-description .subtitle{
+        font-size:16px;
+        width:100%;
+        padding-right:0px;
+    }
+    .tap .hero-section-text{
+        padding-top:90px;
+        width:90%;
+    }
+    .tap .hero-img{
+        width:100%;
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        margin-left:45%;
+    }
+    .tap .hero-img img{
+        width:100%;
+        display: flex;
+        align-items:center;
+        justify-content:flex-end;
+    }
+    .tap .benefit-swipper .card-2 p{
+        margin-bottom:28px;
+    }
+    .hero-img{
+        margin-right:0px;
+    }
+    .tap .benefit-text p{
+        font-size:40px;
+    }
+    .vis{
+        padding:0 15px;
+        padding-top:45px;
+    }
+    .visa{
+        border-radius:20px;
+        padding-top:50px;
+        padding-bottom:60px;
+    }
+    .visa-title{
+        text-align:left;
+        font-size:40px;
+    }
+    .visa-card .visa-title{
+        text-align:center;
+    }
+    .visa-card{
+        margin-top:70px;
+        margin-bottom:70px;
+        gap:30px;
+        justify-content: center;
+    }
+    .visa-card .col-3{
+        width:90%;
+    }
+    .v-card{
+        text-align:center;
+        padding-top:20px;
+        padding-bottom:30px;
+    }
+    .v-bottom-left{
+        gap:20px;
+        justify-content:center;
+        align-items:center;
+    }
+    .visa-bottom{
+        justify-content: space-evenly;
+        align-items:center;
+        gap:20px;
+    }
+    .tap .mastercard{
+        padding-left:0px;
+        padding-right:0px;
+    }
+    .tap .mastercard-right .sub{
+        font-size:18px;
+        font-weight:600;
+    }
+    .tap .mastercard-img{
+        border-radius:20px;
+    }
+    .tap .mastercard-img img{
+        border-radius:20px;
+        width:100%;
+    }
+    .tap-full .business .save {
+        padding-top: 0px;
+    }
+    .tap-full,
+    .tap .save-left,
+    .tap .save-right,
+    .tap .save-right-most,
+    .tap .save{
+        padding-left:0px;
+        padding-right:0px;
+    }
+    .tap .save-left .typewriter{
+        font-size:35px;
+        color:#fff;
+    }
+    .tap .save-right{
+        border-radius:20px;
+        width:30%;
+        margin:0 auto;
+        margin-top:70px;
+    }
+    .tap .save-right img{
+        width:100%;
+    }
+    .tap .save-right-most .save-subtitle{
+        font-size:18px;
+        font-weight:600px;
+    }
+    .tap .save-right-most {
+        margin-top: 80px;
+    }
+    .tap .save-left{
+        padding:0px;
+        height:fit-content;
+        padding:94px 20px;
+        margin-top:100px;
+    }
+    .tap .save-right,
+    .tap .save-right-most{
+        padding:0px;
+        height:fit-content;
+    }
+    .tap .save-right-most{
+        padding:25px 20px;
+        padding-top:50px;
+    }
+    .tap .business .save{
+        justify-content: unset;
+        gap:0px;
+    }
+    .tap.save .col-4{
+        padding:0px;
+    }
+    .tap .save-right img{
+        width:100%;
+        object-fit: cover;
+    }
+    .tap-product .p-text{
+        width:90%;
+    }
+    .tap-product .p-title{
+        font-size:38px;
+        text-align:left;
+        margin-bottom:25px;
+    }
+    .tap-product{
+        padding-top:80px;
+        padding-left:15px;
+        padding-right:15px;
+    }
+    .tap-product .products {
+        padding-top:20px;
+    }
+    .tap-product .p-subtitle{
+        font-size:20px;
+        font-weight:600;
+        text-align:left;
+    }
+    .p-text{
+        margin:0;
+        padding-bottom:15px;
+    }
+    .tap .business{
+        display: flex;
+        justify-content: center;
+        align-items:center;
+    }
+    .tap-product .product-text .title {
+        font-size: 18px;
+        text-align: left;
+    }
+    .tap .questions-title{
+        font-size:37px;
+    }
+    .tap .questions{
+        width:100%;
+        padding:0px;
+        margin-top:40px;
+    }
+
+
+        /************ business account ***************/
+
+    .bus-ac-right,
+    .bus-ac-left{
+        padding:0px;
+    }
+    .bus-hero-section{
+        height:fit-content
+    }
+    .benefit-text span{
+        color:#00D47E;
+    }
+    .bus-ac-right .subtitle{
+        font-size:14px;
+        margin:0 auto;
+    }
+    .bus-ac-right .title{
+        font-size:21px;
+        padding:0px;
+        margin:0 auto;
+    }
+    .bus-ac-right{
+        padding:50px 25px;
+    }
+    .right-box{
+        background:#fff;
+        padding:16px;
+        margin:0 0px;
+        margin-top:25px;
+        border-radius:8px;
+        width:80%;
+    }
+    .right-box .subtitle{
+        text-align:center;
+        padding-right:0px;
+    }
+    .right-box input{
+        margin:0 auto;
+        margin-top:20px;
+        margin-bottom:20px;
+        width:100%;
+        padding:10px;
+        border: none;
+        outline: none;
+    }
+    .right-box button{
+        padding:14px;
+        border:none;
+        outline:none;
+        border-radius:8px;
+        font-size:12px;
+        width:100%;
+    }
+    .new-buss{
+        padding-left:0px;
+        padding-right:0px;
+    }
+    .bus-ac .benefit-text{
+        width:100%;
+    }
+    .bus-ac .benefit-text .col-9{
+        width:100%;
+    }
+    .bus-ac .benefit-text p{
+        margin:0 auto;
+    }
+    .bus-ac .benefit-text .title{
+        font-size:27px;
+        padding:0;
+    }
+    .benefit-des-bg{
+        background-image: url(images/sol.png);
+        background-size: cover;
+    }
+    .b-des-left{
+        width:100%;
+    }
+    .b-des-right{
+        width:100%;
+    }
+    .b-des-left .des-top{
+        font-size:18px;
+    }
+    .b-des-left .typewriter{
+        font-size:32px;
+        font-weight:800;
+    }
+    .b-des-left .subtitle{
+        font-size:15px;
+        margin-top:20px;
+    }
+    .des-bottom{
+        margin-top:41px;
+        margin-bottom:69px;
+        gap:20px;
+    }
+    .des-bottom a{
+        text-decoration: none;
+        font-size:21px;
+        width:100%;
+        padding:0px;
+    }
+    .des-bottom button{
+        border-radius:8px;
+        padding:15px;
+        outline:none;
+        border:none;
+    }
+    .des-bottom .col-6{
+        padding:0px;
+    }
+    .card-full .cont{
+        padding:0px;
+    }
+    .bus-ac .org{
+        font-size:21px;
+        font-weight:800px;
+    }
+    .bus-ac .mastercard-right .typewriter{
+        font-size:32px;
+    }
+    .bus-ac .mastercard-right .ms-subtitle{
+        font-size:15px;
+    }
+    .bus-ac .mastercard-right button{
+        padding:12px;
+        border-radius:8px;
+        border:none;
+        outline:none;
+        margin-top:20px;
+        margin-bottom:20px;
+    }
+    .bus-ac .mastercard-right li{
+        color:#1B5962;
+        font-weight: 800;
+        font-size:15px;
+    }
+    .bus-ac .mastercard-right ul{
+        margin:10px 0;
+    }
+    .bus-ac .b-des-left-detail{
+        font-size:15px;
+        font-weight:600;
+        color:#1B5962;
+    }
+    .master-last{
+        flex-wrap: wrap-reverse;
+    }
+    .master-2 .mastercard-right{
+        margin-left:0px;
+        padding-left:25px;
+    }
+    .bus-ac .mastercard{
+        padding-right:0px;
+        padding-left:0px;
+    }
+    .master-cont{
+        padding:0px;
+    }
+    .master-cont .mastercard .col-6{
+        padding:0px;
+    }
+    .benefit-des .b-des-left-detail{
+        margin-bottom:25px;
+        gap:10px;
+    }
+    .benefit-des .b-des-left-detail img{
+        object-fit:contain;
+        width:30px;
+    }
+    .b-des{
+        gap:50px;
+    }
+    .ad-bg{
+        padding-top:30px;
+        padding-bottom:30px;
+    }
+    .ad-bg .benefit-text p{
+        padding-left:20px;
+        text-align:left;
+    }
+    .saved{
+        padding:40px 0px;
+    }
+    .saved-full .cont{
+        padding:15px;
+    }
+    .saved p:first-of-type{
+        font-size:28px;
+        text-align:left;
+    }
+    .saved p:nth-of-type(2){
+        font-size:35px;
+        margin:20px 0;
+        width:100%;
+    }
+    .saved p:last-of-type{
+        font-size:14px;
+        margin-bottom:50px;
+        width:100%;
+    }
+    .saved button{
+        margin:0px;
+        width:60%;
+    }
+    .saved .saved-bottom{
+        display:block;
+        margin-top:50px;
+        margin-left:20px;
+    }
+    .saved-full{
+        padding:0px;
+        padding-top:50px;
+    }
+    .bus-ac .mastercard-right li{
+        margin:20px 0;
+    }
+    .review{
+        padding-top:50px;
+        padding-bottom:55px;
+    }
+    .review .review-left .title{
+        font-size:35px;
+    }
+    .ratings{
+        margin-top:40px;
+    }
+    .rate{
+        border:1px solid #D9D9D9;
+        border-radius:20px;
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content:center;
+        padding:15px 4px;
+        background:#FFFFFF;
+    }
+    .rate p:first-of-type{
+        font-size:35px;
+    }
+    .rate p:last-of-type{
+        font-size:12px;
+    }
+    .rate span{
+        font-size:20px;
+        color:#BCB7B7;
+    }
+    .r-1 img{
+        margin-bottom:8px;
+    }
+    .review-left{
+        width:100%;
+        margin-bottom:30px;
+    }
+    .review-right{
+        padding:25px 35px;
+        border-radius: 20px;
+        border: 1px solid #D9D9D9;
+        background: #FFF;
+        width:100%;
+    }
+    .review-right img{
+        margin-top:20px;
+    }
+    .review-right .subtitle{
+        font-size:16px;
+        padding-right:20px;
+    }
+    .review-right .review-right-bottom{
+        margin-top:25px;
+    }
+    .review-right .title{
+        font-size:24px;
+    }
+    .review-right img{
+        margin-bottom:20px;
+    }
+    .join-right .title{
+        text-align: left;
+        font-family: "Noto Sans";
+        font-size: 32px;
+    }
+    .join-right button{
+        margin-left:20px;
+        padding:12px;
+        font-size:16px;
+        margin-top:40px;
+        margin-bottom:20px;
+    }
+    .join-right{
+        margin:auto 0;
+        width:100%;
+    }
+    .bus-acc .col-9{
+        margin:0 auto;
+    }
+    .bus-acc .questions-title{
+        text-align:center;
+    }
+    .bus-acc .product-dropdown{
+        padding:25px;
+        width:100%;
+    }
+    .bus-acc .product-text .title{
+        color: #1B5962;
+        text-align: left;
+        font-size: 20px;
+    }
+    .business-product{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+
+    /*  Future Built */
+
+    .future .hero-description {
+        top: 45%;
+        bottom: unset;
+    }
+    .future .hero-section-text {
+        padding-top:0px;
+        width:70%;
+    }
+    .role{
+        flex-wrap: wrap;
+    }
+    .role img{
+        width:100%;
+    }
+    .role .role-right{
+        width:100%;
+    }
+    .roles{
+        width:95%;
+    }
+    .roles .typewriter{
+        font-size:38px;
+        margin-bottom:30px;
+    }
+    .role-right{
+        padding-top:80px;
+        padding-bottom:80px;
+    }
+    .role-bottom{
+        margin-top:60px;
+    }
+    .limit{
+        padding-top:50px;
+    }
+    .limit .typewriter{
+        font-size:36px;
+        margin:0;
+        margin-bottom:30px;
+        width:100%;
+        text-align:left;
+        
+    }
+    .limit .subtitle{
+        text-align:left;
+        font-size:20px;
+        margin:0;
+        padding-left:15px;
+        width:100%;
+    }
+    .limit-cards{
+        margin-top:130px;
+        margin-bottom:100px;
+        gap:40px;
+    }
+    .limit-cards .col-4{
+        width:100%;
+    }
+    .limit-card{
+        padding:40px 20px;
+        padding-right:30px;
+        justify-content:space-between;
+        flex-wrap: nowrap;
+    }
+    .limit-card p{
+        font-weight: 600;
+        font-size: 18px;
+        margin-left:30px;
+    }
+    .limit-card  img{
+        width:120px;
+    }
+    .last-limit img{
+        width:100px;
+    }
+    .swipe .typewriter{
+        width:100%;
+        font-size:25px;
+    }
+    .client-full{
+        padding:0px;
+    }
+    .client{
+        margin-top:50px;
+    }
+    .client p{
+        font-size:30px;
+        margin-left:50px;
+    }
+    .client-bottom{
+        justify-content: space-around;
+        padding-top:30px;
+        gap:30px;
+    }
+    .client-bottom p{
+        font-size:30px;
+        width:100%;
+        padding-left:50px;
+    }
+    .client-img{
+        border:10px solid #1B5962;
+        margin-top:0%;
+    }
+    .want{
+        padding:0 30px;
+        padding-top:55px;
+    }
+    .want .container{
+        width:100%;
+    }
+    .want-bg{
+        padding-top:23px;
+        padding-bottom:75px;
+        border-radius:20px;
+    }
+    .want-bg .typewriter{
+        text-align:center;
+        margin-bottom:55px;
+        font-weight: 800;
+    }
+    .want-bottom{
+        justify-content: center;
+        align-items: center;
+        gap:40px;
+    }
+    .bus-ac .questions{
+        width:100%;
+        margin:0 auto;
+        margin-bottom:40px;
+    }
 }
+
+
+
 
 @media(max-width:430px){
     *{
@@ -9493,7 +12391,6 @@ span, .weight{
         margin:35px auto;
         text-align: center;
     }
-    
     .plan-card .grow{
         font-size:3.5vw;
         letter-spacing: -3%;
@@ -10512,6 +13409,385 @@ span, .weight{
         margin-bottom:40px;
     }
 
+
+    /**********  tap to pay    ************/
+
+    .cont{
+        width:100%;
+        padding:0 15px;
+    }
+    .tap .hero-description{
+        top:unset;
+        bottom:0px;
+        flex-wrap:wrap;
+    }
+    .tap .hero-description .business-card .typewriter {
+        padding: 0px;
+        font-size: 36px;
+        width: 100%;
+    }
+    .tap .hero-description .subtitle{
+        font-size:16px;
+        width:100%;
+        padding-right:0px;
+    }
+    .tap .hero-section-text{
+        padding-top:0px;
+        width:90%;
+    }
+    .tap .hero-img{
+        width:100%;
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        margin-left:35%;
+    }
+    .tap .hero-img img{
+        width:100%;
+        display: flex;
+        align-items:center;
+        justify-content:flex-end;
+    }
+    .tap .benefit-swipper .card-2 p{
+        margin-bottom:28px;
+    }
+    .hero-img{
+        margin-right:0px;
+    }
+    .tap .benefit-text p{
+        font-size:36px;
+        padding:0 15px;
+    }
+    .vis{
+        padding:0 15px;
+        padding-top:45px;
+    }
+    .visa{
+        border-radius:20px;
+        padding-top:50px;
+        padding-bottom:60px;
+    }
+    .visa-title{
+        text-align:left;
+        font-size:40px;
+        padding:0 15px;
+    }
+    .visa-card .visa-title{
+        text-align:center;
+    }
+    .visa-card{
+        margin-top:70px;
+        margin-bottom:70px;
+        gap:30px;
+        justify-content: center;
+    }
+    .visa-card .col-3{
+        width:90%;
+    }
+    .v-card{
+        text-align:center;
+        padding-top:20px;
+        padding-bottom:30px;
+    }
+    .v-bottom-left{
+        gap:20px;
+        justify-content:center;
+        align-items:center;
+    }
+    .visa-bottom{
+        justify-content: space-evenly;
+        align-items:center;
+        gap:20px;
+    }
+    .tap .mastercard{
+        padding-left:0px;
+        padding-right:0px;
+    }
+    .tap .mastercard-right .sub{
+        font-size:18px;
+        font-weight:600;
+    }
+    .tap .mastercard-img{
+        border-radius:20px;
+    }
+    .tap .mastercard-img img{
+        border-radius:20px;
+        width:100%;
+    }
+    .tap-full .business .save {
+        padding-top: 0px;
+    }
+    .tap-full,
+    .tap .save-left,
+    .tap .save-right,
+    .tap .save-right-most,
+    .tap .save{
+        padding-left:0px;
+        padding-right:0px;
+    }
+    .tap .save-left .typewriter{
+        font-size:32px;
+        color:#fff;
+    }
+    .tap .save-right{
+        border-radius:20px;
+        width:40%;
+        margin:0 auto;
+        margin-top:70px;
+    }
+    .tap .save-right img{
+        width:100%;
+    }
+    .tap .save-right-most .save-subtitle{
+        font-size:18px;
+    }
+    .tap .save-right-most {
+        margin-top: 80px;
+    }
+    .tap .save-left{
+        padding:0px;
+        height:fit-content;
+        padding:60px 20px;
+        margin-top:100px;
+    }
+    .tap .save-right,
+    .tap .save-right-most{
+        padding:0px;
+        height:fit-content;
+    }
+    .tap .save-right-most{
+        padding:25px 20px;
+        padding-top:50px;
+    }
+    .tap .business .save{
+        justify-content: unset;
+        gap:0px;
+    }
+    .tap.save .col-4{
+        padding:0px;
+    }
+    .tap .save-right img{
+        width:100%;
+        object-fit: cover;
+    }
+    .tap-product .p-text{
+        width:100%;
+    }
+    .tap-product .p-title{
+        font-size:32px;
+        text-align:left;
+        margin-bottom:25px;
+    }
+    .tap-product{
+        padding-top:80px;
+        padding-left:15px;
+        padding-right:15px;
+    }
+    .tap-product .products {
+        padding-top:20px;
+    }
+    .tap-product .p-subtitle{
+        font-size:18px;
+        font-weight:600;
+        text-align:left;
+    }
+    .p-text{
+        margin:0;
+        padding-bottom:15px;
+    }
+    .tap .business{
+        display: flex;
+        justify-content: center;
+        align-items:center;
+    }
+    .tap-product .product-text .title {
+        font-size: 18px;
+        text-align: left;
+    }
+    .tap .questions-title{
+        font-size:33px;
+    }
+    .tap .questions{
+        width:100%;
+        padding:0px;
+        margin-top:40px;
+    }
+
+    /* business account */
+
+    .bus-hero-section{
+        height:fit-content;
+    }
+    .master-last{
+        flex-wrap:wrap-reverse;
+    }
+    .ad-bg{
+        padding:30px 10px;
+    }
+    .review .review-left .title {
+        font-size: 33px;
+    }
+    .ratings .col-4{
+        padding:0 7px;
+    }
+    .ratings img:last-of-type{
+        width:100%;
+    }
+    .review-right .subtitle{
+        padding-right:0px;
+        font-size:15px;
+    }
+    .review-right{
+        padding-right:25px 15px;
+    }
+    .join-right .title{
+        width:100%;
+        font-size:30px;
+    }
+        .join-right button {
+        margin-left:10px;
+        font-size:14px;
+        margin-top:27px;
+        margin-bottom:20px;
+    }
+
+
+
+    /*  Future Built */
+
+    .future .hero-description {
+        top: 45%;
+        bottom: unset;
+    }
+    .future .hero-section-text {
+        padding-top:0px;
+        width:70%;
+    }
+    .role{
+        flex-wrap: wrap;
+    }
+    .role img{
+        width:100%;
+    }
+    .role .role-right{
+        width:100%;
+    }
+    .roles{
+        width:95%;
+    }
+    .roles .typewriter{
+        font-size:38px;
+        margin-bottom:30px;
+    }
+    .role-right{
+        padding-top:80px;
+        padding-bottom:80px;
+    }
+    .role-bottom{
+        margin-top:60px;
+    }
+    .limit{
+        padding-top:50px;
+    }
+    .limit .typewriter{
+        font-size:30px;
+        margin:0;
+        margin-bottom:30px;
+        width:100%;
+        text-align:left;
+        
+    }
+    .limit .subtitle{
+        text-align:left;
+        font-size:20px;
+        margin:0;
+        padding-left:15px;
+        width:100%;
+    }
+    .limit-cards{
+        margin-top:130px;
+        margin-bottom:100px;
+        gap:40px;
+    }
+    .limit-cards .col-4{
+        width:100%;
+    }
+    .limit-card{
+        padding:40px 20px;
+        padding-right:30px;
+        justify-content:space-between;
+        flex-wrap: nowrap;
+    }
+    .limit-card p{
+        font-weight: 600;
+        font-size: 18px;
+        margin-left:30px;
+    }
+    .limit-card  img{
+        width:150px;
+    }
+    .last-limit img{
+        width:100px;
+    }
+    .swipe .typewriter{
+        width:100%;
+        font-size:25px;
+    }
+    .client-full{
+        padding:0px;
+    }
+    .client{
+        margin-top:50px;
+    }
+    .client p{
+        font-size:30px;
+        margin-left:50px;
+    }
+    .client-bottom{
+        justify-content: space-around;
+        padding-top:30px;
+        gap:30px;
+    }
+    .client-bottom p{
+        font-size:30px;
+        width:100%;
+        padding-left:50px;
+    }
+    .client-img{
+        border:10px solid #1B5962;
+        margin-top:0%;
+        width:100%;
+    }
+    .client-img img{
+        width:100%;
+    }
+    .want{
+        padding:0 30px;
+        padding-top:55px;
+    }
+    .want .container{
+        width:100%;
+    }
+    .want-bg{
+        padding-top:23px;
+        padding-bottom:75px;
+        border-radius:20px;
+    }
+    .want-bg .typewriter{
+        text-align:center;
+        margin-bottom:55px;
+        font-weight: 800;
+    }
+    .want-bottom{
+        justify-content: center;
+        align-items: center;
+        gap:40px;
+    }
+    .bus-ac .questions{
+        width:100%;
+        margin:0 auto;
+        margin-bottom:40px;
+    }
     
 }
 
@@ -11529,7 +14805,6 @@ span, .weight{
         margin-top:20px;
         font-size:20px;
     }
-
     .cost{
         padding-top:100px;
     }
@@ -11603,7 +14878,6 @@ span, .weight{
     .priority-bottom-second{
         margin-top:60px;
     }
-
     .questions{
         padding-top:100px;
         width:100%;
@@ -11688,7 +14962,6 @@ span, .weight{
     .product-title{
         margin-top:15px;
     }
-
     .digital-footer{
         margin-top:20px;
     }
@@ -11698,7 +14971,6 @@ span, .weight{
         margin-top:23px;
         gap:10px;
     }
-    
     .digital-footer-top a{
         width:20%;
     }
@@ -11731,7 +15003,6 @@ span, .weight{
         flex-direction:column;
         gap:10px;
     }
-    
     .address p{
         font-weight:300;
     }
@@ -12689,7 +15960,402 @@ span, .weight{
     .business .hero-description{
         top:55%;
         left:2%;
-    }    
+    }
+
+
+
+    /**********  tap to pay    ************/
+
+    .cont{
+        width:100%;
+        padding:0 15px;
+    }
+    .tap .hero-description{
+        top:unset;
+        bottom:0px;
+        flex-wrap:wrap;
+    }
+    .tap .hero-description .business-card .typewriter {
+        padding: 0px;
+        font-size: 36px;
+        width: 100%;
+    }
+    .tap .hero-description .subtitle{
+        font-size:16px;
+        width:100%;
+        padding-right:0px;
+    }
+    .tap .hero-section-text{
+        padding-top:0px;
+        width:90%;
+    }
+    .tap .hero-img{
+        width:100%;
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        margin-left:35%;
+    }
+    .tap .hero-img img{
+        width:100%;
+        display: flex;
+        align-items:center;
+        justify-content:flex-end;
+    }
+    .tap .benefit-swipper .card-2 p{
+        margin-bottom:28px;
+    }
+    .hero-img{
+        margin-right:0px;
+    }
+    .tap .benefit-text p{
+        font-size:28px;
+        padding:0px;
+    }
+    .vis{
+        padding:0 15px;
+        padding-top:45px;
+    }
+    .visa{
+        border-radius:20px;
+        padding-top:50px;
+        padding-bottom:60px;
+    }
+    .visa-title{
+        text-align:left;
+        font-size:37px;
+        padding:0 15px;
+    }
+    .visa-card .visa-title{
+        text-align:center;
+    }
+    .visa-card{
+        margin-top:70px;
+        margin-bottom:70px;
+        gap:30px;
+        justify-content: center;
+    }
+    .visa-card .col-3{
+        width:90%;
+    }
+    .v-card{
+        text-align:center;
+        padding-top:20px;
+        padding-bottom:30px;
+    }
+    .v-bottom-left{
+        gap:20px;
+        justify-content:center;
+        align-items:center;
+    }
+    .visa-bottom{
+        justify-content: space-evenly;
+        align-items:center;
+        gap:20px;
+    }
+    .tap .mastercard{
+        padding-left:0px;
+        padding-right:0px;
+    }
+    .tap .mastercard-right .sub{
+        font-size:16px;
+        font-weight:600;
+    }
+    .tap .mastercard-img{
+        border-radius:20px;
+    }
+    .tap .mastercard-img img{
+        border-radius:20px;
+        width:100%;
+    }
+    .tap-full .business .save {
+        padding-top: 0px;
+    }
+    .tap-full,
+    .tap .save-left,
+    .tap .save-right,
+    .tap .save-right-most,
+    .tap .save{
+        padding-left:0px;
+        padding-right:0px;
+    }
+    .tap .save-left .typewriter{
+        font-size:28px;
+        color:#fff;
+    }
+    .tap .save-right{
+        border-radius:20px;
+        width:50%;
+        margin:0 auto;
+        margin-top:70px;
+    }
+    .tap .save-right img{
+        width:100%;
+    }
+    .tap .save-right-most .save-subtitle{
+        font-size:16px;
+    }
+    .tap .save-right-most {
+        margin-top: 80px;
+    }
+    .tap .save-left{
+        padding:0px;
+        height:fit-content;
+        padding:60px 20px;
+        margin-top:100px;
+    }
+    .tap .save-right,
+    .tap .save-right-most{
+        padding:0px;
+        height:fit-content;
+    }
+    .tap .save-right-most{
+        padding:25px 20px;
+        padding-top:50px;
+    }
+    .tap .business .save{
+        justify-content: unset;
+        gap:0px;
+    }
+    .tap.save .col-4{
+        padding:0px;
+    }
+    .tap .save-right img{
+        width:100%;
+        object-fit: cover;
+    }
+    .tap-product .p-text{
+        width:100%;
+    }
+    .tap-product .p-title{
+        font-size:28px;
+        text-align:left;
+        margin-bottom:25px;
+    }
+    .tap-product{
+        padding-top:80px;
+        padding-left:15px;
+        padding-right:15px;
+    }
+    .tap-product .products {
+        padding-top:20px;
+    }
+    .tap-product .p-subtitle{
+        font-size:16px;
+        font-weight:600;
+        text-align:left;
+    }
+    .p-text{
+        margin:0;
+        padding-bottom:15px;
+    }
+    .tap .business{
+        display: flex;
+        justify-content: center;
+        align-items:center;
+    }
+    .tap-product .product-text .title {
+        font-size: 18px;
+        text-align: left;
+    }
+    .tap .questions-title{
+        font-size:28px;
+    }
+    .tap .questions{
+        width:100%;
+        padding:0px;
+        margin-top:40px;
+    }
+
+    /* business account */
+
+    .bus-hero-section{
+        height:fit-content;
+    }
+    .right-box{
+        width:100%;
+    }
+    .bus-ac .benefit-text .title {
+        font-size: 21px;
+    }
+    .b-des-left .des-top {
+        font-size: 15px;
+    }
+    .master-last{
+        flex-wrap:wrap-reverse;
+    }
+    .ad-bg{
+        padding:30px 10px;
+    }
+    .saved button{
+        width:65%;
+    }
+    .review .review-left .title {
+        font-size: 26px;
+    }
+    .ratings{
+        gap:20px;
+    }
+    .ratings .col-4{
+        padding:0 7px;
+        width:55%;
+    }
+    .ratings img:last-of-type{
+        width:100%;
+    }
+    .review-right .subtitle{
+        padding-right:0px;
+        font-size:13px;
+    }
+    .review-right{
+        padding-right:25px 15px;
+    }
+    .join-right .title{
+        width:100%;
+        font-size:28px;
+    }
+    .join-right button {
+        margin-left:10px;
+        font-size:14px;
+        margin-top:27px;
+        margin-bottom:20px;
+    }
+
+
+    /*  Future Built */
+
+    .future .hero-description {
+        top: 45%;
+        bottom: unset;
+    }
+    .future .hero-section-text {
+        padding-top:0px;
+        width:70%;
+    }
+    .role{
+        flex-wrap: wrap;
+    }
+    .role img{
+        width:100%;
+    }
+    .role .role-right{
+        width:100%;
+    }
+    .roles{
+        width:100%;
+    }
+    .roles .typewriter{
+        font-size:30px;
+        margin-bottom:30px;
+    }
+    .role-right{
+        padding-top:80px;
+        padding-bottom:80px;
+    }
+    .role-bottom{
+        margin-top:60px;
+    }
+    .limit{
+        padding-top:40px;
+    }
+    .limit .typewriter{
+        font-size:27px;
+        margin:0;
+        margin-bottom:30px;
+        width:100%;
+        text-align:left;
+        
+    }
+    .limit .subtitle{
+        text-align:left;
+        font-size:20px;
+        padding-left:15px;
+        width:100%;
+    }
+    .limit-cards{
+        margin-top:70px;
+        margin-bottom:70px;
+        gap:40px;
+    }
+    .limit-cards .col-4{
+        width:100%;
+    }
+    .limit-card{
+        padding:40px 20px;
+        padding-right:30px;
+        justify-content:space-between;
+        flex-wrap: nowrap;
+    }
+    .limit-card p{
+        font-weight: 600;
+        font-size: 14px;
+        margin-left:30px;
+    }
+    .limit-card  img{
+        width:170px;
+    }
+    .last-limit img{
+        width:100px;
+    }
+    .swipe .typewriter{
+        width:100%;
+        font-size:22px;
+    }
+    .client-full{
+        padding:0px;
+    }
+    .client{
+        margin-top:30px;
+    }
+    .client p{
+        font-size:30px;
+        margin-left:30px;
+    }
+    .client-bottom{
+        justify-content: space-around;
+        padding-top:30px;
+        gap:30px;
+    }
+    .client-bottom p{
+        font-size:25px;
+        width:100%;
+        padding-left:30px;
+    }
+    .client-img{
+        border:10px solid #1B5962;
+        margin-top:0%;
+        width:100%;
+    }
+    .client-img img{
+        width:100%;
+    }
+    .want{
+        padding:0 15px;
+        padding-top:55px;
+    }
+    .want .container{
+        width:100%;
+    }
+    .want-bg{
+        padding-top:23px;
+        padding-bottom:75px;
+        border-radius:20px;
+    }
+    .want-bg .typewriter{
+        text-align:center;
+        margin-bottom:55px;
+        font-weight: 800;
+    }
+    .want-bottom{
+        justify-content: center;
+        align-items: center;
+        gap:40px;
+    }
+    .bus-ac .questions{
+        width:100%;
+        margin:0 auto;
+        margin-bottom:40px;
+    }
 }
 
 
@@ -14398,6 +18064,405 @@ span, .weight{
     }
     .social-media{
         width:80%;
+    }
+
+
+    /**********  tap to pay    ************/
+
+    .cont{
+        width:100%;
+        padding:0 15px;
+    }
+    .tap .hero-description{
+        top:unset;
+        bottom:0px;
+        flex-wrap:wrap;
+    }
+    .tap .hero-description .business-card .typewriter {
+        padding: 0px;
+        font-size: 29px;
+        width: 100%;
+    }
+    .tap .hero-description .subtitle{
+        font-size:14px;
+        width:100%;
+        padding-right:0px;
+    }
+    .tap .hero-section-text{
+        padding-top:0px;
+        width:90%;
+    }
+    .tap .hero-img{
+        width:100%;
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        margin-left:10%;
+    }
+    .tap .hero-img img{
+        width:100%;
+        display: flex;
+        align-items:center;
+        justify-content:flex-end;
+    }
+    .tap .benefit-swipper .card-2 p{
+        margin-bottom:28px;
+    }
+    .hero-img{
+        margin-right:0px;
+    }
+    .tap .benefit-text p{
+        font-size:21px;
+        padding:0px;
+    }
+    .vis{
+        padding:0 15px;
+        padding-top:45px;
+    }
+    .visa{
+        border-radius:20px;
+        padding-top:50px;
+        padding-bottom:60px;
+    }
+    .visa-title{
+        text-align:left;
+        font-size:30px;
+        padding:0 15px;
+    }
+    .visa-card .visa-title{
+        text-align:center;
+    }
+    .visa-card{
+        margin-top:70px;
+        margin-bottom:70px;
+        gap:30px;
+        justify-content:center;
+    }
+    .visa-card .col-3{
+        width:90%;
+    }
+    .v-card{
+        text-align:center;
+        padding-top:20px;
+        padding-bottom:30px;
+    }
+    .v-bottom-left{
+        gap:20px;
+        justify-content:center;
+        align-items:center;
+    }
+    .visa-bottom{
+        justify-content: space-evenly;
+        align-items:center;
+        gap:20px;
+    }
+    .tap .mastercard{
+        padding-left:0px;
+        padding-right:0px;
+    }
+    .tap .mastercard-right .sub{
+        font-size:14px;
+        font-weight:600;
+    }
+    .tap .mastercard-img{
+        border-radius:20px;
+    }
+    .tap .mastercard-img img{
+        border-radius:20px;
+        width:100%;
+    }
+    .tap-full .business .save {
+        padding-top: 0px;
+    }
+    .tap-full,
+    .tap .save-left,
+    .tap .save-right,
+    .tap .save-right-most,
+    .tap .save{
+        padding-left:0px;
+        padding-right:0px;
+    }
+    .tap .save-left .typewriter{
+        font-size:24px;
+        color:#fff;
+    }
+    .tap .save-right{
+        border-radius:20px;
+        width:50%;
+        margin:0 auto;
+        margin-top:70px;
+    }
+    .tap .save-right img{
+        width:100%;
+    }
+    .tap .save-right-most .save-subtitle{
+        font-size:14px;
+    }
+    .tap .save-right-most {
+        margin-top:80px;
+    }
+    .tap .save-left{
+        padding:0px;
+        height:fit-content;
+        padding:60px 20px;
+        margin-top:100px;
+    }
+    .tap .save-right,
+    .tap .save-right-most{
+        padding:0px;
+        height:fit-content;
+    }
+    .tap .save-right-most{
+        padding:25px 20px;
+        padding-top:50px;
+    }
+    .tap .business .save{
+        justify-content: unset;
+        gap:0px;
+    }
+    .tap.save .col-4{
+        padding:0px;
+    }
+    .tap .save-right img{
+        width:100%;
+        object-fit: cover;
+    }
+    .tap-product .p-text{
+        width:100%;
+    }
+    .tap-product .p-title{
+        font-size:23px;
+        text-align:left;
+        margin-bottom:25px;
+    }
+    .tap-product{
+        padding-top:80px;
+        padding-left:15px;
+        padding-right:15px;
+    }
+    .tap-product .products {
+        padding-top:20px;
+    }
+    .tap-product .p-subtitle{
+        font-size:14px;
+        font-weight:600;
+        text-align:left;
+    }
+    .p-text{
+        margin:0;
+        padding-bottom:15px;
+    }
+    .tap .business{
+        display: flex;
+        justify-content: center;
+        align-items:center;
+    }
+    .tap-product .product-text .title {
+        font-size: 18px;
+        text-align: left;
+    }
+    .tap .questions-title{
+        font-size:23px;
+    }
+    .tap .questions{
+        width:100%;
+        padding:0px;
+        margin-top:40px;
+    }
+    .tap-product .dropdown-option {
+        font-size: 13px;
+    }
+
+    /* business-account */
+
+
+    .bus-ac .benefit-text .title {
+        font-size: 21px;
+        padding:0px;
+    }
+        .b-des-left .typewriter {
+        font-size: 27px;
+    }
+        .b-des-left .subtitle {
+        font-size: 14px;
+        padding-right:0px;
+    }
+    .bus-ac .mastercard-right .typewriter {
+        font-size: 23px;
+    }
+    .bus-ac .mastercard-right .ms-subtitle {
+        font-size: 13px;
+    }
+    .ad-bg{
+        padding:20px 0px;
+    }
+    .saved p:first-of-type {
+        font-size: 23px;
+        text-align: left;
+    }
+    .saved p:nth-of-type(2) {
+        font-size: 29px;
+    }
+    .saved button{
+        width:90%;
+    }
+    .review .review-left .title {
+        font-size: 22px;
+    }
+    .join-right .title {
+        width: 100%;
+        font-size: 21px;
+    }
+    .join-right button{
+        font-size:13px;
+    }
+    .business .product-text .title {
+        font-size: 21px;
+        text-align: left;
+    }
+
+    /*  Future Built */
+
+    .future .hero-description {
+        top: 40%;
+        bottom: unset;
+    }
+    .future .hero-section-text {
+        padding-top:0px;
+        width:70%;
+    }
+    .role{
+        flex-wrap: wrap;
+    }
+    .role img{
+        width:100%;
+    }
+    .role .role-right{
+        width:100%;
+    }
+    .roles{
+        width:100%;
+    }
+    .roles .typewriter{
+        font-size:30px;
+        margin-bottom:30px;
+    }
+    .role-right{
+        padding-top:80px;
+        padding-bottom:80px;
+    }
+    .role-bottom{
+        margin-top:60px;
+    }
+    .limit{
+        padding:0px;
+        padding-top:40px;
+    }
+    .limit .col-4{
+        padding:0px;
+    }
+    .limit .typewriter{
+        font-size:23px;
+        margin:0;
+        margin-bottom:30px;
+        width:100%;
+        text-align:left;
+        
+    }
+    .limit .subtitle{
+        text-align:left;
+        font-size:18px;
+        padding-left:15px;
+        width:100%;
+    }
+    .limit-cards{
+        margin-top:70px;
+        margin-bottom:70px;
+        gap:40px;
+    }
+    .limit-cards .col-4{
+        width:100%;
+    }
+    .limit-card{
+        padding:40px 20px;
+        padding-right:30px;
+        justify-content:space-between;
+        flex-wrap: nowrap;
+    }
+    .limit-card p{
+        font-weight: 600;
+        font-size: 14px;
+        margin-left:30px;
+    }
+    .limit-card  img{
+        width:170px;
+    }
+    .last-limit img{
+        width:100px;
+    }
+    .swipe{
+        padding-left:0px;
+        padding-right:0px;
+    }
+    .swipe .typewriter{
+        width:100%;
+        font-size:22px;
+    }
+    .client-full{
+        padding:0px;
+    }
+    .client{
+        margin-top:30px;
+    }
+    .client p{
+        font-size:30px;
+        margin-left:30px;
+    }
+    .client-bottom{
+        justify-content: space-around;
+        padding-top:30px;
+        gap:30px;
+    }
+    .client-bottom p{
+        font-size:25px;
+        width:100%;
+        padding-left:30px;
+    }
+    .client-img{
+        border:10px solid #1B5962;
+        margin-top:0%;
+        width:100%;
+    }
+    .client-img img{
+        width:100%;
+    }
+    .want{
+        padding:0 15px;
+        padding-top:55px;
+    }
+    .want .container{
+        width:100%;
+    }
+    .want-bg{
+        padding-top:23px;
+        padding-bottom:75px;
+        border-radius:20px;
+    }
+    .want-bg .typewriter{
+        text-align:center;
+        margin-bottom:55px;
+        font-weight: 800;
+        font-size:23px;
+    }
+    .want-bottom{
+        justify-content: center;
+        align-items: center;
+        gap:40px;
+    }
+    .bus-ac .questions{
+        width:100%;
+        margin:0 auto;
+        margin-bottom:40px;
     }
 }
 

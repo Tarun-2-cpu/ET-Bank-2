@@ -140,6 +140,24 @@ nav {
     transition: height 0.3s ease;
 }
 
+
+
+
+/* nav {
+    padding: 15px 39px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    background: rgba(11, 22, 13, 0.4);
+    backdrop-filter: blur(10px);
+    border-radius: 0 0 10px 10px;
+    transition: height 0.3s ease;
+} */
 .nav-top {
     width: 100%;
     display: flex;
@@ -150,38 +168,71 @@ nav {
 .nav-link {
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 
-.nav-link a {
+.nav-button,
+.nav-button a {
     font-size: 16px;
     color: #fff;
-    gap: 8px;
+    padding: 12px 16px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    text-decoration: none;
+}
+
+.nav-button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:inherit;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.658);
+    z-index: 1;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 100px;
+    width: 97%;
+    background: rgba(11, 22, 13, 0.4);
+    backdrop-filter: blur(10px);
+}
+
+.dropdown-content a {
+    color: #fff;
+    font-weight:600;
     padding: 12px 16px;
     text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #dddddd70;
 }
 
 nav img {
     width: 220px;
 }
+
 .nav-right {
     display: flex;
     gap: 8px;
     align-items: center;
 }
-.menu {
-    display: block;
-}
-.menu i{
-    display: none;
-}
-.nav-right .login{
+
+.nav-right .login {
     font-size: 16px;
     color: #fff;
     text-decoration: none;
     margin-right: 8px;
     padding: 12px;
 }
+
 .started {
     font-size: 16px;
     padding: 12px;
@@ -192,93 +243,34 @@ nav img {
     outline: none;
     cursor: pointer;
 }
-.started a{
+
+.started a {
     text-decoration: none;
+    color: #000;
 }
 
-
-.nav-link .menu-icon{
-    display:none;
-}
-.nav-link ul{
+.menu {
+    display: flex;
     align-items: center;
-    gap:47px;
-}
-.nav-link li a{
-    font-size:14px;
-    text-decoration: none;
-    padding-bottom: 10px;
-}
-.nav-link li > a {
-    color:#fff;
-}
-.dropdown {
-  float:left;
-}
-.dropdown .dropbtn {
-  font-size: 14px;
-  border: none;
-  outline: none;
-  color: #fff;
-  background:inherit;
-  margin: 0;
-}
-.dropbtn:hover,
-.nav-link li > a:hover {
-  font-weight:700;
-  border-radius: 0px;
-}
-.dropdown-content{
-  display:none;
-  position:absolute;
-  background:inherit;
-  width:100%;
-  left:0;
-  box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index:1;
-  padding-top:34px;
-  padding-left:100px;
-  padding-bottom:61px;
 }
 
-.dropdown-content .nav-header {
-  font-size:20px;
-  color:#fff;
-  font-weight:800;
-  margin-bottom: 41px;
+.menu i {
+    display: none;
 }
 
-.dropdown:hover .dropdown-content {
-  display: block;
-}
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+    }
 
-.column {
-  float: left;
-  width: 25%;
-  background:inherit;
-  padding-left: 16px;
-}
+    .menu i {
+        display: block;
+    }
 
-.column a {
-  float: none;
-  color:#fff;
-  font-size:15px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
+    .nav-right {
+        display: none;
+    }
 }
-.column a:not(:last-of-type) {
-    margin-bottom:18px;
-}
-.column a:hover {
-  font-size:16px;
-}
-.dropdown-content .row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
 
 
 .hero-section img{
@@ -2354,6 +2346,577 @@ span, .weight{
 .weight-600{
     font-weight:600;
 }
+.all-about .ms-sub{
+    font-size:16px;
+}
+.all-about .mastercard-right{
+    padding-right:175px;
+}
+.pix-master .mastercard-right{
+     margin-left:30px;
+}
+.pix-master .cont{
+    padding:0 30px;
+}
+.pix .questions{
+    margin:0 auto;
+}
+
+
+
+
+/* Credit card for You */
+
+.cre img{
+    filter:brightness(70%);
+}
+.credit-for-you .hero-description{
+    right:67px;
+    top:35%;
+}
+.credit-for-you .hero-description .title{
+    font-size:55px;
+}
+.credit-for-you .hero-description .subtitle{
+    font-size:24px;
+    margin-top:32px;
+    padding-left:17px;
+}
+.credit-for-you .hero-section-text{
+    justify-content: flex-end;
+    flex-direction:column;
+    align-items:flex-end;
+}
+.live-this p{
+    font-size:29px;
+    font-weight: 700;
+    color:#1B5962;
+}
+.live-this .hero-bottom{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:50px;
+}
+.live-this{
+    padding:0px;
+}
+.live-this input{
+    border:none;
+    outline:none;
+    background-color: transparent;
+}
+.live-this .input{
+    border-bottom:1px solid black;
+    padding:10px 15px;
+}
+.c-card .swipper-card p:first-of-type{
+    font-size:24px;
+    font-weight:700;
+    text-align:center;
+    margin-bottom:30px;
+}
+.c-card .swipper-card{
+    padding-left:70px;
+    padding-right:70px;
+}
+.c-card .swipper-card p:last-of-type{
+    font-size:18px;
+    text-align:center;
+}
+.c-card .swipper-card .img-div{
+    margin:0 auto;
+    margin-bottom:25px;
+    border-radius: 50%;
+    padding:15px 10px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.c-card .swipper-card .img-div i {
+    font-size:30px;
+}
+.c-card .swipper-1 .img-div{
+    background:crimson;
+}
+.c-card .swipper-1 {
+    padding-bottom:30px;
+}
+.c-card .card-2 .img-div{
+    background:#89CFF0;
+}
+.c-card .card-3 .img-div{
+    background:#00D47E;
+}
+.vid img{
+    width:100%;
+}
+.vid{
+    position:relative;
+    border-radius:20px;
+}
+.vid img{
+    width:100%;
+    border-radius:20px;
+}
+.vid .vid-text{
+    position:absolute;
+    bottom:10%;
+    left:10%;
+}
+.vid .vid-text p{
+    font-size:23px;
+    font-weight: 700;
+    color:#fff;
+}
+.vid .vid-button{
+    position:absolute;
+    top:50%;
+    left:50%;
+}
+.vid .vid-button{
+    background-color: #1B5962;
+    box-shadow: 0px 0px 0px 1px #E8F0FF;
+    border:5px solid #E8F0FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding:15px;
+}
+.vid .vid-button i{
+    font-size:30px;
+    color:#fff;
+}
+.vid .vid-top{
+    justify-content: space-around;
+    align-items: center;
+}
+.vid-bottom{
+    margin-top:53px;
+}
+.ultraviolet{
+    margin:100px 0;
+}
+.ultraviolet .ultra-top p{
+    font-size:20px;
+    font-weight:800;
+}
+.ultraviolet .ultra-top{
+    border:2px solid #00D47E;
+    margin-bottom:18px;
+    width:fit-content;
+    padding:8px;    
+}
+.ultraviolet .ultra-title{
+    font-size:35px;
+    font-weight:800;
+    color:#1B5962;
+    margin-bottom:40px;
+}
+.color-ultra .ultra-title{
+    font-size:35px;
+    font-weight:800;
+    color:#fff;
+    margin-bottom:40px;
+}
+.ultraviolet .ultra-subtitle{
+    color:#000;
+    margin-bottom:30px;
+}
+.color-ultra .ultra-subtitle{
+    color:#fff;
+    margin-bottom:30px;
+}
+.ultraviolet .ultra-detail{
+    border:1px solid #1B5962;
+    padding:24px 23px;
+    margin-bottom:20px;
+}
+.color-ultra .ultraviolet .ultra-detail{
+    background-color: #ffff;
+    padding:24px 23px;
+    margin-bottom:20px;
+}
+.ultraviolet .ultra-detail p{
+    font-size:18px;
+    font-weight:600;
+}
+.ultraviolet .ultra-right img{
+    width:100%;
+    border-radius: 20px;
+}
+.ultraviolet .ultra-right{
+    border-radius:20px;
+    height:auto;
+}
+.ultraviolet .ultra-detail-top{
+    background-color:#B2FFE0;
+    padding:24px 23px;
+    margin-bottom:20px;
+}
+.ultra-detail-top .ultra-sub-title{
+    font-size:25px;
+    font-weight: 600;
+    margin-bottom:20px;
+}
+.ultra-detail-top .ultra-sub-subtitle{
+    font-weight:16px;
+    font-weight: 400;
+}
+
+
+
+/* Personal Loans*/
+
+.personal-loan .hero-description{
+    top:181px;
+    left:103px;
+}
+.personal-loan .hero-section-text{
+    flex-direction:column;
+    justify-content:flex-start;
+    align-items:flex-start;
+    gap:32px;
+}
+.personal-loan .hero-section-text .typewriter{
+    font-size:55px;
+    padding-left:0px;
+}
+.personal-loan .hero-section-text .subtitle{
+    font-size:28px;
+}
+.personal-loan .hero-text-right p:first-of-type{
+    margin-bottom:22px;
+}
+
+.personal-loan p:first-of-type{
+    font-size:17px;
+    margin-top:15px;
+    font-weight:800;
+}
+.personal-loan p:last-of-type{
+    font-size:16px;
+    font-weight:500;
+}
+.choose .cho{
+    margin-top:30px;
+}
+.personal-loan-link{
+    border:1px solid #fff;
+    margin:20px 0;
+    padding:8px;
+    border-radius:8px;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    margin-bottom:40px;
+}
+.personal-loan-link p,
+.personal-loan-link i{
+    color:#fff;
+    font-size:15px;
+}
+.personal-loan-link i{
+    margin-right:0;
+}
+.personal-loans-questions-title{
+    font-size:20px;
+    margin-bottom:30px;
+}
+.personal-loans-questions-outer{
+    border-radius:20px;
+    padding:25px 30px;
+}
+.ques-img img{
+    width:100%;
+}
+.que{
+    align-items:flex-end;
+}
+
+.surprise{
+    margin:100px 0;
+}
+.surprise-title p:first-of-type{
+    font-size:55px;
+    padding-left:30px;
+    margin-bottom:30px;
+}
+.surprise-title p:last-of-type{
+    font-size:16px;
+    padding-left:30px;
+}
+.surprise-bottom{
+    margin-top:45px;
+    gap:19px;
+}
+.surprise-card{
+    padding:20px;
+    padding-bottom:50px;
+    width:33%;
+    background-color: #1B5962;
+    border-radius: 20px;
+}
+.surprise-card .surprise-img{
+    border-radius:50%;
+}
+.surprise-card .surprise-img img{
+    width:100%;
+}
+.surprise-card .surprise-text p:first-of-type{
+    font-size:22px;
+    font-weight:800;
+    margin-bottom:24px;
+    text-align:center;
+    color:#fff;
+}
+.surprise-card .surprise-text p:last-of-type{
+    font-size:18px;
+    text-align:left;
+    color:#fff;
+}
+
+
+/* mobile insurance */
+
+.ins .hero-description{
+    top:40%;
+}
+.ins .hero-section-text{
+    background-color:#1B5962B2;
+    border-radius:20px;
+    width:50%;
+    padding:30px;
+}
+.ins .hero-section-text p:first-of-type{
+    font-size:55px;
+    padding-left:0px;
+}
+.ins .hero-section-text .sub{
+    font-size:24px;
+    padding-left:0px;
+}
+.ins .hero-section-text .sub-sub{
+    font-size:18px;
+    padding-left:0px;
+    margin-top:15px;
+}
+.mas-rev .mastercard-right{
+    padding-left:60px;
+}
+.ins .mastercard .mas-right{
+    padding-right:150px;
+}
+.stress-title{
+    text-align:center;
+    font-size:55px;
+    font-weight: 800;
+    color:#fff;
+}
+.stress-single p:first-of-type{
+    font-size:35px;
+    font-weight:800;
+    text-decoration: underline;
+    margin-bottom:15px;
+    color:#fff;
+}
+.stress-single p:last-of-type{
+    font-size:17px;
+    margin-bottom:15px;
+    color:#fff;
+}
+.stress-single{
+    border-radius:20px;
+    background: #B4F6DB66;
+    width:35%;
+    padding:20px 35px;
+}
+.stress{
+    justify-content: space-around;
+    margin-top:80px;
+}
+.st-b{
+    margin-top:56px;
+    margin-bottom:50px;
+}
+.stress-outer{
+    padding-top:56px;
+    margin-top:60px;
+}
+.stress-subtitle{
+    font-size:20px;
+    font-weight:600;
+    margin-bottom:95px;
+    color:#fff;
+    text-align:center;
+    margin-top:20px;
+}
+.waitlist-bottom{
+    justify-content: space-around;
+}
+.watch{
+    padding-bottom:90px;
+    padding-top:50px;
+}
+.copy p{
+    font-size:25px;
+    font-weight: 600;
+    font-family: "Noto Sans";
+}
+.copy{
+    padding:70px 85px;
+}
+.coverage-img {
+    width:100%;
+}
+.coverage-img img{
+    width:100%;
+}
+.understand img{
+    width:100%;
+}
+.understand{
+    position:relative;
+    margin-top:50px;
+}
+.understand .text-detail{
+    position:absolute;
+    top:100px;
+    left:120px;
+    padding:45px;
+    background:#FFFFFFB2;
+    border-radius: 20px;
+}
+.understand .text-detail p:first-of-type{
+    font-size:45px;
+    font-weight: 800;
+    margin-bottom:20px;
+}
+
+
+
+
+
+
+
+
+
+/* child account */
+
+.child .mastercard .mastercard-img > img{
+    width:400px;
+    height:unset;
+}
+
+
+.keen .keen-text p:first-of-type{
+    font-size:82px;
+    font-weight:800;
+    color:#1B5962;
+}
+.keen .keen-text p:last-of-type{
+    font-size:30px;
+    font-weight:600;
+    color:#1B5962;
+}
+.keen-img img{
+    width:100%;
+}
+.keen{
+    position:relative;
+}
+.keen-text{
+    position:absolute;
+    top:20%;
+    right:10%;
+}
+.revolut{
+    margin:80px 0;
+}
+.revolut .title{
+    font-size:60px;
+    color:#1B5962;
+    font-weight: 800;
+    text-align: center;
+}
+.revolut .subtitle{
+    font-size:30px;
+    color:#1B5962;
+    font-weight:600;
+    text-align: center;
+}
+.revolut button{
+    margin:30px auto;
+}
+
+.revolut-card{
+    border:1px solid #1B5962;
+    padding:50px 35px;
+    border-radius:20px;
+}
+.revolut-card p:first-of-type{
+    font-size:35px;
+    font-weight: 800;
+}
+.revolut-card p:last-of-type{
+    font-size:20px;
+    font-weight: 600;
+}
+.revolut-card img{
+    width:100%;
+}
+.revolut .revolut-last{
+    font-size:20px;
+    font-weight:600;
+    margin-top:32px;
+    text-align:center;
+}
+.r-card-1 img{
+    margin-bottom:55px;
+}
+.r-card-3 img{
+    margin-bottom:20px;
+}
+.child-account .choose-top{
+    font-size:33px;
+    margin-bottom:40px;
+}
+.child-account .choose-title{
+    font-size:60px;
+    margin-bottom:85px;
+}
+.child-account .choose-subtitle{
+    font-size:20px;
+    font-weight:600;
+}
+.child-account .swipper-card{
+    padding-bottom:123px;
+}
+.what p:first-of-type{
+    font-size:30px;
+    font-weight: 800;
+    margin-bottom:20px;
+    text-align: center;
+}
+.what p:last-of-type{
+    font-size:55px;
+    font-weight: 800;
+    margin-bottom:20px;
+    text-align: center;
+}
+.what button{
+    margin:0 auto;
+}
+.rev-top, .what{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    flex-direction:column;
+}
+
+
+
 
 @media(max-width:1366px){
 
@@ -4072,7 +4635,792 @@ span, .weight{
     }
 
 
+        /* PIX */
 
+    .pix .hero-text-right{
+        padding:0;
+        background-color:unset;
+    }
+    .pix .hero-description{
+        top:40%;
+        margin-left:30px;
+    }
+    .pix .hero-text-left .text{
+        font-size:27px;
+    }
+    .pix .hero-text-right{
+        width:65%;
+    }
+    .pix .cpf input{
+        padding:12px;
+        width:90%;
+    }
+    .pix .cpf{
+        padding-top:90px;
+        padding-bottom:37px;
+        border-radius:8px;
+    }
+    .pix .mastercard{
+        padding: - 0px;
+        padding-bottom:50px;
+    }
+    .pix .mastercard .ms-subtitle{
+        font-size:25px;
+        padding-right:80px;
+    }
+    .pix-card .cont{
+        padding:30px;
+    }
+    .pix-card-bottom{
+        background:#C6F8E380;
+        padding:40px 140px;
+        padding-right:60px;
+    }
+    .pix-detail p:first-of-type{
+        font-size:28px;
+    }
+    .pix-detail p:last-of-type{
+        font-size:20px;
+    }
+    .pixes{
+        flex-wrap:wrap;
+        gap:100px 0;
+    }
+    .pix-b{
+        margin-top:100px;
+    }
+    .pix-detail{
+        width:50%;
+    }
+    .pixes .pix-right{
+        padding-left:50px;
+    }
+    .keys{
+        margin-top:67px;
+    }
+    .keys-inner-img{
+        width:50%;
+    }
+    .keys-inner-img img{
+        width:100%;
+    }
+    .keys-right{
+        width:50%;
+        padding-left:50px;
+        padding-top:43px;
+        padding-bottom:49px;
+        padding-right:120px;
+    }
+    .keys-right .title{
+        font-size:48px;
+    }
+    .keys-right .sub{
+        font-size:25px;
+        margin-top:40px;
+        margin-bottom:16px;
+    }
+    .keys-right .sub-1{
+        font-size:28px;
+        margin-bottom:40px;
+    }
+    .key-register .register-text{
+        font-size:20px;
+    }
+    .key-register .key-1{
+        width:100%;
+        justify-content:space-around;
+        gap:24px 0;
+    }
+    .key-register .key-1 p{
+        width:50%;
+    }
+    .key-register .key-last{
+        margin-top:24px;
+    }
+    .pix-master .mastercard-right .typewriter {
+        font-size: 48px;
+    }
+    .pix-master .ms-subtitle{
+        font-size:27px;
+    }
+    .pix-master button{
+        font-size:16px;
+    }
+    .pix-master{
+        padding-bottom:50px;
+    }
+    .all-about .ms-sub{
+        font-size:16px;
+    }
+    .all-about .mastercard-right{
+        padding-right:140px;
+    }
+    .all-about .mastercard-right .typewriter{
+        font-size:40px;
+    }
+    .all-about .mastercard{
+        padding-bottom:0px;
+    }
+    .pix-master .mastercard-right{
+        margin-left:30px;
+    }
+    .pix-master .cont{
+        padding:0 30px;
+    }
+    .pix .questions{
+        margin:0 auto;
+        padding-top:75px;
+    }
+    .pix .questions-title{
+        text-align:center;
+    }
+
+
+    
+    /* PIX */
+
+    
+    .pix .hero-text-left .text{
+        font-size:27px;
+    }
+    .pix .cpf input{
+        border-bottom:1px solid black;
+        padding:12px;
+        width:100%;
+    }
+    .pix .hero-text-right{
+        width:100%;
+    }
+    .pix .cpf{
+        padding-top:114px;
+        padding-bottom:37px;
+        border-radius:8px;
+    }
+    .pix .mastercard{
+        padding: - 0px;
+    }
+    .pix .mastercard .ms-subtitle{
+        font-size:30px;
+        padding-right:100px;
+    }
+    .pix-card .cont{
+        padding:25px;
+    }
+    .pix-card-bottom{
+        background:#C6F8E380;
+        padding:40px 100px;
+        padding-right:60px;
+    }
+    .pix-detail p:first-of-type{
+        font-size:35px;
+    }
+    .pix-detail p:first-of-type{
+        font-size:24px;
+    }
+    .pixes{
+        flex-wrap:wrap;
+        gap:100px 0;
+    }
+    .pix-b{
+        margin-top:80px;
+    }
+    .pix-detail{
+        width:50%;
+    }
+    .pixes .pix-right{
+        padding-left:50px;
+    }
+    .keys{
+        margin-top:67px;
+    }
+    .keys-inner-img{
+        width:50%;
+    }
+    .keys-inner-img img{
+        width:100%;
+    }
+    .keys-right{
+        width:50%;
+        padding-left:50px;
+        padding-top:43px;
+        padding-bottom:49px;
+        padding-right:120px;
+    }
+    .keys-right .title{
+        font-size:48px;
+    }
+    .keys-right .sub{
+        font-size:25px;
+        margin-top:30px;
+        margin-bottom:16px;
+    }
+    .keys-right .sub-1{
+        font-size:27px;
+        margin-bottom:30px;
+    }
+    .key-register .register-text{
+        font-size:21px;
+    }
+    .key-register .key-1{
+        width:100%;
+        justify-content:space-around;
+        gap:24px 0;
+    }
+    .key-register .key-1 p{
+        width:50%;
+    }
+    .key-register .key-last{
+        margin-top:24px;
+    }
+    .pix-master .mastercard-right .typewriter {
+        font-size: 50px;
+    }
+    .pix-master .ms-subtitle{
+        font-size:30px;
+    }
+    .pix-master button{
+        font-size:16px;
+    }
+    .pix-master{
+        padding-bottom:90px;
+    }
+    .weight-600{
+        font-weight:600;
+    }
+    .all-about .ms-sub{
+        font-size:16px;
+    }
+    .all-about .mastercard-right{
+        padding-right:40px;
+    }
+    .pix-master .mastercard-right{
+        margin-left:30px;
+    }
+    .pix-master .cont{
+        padding:0 30px;
+    }
+    .pix .questions{
+        margin:0 auto;
+    }
+
+
+    /* Personal Loans*/
+
+    .personal-loan .hero-description{
+        top:140px;
+        left:103px;
+    }
+    .personal-loan .hero-section-text{
+        flex-direction:column;
+        justify-content:flex-start;
+        align-items:flex-start;
+        gap:25px;
+    }
+    .personal-loan .hero-section-text .typewriter{
+        font-size:48px;
+    }
+    .personal-loan .hero-section-text .subtitle{
+        font-size:24px;
+    }
+    .personal-loan .hero-text-right p:first-of-type{
+        margin-bottom:17px;
+    }
+    .personal-loan p:first-of-type{
+        font-size:17px;
+        margin-top:15px;
+        font-weight:800;
+    }
+    .personal-loan p:last-of-type{
+        font-size:16px;
+        font-weight:500;
+    }
+    .choose .cho{
+        margin-top:30px;
+    }
+    .personal-loan-link{
+        border:1px solid #fff;
+        margin:20px 0;
+        padding:8px;
+        border-radius:8px;
+        display: flex;
+        justify-content: space-around;
+        align-items:center;
+        margin-bottom:40px;
+    }
+    .personal-loan-link p,
+    .personal-loan-link i{
+        color:#fff;
+        font-size:15px;
+    }
+    .personal-loan-link i{
+        margin-right:0;
+    }
+    .personal-loans-questions-title{
+        font-size:20px;
+        margin-bottom:30px;
+    }
+    .personal-loans-questions-outer{
+        border-radius:20px;
+        padding:25px 30px;
+    }
+    .ques-img img{
+        width:100%;
+    }
+    .que{
+        align-items:flex-end;
+    }
+    .msr{
+        margin-left:30px;
+    }
+    .surprise{
+        margin:100px 0;
+    }
+    .surprise-title p:first-of-type{
+        font-size:55px;
+        padding-left:30px;
+        margin-bottom:30px;
+    }
+    .surprise-title p:last-of-type{
+        font-size:16px;
+        padding-left:30px;
+    }
+    .surprise-bottom{
+        margin-top:45px;
+        gap:19px;
+    }
+    .surprise-card{
+        padding:20px;
+        padding-bottom:50px;
+        width:33%;
+        background-color: #1B5962;
+        border-radius: 20px;
+    }
+    .surprise-card .surprise-img{
+        border-radius:50%;
+    }
+    .surprise-card .surprise-img img{
+        width:100%;
+    }
+    .surprise-card .surprise-text p:first-of-type{
+        font-size:22px;
+        font-weight:800;
+        margin-bottom:24px;
+        text-align:center;
+        color:#fff;
+    }
+    .surprise-card .surprise-text p:last-of-type{
+        font-size:18px;
+        text-align:left;
+        color:#fff;
+    }
+
+
+
+
+
+
+    /* mobile insurance */
+
+    .ins .hero-description{
+        top:40%;
+    }
+    .ins .hero-section-text{
+        background-color:#1B5962B2;
+        border-radius:20px;
+        width:50%;
+        padding:30px;
+    }
+    .ins .hero-section-text p:first-of-type{
+        font-size:48px;
+        padding-left:0px;
+    }
+    .ins .hero-section-text .sub{
+        font-size:20px;
+        padding-left:0px;
+    }
+    .ins .hero-section-text .sub-sub{
+        font-size:16px;
+        padding-left:0px;
+        margin-top:15px;
+    }
+    .mas-rev .mastercard-right{
+        padding-left:60px;
+    }
+    .stress-title{
+        text-align:center;
+        font-size:48px;
+        font-weight: 800;
+        color:#fff;
+    }
+    .stress-single p:first-of-type{
+        font-size:30px;
+        font-weight:800;
+        text-decoration: underline;
+        margin-bottom:15px;
+        color:#fff;
+    }
+    .stress-single p:last-of-type{
+        font-size:16px;
+        margin-bottom:15px;
+        color:#fff;
+    }
+    .stress-single{
+        border-radius:20px;
+        background: #B4F6DB66;
+        width:35%;
+        padding:20px 35px;
+    }
+    .stress{
+        justify-content: space-around;
+        margin-top:80px;
+    }
+    .st-b{
+        margin-top:56px;
+        margin-bottom:50px;
+    }
+    .stress-outer{
+        padding-top:56px;
+    }
+    .stress-subtitle{
+        font-size:20px;
+        font-weight:600;
+        margin-bottom:95px;
+        color:#fff;
+        text-align:center;
+        margin-top:20px;
+    }
+    .watch{
+        padding-bottom:90px;
+    }
+    .copy p{
+        font-size:25px;
+        font-weight: 600;
+        font-family: "Noto Sans";
+    }
+    .copy{
+        padding:70px 85px;
+    }
+
+
+
+        /* child account */
+
+    .child .mastercard{
+        justify-content: space-between;
+    }
+    .child .mastercard .mastercard-img > img{
+        width:350px;
+        height:unset;
+    }
+    .keen .keen-text p:first-of-type{
+        font-size:65px;
+        color:#1B5962;
+    }
+    .keen .keen-text p:last-of-type{
+        font-size:25px;
+        font-weight:600;
+        color:#1B5962;
+        margin-bottom:30px;
+    }
+    .keen-img img{
+        width:100%;
+    }
+    .keen{
+        position:relative;
+    }
+    .keen-text{
+        position:absolute;
+        top:20%;
+        right:10%;
+    }
+    .revolut{
+        margin:80px 0;
+    }
+    .revolut .title{
+        font-size:50px;
+        color:#1B5962;
+        font-weight: 800;
+        text-align: center;
+    }
+    .revolut .subtitle{
+        font-size:30px;
+        color:#1B5962;
+        font-weight:600;
+        text-align: center;
+    }
+    .revolut button{
+        margin:30px auto;
+    }
+
+    .revolut-card{
+        border:1px solid #1B5962;
+        padding:50px 35px;
+        border-radius:20px;
+    }
+    .revolut-card p:first-of-type{
+        font-size:30px;
+        font-weight: 800;
+    }
+    .revolut-card p:last-of-type{
+        font-size:18px;
+    }
+    .revolut-card img{
+        width:100%;
+    }
+    .revolut .revolut-last{
+        font-size:20px;
+        font-weight:600;
+        margin-top:32px;
+        text-align:center;
+    }
+    .r-card-1 img{
+        margin-bottom:50px;
+    }
+    .r-card-3 img{
+        margin-bottom:0px;
+    }
+    .r-card-2 img{
+        margin-bottom:10px;
+    }
+    .child-account .choose-top{
+        font-size:28px;
+        margin-bottom:40px;
+    }
+    .child-account .choose-title{
+        font-size:45px;
+        margin-bottom:85px;
+    }
+    .child-account .choose-subtitle{
+        font-size:20px;
+        font-weight:600;
+    }
+    .child-account .swipper-card{
+        padding-bottom:123px;
+    }
+    .what p:first-of-type{
+        font-size:30px;
+        font-weight: 800;
+        margin-bottom:20px;
+        text-align: center;
+    }
+    .what p:last-of-type{
+        font-size:55px;
+        font-weight: 800;
+        margin-bottom:20px;
+        text-align: center;
+    }
+    .what button{
+        margin:0 auto;
+    }
+    .rev-top, .what{
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        flex-direction:column;
+    }
+
+
+
+    /* Credit card for You */
+
+    .credit-for-you .hero-description{
+        right:67px;
+        top:35%;
+    }
+    .credit-for-you .hero-description .title{
+        font-size:50px;
+    }
+    .credit-for-you .hero-description .subtitle{
+        font-size:24px;
+        margin-top:32px;
+        padding-left:17px;
+    }
+    .credit-for-you .hero-section-text{
+        justify-content: flex-end;
+        flex-direction:column;
+        align-items:flex-end;
+    }
+    .live-this p{
+        font-size:25px;
+    }
+    .live-this .hero-bottom{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        padding:50px;
+    }
+    .live-this{
+        padding:0px;
+    }
+    .live-this input{
+        border:none;
+        outline:none;
+        background-color: transparent;
+    }
+    .live-this .input{
+        border-bottom:1px solid black;
+        padding:10px 15px;
+    }
+    .c-card .swipper-card p:first-of-type{
+        font-size:20px;
+        text-align:center;
+        margin-bottom:30px;
+    }
+    .c-card .swipper-card{
+        padding-left:70px;
+        padding-right:70px;
+    }
+    .c-card .swipper-card p:last-of-type{
+        font-size:16px;
+        text-align:center;
+    }
+    .c-card .swipper-card .img-div{
+        margin:0 auto;
+        margin-bottom:25px;
+        border-radius: 50%;
+        padding:10px 8px;
+        width:fit-content;
+        height:fit-content;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .c-card .swipper-card .img-div i {
+        font-size:35px;
+    }
+    .c-card .swipper-1 .img-div{
+        background:crimson;
+    }
+    .c-card .swipper-1 {
+        padding-bottom:40px;
+    }
+    .c-card .swipper-2{
+        padding-bottom:45px;
+    }
+    .c-card .card-2 .img-div{
+        background:#89CFF0;
+    }
+    .c-card .card-3 .img-div{
+        background:#00D47E;
+    }
+    .vid img{
+        width:100%;
+    }
+    .vid{
+        position:relative;
+        border-radius:20px;
+    }
+    .vid img{
+        width:100%;
+        border-radius:20px;
+    }
+    .vid .vid-text{
+        position:absolute;
+        bottom:10%;
+        left:10%;
+    }
+    .vid .vid-text p{
+        font-size:23px;
+        font-weight: 700;
+        color:#fff;
+    }
+    .vid .vid-button{
+        position:absolute;
+        top:50%;
+        left:50%;
+    }
+    .vid .vid-button{
+        background-color: #1B5962;
+        box-shadow: 0px 0px 0px 1px #E8F0FF;
+        border:5px solid #E8F0FF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        padding:15px;
+    }
+    .vid .vid-button i{
+        font-size:30px;
+        color:#fff;
+    }
+    .vid .vid-top{
+        justify-content: space-around;
+        align-items: center;
+    }
+    .vid-bottom{
+        margin-top:53px;
+    }
+    .ultraviolet{
+        margin:100px 0;
+    }
+    .ultraviolet .ultra-top p{
+        font-size:18px;
+        font-weight:800;
+    }
+    .ultraviolet .ultra-top{
+        border:2px solid #00D47E;
+        margin-bottom:18px;
+        width:fit-content;
+        padding:8px;    
+    }
+    .ultraviolet .ultra-title{
+        font-size:30px;
+        font-weight:800;
+        color:#1B5962;
+        margin-bottom:40px;
+    }
+    .color-ultra .ultra-title{
+        font-size:30px;
+        font-weight:800;
+        color:#fff;
+        margin-bottom:40px;
+    }
+    .ultraviolet .ultra-subtitle{
+        color:#000;
+        margin-bottom:30px;
+    }
+    .color-ultra .ultra-subtitle{
+        color:#fff;
+        margin-bottom:30px;
+    }
+    .ultraviolet .ultra-detail{
+        border:1px solid #1B5962;
+        padding:24px 23px;
+        margin-bottom:20px;
+    }
+    .color-ultra .ultraviolet .ultra-detail{
+        background-color: #ffff;
+        padding:24px 23px;
+        margin-bottom:20px;
+    }
+    .ultraviolet .ultra-detail p{
+        font-size:16px;
+        font-weight:600;
+    }
+    .ultraviolet .ultra-right img{
+        width:100%;
+        border-radius: 20px;
+    }
+    .ultraviolet .ultra-right{
+        border-radius:20px;
+        height:auto;
+    }
+    .ultraviolet .ultra-detail-top{
+        background-color:#B2FFE0;
+        padding:24px 23px;
+        margin-bottom:20px;
+    }
+    .ultra-detail-top .ultra-sub-title{
+        font-size:22px;
+        font-weight: 600;
+        margin-bottom:20px;
+    }
+    .ultra-detail-top .ultra-sub-subtitle{
+        font-weight:16px;
+        font-weight: 400;
+    }
+
+    
 }
 
 
@@ -9197,16 +10545,22 @@ span, .weight{
         margin-left:50px;
     }
     .client-bottom{
-        justify-content: space-around;
+        justify-content: flex-start;
         padding-top:30px;
+        flex-wrap:wrap;
+        padding-left:40px;
     }
     .client-bottom p{
         font-size:30px;
-        width:34%;
+        width:51%;
     }
     .client-img{
-        border:10px solid #1B5962;
         margin-top:0%;
+        width:75%;
+        border-radius:20px;
+    }
+    .client-img .cpf{
+        margin-top:20px;
     }
     .want{
         padding:0 30px;
@@ -9233,6 +10587,714 @@ span, .weight{
         width:80%;
         margin:0 auto;
         margin-bottom:40px;
+    }
+
+    /* PIX */
+
+    .pix .hero-description{
+        top:60%;
+    }
+    .pix .hero-text-left .text{
+        font-size:25px;
+        width:80%;
+        color:black;
+    }
+    .pix .cpf input{
+        border-bottom:1px solid black;
+        padding:12px;
+        width:100%;
+    }
+    .pix .hero-text-right{
+        width:100%;
+    }
+    .pix .cpf{
+        padding-top:114px;
+        padding-bottom:37px;
+        border-radius:8px;
+    }
+    .pix .mastercard{
+        padding: - 0px;
+    }
+    .pix .mastercard .ms-subtitle{
+        font-size:25px;
+        padding-right:10px;
+        margin-bottom:40px;
+    }
+    .pix .mastercard button{
+        margin-bottom:40px;
+    }
+    .pix-card .cont{
+        padding:25px;
+    }
+    .pix-card-bottom{
+        background:#C6F8E380;
+        padding:40px 40px;
+        padding-right:40px;
+    }
+    .pix-detail p:first-of-type{
+        font-size:35px;
+    }
+    .pix-detail p:first-of-type{
+        font-size:24px;
+    }
+    .pix-detail{
+        width:100%;
+    }
+    .pixes{
+        flex-wrap:wrap;
+        gap:100px 0;
+    }
+    .pix-b{
+        margin-top:80px;
+    }
+    .pixes .pix-right{
+        padding-left:0px;
+    }
+    .keys{
+        margin-top:67px;
+    }
+    .keys-inner{
+        flex-wrap:wrap;
+    }
+    .keys-inner-img{
+        width:100%;
+    }
+    .keys-inner-img img{
+        width:100%;
+    }
+    .keys-right{
+        width:100%;
+        padding-left:0px;
+        padding-top:43px;
+        padding-bottom:49px;
+        padding-right:0px;
+    }
+    .keys-right .title{
+        font-size:48px;
+    }
+    .keys-right .sub{
+        font-size:25px;
+        margin-top:30px;
+        margin-bottom:16px;
+    }
+    .keys-right .sub-1{
+        font-size:27px;
+        margin-bottom:30px;
+    }
+    .key-register .register-text{
+        font-size:21px;
+    }
+    .key-register .key-1{
+        width:100%;
+        justify-content:space-around;
+        gap:24px 0;
+    }
+    .key-register .key-1 p{
+        width:50%;
+    }
+    .key-register .key-last{
+        margin-top:24px;
+    }
+    .pix-master .mastercard-right .typewriter {
+        font-size: 50px;
+    }
+    .pix-master .ms-subtitle{
+        font-size:30px;
+    }
+    .pix-master .ms-sub{
+        margin-bottom:40px;
+    }
+    .pix-master button{
+        font-size:16px;
+    }
+    .pix-master{
+        padding-bottom:90px;
+    }
+    .weight-600{
+        font-weight:600;
+    }
+    .all-about .ms-sub{
+        font-size:16px;
+    }
+    .all-about .mastercard-right{
+        padding-right:40px;
+    }
+    .pix-master .mastercard-right{
+        margin-left:30px;
+    }
+    .pix-master .cont{
+        padding:0 30px;
+    }
+    .pix .questions{
+        margin:0 auto;
+    }
+
+    /* Personal Loans*/
+
+    .personal-loan .hero-description{
+        top:50%;
+        left:70px;
+    }
+    .personal-loan .hero-section-text{
+        flex-direction:column;
+        justify-content:flex-start;
+        align-items:flex-start;
+        gap:25px;
+    }
+    .personal-loan .hero-section-text .typewriter{
+        font-size:40px;
+        width:90%;
+    }
+    .personal-loan .hero-section-text .subtitle{
+        font-size:24px;
+        width:90%;
+    }
+    .personal-loan .hero-text-right p:first-of-type{
+        margin-bottom:17px;
+    }
+    .personal-loan p:first-of-type{
+        font-size:17px;
+        margin-top:15px;
+        font-weight:800;
+    }
+    .personal-loan p:last-of-type{
+        font-size:16px;
+        font-weight:500;
+    }
+    .choose .cho{
+        margin-top:30px;
+    }
+    .personal-loan-link{
+        border:1px solid #fff;
+        margin:20px 0;
+        padding:8px;
+        border-radius:8px;
+        display: flex;
+        justify-content: space-around;
+        align-items:center;
+        margin-bottom:40px;
+    }
+    .personal-loan-link p,
+    .personal-loan-link i{
+        color:#fff;
+        font-size:15px;
+    }
+    .personal-loan-link i{
+        margin-right:0;
+    }
+    .personal-loans-questions-title{
+        font-size:20px;
+        margin-bottom:30px;
+    }
+    .personal-loans-questions-outer{
+        border-radius:20px;
+        padding:25px 30px;
+    }
+    .ques-img img{
+        width:100%;
+    }
+    .que{
+        align-items:flex-end;
+        flex-wrap:wrap;
+        gap:40px;
+    }
+    .que .col-6{
+        width:100%;
+    }
+    .que .personal-loans-questions-outer{
+        width:100%;
+    }
+    
+    .msr{
+        margin-left:30px;
+    }
+    .surprise{
+        margin:70px 0;
+    }
+    .surprise-title p:first-of-type{
+        font-size:45px;
+        padding-left:20px;
+        margin-bottom:30px;
+    }
+    .surprise-title p:last-of-type{
+        font-size:16px;
+        padding-left:20px;
+    }
+    .surprise-bottom{
+        margin-top:45px;
+        gap:19px;
+    }
+    .surprise-card{
+        padding:20px;
+        padding-bottom:50px;
+        width:100%;
+        border-radius: 20px;
+    }
+    .surprise-card .surprise-img{
+        border-radius:50%;
+    }
+    .surprise-card .surprise-img img{
+        width:100%;
+    }
+    .surprise-card .surprise-text p:first-of-type{
+        font-size:22px;
+        font-weight:800;
+        margin-bottom:24px;
+        text-align:center;
+        color:#fff;
+    }
+    .surprise-card .surprise-text p:last-of-type{
+        font-size:18px;
+        text-align:left;
+        color:#fff;
+    }
+
+    
+    /* mobile insurance */
+
+    .ins .hero-description{
+        top:45%;
+    }
+    .ins .hero-section-text{
+        background-color:#1B5962B2;
+        border-radius:20px;
+        width:100%;
+        padding:30px;
+    }
+    .ins .hero-section-text p:first-of-type{
+        font-size:40px;
+        padding-left:0px;
+    }
+    .ins .hero-section-text .sub{
+        font-size:20px;
+        padding-left:0px;
+    }
+    .ins .hero-section-text .sub-sub{
+        font-size:16px;
+        padding-left:0px;
+        margin-top:15px;
+    }
+    .mas-rev .mastercard-right{
+        padding-left:60px;
+    }
+    .ins .mastercard .mas-right{
+        padding-right:0px;
+    }
+    .stress-title{
+        text-align:left;
+        font-size:40px;
+        font-weight: 800;
+        color:#fff;
+        padding-left:50px;
+    }
+    .stress-single p:first-of-type{
+        font-size:30px;
+        font-weight:800;
+        text-decoration: underline;
+        margin-bottom:15px;
+        color:#fff;
+    }
+    .stress-single p:last-of-type{
+        font-size:16px;
+        margin-bottom:15px;
+        color:#fff;
+    }
+    .stress-single{
+        border-radius:20px;
+        background: #B4F6DB66;
+        width:70%;
+        padding:20px 35px;
+        margin-top:50px;
+    }
+    .stress{
+        justify-content: flex-start;
+        margin-top:0px;
+        padding-left:50px;
+    }
+    .st-b{
+        margin-top:56px;
+        margin-bottom:50px;
+    }
+    .stress-outer{
+        padding-top:56px;
+    }
+    .stress-subtitle{
+        font-size:20px;
+        font-weight:600;
+        margin-bottom:95px;
+        color:#fff;
+        text-align:left;
+        margin-top:20px;
+        padding-left:50px;
+    }
+    .watch{
+        padding-bottom:90px;
+        padding-top:50px;
+    }
+    .copy p{
+        font-size:20px;
+        font-weight: 600;
+        font-family: "Noto Sans";
+    }
+    .copy{
+        padding:70px 85px;
+    }
+    .waitlist-bottom{
+        flex-wrap:wrap;
+    }
+    .waitlist-bottom img{
+        width:100%;
+    }
+    .waitlist-bottom .hero-text-right{
+        width:100%;
+    }
+    .waitlist-bottom .hero-text-right {
+        width: 100%;
+    }
+
+
+
+    /* child account */
+
+    .child .mastercard{
+        justify-content: unset;
+    }
+    .child .mastercard .mastercard-img > img{
+        width:50%;
+        height:unset;
+    }
+    .child .mastercard .mastercard-img{
+        align-items:center;
+        justify-content:center;
+    }
+    .keen .keen-text p:first-of-type{
+        font-size:35px;
+        color:#1B5962;
+    }
+    .keen .keen-text p:last-of-type{
+        font-size:20px;
+        font-weight:600;
+        color:#1B5962;
+        margin-bottom:30px;
+    }
+    .keen-img img{
+        width:100%;
+    }
+    .keen{
+        position:relative;
+    }
+    .keen-text{
+        position:absolute;
+        top:20%;
+        right:10%;
+    }
+    .revolut{
+        margin:80px 0;
+    }
+    .revolut .title{
+        font-size:35px;
+        color:#1B5962;
+        font-weight: 800;
+        text-align: center;
+    }
+    .revolut .subtitle{
+        font-size:30px;
+        color:#1B5962;
+        font-weight:600;
+        text-align: center;
+    }
+    .revolut button{
+        margin:30px auto;
+    }
+    .revolut-cards{
+        flex-wrap: wrap;
+        gap:30px;
+    }
+    .revolut-cards .col-4{
+        width:100%;
+        padding:0;
+    }
+    .revolut-card{
+        border:1px solid #1B5962;
+        padding:50px 35px;
+        border-radius:20px;
+        text-align:center;
+    }
+    .revolut-card p:first-of-type{
+        font-size:30px;
+        font-weight: 800;
+    }
+    .revolut-card p:last-of-type{
+        font-size:18px;
+    }
+    .revolut-card img{
+        width:100%;
+    }
+    .revolut .revolut-last{
+        font-size:20px;
+        font-weight:600;
+        margin-top:32px;
+        text-align:center;
+    }
+    .r-card-1 img{
+        margin-bottom:50px;
+    }
+    .r-card-3 img{
+        margin-bottom:0px;
+    }
+    .r-card-2 img{
+        margin-bottom:10px;
+    }
+    .child-account .choose-top{
+        font-size:28px;
+        margin-bottom:40px;
+    }
+    .child-account .choose-title{
+        font-size:45px;
+        margin-bottom:85px;
+    }
+    .child-account .choose-subtitle{
+        font-size:20px;
+        font-weight:600;
+    }
+    .child-account .swipper-card{
+        padding-bottom:53px;
+    }
+    .what p:first-of-type{
+        font-size:25px;
+        font-weight: 800;
+        margin-bottom:20px;
+        text-align: center;
+    }
+    .what p:last-of-type{
+        font-size:40px;
+        font-weight: 800;
+        margin-bottom:20px;
+        text-align: center;
+    }
+    .what button{
+        margin:0 auto;
+    }
+    .rev-top, .what{
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        flex-direction:column;
+    }
+    .what{
+        margin:60px 0;
+    }
+
+
+
+    /* Credit card for You */
+
+    .credit-for-you .hero-description{
+        right:67px;
+        top:35%;
+    }
+    .credit-for-you .hero-description .title{
+        font-size:38px;
+    }
+    .credit-for-you .hero-description .subtitle{
+        font-size:21px;
+        margin-top:32px;
+        padding-left:17px;
+    }
+    .credit-for-you .hero-section-text{
+        justify-content: flex-end;
+        flex-direction:column;
+        align-items:flex-end;
+    }
+    .live-this p{
+        font-size:25px;
+        width:100%;
+    }
+    .live-this .hero-bottom{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content: flex-start;
+        align-items: center;
+        padding:50px;
+        gap:40px;
+    }
+    .live-this{
+        padding:0px;
+    }
+    .live-this input{
+        border:none;
+        outline:none;
+        background-color: transparent;
+    }
+    .live-this .input{
+        border-bottom:1px solid black;
+        padding:10px 15px;
+    }
+    .c-card .swipper-card p:first-of-type{
+        font-size:20px;
+        text-align:center;
+        margin-bottom:30px;
+    }
+    .c-card .swipper-card{
+        padding-left:70px;
+        padding-right:70px;
+    }
+    .c-card .swipper-card p:last-of-type{
+        font-size:16px;
+        text-align:center;
+    }
+    .c-card .swipper-card .img-div{
+        margin:0 auto;
+        margin-bottom:25px;
+        border-radius: 50%;
+        padding:10px 8px;
+        width:fit-content;
+        height:fit-content;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .c-card .swipper-card .img-div i {
+        font-size:35px;
+    }
+    .c-card .swipper-1 .img-div{
+        background:crimson;
+    }
+    .c-card .swipper-1 {
+        padding-bottom:10px;
+    }
+    .c-card .swipper-2{
+        padding-bottom:15px;
+    }
+    .c-card .card-2 .img-div{
+        background:#89CFF0;
+    }
+    .c-card .card-3 .img-div{
+        background:#00D47E;
+    }
+    .vid img{
+        width:100%;
+    }
+    .vid{
+        position:relative;
+        border-radius:20px;
+    }
+    .vid img{
+        width:100%;
+        border-radius:20px;
+    }
+    .vid .vid-text{
+        position:absolute;
+        bottom:10%;
+        left:10%;
+    }
+    .vid .vid-text p{
+        font-size:23px;
+        font-weight: 700;
+        color:#fff;
+    }
+    .vid .vid-button{
+        position:absolute;
+        top:50%;
+        left:50%;
+    }
+    .vid .vid-button{
+        background-color: #1B5962;
+        box-shadow: 0px 0px 0px 1px #E8F0FF;
+        border:5px solid #E8F0FF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        padding:15px;
+    }
+    .vid .vid-button i{
+        font-size:30px;
+        color:#fff;
+    }
+    .vid .vid-top{
+        justify-content: space-around;
+        align-items: center;
+    }
+    .vid-bottom{
+        margin-top:53px;
+    }
+    .ultra{
+        flex-wrap:wrap;
+    }
+    .ultra-left,
+    .ultra-right{
+        width:100%;
+        margin:20px 0;
+    }
+    .ultraviolet{
+        margin:100px 0;
+    }
+    .ultraviolet .ultra-top p{
+        font-size:18px;
+        font-weight:800;
+    }
+    .ultraviolet .ultra-top{
+        border:2px solid #00D47E;
+        margin-bottom:18px;
+        width:fit-content;
+        padding:8px;    
+    }
+    .ultraviolet .ultra-title{
+        font-size:30px;
+        font-weight:800;
+        color:#1B5962;
+        margin-bottom:40px;
+    }
+    .color-ultra .ultra-title{
+        font-size:30px;
+        font-weight:800;
+        color:#fff;
+        margin-bottom:40px;
+    }
+    .ultraviolet .ultra-subtitle{
+        color:#000;
+        margin-bottom:30px;
+    }
+    .color-ultra .ultra-subtitle{
+        color:#fff;
+        margin-bottom:30px;
+    }
+    .ultraviolet .ultra-detail{
+        border:1px solid #1B5962;
+        padding:24px 23px;
+        margin-bottom:20px;
+    }
+    .color-ultra .ultraviolet .ultra-detail{
+        background-color: #ffff;
+        padding:24px 23px;
+        margin-bottom:20px;
+    }
+    .ultraviolet .ultra-detail p{
+        font-size:16px;
+        font-weight:600;
+    }
+    .ultraviolet .ultra-right img{
+        width:100%;
+        border-radius: 20px;
+    }
+    .ultraviolet .ultra-right{
+        border-radius:20px;
+        height:auto;
+    }
+    .ultraviolet .ultra-detail-top{
+        background-color:#B2FFE0;
+        padding:24px 23px;
+        margin-bottom:20px;
+    }
+    .ultra-detail-top .ultra-sub-title{
+        font-size:22px;
+        font-weight: 600;
+        margin-bottom:20px;
+    }
+    .ultra-detail-top .ultra-sub-subtitle{
+        font-weight:16px;
+        font-weight: 400;
     }
 
 }
@@ -11900,15 +13962,17 @@ span, .weight{
         justify-content: space-around;
         padding-top:30px;
         gap:30px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
     .client-bottom p{
         font-size:30px;
         width:100%;
-        padding-left:50px;
+        padding-left:10px;
     }
     .client-img{
-        border:10px solid #1B5962;
-        margin-top:0%;
+        border:none;
+        width:100%;
     }
     .want{
         padding:0 30px;
@@ -11936,6 +14000,622 @@ span, .weight{
         width:100%;
         margin:0 auto;
         margin-bottom:40px;
+    }
+    .wan-2 a{
+        padding-left:50px;
+    }
+
+
+
+    /* PIX */
+
+    .pix .hero-description{
+        top:55%;
+        left:2%;
+    }
+    .pix .hero-text-left .text{
+        font-size:21px;
+        width:90%;
+    }
+    .pix .mastercard{
+        padding: - 0px;
+    }
+    .pix .mastercard .ms-subtitle{
+        font-size:18px;
+        padding-right:10px;
+        margin-bottom:40px;
+    }
+    .pix .mastercard button{
+        margin-bottom:40px;
+    }
+    .pix-card .cont{
+        padding:25px 0px;
+    }
+    .pix-card-bottom{
+        background:#C6F8E380;
+        padding:40px 40px;
+        padding-right:40px;
+    }
+    .pix-detail p:first-of-type{
+        font-size:35px;
+    }
+    .pix-detail p:first-of-type{
+        font-size:24px;
+    }
+    .pix-detail{
+        width:100%;
+    }
+    .pixes{
+        flex-wrap:wrap;
+        gap:100px 0;
+    }
+    .pix-b{
+        margin-top:50px;
+    }
+    .pixes .pix-right{
+        padding-left:0px;
+    }
+    .keys{
+        margin-top:67px;
+    }
+    .keys-inner{
+        flex-wrap:wrap;
+    }
+    .keys-right{
+        width:100%;
+        padding-top:43px;
+        padding-bottom:49px;
+    }
+    .keys-right .title{
+        font-size:33px;
+    }
+    .keys-right .sub{
+        font-size:21px;
+        margin-top:30px;
+        margin-bottom:16px;
+    }
+    .keys-right .sub-1{
+        font-size:23px;
+        margin-bottom:30px;
+    }
+    .key-register .register-text{
+        font-size:21px;
+    }
+    .key-register .key-1{
+        width:100%;
+        justify-content:space-around;
+        gap:24px 0;
+    }
+    .key-register .key-1 p{
+        width:50%;
+    }
+    .key-register .key-last{
+        margin-top:24px;
+    }
+    .pix-master .mastercard-right .typewriter {
+        font-size: 38px;
+    }
+    .pix-master .ms-subtitle{
+        font-size:24px;
+    }
+    .pix-master .ms-sub{
+        margin-bottom:40px;
+    }
+    .pix-master button{
+        font-size:16px;
+    }
+    .pix-master{
+        padding-bottom:10px;
+    }
+    .weight-600{
+        font-weight:600;
+    }
+    .all-about .ms-sub{
+        font-size:16px;
+    }
+    .all-about .mastercard-right{
+        padding-right:40px;
+    }
+    .pix-master .mastercard-right{
+        margin-left:30px;
+    }
+    .pix-master .cont{
+        padding:0 0px;
+    }
+    .pix .questions{
+        margin:0 auto;
+    }
+
+
+    /* Personal Loans*/
+
+    .personal-loan .hero-description{
+        top:45%;
+        left:40px;
+    }
+    .personal-loan .hero-section-text{
+        justify-content:flex-start;
+        align-items:flex-start;
+        gap:25px;
+    }
+    .personal-loan .hero-section-text .typewriter{
+        font-size:36px;
+        width:90%;
+    }
+    .personal-loan .hero-section-text .subtitle{
+        font-size:21px;
+        width:90%;
+    }
+    .personal-loan .hero-text-right p:first-of-type{
+        margin-bottom:17px;
+    }
+    .personal-loan p:first-of-type{
+        font-size:17px;
+        margin-top:15px;
+        font-weight:800;
+    }
+    .personal-loan p:last-of-type{
+        font-size:16px;
+        font-weight:500;
+    }
+    .choose .cho{
+        margin-top:30px;
+    }
+    .personal-loan-link{
+        border:1px solid #fff;
+        margin:20px 0;
+        padding:8px;
+        border-radius:8px;
+        display: flex;
+        justify-content: space-around;
+        align-items:center;
+        margin-bottom:40px;
+    }
+    .personal-loan-link p,
+    .personal-loan-link i{
+        color:#fff;
+        font-size:15px;
+    }
+    .personal-loan-link i{
+        margin-right:0;
+    }
+    .personal-loans-questions-title{
+        font-size:20px;
+        margin-bottom:30px;
+    }
+    .personal-loans-questions-outer{
+        border-radius:20px;
+        padding:25px 30px;
+    }
+    .ques-img img{
+        width:100%;
+    }
+    .que{
+        align-items:flex-end;
+        flex-wrap:wrap;
+        gap:40px;
+    }
+    .que .col-6{
+        width:100%;
+        padding: 0px;
+    }
+    .que .personal-loans-questions-outer{
+        width:100%;
+    }
+    .msr{
+        margin-left:30px;
+    }
+    .surprise{
+        margin:50px 0;
+    }
+    .surprise-title p:first-of-type{
+        font-size:38px;
+        padding-left:20px;
+        margin-bottom:30px;
+    }
+    .surprise-title p:last-of-type{
+        font-size:16px;
+        padding-left:20px;
+    }
+    .surprise-bottom{
+        margin-top:45px;
+    }
+    .surprise-card{
+        padding:20px;
+        padding-bottom:50px;
+        width:100%;
+    }
+    .surprise-card .surprise-img{
+        border-radius:50%;
+    }
+    .surprise-card .surprise-img img{
+        width:100%;
+    }
+    .surprise-card .surprise-text p:first-of-type{
+        font-size:20px;
+        margin-bottom:24px;
+        text-align:center;
+    }
+    .surprise-card .surprise-text p:last-of-type{
+        font-size:16px;
+        text-align:left;
+        color:#fff;
+    }
+
+
+    /* Personal Loans*/
+
+    .personal-loan .hero-description{
+        top:45%;
+        left:40px;
+    }
+    .personal-loan .hero-section-text{
+        justify-content:flex-start;
+        align-items:flex-start;
+        gap:25px;
+    }
+    .personal-loan .hero-section-text .typewriter{
+        font-size:36px;
+        width:90%;
+    }
+    .personal-loan .hero-section-text .subtitle{
+        font-size:21px;
+        width:90%;
+    }
+    .personal-loan .hero-text-right p:first-of-type{
+        margin-bottom:17px;
+    }
+    .personal-loan p:first-of-type{
+        font-size:17px;
+        margin-top:15px;
+        font-weight:800;
+    }
+    .personal-loan p:last-of-type{
+        font-size:16px;
+        font-weight:500;
+    }
+    .choose .cho{
+        margin-top:30px;
+    }
+    .personal-loan-link{
+        border:1px solid #fff;
+        margin:20px 0;
+        padding:8px;
+        border-radius:8px;
+        display: flex;
+        justify-content: space-around;
+        align-items:center;
+        margin-bottom:40px;
+    }
+    .personal-loan-link p,
+    .personal-loan-link i{
+        color:#fff;
+        font-size:15px;
+    }
+    .personal-loan-link i{
+        margin-right:0;
+    }
+    .personal-loans-questions-title{
+        font-size:20px;
+        margin-bottom:30px;
+    }
+    .personal-loans-questions-outer{
+        border-radius:20px;
+        padding:25px 30px;
+    }
+    .ques-img img{
+        width:100%;
+    }
+    .que{
+        align-items:flex-end;
+        flex-wrap:wrap;
+        gap:40px;
+    }
+    .que .col-6{
+        width:100%;
+        padding: 0px;
+    }
+    .que .personal-loans-questions-outer{
+        width:100%;
+    }
+    .msr{
+        margin-left:30px;
+    }
+    .surprise{
+        margin:50px 0;
+    }
+    .surprise-title p:first-of-type{
+        font-size:38px;
+        padding-left:20px;
+        margin-bottom:30px;
+    }
+    .surprise-title p:last-of-type{
+        font-size:16px;
+        padding-left:20px;
+    }
+    .surprise-bottom{
+        margin-top:45px;
+    }
+    .surprise-card{
+        padding:20px;
+        padding-bottom:50px;
+        width:100%;
+    }
+    .surprise-card .surprise-img{
+        border-radius:50%;
+    }
+    .surprise-card .surprise-img img{
+        width:100%;
+    }
+    .surprise-card .surprise-text p:first-of-type{
+        font-size:20px;
+        margin-bottom:24px;
+        text-align:center;
+    }
+    .surprise-card .surprise-text p:last-of-type{
+        font-size:16px;
+        text-align:left;
+        color:#fff;
+    }
+
+
+
+    /* mobile insurance */
+
+    .ins .hero-description{
+        top:55%;
+        left:0;
+        margin-left:10px;
+    }
+    .ins .hero-section-text{
+        background-color:#1B5962B2;
+        border-radius:20px;
+        width:100%;
+        
+        padding:30px;
+    }
+    .ins .hero-section-text p:first-of-type{
+        font-size:30px;
+        padding-left:0px;
+    }
+    .ins .hero-section-text .sub{
+        font-size:18px;
+        padding-left:0px;
+    }
+    .ins .hero-section-text .sub-sub{
+        font-size:16px;
+        padding-left:0px;
+        margin-top:15px;
+    }
+    .mas-rev .mastercard-right{
+        padding-left:15px;
+    }
+    .stress-title{
+        text-align:left;
+        font-size:40px;
+        font-weight: 800;
+        color:#fff;
+        padding-left:15px;
+    }
+    .stress-single p:first-of-type{
+        font-size:30px;
+        font-weight:800;
+        text-decoration: underline;
+        margin-bottom:15px;
+        color:#fff;
+    }
+    .stress-single p:last-of-type{
+        font-size:16px;
+        margin-bottom:15px;
+        color:#fff;
+    }
+    .stress-single{
+        border-radius:20px;
+        background: #B4F6DB66;
+        width:100%;
+        padding:20px 35px;
+        margin-top:50px;
+    }
+    .stress{
+        justify-content: flex-start;
+        margin-top:0px;
+        padding-left:20px;
+    }
+    .st-b{
+        margin-top:56px;
+        margin-bottom:50px;
+    }
+    .stress-outer{
+        padding-top:56px;
+    }
+    .stress-subtitle{
+        font-size:20px;
+        font-weight:600;
+        margin-bottom:40px;
+        color:#fff;
+        text-align:left;
+        margin-top:20px;
+        padding-left:15px;
+    }
+    .watch{
+        padding-bottom:90px;
+        padding-top:50px;
+    }
+    .copy p{
+        font-size:20px;
+        font-weight: 600;
+        font-family: "Noto Sans";
+    }
+    .copy{
+        padding:30px;
+    }
+    .waitlist-bottom img{
+        width:100%;
+    }
+    .waitlist-bottom .hero-text-right{
+        width:100%;
+    }
+    .waitlist-bottom .hero-text-right {
+        width: 100%;
+    }
+
+
+
+
+    /* child account */
+
+    
+    .keen .keen-text p:first-of-type{
+        font-size:20px;
+        color:#1B5962;
+    }
+    .keen .keen-text p:last-of-type{
+        font-size:14px;
+        font-weight:600;
+        color:#1B5962;
+        margin-bottom:30px;
+    }
+    .keen-text{
+        width:40%;
+    }
+    .keen button{
+        width:100%;
+        font-size:12px;
+    }
+    .keen-img img{
+        width:100%;
+    }
+    .keen{
+        position:relative;
+    }
+    .keen-text{
+        position:absolute;
+        top:20%;
+        right:10%;
+    }
+    .revolut{
+        margin:80px 0;
+    }
+    .rev-top{
+        width:100%;
+    }
+    .revolut .title{
+        font-size:35px;
+        color:#1B5962;
+        font-weight: 800;
+        text-align: left;
+    }
+    .revolut .subtitle{
+        font-size:30px;
+        color:#1B5962;
+        font-weight:600;
+        text-align: left;
+    }
+    .revolut button{
+        margin:30px 0;
+        width:fit-content;
+    }
+    .revolut-cards{
+        flex-wrap: wrap;
+    }
+    .revolut-cards .col-4{
+        width:100%;
+        padding:0;
+    }
+    .revolut-card{
+        border:1px solid #1B5962;
+        padding:50px 35px;
+        border-radius:20px;
+        text-align:center;
+    }
+    .revolut-card p:first-of-type{
+        font-size:25px;
+    }
+    .revolut-card p:last-of-type{
+        font-size:18px;
+    }
+    .revolut-card img{
+        width:100%;
+    }
+    .revolut .revolut-last{
+        font-size:20px;
+        font-weight:600;
+        margin-top:32px;
+        text-align:left;
+    }
+    .r-card-1 img{
+        margin-bottom:50px;
+    }
+    .r-card-3 img{
+        margin-bottom:0px;
+    }
+    .r-card-2 img{
+        margin-bottom:10px;
+    }
+    .child-account .choose-top{
+        font-size:28px;
+        margin-bottom:40px;
+    }
+    .child-account .choose-title{
+        font-size:45px;
+        margin-bottom:40px;
+    }
+    .child-account .choose-subtitle{
+        font-size:20px;
+        font-weight:600;
+    }
+    .child-account .swipper-card{
+        padding-bottom:53px;
+    }
+    .what p:first-of-type{
+        font-size:25px;
+        font-weight: 800;
+        margin-bottom:20px;
+        text-align: left;
+    }
+    .what p:last-of-type{
+        font-size:40px;
+        font-weight: 800;
+        margin-bottom:20px;
+        text-align: left;
+    }
+    .what button{
+        margin:0 auto;
+    }
+    .rev-top, .what{
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        flex-direction:column;
+    }
+    .what{
+        margin:60px 0;
+    }
+
+    /* credit card for you */
+
+
+
+    .hero-bottom .input{
+        width:60%;
+    }
+    .credit-for-you .hero-section-text {
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: flex-start;
+        width:100%;
+    }
+    .credit-for-you .hero-section-text p:first-of-type {
+        width:95%;
+    }
+    .credit-for-you .hero-description .title {
+        font-size: 28px;
+        margin-left:0px;
+    }
+    .credit-for-you .hero-description{
+        left:0;
+        right:unset;
+        top:50%;
     }
 }
 
@@ -13881,7 +16561,269 @@ span, .weight{
         margin:0 auto;
         margin-bottom:40px;
     }
+    .bus-ac .question p{
+        width:90%;
+    }
+
+
     
+    /* PIX */
+
+    .pix .hero-description{
+        top:55%;
+        left:2%;
+    }
+    .pix .hero-text-left .text{
+        font-size:20px;
+        width:95%;
+    }
+    .pix .mastercard{
+        padding: - 0px;
+    }
+    .pix .mastercard .ms-subtitle{
+        font-size:16px;
+        padding-right:10px;
+        margin-bottom:40px;
+    }
+    .pix .mastercard button{
+        margin-bottom:40px;
+    }
+    .pix-card .cont{
+        padding:25px 0px;
+    }
+    .pix-card-bottom{
+        background:#C6F8E380;
+        padding:40px 40px;
+        padding-right:40px;
+    }
+    .pix-detail p:first-of-type{
+        font-size:30px;
+    }
+    .pix-detail p:first-of-type{
+        font-size:24px;
+    }
+    .pix-detail{
+        width:100%;
+    }
+    .pixes{
+        flex-wrap:wrap;
+        gap:100px 0;
+    }
+    .pix-b{
+        margin-top:50px;
+    }
+    .pixes .pix-right{
+        padding-left:0px;
+    }
+    .keys{
+        margin-top:67px;
+    }
+    .keys-inner{
+        flex-wrap:wrap;
+    }
+    .keys-right{
+        width:100%;
+        padding-top:43px;
+        padding-bottom:49px;
+    }
+    .keys-right .title{
+        font-size:30px;
+    }
+    .keys-right .sub{
+        font-size:21px;
+        margin-top:30px;
+        margin-bottom:16px;
+    }
+    .keys-right .sub-1{
+        font-size:23px;
+        margin-bottom:30px;
+    }
+    .key-register .register-text{
+        font-size:21px;
+    }
+    .key-register .key-1{
+        width:100%;
+        justify-content:space-around;
+        gap:24px 0;
+    }
+    .key-register .key-1 p{
+        width:50%;
+    }
+    .key-register .key-last{
+        margin-top:24px;
+    }
+    .pix-master .mastercard-right .typewriter {
+        font-size: 30px;
+    }
+    .pix-master .ms-subtitle{
+        font-size:24px;
+    }
+    .pix-master .ms-sub{
+        margin-bottom:40px;
+    }
+    .pix-master button{
+        font-size:16px;
+    }
+    .pix-master{
+        padding-bottom:10px;
+    }
+    .weight-600{
+        font-weight:600;
+    }
+    .all-about .ms-sub{
+        font-size:16px;
+    }
+    .all-about .mastercard-right{
+        padding-right:40px;
+    }
+    .pix-master .mastercard-right{
+        margin-left:30px;
+    }
+    .pix-master .cont{
+        padding:0 0px;
+    }
+    .pix .questions{
+        margin:0 auto;
+    }
+
+
+
+    /* Personal Loans*/
+
+    .personal-loan .hero-description{
+        top:48%;
+        left:40px;
+    }
+    .personal-loan .hero-section-text .typewriter{
+        font-size:30px;
+        width:90%;
+    }
+    .personal-loan .hero-section-text .subtitle{
+        font-size:20px;
+        width:90%;
+    }
+    .personal-loan .hero-text-right p:first-of-type{
+        margin-bottom:17px;
+    }
+    .personal-loan p:first-of-type{
+        font-size:17px;
+        margin-top:15px;
+        font-weight:800;
+    }
+    .personal-loan p:last-of-type{
+        font-size:16px;
+        font-weight:500;
+    }
+    .surprise-title p:first-of-type{
+        font-size:32px;
+        padding-left:20px;
+        margin-bottom:30px;
+    }
+    .surprise-title p:last-of-type{
+        font-size:16px;
+        padding-left:20px;
+    }
+    .surprise-card .surprise-text p:first-of-type{
+        font-size:20px;
+        margin-bottom:24px;
+        text-align:center;
+    }
+    .surprise-card .surprise-text p:last-of-type{
+        font-size:15px;
+        text-align:left;
+        color:#fff;
+    }
+
+
+
+
+
+
+    /* mobile insurance */
+
+    .stress{
+        padding-left:0px;
+    }
+    .stress-title{
+        padding-left:0px;
+    }
+    .stress-subtitle{
+        padding-left:0px;
+    }
+    .waitlist-bottom     .hero-text-right {
+        margin-right: 0px;
+    }
+    .copy{
+        padding:20px 15px;
+    }
+
+        /* Child account  */
+    
+    .revolut-card p:first-of-type{
+        font-size:25px;
+    }
+    .revolut-card p:last-of-type{
+        font-size:18px;
+    }
+    .revolut-card img{
+        width:100%;
+    }
+    .revolut .revolut-last{
+        font-size:20px;
+        font-weight:600;
+        margin-top:32px;
+        text-align:left;
+    }
+    .r-card-1 img{
+        margin-bottom:50px;
+    }
+    .r-card-3 img{
+        margin-bottom:0px;
+    }
+    .r-card-2 img{
+        margin-bottom:10px;
+    }
+    .child-account .choose-top{
+        font-size:28px;
+        margin-bottom:40px;
+    }
+    .child-account .choose-title{
+        font-size:45px;
+        margin-bottom:40px;
+    }
+    .child-account .choose-subtitle{
+        font-size:20px;
+        font-weight:600;
+    }
+    .child-account .swipper-card{
+        padding-bottom:53px;
+    }
+    .what p:first-of-type{
+        font-size:21px;
+        font-weight: 800;
+        margin-bottom:20px;
+        text-align: left;
+    }
+    .what p:last-of-type{
+        font-size:35px;
+        font-weight: 800;
+        margin-bottom:20px;
+        text-align: left;
+    }
+    .what button{
+        margin:0;
+        width:fit-content;
+    }
+    .rev-top, .what{
+        display:flex;
+        align-items:flex-start;
+        justify-content:flex-start;
+        flex-direction:column;
+    }
+    .what{
+        margin:60px 0;
+        padding:0 20px;
+    }
 }
 
 
@@ -16449,6 +19391,276 @@ span, .weight{
         margin:0 auto;
         margin-bottom:40px;
     }
+
+
+
+    /* PIX */
+
+    .pix .hero-description{
+        top:55%;
+        margin-left:10px;
+    }
+    .pix .hero-text-left .text{
+        font-size:20px;
+        width:95%;
+    }
+    .pix .mastercard{
+        padding: - 15px;
+    }
+    .pix .mastercard .ms-subtitle{
+        font-size:16px;
+        padding-right:10px;
+        margin-bottom:25px;
+    }
+    .pix .mastercard button{
+        margin-bottom:25px;
+    }
+    .pix-card .cont{
+        padding:25px 15px;
+    }
+    .pix-card-bottom{
+        background:#C6F8E380;
+        padding:40px 20px;
+        padding-right:20px;
+    }
+    .pix-detail p:first-of-type{
+        font-size:24px;
+    }
+    .pix-detail p:last-of-type{
+        font-size:18px;
+    }
+    .pix-detail{
+        width:100%;
+    }
+    .pixes{
+        flex-wrap:wrap;
+        gap:100px 0;
+    }
+    .pix-b{
+        margin-top:30px;
+    }
+    .pixes .pix-right{
+        padding-left:0px;
+    }
+    .keys{
+        margin-top:67px;
+    }
+    .keys-inner{
+        flex-wrap:wrap;
+    }
+    .keys-right{
+        width:100%;
+        padding-top:43px;
+        padding-bottom:49px;
+    }
+    .keys-right .title{
+        font-size:28px;
+    }
+    .keys-right .sub{
+        font-size:16px;
+        margin-top:30px;
+        margin-bottom:16px;
+    }
+    .keys-right .sub-1{
+        font-size:18px;
+        margin-bottom:30px;
+    }
+    .key-register .register-text{
+        font-size:20px;
+    }
+    .key-register .key-1{
+        width:100%;
+        justify-content:space-around;
+        gap:24px 0;
+    }
+    .key-register .key-1 p{
+        width:50%;
+    }
+    .key-register .key-last{
+        margin-top:24px;
+    }
+    .pix-master .mastercard-right .typewriter {
+        font-size: 30px;
+    }
+    .pix-master .ms-subtitle{
+        font-size:24px;
+    }
+    .pix-master .ms-sub{
+        margin-bottom:40px;
+    }
+    .pix-master button{
+        font-size:16px;
+    }
+    .pix-master{
+        padding-bottom:10px;
+    }
+    .weight-600{
+        font-weight:600;
+    }
+    .all-about .ms-sub{
+        font-size:16px;
+    }
+    .all-about .mastercard-right{
+        padding-right:40px;
+    }
+    .pix-master .mastercard-right{
+        margin-left:15px;
+    }
+    .pix-master .cont{
+        padding:0 0px;
+    }
+    .pix .questions{
+        margin:0 auto;
+    }
+
+
+    /* Personal Loans*/
+
+    .personal-loan .hero-description{
+        top:48%;
+        left:20px;
+    }
+    .personal-loan .hero-section-text .typewriter{
+        font-size:30px;
+        width:90%;
+    }
+    .personal-loan .hero-section-text .subtitle{
+        font-size:20px;
+        width:90%;
+    }
+    .surprise-title p:first-of-type{
+        font-size:28px;
+        padding-left:20px;
+        margin-bottom:30px;
+    }
+    .surprise-title p:last-of-type{
+        font-size:16px;
+        padding-left:20px;
+    }
+    .surprise-card .surprise-text p:first-of-type{
+        font-size:20px;
+        margin-bottom:24px;
+        text-align:center;
+    }
+    .surprise-card .surprise-text p:last-of-type{
+        font-size:14px;
+        text-align:left;
+        color:#fff;
+    }
+
+   
+    /* mobile insurance */
+
+    .ins .hero-section-text {
+        padding: 15px;
+    }
+    .ins .hero-description{
+        left:0;
+    }
+    .ins .hero-section-text p:first-of-type {
+        font-size: 25px;
+        padding-left: 0px;
+    }
+    .ins .hero-section-text .sub{
+        font-size: 18px;
+    }
+    .ins .hero-section-text .sub-sub{
+        font-size: 15px;
+    }
+    .stress{
+        padding-left:0px;
+    }
+    .stress-title{
+        padding-left:0px;
+    }
+    .stress-subtitle{
+        padding-left:0px;
+    }
+    .waitlist-bottom     .hero-text-right {
+        margin-right: 0px;
+    }
+    .copy{
+        padding:20px 15px;
+    }
+
+
+    /* Child account  */
+
+    .chill .hero-description .business-card .typewriter {
+        font-size: 34px;
+    }
+    .keen-text{
+        position:unset;
+        width:100%;
+    }
+    .keen-text button{
+        width:fit-content;
+    }
+    .revolut-card p:first-of-type{
+        font-size:25px;
+    }
+    .revolut-card p:last-of-type{
+        font-size:18px;
+    }
+    .revolut-card img{
+        width:100%;
+    }
+    .revolut .revolut-last{
+        font-size:20px;
+        font-weight:600;
+        margin-top:32px;
+        text-align:left;
+    }
+    .r-card-1 img{
+        margin-bottom:50px;
+    }
+    .r-card-3 img{
+        margin-bottom:0px;
+    }
+    .r-card-2 img{
+        margin-bottom:10px;
+    }
+    .child-account .choose-top{
+        font-size:28px;
+        margin-bottom:40px;
+    }
+    .child-account .choose-title{
+        font-size:45px;
+        margin-bottom:40px;
+    }
+    .child-account .choose-subtitle{
+        font-size:20px;
+        font-weight:600;
+    }
+    .child-account .swipper-card{
+        padding-bottom:53px;
+    }
+    .what p:first-of-type{
+        font-size:21px;
+        font-weight: 800;
+        margin-bottom:20px;
+        text-align: left;
+    }
+    .what p:last-of-type{
+        font-size:35px;
+        font-weight: 800;
+        margin-bottom:20px;
+        text-align: left;
+    }
+    .what button{
+        margin:0;
+        width:fit-content;
+    }
+    .rev-top, .what{
+        display:flex;
+        align-items:flex-start;
+        justify-content:flex-start;
+        flex-direction:column;
+    }
+    .what{
+        margin:60px 0;
+        padding:0 20px;
+    }
 }
 
 
@@ -18513,6 +21725,8 @@ span, .weight{
     }
     .client-bottom{
         justify-content: space-around;
+        padding-left:20px;
+        padding-right:20px;
         padding-top:30px;
         gap:30px;
     }
@@ -18522,9 +21736,15 @@ span, .weight{
         padding-left:30px;
     }
     .client-img{
-        border:10px solid #1B5962;
+        border:none;
         margin-top:0%;
         width:100%;
+        padding:0;
+    }
+    .cpf {
+        padding: 0px 15px;
+        padding-top: 36px;
+        padding-bottom: 31px;
     }
     .client-img img{
         width:100%;
@@ -18556,6 +21776,269 @@ span, .weight{
         width:100%;
         margin:0 auto;
         margin-bottom:40px;
+    }
+    .wan-2 a{
+        padding-left:20px;
+    }
+
+
+    /* PIX */
+
+    .pix .hero-description{
+        top:55%;
+        margin-left:10px;
+    }
+    .pix .hero-text-left .text{
+        font-size:20px;
+        width:95%;
+    }
+    .pix .mastercard{
+        padding: - 15px;
+    }
+    .pix .mastercard .ms-subtitle{
+        font-size:16px;
+        padding-right:10px;
+        margin-bottom:25px;
+    }
+    .pix .mastercard button{
+        margin-bottom:25px;
+    }
+    .pix-card .cont{
+        padding:25px 15px;
+    }
+    .pix-card-bottom{
+        background:#C6F8E380;
+        padding:40px 20px;
+        padding-right:20px;
+    }
+    .pix-detail p:first-of-type{
+        font-size:24px;
+    }
+    .pix-detail p:last-of-type{
+        font-size:18px;
+    }
+    .pix-detail{
+        width:100%;
+    }
+    .pixes{
+        flex-wrap:wrap;
+        gap:100px 0;
+    }
+    .pix-b{
+        margin-top:30px;
+    }
+    .pixes .pix-right{
+        padding-left:0px;
+    }
+    .keys{
+        margin-top:67px;
+    }
+    .keys-inner{
+        flex-wrap:wrap;
+    }
+    .keys-right{
+        width:100%;
+        padding-top:43px;
+        padding-bottom:49px;
+    }
+    .keys-right .title{
+        font-size:28px;
+    }
+    .keys-right .sub{
+        font-size:16px;
+        margin-top:30px;
+        margin-bottom:16px;
+    }
+    .keys-right .sub-1{
+        font-size:18px;
+        margin-bottom:30px;
+    }
+    .key-register .register-text{
+        font-size:20px;
+    }
+
+
+    /* PIX */
+
+    .pix .hero-description{
+        top:50%;
+        margin-left:10px;
+    }
+    .pix .hero-text-left .text{
+        font-size:18px;
+        width:100%;
+    }
+    .pix .mastercard{
+        padding: - 15px;
+    }
+    .pix .mastercard .ms-subtitle{
+        font-size:16px;
+        padding-right:10px;
+        margin-bottom:25px;
+    }
+    .pix .mastercard button{
+        margin-bottom:25px;
+    }
+    .pix-card .cont{
+        padding:25px 15px;
+    }
+    .pix-card-bottom{
+        background:#C6F8E380;
+        padding:40px 20px;
+        padding-right:20px;
+    }
+    .pix-detail p:first-of-type{
+        font-size:22px;
+    }
+    .pix-detail p:last-of-type{
+        font-size:18px;
+    }
+    .pix-detail{
+        width:100%;
+    }
+    .pixes{
+        flex-wrap:wrap;
+        gap:100px 0;
+    }
+    .pix-b{
+        margin-top:30px;
+    }
+    .pixes .pix-right{
+        padding-left:0px;
+    }
+    .keys{
+        margin-top:67px;
+    }
+    .keys-inner{
+        flex-wrap:wrap;
+    }
+    .keys-right{
+        width:100%;
+        padding-top:43px;
+        padding-bottom:49px;
+    }
+    .keys-right .title{
+        font-size:28px;
+    }
+    .keys-right .sub{
+        font-size:16px;
+        margin-top:30px;
+        margin-bottom:16px;
+    }
+    .keys-right .sub-1{
+        font-size:18px;
+        margin-bottom:30px;
+    }
+    .key-register .register-text{
+        font-size:20px;
+    }
+    .key-1{
+        flex-wrap:wrap;
+    }
+    .key-1 p{
+        width:100%;
+    }
+    .key-register .key-1 {
+        width: 100%;
+        justify-content: flex-start;
+        gap: 20px;
+    }
+    
+
+
+    /* Personal Loans*/
+
+    .personal-loan .hero-description{
+        top:50%;
+        left:20px;
+    }
+    .personal-loan .hero-section-text .typewriter{
+        font-size:25px;
+        width:95%;
+    }
+    .personal-loan .hero-section-text .subtitle{
+        font-size:16px;
+        width:95%;
+    }
+    .surprise-title p:first-of-type{
+        font-size:26px;
+        padding-left:20px;
+        margin-bottom:30px;
+    }
+    .surprise-title p:last-of-type{
+        font-size:16px;
+        padding-left:20px;
+    }
+    .surprise-card .surprise-text p:first-of-type{
+        font-size:20px;
+        margin-bottom:24px;
+        text-align:center;
+    }
+    .surprise-card .surprise-text p:last-of-type{
+        font-size:14px;
+        text-align:left;
+        color:#fff;
+    }
+    .mas .col-12{
+        padding:0px;
+    }
+    .personal-loans-questions-title {
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+    .personal-loan-link p{
+        width:95%;
+        font-size:12px;
+    }
+
+
+
+
+    /* mobile insurance */
+
+    .ins .hero-section-text {
+        padding: 15px;
+    }
+    .ins .hero-description{
+        left:0;
+    }
+    .ins .hero-section-text p:first-of-type {
+        font-size: 20px;
+        padding-left: 0px;
+    }
+    .ins .hero-section-text .sub{
+        font-size: 16px;
+    }
+    .ins .hero-section-text .sub-sub{
+        font-size: 14px;
+    }
+    .stress{
+        padding-left:0px;
+        margin-top:50px;
+    }
+    .stress img{
+        width:100%;
+    }
+    .stress-title{
+        padding-left:0px;
+        font-size:30px;
+    }
+    .stress-subtitle{
+        padding-left:0px;
+    }
+    .stress-single p:first-of-type {
+        font-size: 21px;
+    }
+    .waitlist-bottom .hero-text-right {
+        margin-right: 0px;
+        padding:20px 15px;
+    }
+    
+    .copy{
+        padding:20px 15px;
+    }
+    .copy p{
+        font-size:16px;
     }
 }
 

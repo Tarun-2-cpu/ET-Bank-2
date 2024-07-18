@@ -25,23 +25,41 @@
         <nav>
             <div class="nav-top row">
                 <img src="./images/Header-logo.png" alt="Logo">
-
                 <div class="menu row">
                     <i class="ri-menu-line"></i>
                     <div class="nav-link">
-                        <a href="index.html">Home</a>
-                        <a href="digital-account-desktop.html">Digital Account</a>
-                        <a href="business-card-desktop.html">Business card</a>
-                        <a href="card-desktop.html">Credit Card</a>
+                        <button class="nav-button"><a href="index.html">Home</a></button>
+                        <button class="nav-button" onclick="toggleDropdown('personal')">Personal</button>
+                        <button class="nav-button" onclick="toggleDropdown('business')">Business</button>
+                        <button class="nav-button" onclick="toggleDropdown('under')">Under 18</button>
+                        <button class="nav-button" onclick="toggleDropdown('sim')">E-Sim</button>
+                        <button class="nav-button" onclick="toggleDropdown('contact')">Contact us</button>
                     </div>
                 </div>
                 <div class="nav-right">
                     <a class="login" href="https://app.etbank.com/login">Login</a>
-                    <button class="started dark"><a style="color:#1B5962;"
-                            href="https://onboarding.etbank.com/register/">Get started</a></button>
+                    <button class="started dark"><a style="color:#1B5962;" href="https://onboarding.etbank.com/register/">Get started</a></button>
                 </div>
             </div>
         </nav>
+        <div id="personal" class="dropdown-content">
+            <a href="digital-account-desktop.html">Digital Account</a>
+            <a href="card-desktop.html">Credit Card Desktop</a>
+            <a href="future-built-limit.html">Future Built</a>
+            <a href="all-about-pix.html">All about Pix</a>
+            <a href="credit-card-for-you.html">Credit Card For you</a>
+            <a href="mobile-insurance.html">Mobile Insurance</a>
+            <a href="personal-loans.html">Personal Loans</a>
+        </div>
+        <div id="business" class="dropdown-content">
+            <a href="business-account.html">Business Account Desktop</a>
+            <a href="business-card-desktop.html">Business Credit Card</a>
+            <a href="tap-to-pay.html">Tap to Pay</a>
+        </div>
+        <div id="under" class="dropdown-content">
+            <a href="child-account.html">Child Account</a>
+            
+        </div>
     </header>
     <main>
         <section class="hero-section bus-ac row bus-hero-section">
@@ -410,6 +428,76 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const knowMoreButtons = document.querySelectorAll('.starteded');
+            const cardContainer = document.querySelector('.card-container');
+            const menu = document.querySelector('.menu');
+            const navLinks = document.querySelector('.nav-link');
+            const menuIcon = menu.querySelector('i');
+
+            knowMoreButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    cardContainer.style.display = 'block';
+                });
+            });
+
+            const closeButtons = document.querySelectorAll('.close-btn');
+            closeButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    cardContainer.style.display = 'none';
+                });
+            });
+
+            menu.addEventListener('click', function () {
+                navLinks.classList.toggle('show');
+                if (navLinks.classList.contains('show')) {
+                    menuIcon.classList.remove('ri-menu-line');
+                    menuIcon.classList.add('ri-close-line');
+                } else {
+                    menuIcon.classList.remove('ri-close-line');
+                    menuIcon.classList.add('ri-menu-line');
+                }
+            });
+        });
+
+
+
+        function toggleDropdown(dropdownId) {
+            const dropdown = document.getElementById(dropdownId);
+            const isVisible = dropdown.style.display === 'block';
+            hideAllDropdowns();
+            if (!isVisible) {
+                dropdown.style.display = 'block';
+            }
+        }
+
+        function hideAllDropdowns() {
+            const dropdowns = document.querySelectorAll('.dropdown-content');
+            dropdowns.forEach(dropdown => {
+                dropdown.style.display = 'none';
+            });
+        }
+
+        document.addEventListener('click', function (event) {
+            const isClickInside = event.target.closest('nav') || event.target.closest('.dropdown-content');
+            if (!isClickInside) {
+                hideAllDropdowns();
+            }
+        });
+
+        // Hide dropdowns on page load
+        document.addEventListener('DOMContentLoaded', function () {
+            hideAllDropdowns();
+        });
+
+
+
+
+
+
+    </script>
 </body>
 
 </html>

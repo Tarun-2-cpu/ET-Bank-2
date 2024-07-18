@@ -25,23 +25,41 @@
         <nav>
             <div class="nav-top row">
                 <img src="./images/Header-logo.png" alt="Logo">
-
                 <div class="menu row">
                     <i class="ri-menu-line"></i>
                     <div class="nav-link">
-                        <a href="index.html">Home</a>
-                        <a href="digital-account-desktop.html">Digital Account</a>
-                        <a href="business-card-desktop.html">Business card</a>
-                        <a href="card-desktop.html">Credit Card</a>
+                        <button class="nav-button"><a href="index.html">Home</a></button>
+                        <button class="nav-button" onclick="toggleDropdown('personal')">Personal</button>
+                        <button class="nav-button" onclick="toggleDropdown('business')">Business</button>
+                        <button class="nav-button" onclick="toggleDropdown('under')">Under 18</button>
+                        <button class="nav-button" onclick="toggleDropdown('sim')">E-Sim</button>
+                        <button class="nav-button" onclick="toggleDropdown('contact')">Contact us</button>
                     </div>
                 </div>
                 <div class="nav-right">
                     <a class="login" href="https://app.etbank.com/login">Login</a>
-                    <button class="started dark"><a style="color:#1B5962;"
-                            href="https://onboarding.etbank.com/register/">Get started</a></button>
+                    <button class="started dark"><a style="color:#1B5962;" href="https://onboarding.etbank.com/register/">Get started</a></button>
                 </div>
             </div>
         </nav>
+        <div id="personal" class="dropdown-content">
+            <a href="digital-account-desktop.html">Digital Account</a>
+            <a href="card-desktop.html">Credit Card Desktop</a>
+            <a href="future-built-limit.html">Future Built</a>
+            <a href="all-about-pix.html">All about Pix</a>
+            <a href="credit-card-for-you.html">Credit Card For you</a>
+            <a href="mobile-insurance.html">Mobile Insurance</a>
+            <a href="personal-loans.html">Personal Loans</a>
+        </div>
+        <div id="business" class="dropdown-content">
+            <a href="business-account.html">Business Account Desktop</a>
+            <a href="business-card-desktop.html">Business Credit Card</a>
+            <a href="tap-to-pay.html">Tap to Pay</a>
+        </div>
+        <div id="under" class="dropdown-content">
+            <a href="child-account.html">Child Account</a>
+            
+        </div>
     </header>
     <main>
         <section class="hero-section pix">
@@ -169,19 +187,53 @@
         </section>
 
         <section>
-            <div class="col-12 bus-ac pix pix-master">
+            <div class="col-12 bus-ac pix pix-master all-about">
                 <div class="cont">
                     <div class="row mastercard last-2 master-right-2">
                         <div class="mastercard-right col-6">
                             <p class="typewriter primary-color ms-title weight-700">Practicality for you and total control of your PJ account</p>
-                            <p class="dark-text ms-subtitle">Commercial establishments will be able to generate a QR Code through the app to receive payments via Pix. This way, customers can make purchases using just their cell phone, and a store can sell without using a machine. And transfers to legal entities remain completely free on Nubank, this will not change with Pix.</p>
+                            <p class="dark-text weight-600 ms-sub">Commercial establishments will be able to generate a QR Code through the app to receive payments via Pix. This way, customers can make purchases using just their cell phone, and a store can sell without using a machine. And transfers to legal entities remain completely free on Nubank, this will not change with Pix.</p>
                         </div>
 
                         <div class="col-6 mastercard-img radius">
-                            <img class="img-brightness-60" src="images/custom.jpeg" alt="">
+                            <img class="img-brightness-60" src="images/prac.jpeg" alt="">
                         </div>
                     </div>
                 </div>    
+            </div>
+        </section>
+
+        <section>
+            <div class="col-12 pix">
+                <div class="container business">
+                    <div class="questions col-9">
+                        <p class="questions-title weight-700">Common questions</p>
+                        <div class="question-list">
+                            <div class="question row">
+                                <p>What is Pix?</p>
+                                <i class="ri-arrow-down-s-line"></i>
+                            </div>
+                            <div class="question row">
+                                <p>What are Pix keys?</p>
+                                <i class="ri-arrow-down-s-line"></i>
+                            </div>
+                            <div class="question row">
+                                <p>How do I register Pix keys to my Nubank account?</p>
+                                <i class="ri-arrow-down-s-line"></i>
+                            </div>
+                            <div class="question row">
+                                <p>How to make a Pix through Nubank?</p>
+                                <i class="ri-arrow-down-s-line"></i>
+                            </div>
+                            <div class="question row">
+                                <p>Can I register the same keys that I registered with Nubank at another institution?</p>
+                                <i class="ri-arrow-down-s-line"></i>
+                            </div>
+                            <p class="Learn-more">See more answers <i class="ri-arrow-right-line"
+                                style="margin-left:10px;"></i></p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -219,6 +271,75 @@
             </div>
         </div>
     </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const knowMoreButtons = document.querySelectorAll('.starteded');
+            const cardContainer = document.querySelector('.card-container');
+            const menu = document.querySelector('.menu');
+            const navLinks = document.querySelector('.nav-link');
+            const menuIcon = menu.querySelector('i');
+
+            knowMoreButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    cardContainer.style.display = 'block';
+                });
+            });
+
+            const closeButtons = document.querySelectorAll('.close-btn');
+            closeButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    cardContainer.style.display = 'none';
+                });
+            });
+
+            menu.addEventListener('click', function () {
+                navLinks.classList.toggle('show');
+                if (navLinks.classList.contains('show')) {
+                    menuIcon.classList.remove('ri-menu-line');
+                    menuIcon.classList.add('ri-close-line');
+                } else {
+                    menuIcon.classList.remove('ri-close-line');
+                    menuIcon.classList.add('ri-menu-line');
+                }
+            });
+        });
+
+
+
+        function toggleDropdown(dropdownId) {
+            const dropdown = document.getElementById(dropdownId);
+            const isVisible = dropdown.style.display === 'block';
+            hideAllDropdowns();
+            if (!isVisible) {
+                dropdown.style.display = 'block';
+            }
+        }
+
+        function hideAllDropdowns() {
+            const dropdowns = document.querySelectorAll('.dropdown-content');
+            dropdowns.forEach(dropdown => {
+                dropdown.style.display = 'none';
+            });
+        }
+
+        document.addEventListener('click', function (event) {
+            const isClickInside = event.target.closest('nav') || event.target.closest('.dropdown-content');
+            if (!isClickInside) {
+                hideAllDropdowns();
+            }
+        });
+
+        // Hide dropdowns on page load
+        document.addEventListener('DOMContentLoaded', function () {
+            hideAllDropdowns();
+        });
+
+
+
+
+
+
+    </script>
 </body>
 
 </html>

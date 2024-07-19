@@ -3023,7 +3023,7 @@ span, .weight{
 .esim .benefit-swipper .cho-2 .call-detail{
     margin-top:40px;
 }
-.esim .benefit-swipper .choose-subtitle{
+.call .benefit-swipper .choose-subtitle{
     font-family: "Noto Sans";
     font-size: 10px;
     font-weight: 400;
@@ -5692,7 +5692,7 @@ span, .weight{
     .esim .benefit-swipper .cho-2 .call-detail{
         margin-top:38px;
     }
-    .esim .benefit-swipper .choose-subtitle{
+    .call .benefit-swipper .choose-subtitle{
         font-size: 10px;
         text-align: left;
     }
@@ -11748,7 +11748,7 @@ span, .weight{
     .esim .benefit-swipper .cho-2 .call-detail{
         margin-top:38px;
     }
-    .esim .benefit-swipper .choose-subtitle{
+    .call .benefit-swipper .choose-subtitle{
         font-size: 10px;
         text-align: left;
     }
@@ -15259,7 +15259,7 @@ span, .weight{
     .esim .benefit-swipper .cho-2 .call-detail{
         margin-top:38px;
     }
-    .esim .benefit-swipper .choose-subtitle{
+    .call .benefit-swipper .choose-subtitle{
         font-size: 10px;
         text-align: left;
     }

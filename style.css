@@ -193,13 +193,13 @@ nav {
     position: absolute;
     background-color:inherit;
     min-width: 160px;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.658);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.76);
     z-index: 1;
     border-radius: 5px;
     padding: 10px;
     margin-top: 100px;
     width: 97%;
-    background: rgba(11, 22, 13, 0.4);
+    background: rgba(11, 22, 13, 0.644);
     backdrop-filter: blur(10px);
 }
 
@@ -2916,6 +2916,178 @@ span, .weight{
 }
 
 
+/* E sim */
+
+.esim .hero-description{
+    right:10px;
+    left:unset;
+    display: flex;
+    align-items:flex-end;
+    justify-content: flex-end;
+}
+.esim .hero-section-text{
+    background-color:#071C004D;
+    width:45%;
+    margin-right:50px;
+}
+.esim .hero-section-text button{
+    margin-top:20px;
+}
+.image-section{
+    position:relative;
+}
+.image-section img{
+    width:100%;
+}
+.set .set-text p:first-of-type{
+    font-size:55px;
+    font-weight:800;
+    margin-bottom:28px;
+    color:#fff;
+}
+.set .set-text p:last-of-type{
+    font-size:20px;
+    font-weight:700;
+    margin-bottom:28px;
+    color:#fff;
+}
+.set .set-img img{
+    width:100%;
+}
+.set-sec{
+    margin-top:50px;
+}
+.set{
+    padding-top:130px;
+    padding-left:90px;
+    padding-right:45px;
+}
+.image-text{
+    position:absolute;
+    top:73px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width:100%;
+}
+.image-text p:first-of-type{
+    font-size:55px;
+    text-align:center;
+}   
+.image-text p:last-of-type{
+    font-size:20px;
+    text-align:center;
+    margin:22px 0;
+}
+.image-text button{
+    width:14%;
+}
+.esim .benefit-text .sub{
+    font-size:20px;
+    font-weight: 600;
+}
+.esim .benefit-text button{
+    margin:0 auto ;
+}
+.esim .benefit-swipper .icon-div{
+    background:#fff;
+    height:fit-content;
+    width:fit-content;
+    padding:4px 8px;
+    border-radius:50%;
+    font-size:30px;
+}
+.esim .benefit-swipper .icon-text{
+    gap:18px;
+}
+.esim .benefit-swipper .choose-top{
+    font-family: "Noto Sans";
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom:40px;
+}
+.esim .benefit-swipper .choose-mid{
+    font-family: "Noto Sans";
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    color:#fff;
+}
+.esim .benefit-swipper .call-detail{
+    gap:15px;
+    margin-top:18px;
+    margin-bottom:41px;
+    color:#fff;
+}
+.esim .benefit-swipper .cho-2 .call-detail{
+    margin-top:40px;
+}
+.esim .benefit-swipper .choose-subtitle{
+    font-family: "Noto Sans";
+    font-size: 10px;
+    font-weight: 400;
+    text-align: left;
+    color:#fff;
+}
+.esim .benefit-arrow p{
+    font-family: "Noto Sans";
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+}
+.flag img{
+    width:100%;
+    border-radius: 50%;
+    height:215px;
+}
+.flag{
+    border-radius: 50%;
+    width:55%;
+    margin:auto;
+}
+.flags .swipper-card p{
+    font-family: "Noto Sans";
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom:50px;
+    margin-top:20px;
+}
+.flags .swipper-card{
+    padding:30px;
+}
+.flags .swipper-card button{
+    width:40%;
+    margin-left:130px;
+}
+.mid{
+    margin:0 auto;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+}
+.dest .benefit-text button{
+    margin-top:60px;
+    width:14%;
+}
+.dest{
+    padding:0px;
+}
+.dest .benefit-text{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction: column;
+}
+.esim .swipper-card{
+    padding-bottom: 21px;
+    padding-top:19px;
+    padding-left:22px;
+    padding-right:57px;
+}
+
 
 
 @media(max-width:1366px){
@@ -5418,6 +5590,161 @@ span, .weight{
     .ultra-detail-top .ultra-sub-subtitle{
         font-weight:16px;
         font-weight: 400;
+    }
+
+
+    /* E sim */
+
+    .esim .hero-description{
+        right:10px;
+        left:unset;
+        display: flex;
+        align-items:flex-end;
+        justify-content: flex-end;
+    }
+    .esim .hero-section-text{
+        background-color:#071C004D;
+        width:45%;
+        margin-right:50px;
+    }
+    .esim .hero-section-text button{
+        margin-top:15px;
+    }
+    .image-section{
+        position:relative;
+    }
+    .set .set-text p:first-of-type{
+        font-size:48px;
+        margin-bottom:28px;
+        color:#fff;
+    }
+    .set .set-text p:last-of-type{
+        font-size:19px;
+        margin-bottom:28px;
+        color:#fff;
+    }
+    .set-sec{
+        margin-top:50px;
+    }
+    .set{
+        padding-top:110px;
+        padding-left:70px;
+        padding-right:40px;
+        padding-bottom:50px;
+    }
+
+    .image-text{
+        top:80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width:100%;
+    }
+    .image-text p:first-of-type{
+        font-size:45px;
+        text-align:center;
+    }   
+    .image-text p:last-of-type{
+        font-size:19px;
+        text-align:center;
+        margin:22px 0;
+    }
+    .image-text button{
+        width:14%;
+    }
+
+    .esim .benefit-text .sub{
+        font-size:20px;
+        font-weight: 600;
+    }
+    .esim .benefit-text button{
+        margin:0 auto ;
+    }
+    .esim .benefit-swipper .icon-div{
+        background:#fff;
+        height:fit-content;
+        width:auto;
+        padding:10px 13px;
+        border-radius:50%;
+        font-size:30px;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+    .esim .benefit-swipper .icon-text{
+        gap:18px;
+    }
+    .esim .benefit-swipper .choose-top{
+        font-family: "Noto Sans";
+        font-size: 22px;
+        margin-bottom:40px;
+    }
+    .esim .benefit-swipper .choose-mid{
+        font-size: 15px;
+        text-align: center;
+    }
+    .esim .benefit-swipper .call-detail{
+        gap:15px;
+        margin-top:18px;
+        margin-bottom:38px;
+    }
+    .esim .benefit-swipper .cho-2 .call-detail{
+        margin-top:38px;
+    }
+    .esim .benefit-swipper .choose-subtitle{
+        font-size: 10px;
+        text-align: left;
+    }
+    .esim .benefit-arrow p{
+        font-size: 16px;
+        text-align: center;
+    }
+    .flag img{
+        height:152px;
+    }
+    .flag{
+        width:50%;
+        margin:auto;
+    }
+    .flags .swipper-card p{
+        font-size: 40px;
+        text-align: center;
+        margin-bottom:30px;
+        margin-top:20px;
+    }
+    .flags .swipper-card{
+        padding:25px;
+    }
+    .flags .swipper-card button{
+        width:40%;
+        margin-left:95px;
+    }
+    .mid{
+        margin:0 auto;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        flex-direction:column;
+    }
+    .dest .benefit-text button{
+        margin-top:60px;
+        width:14%;
+    }
+    .dest{
+        padding:0px;
+    }
+    .dest .benefit-text{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        flex-direction: column;
+    }
+    .esim .swipper-card{
+        padding-bottom: 21px;
+        padding-top:19px;
+        padding-left:22px;
+        padding-right:57px;
     }
 
     
@@ -11297,6 +11624,187 @@ span, .weight{
         font-weight: 400;
     }
 
+
+
+    /* E sim */
+
+    .esim .hero-description{
+        right:10px;
+        left:unset;
+        display: flex;
+        align-items:flex-end;
+        justify-content: flex-end;
+    }
+    .esim .hero-section-text {
+        background-color: #071C004D;
+        width: 69%;
+        margin-right: 20px;
+    }
+    .esim .hero-section-text button{
+        margin-top:15px;
+    }
+    .esim .hero-section-text p:first-of-type {
+        font-size: 35px;
+        padding-left: 0px;
+        margin-bottom:20px;
+    }
+    .esim .hero-section-text .sub {
+        font-size: 17px;
+        margin-bottom:15px;
+    }
+    .esim .hero-section-text {
+        width: 100%;
+        padding:30px;
+    }
+    .image-section{
+        position:relative;
+    }
+
+    .set .set-text p:first-of-type{
+        font-size:48px;
+        margin-bottom:28px;
+        color:#fff;
+    }
+    .set .set-text p:last-of-type{
+        font-size:19px;
+        margin-bottom:28px;
+        color:#fff;
+    }
+    .set-sec{
+        margin-top:50px;
+    }
+    .set{
+        padding-top:90px;
+        padding-left:50px;
+        padding-right:40px;
+        padding-bottom:50px;
+        flex-wrap:wrap;
+        gap:40px;
+    }
+    .set-text,
+    .set-img{
+        width:100%;
+    }
+    .image-text{
+        top:40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width:100%;
+    }
+    .image-text p:first-of-type{
+        font-size:33px;
+        text-align:center;
+    }   
+    .image-text p:last-of-type{
+        font-size:16px;
+        text-align:center;
+        margin:20px 0;
+        width:85%;
+    }
+    .image-text button{
+        width:17%;
+    }
+    .esim .benefit-text p {
+        margin-top: 28px;
+    }
+    .esim .benefit-text .sub{
+        font-size:18px;
+        font-weight: 600;
+    }
+    .esim .benefit-text button{
+        margin:0 auto ;
+    }
+    .esim .benefit-swipper .icon-div{
+        background:#fff;
+        height:fit-content;
+        width:auto;
+        padding:10px 13px;
+        border-radius:50%;
+        font-size:30px;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+    .esim .benefit-swipper .icon-text{
+        gap:18px;
+    }
+    .esim .benefit-swipper .choose-top{
+        font-family: "Noto Sans";
+        font-size: 22px;
+        margin-bottom:40px;
+        margin-top:10px;
+    }
+    .esim .benefit-swipper .choose-mid{
+        font-size: 15px;
+        text-align: center;
+    }
+    .esim .benefit-swipper .call-detail{
+        gap:15px;
+        margin-top:18px;
+        margin-bottom:38px;
+    }
+    .esim .benefit-swipper .cho-2 .call-detail{
+        margin-top:38px;
+    }
+    .esim .benefit-swipper .choose-subtitle{
+        font-size: 10px;
+        text-align: left;
+    }
+    .esim .benefit-arrow p{
+        font-size: 16px;
+        text-align: center;
+        width:80%;
+        margin:0 auto;
+    }
+    .flag img{
+        height:168px;
+    }
+    .flag{
+        width:40%;
+        margin:auto;
+    }
+    .flags .swipper-card p{
+        font-size: 40px;
+        text-align: center;
+        margin-bottom:30px;
+        margin-top:20px;
+    }
+    .flags .swipper-card{
+        padding:25px;
+    }
+    .flags .swipper-card button{
+        width:40%;
+        margin-left:150px;
+    }
+    .mid{
+        margin:0 auto;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        flex-direction:column;
+    }
+    .dest .benefit-text button{
+        margin-top:40px;
+        width:17%;
+    }
+    .dest{
+        padding:0px;
+    }
+    .dest .benefit-text{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        flex-direction: column;
+    }
+    .esim .swipper-card{
+        padding-bottom: 21px;
+        padding-top:19px;
+        padding-left:50px;
+        padding-right:50px;
+    }
+
 }
 
 
@@ -14617,6 +15125,210 @@ span, .weight{
         right:unset;
         top:50%;
     }
+
+    
+    
+    
+    
+    
+    
+    /* E sim */
+
+    .esim .hero-description{
+        right:0px;
+        top:40%;
+        left:unset;
+    }
+    .esim .hero-section-text {
+        background-color: #071C004D;
+        width: 100%;
+        margin-right: 20px;
+        padding:15px 10px;
+    }
+    .esim .hero-section-text button{
+        margin-top:0px;
+    }
+    .esim .hero-section-text p:first-of-type {
+        font-size: 35px;
+        padding-left: 0px;
+        margin-bottom:15px;
+    }
+    .esim .hero-section-text .sub {
+        font-size: 17px;
+        margin-bottom:15px;
+    }
+    .esim .hero-section-text {
+        width: 100%;
+        padding:30px;
+    }
+    .set{
+        padding-top:50px;
+        padding-left:0px;
+        padding-right:0px;
+        padding-bottom:50px;
+        flex-wrap:wrap;
+        gap:40px;
+    }
+    .image-section{
+        position:relative;
+    }
+    .set .set-text p:first-of-type{
+        font-size:37px;
+        margin-bottom:28px;
+        color:#fff;
+    }
+    .set .set-text p:last-of-type{
+        font-size:19px;
+        margin-bottom:28px;
+        color:#fff;
+    }
+    .set-sec{
+        margin-top:50px;
+    }
+    .set-text,
+    .set-img{
+        width:100%;
+    }
+    .image-text{
+        position:unset;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        width:100%;
+        padding:0 15px;
+    }
+    .image-text p:first-of-type{
+        font-size:27px;
+        text-align:left;
+        color:#000;
+    }   
+    .image-text p:last-of-type{
+        font-size:14px;
+        text-align:left;
+        margin:15px auto;
+        width:100%;
+        color:#000;
+        padding:0px;
+    }
+    .image-text button{
+        width:30%;
+    }
+    .esim .benefit-text p {
+        margin-top: 28px;
+    }
+    .esim .benefit-text .sub{
+        font-size:18px;
+        font-weight: 600;
+    }
+    .esim .benefit-text button{
+        margin:0 auto ;
+    }
+    .esim .benefit-swipper .icon-div{
+        background:#fff;
+        height:fit-content;
+        width:auto;
+        padding:10px 13px;
+        border-radius:50%;
+        font-size:30px;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+    .esim .benefit-swipper .col-4{
+        padding:0px;
+    }
+    .esim .benefit-swipper .icon-text{
+        gap:18px;
+    }
+    .esim .benefit-swipper .choose-top{
+        font-family: "Noto Sans";
+        font-size: 22px;
+        margin-bottom:40px;
+        margin-top:10px;
+    }
+    .esim .benefit-swipper .choose-mid{
+        font-size: 15px;
+        text-align: left;
+    }
+    .esim .benefit-swipper .call-detail{
+        gap:15px;
+        margin-top:18px;
+        margin-bottom:38px;
+    }
+    .esim .benefit-swipper .cho-2 .call-detail{
+        margin-top:38px;
+    }
+    .esim .benefit-swipper .choose-subtitle{
+        font-size: 10px;
+        text-align: left;
+    }
+    .esim .benefit-arrow p{
+        font-size: 16px;
+        text-align: left;
+        width:100%;
+        margin:0 auto;
+        padding:0 20px;
+    }
+    .flag img{
+        height:112px;
+    }
+    .flag{
+        width:40%;
+        margin:auto;
+    }
+    .flags .swipper-card p{
+        font-size: 40px;
+        text-align: center;
+        margin-bottom:30px;
+        margin-top:20px;
+    }
+    .flags .swipper-card{
+        padding:25px;
+    }
+    .flags .swipper-card button{
+        width:40%;
+        margin-left:100px;
+    }
+    .mid{
+        margin:0 auto;
+        display:flex;
+        align-items:flex-start;
+        justify-content:center;
+        flex-direction:column;
+    }
+    .dest .benefit-text button{
+        margin-top:40px;
+        width:30%;
+    }
+    .dest{
+        padding:0px;
+    }
+    .dest .benefit-text{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        flex-direction: column;
+    }
+    .esim .swipper-card{
+        padding-bottom: 21px;
+        padding-top:19px;
+        padding-left:50px;
+        padding-right:50px;
+    }
+
+    .rev-top, .what {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-direction: column;
+        padding-left: 20px;
+    }
+        .what button {
+        margin: 0px;
+        width: fit-content;
+    }
+
 }
 
 
@@ -16823,6 +17535,212 @@ span, .weight{
     .what{
         margin:60px 0;
         padding:0 20px;
+    }
+
+    /* E sim */
+
+    .esim .hero-description{
+        right:0px;
+        top:45%;
+        left:unset;
+    }
+    .esim .hero-section-text {
+        background-color: #071C004D;
+        width: 100%;
+        margin-right: 20px;
+        padding:15px;
+    }
+    .esim .hero-section-text button{
+        margin-top:0px;
+    }
+    .esim .hero-section-text p:first-of-type {
+        font-size: 30px;
+        padding-left: 0px;
+        margin-bottom:15px;
+    }
+    .esim .hero-section-text .sub {
+        font-size: 16px;
+        margin-bottom:15px;
+    }
+    .esim .hero-section-text {
+        width: 100%;
+        padding:30px;
+    }
+    .set{
+        padding-top:50px;
+        padding-left:0px;
+        padding-right:0px;
+        padding-bottom:50px;
+        flex-wrap:wrap;
+        gap:40px;
+    }
+    .image-section{
+        position:relative;
+    }
+    .set .set-text p:first-of-type{
+        font-size:37px;
+        margin-bottom:28px;
+        color:#fff;
+    }
+    .set .set-text p:last-of-type{
+        font-size:19px;
+        margin-bottom:28px;
+        color:#fff;
+    }
+    .set-sec{
+        margin-top:50px;
+    }
+    .set-text,
+    .set-img{
+        width:100%;
+    }
+    .image-text{
+        position:unset;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        width:100%;
+        padding:0 15px;
+    }
+    .image-text p:first-of-type{
+        font-size:27px;
+        text-align:left;
+        color:#000;
+    }   
+    .image-text p:last-of-type{
+        font-size:14px;
+        text-align:left;
+        margin:15px auto;
+        width:100%;
+        color:#000;
+        padding:0px;
+    }
+    .image-text button{
+        width:30%;
+    }
+    .esim .benefit-text p {
+        margin-top: 28px;
+    }
+    .esim .benefit-text .sub{
+        font-size:18px;
+        font-weight: 600;
+    }
+    .esim .benefit-text button{
+        margin:0 auto ;
+    }
+    .esim .benefit-swipper .icon-div{
+        background:#fff;
+        height:fit-content;
+        width:auto;
+        padding:10px 13px;
+        border-radius:50%;
+        font-size:30px;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+    .esim .benefit-swipper .col-4{
+        padding:0px;
+    }
+    .esim .benefit-swipper .icon-text{
+        gap:18px;
+    }
+    .esim .benefit-swipper .choose-top{
+        font-family: "Noto Sans";
+        font-size: 22px;
+        margin-bottom:40px;
+        margin-top:10px;
+    }
+    .esim .benefit-swipper .choose-mid{
+        font-size: 15px;
+        text-align: left;
+    }
+    .esim .benefit-swipper .call-detail{
+        gap:15px;
+        margin-top:18px;
+        margin-bottom:38px;
+    }
+    .esim .benefit-swipper .cho-2 .call-detail{
+        margin-top:38px;
+    }
+    .esim .benefit-swipper .choose-subtitle{
+        font-size: 10px;
+        text-align: left;
+    }
+    .esim .benefit-arrow p{
+        font-size: 16px;
+        text-align: left;
+        width:100%;
+        margin:0 auto;
+        padding:0px;
+    }
+    .flag img{
+        height:112px;
+    }
+    .flag{
+        width:44%;
+        margin:auto;
+    }
+    .flags .swipper-card p{
+        font-size: 40px;
+        text-align: center;
+        margin-bottom:30px;
+        margin-top:20px;
+    }
+    .flags .swipper-card{
+        padding:25px;
+    }
+    .flags .swipper-card button{
+        width:40%;
+        margin-left:100px;
+    }
+    .mid{
+        margin:0 auto;
+        display:flex;
+        align-items:flex-start;
+        justify-content:center;
+        flex-direction:column;
+    }
+    .dest .benefit-text button{
+        margin-top:40px;
+        width:30%;
+    }
+    .dest{
+        padding:0px;
+    }
+    .dest .benefit-text{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        flex-direction: column;
+    }
+    .esim .swipper-card{
+        padding-bottom: 21px;
+        padding-top:19px;
+        padding-left:50px;
+        padding-right:50px;
+    }
+
+    .rev-top, .what {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-direction: column;
+        padding-left: 20px;
+    }
+        .what button {
+        margin: 0px;
+        width: fit-content;
+    }
+
+    .esim .business .questions-title {
+        margin-top: 0;
+        font-size: 31px;
+        text-align: left;
+    }
+    .flags .benefit-text p{
+        padding-left:20px;
     }
 }
 
@@ -19661,6 +20579,80 @@ span, .weight{
         margin:60px 0;
         padding:0 20px;
     }
+
+
+    /* E sim */
+
+    .esim .hero-description{
+        top:50%;
+    }
+    .esim .hero-section-text {
+        margin-right: 0px;
+        padding:15px;
+    }
+    .esim .hero-section-text p:first-of-type {
+        font-size: 30px;
+        margin-bottom:15px;
+    }
+    .esim .hero-section-text .sub {
+        font-size: 16px;
+        margin-bottom:15px;
+    }
+    .esim .hero-section-text {
+        padding:15px;
+    }
+    .set .set-text p:first-of-type {
+        font-size: 33px;
+    }
+    .esim .benefit-arrow p {
+        padding-left: 20px;
+    }
+    .esim .benefit-swipper .call-detail {
+        gap: 11px;
+    }
+    .flags .benefit-text p {
+        padding-left: 20px;     
+    }
+    .flags .benefit-text{
+        padding:0px;
+    }
+    .esim .benefit-text{
+        padding-left:14px;
+    }
+    .flags .benefit-swipper{
+        padding:0px;
+    }
+    .flag{
+        width:57%;
+    }
+    .flag img{
+        height:128px;
+    }
+    .flags .swipper-card{
+        padding:25px 15px;
+    }
+    .flags .swipper-card button {
+        width: 45%;
+        margin-left: 77px;
+    }
+    .dest .benefit-text button {
+        margin-top: 33px;
+        width: 40%;
+    }
+    .dest .benefit-text {
+        align-items: flex-start;
+        padding-left: 30PX;
+    }
+    .dest .benefit-text p{
+        margin-top:40px;
+    }
+    .image-text button{
+        width: 38%;
+    }
+    .esim .business .questions-title {
+        font-size: 31px;
+        padding-left: 15px;
+    }
 }
 
 
@@ -22039,6 +23031,123 @@ span, .weight{
     }
     .copy p{
         font-size:16px;
+    }
+
+
+    /* E sim */
+
+    .esim .hero-description{
+        top:50%;
+    }
+    .esim .hero-section-text {
+        padding:15px 10px;
+    }
+    .esim .hero-section-text p:first-of-type {
+        font-size: 26px;
+        margin-bottom:15px;
+    }
+    .esim .hero-section-text .sub {
+        font-size: 14px;
+        margin-bottom:15px;
+        padding-right:0px;
+    }
+    .esim .hero-section-text {
+        padding:15px;
+    }
+    .set .set-text p:first-of-type {
+        font-size: 24px;
+    }
+    .set .set-text p:last-of-type {
+        font-size: 14px;
+    }
+    .set-sec .col-12{
+        padding:0px;
+    }
+    .set-sec .set-img{
+        padding:0px;
+    }
+    .esim .benefit-arrow p {
+        padding-left:7px;
+    }
+    .esim .benefit-swipper .call-detail {
+        gap: 11px;
+    }
+    .flags .benefit-text p {
+        padding-left: 7px;
+        margin-top:40px;
+        font-size:25px;   
+    }
+    .flags .benefit-text{
+        padding:0px;
+    }
+    .flags .benefit-swipper .col-4{
+        padding:0px;
+    }
+    .esim .benefit-text{
+        padding-left:14px;
+    }
+    .esim .benefit-text p{
+        font-size:30px;
+    }
+    .esim .benefit-text .sub{
+        font-size: 14px;
+    }
+    .esim .swipper-card {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom:20px;
+    }
+    .flags .benefit-swipper{
+        padding:0px;
+    }
+    .flag{
+        width:63%;
+    }
+    .flag img{
+        height:128px;
+    }
+    .flags .swipper-card{
+        padding:25px 15px;
+    }
+    .flags .swipper-card p {
+        font-size: 35px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    .flags .swipper-card button {
+        width: 45%;
+        margin-left: 77px;
+    }
+    .dest .benefit-text button {
+        margin-top: 33px;
+        width: 40%;
+    }
+    .dest .benefit-text{
+        align-items: flex-start;
+        padding-left: 30PX;
+    }
+    .dest .benefit-text p{
+        margin-top:40px;
+        font-size:22px;
+    }
+    .dest .benefit-text button{
+        width:45%;
+    }
+    .image-text button{
+        width: 45%;
+    }
+    .image-text p:first-of-type {
+        font-size: 23px;
+    }
+    .image-text p:last-of-type {
+        font-size: 13px;
+    }
+    .esim .business .questions-title {
+        font-size: 31px;
+        padding-left: 15px;
+    }
+    .cho .benefit-text p{
+        font-size:28px;
     }
 }
 

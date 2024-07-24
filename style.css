@@ -3279,7 +3279,15 @@ span, .weight{
     font-family:"Noto Sans";
 }
 
+/* privacy */
 
+
+.privacy .hero-description{
+    top:0;
+}
+.privacy .hero-description .hero-img img{
+    width:100%;
+}
 
 
 

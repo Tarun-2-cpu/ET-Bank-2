@@ -990,6 +990,76 @@ We always value transparency: every time a relevant change is made, we will send
             </div>
         </section>
     </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const knowMoreButtons = document.querySelectorAll('.starteded');
+            const cardContainer = document.querySelector('.card-container');
+            const menu = document.querySelector('.menu');
+            const navLinks = document.querySelector('.nav-link');
+            const menuIcon = menu.querySelector('i');
+
+            knowMoreButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    cardContainer.style.display = 'block';
+                });
+            });
+
+            const closeButtons = document.querySelectorAll('.close-btn');
+            closeButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    cardContainer.style.display = 'none';
+                });
+            });
+
+            menu.addEventListener('click', function () {
+                navLinks.classList.toggle('show');
+                if (navLinks.classList.contains('show')) {
+                    menuIcon.classList.remove('ri-menu-line');
+                    menuIcon.classList.add('ri-close-line');
+                } else {
+                    menuIcon.classList.remove('ri-close-line');
+                    menuIcon.classList.add('ri-menu-line');
+                }
+            });
+        });
+
+
+
+        function toggleDropdown(dropdownId) {
+            const dropdown = document.getElementById(dropdownId);
+            const isVisible = dropdown.style.display === 'block';
+            hideAllDropdowns();
+            if (!isVisible) {
+                dropdown.style.display = 'block';
+            }
+        }
+
+        function hideAllDropdowns() {
+            const dropdowns = document.querySelectorAll('.dropdown-content');
+            dropdowns.forEach(dropdown => {
+                dropdown.style.display = 'none';
+            });
+        }
+
+        document.addEventListener('click', function (event) {
+            const isClickInside = event.target.closest('nav') || event.target.closest('.dropdown-content');
+            if (!isClickInside) {
+                hideAllDropdowns();
+            }
+        });
+
+        // Hide dropdowns on page load
+        document.addEventListener('DOMContentLoaded', function () {
+            hideAllDropdowns();
+        });
+
+
+
+
+
+
+    </script>
 </body>
 
 </html>

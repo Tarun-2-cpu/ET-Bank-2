@@ -106,9 +106,9 @@ html,body{
 .weight-800{
     font-weight: 800 !important;
 }
-ul,ol,li{
+/* ul,ol,li{
     list-style-type:none;
-}
+} */
 li>a{
     line-height:normal !important;
     overflow: hidden;
@@ -3283,13 +3283,72 @@ span, .weight{
 
 
 .privacy .hero-description{
-    top:0;
-}
-.privacy .hero-description .hero-img img{
+    top:10%;
+    left:0%;
     width:100%;
 }
-
-
+.privacy .hero-description .hero-img img {
+    width:100%;
+}
+.privacy .hero-description .hero-img{
+    width:38%;
+}
+.privacy .hero-description .hero-section-text{
+    width:62%;
+    padding-top:320px;
+    padding-left:72px;
+}
+.privacy .hero-description .hero-section-text .typewriter{
+    font-size:60px;
+}
+.privacy-title{
+    color: #000;
+    font-family: "Noto Sans";
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin-bottom:30px;
+    margin-top:40px;
+}
+.privacy-detail{
+    color: #000;
+    font-family: "Noto Sans";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+}
+.list-style{
+    list-style-type: disc !important;
+    color: #000;
+    font-family: "Noto Sans";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+}
+.list-style li{
+    margin:8px 0;
+}
+.small-title{
+    color: #000;
+    font-family: "Noto Sans";
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.more-small-title{
+    color: #000;
+    font-family: "Noto Sans";
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.pri-cont{
+    padding:0px 80px;
+    padding-bottom:100px;
+}
 
 
 
@@ -6102,6 +6161,57 @@ span, .weight{
 
     .parents .hero-description{
         top:20%;
+    }
+
+
+    /* privacy */
+
+
+    .privacy .hero-description{
+        top:10%;
+        left:0%;
+        width:100%;
+    }
+    .privacy .hero-description .hero-img img {
+        width:100%;
+    }
+    .privacy .hero-description .hero-img{
+        width:38%;
+    }
+    .privacy .hero-description .hero-section-text{
+        width:62%;
+        padding-top:220px;
+        padding-left:30px;
+    }
+    .privacy .hero-description .hero-section-text .typewriter{
+        font-size:55px;
+    }
+    .privacy-title{
+        font-size: 30px;
+        font-style: normal;
+        margin-bottom:30px;
+        margin-top:40px;
+    }
+    .privacy-detail{
+        font-size: 20px;
+    }
+    .list-style{
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .list-style li{
+        margin:8px 0;
+    }
+    .small-title{
+        font-size: 23px;
+        font-weight: 700;
+    }
+    .more-small-title{
+        font-size: 21px;
+    }
+    .pri-cont{
+        padding:0px 80px;
+        padding-bottom:100px;
     }
 }
 
@@ -12361,6 +12471,56 @@ span, .weight{
         margin-bottom:40px;
         padding-left:25px;
     }
+
+    /* privacy */
+
+
+    .privacy .hero-description{
+        top:32%;
+        left:0%;
+        width:100%;
+    }
+    .privacy .hero-description .hero-img img {
+        width:100%;
+    }
+    .privacy .hero-description .hero-img{
+        width:41%;
+    }
+    .privacy .hero-description .hero-section-text{
+        width:59%;
+        padding-top:130px;
+        padding-left:30px;
+    }
+    .privacy .hero-description .hero-section-text .typewriter{
+        font-size:42px;
+    }
+    .privacy-title{
+        font-size: 28px;
+        font-style: normal;
+        margin-bottom:30px;
+        margin-top:40px;
+    }
+    .privacy-detail{
+        font-size: 18px;
+    }
+    .list-style{
+        font-size: 18px;
+        font-weight: 400;
+    }
+    .list-style li{
+        margin:8px 0;
+    }
+    .small-title{
+        font-size: 21px;
+        font-weight: 700;
+    }
+    .more-small-title{
+        font-size: 19px;
+    }
+    .pri-cont{
+        padding:0px 60px;
+        padding-bottom:100px;
+    }
 }
 
 
@@ -16009,6 +16169,60 @@ span, .weight{
     .ins .mastercard-right .typewriter {
         font-size: 32px;
     }
+
+
+    /* privacy */
+
+
+    .privacy .hero-description{
+        top:12%;
+        left:0%;
+        width:100%;
+        flex-wrap:wrap-reverse;
+        align-items:center;
+        justify-content: space-evenly;
+    }
+    .privacy .hero-description .hero-img img {
+        width:100%;
+    }
+    .privacy .hero-description .hero-img{
+        width:340px;
+    }
+    .privacy .hero-description .hero-section-text{
+        width:fit-content;
+        padding-top:40px;
+        padding-left:50px;
+    }
+    .privacy .hero-description .hero-section-text .typewriter{
+        font-size:42px;
+    }
+    .privacy-title{
+        font-size: 28px;
+        font-style: normal;
+        margin-bottom:30px;
+        margin-top:40px;
+    }
+    .privacy-detail{
+        font-size: 18px;
+    }
+    .list-style{
+        font-size: 18px;
+        font-weight: 400;
+    }
+    .list-style li{
+        margin:8px 0;
+    }
+    .small-title{
+        font-size: 21px;
+        font-weight: 700;
+    }
+    .more-small-title{
+        font-size: 19px;
+    }
+    .pri-cont{
+        padding:0px 60px;
+        padding-bottom:100px;
+    }
 }
 
 
@@ -18537,6 +18751,60 @@ span, .weight{
     }
     .ins .mastercard-right .typewriter {
         font-size: 29px;
+    }
+
+
+    /* privacy */
+
+
+    .privacy .hero-description{
+        top:12%;
+        left:0%;
+        width:100%;
+        flex-wrap:wrap-reverse;
+        align-items:center;
+        justify-content: space-evenly;
+    }
+    .privacy .hero-description .hero-img img {
+        width:100%;
+    }
+    .privacy .hero-description .hero-img{
+        width:340px;
+    }
+    .privacy .hero-description .hero-section-text{
+        width:fit-content;
+        padding-top:40px;
+        padding-left:50px;
+    }
+    .privacy .hero-description .hero-section-text .typewriter{
+        font-size:42px;
+    }
+    .privacy-title{
+        font-size: 28px;
+        font-style: normal;
+        margin-bottom:30px;
+        margin-top:40px;
+    }
+    .privacy-detail{
+        font-size: 18px;
+    }
+    .list-style{
+        font-size: 18px;
+        font-weight: 400;
+    }
+    .list-style li{
+        margin:8px 0;
+    }
+    .small-title{
+        font-size: 21px;
+        font-weight: 700;
+    }
+    .more-small-title{
+        font-size: 19px;
+    }
+    .pri-cont{
+        padding:0px 40px;
+        padding-bottom:100px;
     }
 }
 
@@ -21554,6 +21822,58 @@ span, .weight{
         font-size: 29px;
     }
 
+    /* privacy */
+
+
+    .privacy .hero-description{
+        top:12%;
+        left:0%;
+        width:100%;
+        flex-wrap:wrap-reverse;
+        align-items:center;
+        justify-content: space-evenly;
+    }
+    .privacy .hero-description .hero-img img {
+        width:100%;
+    }
+    .privacy .hero-description .hero-img{
+        width:340px;
+    }
+    .privacy .hero-description .hero-section-text{
+        width:fit-content;
+        padding-top:40px;
+        padding-left:30px;
+    }
+    .privacy .hero-description .hero-section-text .typewriter{
+        font-size:42px;
+    }
+    .privacy-title{
+        font-size: 28px;
+        font-style: normal;
+        margin-bottom:30px;
+        margin-top:40px;
+    }
+    .privacy-detail{
+        font-size: 18px;
+    }
+    .list-style{
+        font-size: 18px;
+        font-weight: 400;
+    }
+    .list-style li{
+        margin:8px 0;
+    }
+    .small-title{
+        font-size: 21px;
+        font-weight: 700;
+    }
+    .more-small-title{
+        font-size: 19px;
+    }
+    .pri-cont{
+        padding:0px 40px;
+        padding-bottom:100px;
+    }
 
 }
 
@@ -24164,6 +24484,60 @@ span, .weight{
     }
     .opt-card .opt-img {
         width: 22%;
+    }
+
+
+    /* privacy */
+
+
+    .privacy .hero-description{
+        top:12%;
+        left:0%;
+        width:100%;
+        flex-wrap:wrap-reverse;
+        align-items:center;
+        justify-content: center;
+    }
+    .privacy .hero-description .hero-img img {
+        width:100%;
+    }
+    .privacy .hero-description .hero-img{
+        width:340px;
+    }
+    .privacy .hero-description .hero-section-text{
+        width:fit-content;
+        padding-top:40px;
+        padding-left:30px;
+    }
+    .privacy .hero-description .hero-section-text .typewriter{
+        font-size:35px;
+    }
+    .privacy-title{
+        font-size: 28px;
+        font-style: normal;
+        margin-bottom:30px;
+        margin-top:40px;
+    }
+    .privacy-detail{
+        font-size: 18px;
+    }
+    .list-style{
+        font-size: 18px;
+        font-weight: 400;
+    }
+    .list-style li{
+        margin:8px 0;
+    }
+    .small-title{
+        font-size: 21px;
+        font-weight: 700;
+    }
+    .more-small-title{
+        font-size: 19px;
+    }
+    .pri-cont{
+        padding:0px 40px;
+        padding-bottom:100px;
     }
 }
 

@@ -62,7 +62,6 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
-    overflow-x: hidden;
 }
 html,body{
     height:100%;
@@ -111,11 +110,9 @@ html,body{
 } */
 li>a{
     line-height:normal !important;
-    overflow: hidden;
 }
 li{
     line-height: normal !important;
-    overflow:hidden;
 }
 header{
     margin: 0 20px;
@@ -1442,6 +1439,9 @@ span, .weight{
 .mastercard .typewriter{
     margin-bottom:15px;
 }
+.e-tudo .mastercard-right{
+    margin-left:30px;
+}
 .card-title{
     font-size:24px;
     margin-bottom:8px;
@@ -1894,6 +1894,9 @@ span, .weight{
     background-image: url(images/sol.png);
     background-size: cover;
 }
+.b-des-left{
+    padding-left:66px;
+}
 .b-des-left .des-top{
     font-size:22px;
 }
@@ -2192,11 +2195,11 @@ span, .weight{
     padding-bottom:50px;
 }
 .client-bottom p{
-    font-size:40px;
+    font-size:34px;
 }
 .client-img{
-    border:10px solid #1B5962;
-    margin-top:-5%;
+    border:none;
+    margin-top:-8%;
 }
 .cpf{
     padding:0 40px;
@@ -2689,6 +2692,7 @@ span, .weight{
     background-color: #1B5962;
     border-radius: 20px;
 }
+
 .surprise-card .surprise-img{
     border-radius:100%;
     width:150px;
@@ -2713,6 +2717,17 @@ span, .weight{
     width:100%;
     height:100%;
     object-fit:cover;
+}
+.sur-1 .surprise-img{
+    width:120px;
+    height:100px;
+}
+.surprise-card .surprise-img{
+    border-radius:100%;
+}
+.surprise-card .surprise-img img{
+    width:100%;
+    border-radius:100%;
 }
 .surprise-card .surprise-text p:first-of-type{
     font-size:22px;
@@ -2880,7 +2895,15 @@ span, .weight{
     width:400px;
     height:unset;
 }
-
+.stash .mastercard .mastercard-img{
+    position:relative;
+}
+.stash .mastercard .mastercard-img .inside-img{
+    position:absolute;
+    bottom:30%;
+    left:0;
+    width:450px;
+}
 
 .keen .keen-text p:first-of-type{
     font-size:82px;
@@ -3029,6 +3052,11 @@ span, .weight{
 .set-sec{
     margin-top:50px;
 }
+.set-secc{
+    background-image: url(images/set-up-map.png);
+    background-blend-mode:difference;
+}
+
 .set{
     padding-top:130px;
     padding-left:90px;
@@ -4727,6 +4755,9 @@ span, .weight{
         background-image: url(images/sol.png);
         background-size: cover;
     }
+    .b-des-left{
+        padding-left:0px;
+    }
     .b-des-left .des-top{
         font-size:20px;
     }
@@ -5031,19 +5062,19 @@ span, .weight{
     }
     .client p{
         font-size:40px;
-        margin-left:190px;
+        margin-left:128px;
     }
     .client-bottom{
         justify-content: space-around;
         padding-top:30px;
     }
     .client-bottom p{
-        font-size:37px;
+        font-size:33px;
         width:32%;
     }
     .client-img{
-        border:10px solid #1B5962;
-        margin-top:-5%;
+        border:none;
+        margin-top:-8%;
     }
     .want{
         padding:0 60px;
@@ -5572,6 +5603,15 @@ span, .weight{
     .child .mastercard .mastercard-img > img{
         width:350px;
         height:unset;
+    }
+    .stash .mastercard .mastercard-img .inside-img{
+        position:absolute;
+        bottom:30%;
+        left:0;
+        width:400px;
+    }
+    .stash{
+        padding-bottom:30px;
     }
     .keen .keen-text p:first-of-type{
         font-size:65px;
@@ -8999,10 +9039,6 @@ span, .weight{
     .nav-link .row{
         flex-direction: column;
     }
-    
-    *{
-        overflow-x: hidden;
-    }
     .container{
         width:100%;
     }
@@ -11339,7 +11375,7 @@ span, .weight{
     .client-bottom{
         justify-content: flex-start;
         padding-top:30px;
-        flex-wrap:wrap;
+        flex-wrap:nowrap;
         padding-left:40px;
     }
     .client-bottom p{
@@ -11347,8 +11383,8 @@ span, .weight{
         width:51%;
     }
     .client-img{
-        margin-top:0%;
-        width:75%;
+        margin-top:-10%;
+        width:50%;
         border-radius:20px;
     }
     .client-img .cpf{
@@ -11781,6 +11817,14 @@ span, .weight{
     .child .mastercard .mastercard-img > img{
         width:50%;
         height:unset;
+    }
+    .stash .mastercard .mastercard-img .inside-img{
+        position:absolute;
+        bottom:30%;
+        left:0;
+        width:400px;
+        margin:0 auto;
+        transform: translate(42%,50%);
     }
     .child .mastercard .mastercard-img{
         align-items:center;
@@ -15197,6 +15241,7 @@ span, .weight{
     .client-img{
         border:none;
         width:100%;
+        margin-top:30px;
     }
     .want{
         padding:0 30px;
@@ -15715,7 +15760,14 @@ span, .weight{
 
     /* child account */
 
-    
+    .stash .mastercard .mastercard-img .inside-img{
+        position:absolute;
+        bottom:30%;
+        left:0;
+        width:250px;
+        margin:0 auto;
+        transform: translate(42%,50%);
+    }
     .keen .keen-text p:first-of-type{
         font-size:20px;
         color:#1B5962;
@@ -18133,7 +18185,7 @@ span, .weight{
         padding-left:50px;
     }
     .client-img{
-        border:10px solid #1B5962;
+        border:none;
         margin-top:0%;
         width:100%;
     }
@@ -18386,6 +18438,15 @@ span, .weight{
     }
 
         /* Child account  */
+
+        .stash .mastercard .mastercard-img .inside-img{
+            position:absolute;
+            bottom:30%;
+            left:0;
+            width:220px;
+            margin:0 auto;
+            transform: translate(42%,50%);
+        }    
     
     .revolut-card p:first-of-type{
         font-size:25px;
@@ -21339,7 +21400,7 @@ span, .weight{
         padding-left:30px;
     }
     .client-img{
-        border:10px solid #1B5962;
+        border:none;
         margin-top:0%;
         width:100%;
     }
@@ -21595,8 +21656,17 @@ span, .weight{
 
     /* Child account  */
 
+    .stash .mastercard .mastercard-img .inside-img{
+        position:absolute;
+        bottom:30%;
+        left:0;
+        width:190px;
+        margin:0 auto;
+        transform: translate(42%,50%);
+    }
+
     .chill .hero-description .business-card .typewriter {
-        font-size: 34px;
+        font-size: 32px;
     }
     .keen-text{
         position:unset;
@@ -24539,5 +24609,23 @@ span, .weight{
         padding:0px 40px;
         padding-bottom:100px;
     }
+
+        /* Child account  */
+
+        .stash .mastercard .mastercard-img .inside-img{
+            position:absolute;
+            bottom:30%;
+            left:0;
+            width:160px;
+            margin:0 auto;
+            transform: translate(42%,50%);
+        }
+        .chill .hero-description .business-card .typewriter {
+            font-size: 27px;
+            width:100%;
+        }
+        .chill .hero-description .hero-section-text{
+            width:90%;
+        }
 }
 

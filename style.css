@@ -165,6 +165,9 @@ nav {
 .nav-link {
     display: flex;
     align-items: center;
+    flex:1;
+    justify-content: space-between;
+    margin-left:230px;
 }
 
 .nav-button,
@@ -249,11 +252,14 @@ nav img {
 .menu {
     display: flex;
     align-items: center;
+    flex:1;
+    gap:100px;
 }
 
 .menu i {
     display: none;
 }
+
 
 @media (max-width: 768px) {
     .menu {
@@ -2680,6 +2686,7 @@ span, .weight{
 .surprise-title p:last-of-type{
     font-size:16px;
     padding-left:30px;
+    margin-bottom:88px;
 }
 .surprise-bottom{
     margin-top:45px;
@@ -2718,10 +2725,7 @@ span, .weight{
     height:100%;
     object-fit:cover;
 }
-.sur-1 .surprise-img{
-    width:120px;
-    height:100px;
-}
+
 .surprise-card .surprise-img{
     border-radius:100%;
 }
@@ -2729,6 +2733,15 @@ span, .weight{
     width:100%;
     border-radius:100%;
 }
+.sur-1 .surprise-img{
+    width:134px;
+    height:134px;
+}
+.sur-1 .surprise-img img{
+    width:100%;
+    height:100%;
+}
+
 .surprise-card .surprise-text p:first-of-type{
     font-size:22px;
     font-weight:800;
@@ -3415,7 +3428,8 @@ span, .weight{
     .nav-link {
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content:space-between;
+        margin-left:90px;
     }
 
     .nav-link a {
@@ -6257,6 +6271,12 @@ span, .weight{
 
 
 @media (max-width:1280px){
+    .nav-link {
+        display: flex;
+        align-items: center;
+        justify-content:space-between;
+        margin-left:90px;
+    }
     nav img{
         width:180px;
     }
@@ -7478,6 +7498,12 @@ span, .weight{
     .container{
         width:100%;
     }
+    .nav-link {
+        display: flex;
+        align-items: center;
+        justify-content:space-between;
+        margin-left:10px;
+    }
     nav{
         padding:15px 30px;
         display:flex;
@@ -7488,12 +7514,19 @@ span, .weight{
         width:97%;
         z-index:10;
     }
+    
     .nav-link a{ 
-     font-size:14px;
+     font-size:12px;
      color:#fff;
      gap:8px;
-     padding:12px 16px;
+     padding:12px;
      text-decoration: none;
+    }
+    .nav-button a{
+        font-size:14px;
+    }
+    .nav-button{
+        font-size:14px;
     }
     nav img{
         width:120px;
@@ -7515,7 +7548,7 @@ span, .weight{
         padding:12px;
     }
     .started{
-        font-size:14px;
+        font-size:12px;
         padding:8px;
         background-color:#00D47E;
         color:#000000;
@@ -7523,6 +7556,7 @@ span, .weight{
         border:none;
         outline:none;
         cursor:pointer;
+        width:fit-content;
     }
     .hero-section{
         width:100%;
@@ -9045,6 +9079,10 @@ span, .weight{
     .row{
         flex-wrap:wrap;
     }
+    .dropdown-content{
+        margin-top:117px;
+        width:100%;
+    }
     nav {
         padding: 9px 39px;
         display: flex;
@@ -9089,7 +9127,8 @@ span, .weight{
         width: 150px;
     }
     .nav-right {
-        display: none;
+        display: block;
+        margin-top:25px;
     }
     .menu {
         display: block;
@@ -9099,6 +9138,7 @@ span, .weight{
         color: white;
         font-size: 24px;
         display: block;
+        margin-left:100%;
     }
     header {
         margin: 0;
@@ -9112,6 +9152,10 @@ span, .weight{
         border: none;
         outline: none;
         cursor: pointer;
+    }
+    .linke {
+        display:flex;
+        flex-direction:column;
     }
     .hero-section{
         width:100%;
@@ -11674,10 +11718,11 @@ span, .weight{
     .surprise-title p:last-of-type{
         font-size:16px;
         padding-left:20px;
+        margin-bottom:150px;
     }
     .surprise-bottom{
         margin-top:45px;
-        gap:19px;
+        gap:124px;
     }
     .surprise-card{
         padding:20px;
@@ -12570,9 +12615,7 @@ span, .weight{
 
 
 @media (max-width:480px){
-    *{
-        overflow-x: hidden;
-    }
+    
     .container{
         width:100%;
     }
@@ -12623,8 +12666,8 @@ span, .weight{
     nav img {
         width: 150px;
     }
-    .nav-right {
-        display: none;
+    .nav-right{
+        display: block;
     }
     .menu {
         display: block;
@@ -12634,6 +12677,7 @@ span, .weight{
         color: white;
         font-size: 24px;
         display: block;
+        margin-left:50%;
     }
     header {
         margin: 0;
@@ -15522,7 +15566,8 @@ span, .weight{
         width:100%;
     }
     .surprise-card .surprise-img{
-        border-radius:50%;
+        border-radius:100%;
+        margin-top:-25%;
     }
     .surprise-card .surprise-img img{
         width:100%;
@@ -16281,9 +16326,7 @@ span, .weight{
 
 
 @media(max-width:430px){
-    *{
-        overflow-x: hidden;
-    }
+    
     .container{
         width:100%;
     }
@@ -16335,7 +16378,9 @@ span, .weight{
         width: 32vw;
     }
     .nav-right {
-        display: none;
+        display:flex;
+        flex-direction:column;
+        gap:10px;
     }
     .menu {
         display: block;
@@ -16345,6 +16390,7 @@ span, .weight{
         color: white;
         font-size: 24px;
         display: block;
+        margin-left:50%;
     }
     header {
         margin: 0;
@@ -18402,6 +18448,7 @@ span, .weight{
     .surprise-title p:last-of-type{
         font-size:16px;
         padding-left:20px;
+        margin-bottom:75px;
     }
     .surprise-card .surprise-text p:first-of-type{
         font-size:20px;
@@ -18874,9 +18921,6 @@ span, .weight{
 
 
 @media(max-width:380px){
-    *{
-        overflow-x: hidden;
-    }
     .container{
         width:100%;
     }
@@ -18928,7 +18972,8 @@ span, .weight{
         width: 120px;
     }
     .nav-right {
-        display: none;
+        display: flex;
+        flex-direction:column;
     }
     .menu {
         display: block;
@@ -18938,6 +18983,7 @@ span, .weight{
         color: white;
         font-size: 24px;
         display: block;
+        margin-left:50%;
     }
     header {
         margin: 0;
@@ -21995,7 +22041,8 @@ span, .weight{
         width: 100px;
     }
     .nav-right {
-        display: none;
+        display: flex;
+        flex-direction: column;
     }
     .menu {
         display: block;
@@ -22005,6 +22052,7 @@ span, .weight{
         color: white;
         font-size: 24px;
         display: block;
+        margin-left:50%;
     }
     header {
         margin: 0;
@@ -24267,6 +24315,7 @@ span, .weight{
         width:50px;
         border-radius:50%;
         height:50px;
+        margin-top:-50px;
     }
     .surprise-img img{
         width:100%;

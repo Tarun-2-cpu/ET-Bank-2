@@ -9091,7 +9091,7 @@ span, .weight{
         justify-content: space-between;
         position: fixed;
         top: 1%;
-        width: 98%;
+        width: 97.5%;
         right:1%;
         left:1%;
         z-index: 10;
@@ -9109,30 +9109,40 @@ span, .weight{
         display: none;
         flex-direction: column;
         text-align: center;
+        gap:12px;
         width: 100%;
         border-radius: 0 0 10px 10px;
     }
     .nav-link.show {
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: flex-start;
         padding-top: 15px;
     }
     .nav-link a {
-        padding: 12px 16px;
+        padding:0px;
         background-color:inherit;
         width: 100%;
-        margin:15px;
+        margin:0px;
+    }
+    .nav-button{
+        width:fit-content;
     }
     nav img {
         width: 150px;
     }
     .nav-right {
         display: block;
-        margin-top:25px;
+        margin:auto 0px;
+    }
+    .nav-right .login{
+        padding: 0px;
     }
     .menu {
         display: block;
         cursor: pointer;
+        flex:0.4;
     }
     .menu i {
         color: white;
@@ -9156,6 +9166,17 @@ span, .weight{
     .linke {
         display:flex;
         flex-direction:column;
+        width:fit-content;
+        height:fit-content;
+    }
+    .linke .homee{
+        display:none;
+    }
+    .nav-button, .nav-button a {
+        padding: 12px 0px;
+    }
+    .nav-right .started{
+        display:none;
     }
     .hero-section{
         width:100%;
@@ -12622,6 +12643,9 @@ span, .weight{
     .row{
         flex-wrap:wrap;
     }
+    .nav-link .row{
+        flex-direction: column;
+    }
     nav {
         padding: 9px 39px;
         display: flex;
@@ -12630,7 +12654,7 @@ span, .weight{
         justify-content: space-between;
         position: fixed;
         top: 1%;
-        width: 98%;
+        width: 97%;
         right:1%;
         left:1%;
         z-index: 10;
@@ -12654,30 +12678,37 @@ span, .weight{
 
     .nav-link.show {
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: flex-start;
         padding-top: 15px;
     }
     .nav-link a {
-        padding: 12px 16px;
+        padding: 0px;
         background-color: inherit;
         width: 100%;
-        margin:15px;
+        margin:0px;
     }
     nav img {
         width: 150px;
     }
-    .nav-right{
+    .nav-right {
         display: block;
+        margin:auto 0px;
+    }
+    .nav-right .login{
+        padding: 0px;
     }
     .menu {
         display: block;
         cursor: pointer;
+        flex:0.5;
     }
     .menu i {
         color: white;
         font-size: 24px;
         display: block;
-        margin-left:50%;
+        margin-left:100%;
     }
     header {
         margin: 0;
@@ -12691,6 +12722,15 @@ span, .weight{
         border: none;
         outline: none;
         cursor: pointer;
+    }
+    .linke {
+        display:flex;
+        flex-direction:column;
+        width:fit-content;
+        height:fit-content;
+    }
+    .linke .homee{
+        display:none;
     }
     .hero-section{
         width:100%;
@@ -16341,7 +16381,7 @@ span, .weight{
         justify-content: space-between;
         position: fixed;
         top: 1%;
-        width: 98%;
+        width: 97.5%;
         right:1%;
         left:1%;
         z-index: 10;
@@ -16361,36 +16401,45 @@ span, .weight{
         text-align: center;
         width: 100%;
         border-radius: 0 0 10px 10px;
+        width:100%;
     }
 
     .nav-link.show {
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
+        justify-content:center;
+        align-items:flex-start;
         padding-top: 15px;
     }
     .nav-link a{
-        padding: 12px 16px;
+        padding: 0px;
         background-color: inherit;
         width: 100%;
-        margin:15px;
+        margin:0px;
+    }
+    .nav-button{
+        width:fit-content;
     }
     nav img {
         width: 32vw;
     }
     .nav-right {
-        display:flex;
-        flex-direction:column;
-        gap:10px;
+        display: block;
+        margin:auto 0px;
+    }
+    .nav-right .login{
+        padding: 0px;
     }
     .menu {
         display: block;
         cursor: pointer;
+        flex:0.5;
     }
     .menu i {
         color: white;
         font-size: 24px;
         display: block;
-        margin-left:50%;
+        margin-left:95%;
     }
     header {
         margin: 0;
@@ -16404,6 +16453,15 @@ span, .weight{
         border: none;
         outline: none;
         cursor: pointer;
+    }
+    .linke {
+        display:flex;
+        flex-direction:column;
+        width:fit-content;
+        height:fit-content;
+    }
+    .linke .homee{
+        display:none;
     }
     .hero-section{
         width:100%;
@@ -18923,6 +18981,10 @@ span, .weight{
 @media(max-width:380px){
     .container{
         width:100%;
+        height:auto;
+    }
+    .nav-link .row{
+        flex-direction: column;
     }
     .row{
         flex-wrap:wrap;
@@ -18935,7 +18997,7 @@ span, .weight{
         justify-content: space-between;
         position: fixed;
         top: 1%;
-        width: 98%;
+        width: 97%;
         right:1%;
         left:1%;
         z-index: 10;
@@ -18955,35 +19017,45 @@ span, .weight{
         text-align: center;
         width: 100%;
         border-radius: 0 0 10px 10px;
+        gap:12px;
     }
 
     .nav-link.show {
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items:flex-start;
         padding-top: 15px;
     }
     .nav-link a {
-        padding: 12px 16px;
+        padding: 0px;
         background-color: inherit;
         width: 100%;
-        margin:15px;
+        margin:0px;
+    }
+    .nav-button{
+        width:fit-content;
     }
     nav img {
         width: 120px;
     }
     .nav-right {
-        display: flex;
-        flex-direction:column;
+        display: block;
+        margin:auto 0px;
+    }
+    .nav-right .login{
+        padding: 0px;
     }
     .menu {
         display: block;
         cursor: pointer;
+        flex:0.6;
     }
     .menu i {
         color: white;
         font-size: 24px;
         display: block;
-        margin-left:50%;
+        margin-left:90%;
     }
     header {
         margin: 0;
@@ -18997,6 +19069,15 @@ span, .weight{
         border: none;
         outline: none;
         cursor: pointer;
+    }
+    .linke {
+        display:flex;
+        flex-direction:column;
+        width:fit-content;
+        height:fit-content;
+    }
+    .linke .homee{
+        display:none;
     }
     .hero-section{
         width:100%;
@@ -21996,6 +22077,9 @@ span, .weight{
 
 
 @media(max-width:320px){
+    .nav-link .row{
+        flex-direction: column;
+    }
     nav {
         padding: 9px 10px;
         display: flex;
@@ -22004,7 +22088,7 @@ span, .weight{
         justify-content: space-between;
         position: fixed;
         top: 1%;
-        width: 98%;
+        width: 96%;
         right:1%;
         left:1%;
         z-index: 10;
@@ -22023,36 +22107,45 @@ span, .weight{
         flex-direction: column;
         text-align: center;
         width: 100%;
+        gap:12px;
         border-radius: 0 0 10px 10px;
     }
-
     .nav-link.show {
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
+        justify-content:center;
+        align-items:flex-start;
         padding-top: 15px;
     }
     .nav-link a {
-        padding: 12px 16px;
+        padding: 0px;
         background-color: inherit;
         width: 100%;
-        margin:15px;
+        margin:0px;
+    }
+    .nav-button{
+        width:fit-content;
     }
     nav img {
         width: 100px;
     }
     .nav-right {
-        display: flex;
-        flex-direction: column;
+        display: block;
+        margin:auto 0px;
+    }
+    .nav-right .login{
+        padding: 0px;
     }
     .menu {
         display: block;
         cursor: pointer;
+        flex:0.6;
     }
     .menu i {
         color: white;
         font-size: 24px;
         display: block;
-        margin-left:50%;
+        margin-left:80%;
     }
     header {
         margin: 0;
@@ -22066,6 +22159,15 @@ span, .weight{
         border: none;
         outline: none;
         cursor: pointer;
+    }
+    .linke {
+        display:flex;
+        flex-direction:column;
+        width:fit-content;
+        height:fit-content;
+    }
+    .linke .homee{
+        display:none;
     }
     .hero-section{
         width:100%;

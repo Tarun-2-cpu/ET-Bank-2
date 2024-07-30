@@ -201,6 +201,14 @@ nav {
     width: 97%;
     background: rgba(11, 22, 13, 0.644);
     backdrop-filter: blur(10px);
+    transition:transform 0.3s ease, opacity 0.3s ease;
+    transform:translateX(100%);
+    opacity:0;
+}
+.dropdown-content.show{
+    display:block;
+    transform:translateX(0);
+    opacity:1;
 }
 
 .dropdown-content a {
@@ -210,6 +218,7 @@ nav {
     text-decoration: none;
     display: block;
 }
+
 
 .dropdown-content a:hover {
     background-color: #dddddd70;
@@ -9082,6 +9091,16 @@ span, .weight{
     .dropdown-content{
         margin-top:117px;
         width:100%;
+        transform:translateX(100%);
+        opacity:0;
+    }
+    .dropdown-content .show{
+        transform:translateX(0);
+        opacity:1;
+    }
+    .dropdown-content.show{
+        transform:translateX(0);
+        opacity:1;
     }
     nav {
         padding: 9px 39px;
@@ -11872,7 +11891,13 @@ span, .weight{
     .waitlist-bottom .hero-text-right {
         width: 100%;
     }
-
+    .understand{
+        padding:0px;
+    }
+    .understand .text-detail{
+        position:static;
+        width:100%;
+    }
 
 
     /* child account */
@@ -15839,7 +15864,9 @@ span, .weight{
     .waitlist-bottom .hero-text-right {
         width: 100%;
     }
-
+    .understand .text-detail p:first-of-type{
+        font-size:34px;
+    }
 
 
 
@@ -18541,17 +18568,21 @@ span, .weight{
     .copy{
         padding:20px 15px;
     }
+    .understand .text-detail p:first-of-type{
+        font-size:29px;
+    }
 
-        /* Child account  */
 
-        .stash .mastercard .mastercard-img .inside-img{
-            position:absolute;
-            bottom:30%;
-            left:0;
-            width:220px;
-            margin:0 auto;
-            transform: translate(42%,50%);
-        }    
+    /* Child account  */
+
+    .stash .mastercard .mastercard-img .inside-img{
+        position:absolute;
+        bottom:30%;
+        left:0;
+        width:220px;
+        margin:0 auto;
+        transform: translate(42%,50%);
+    }    
     
     .revolut-card p:first-of-type{
         font-size:25px;
@@ -21779,6 +21810,9 @@ span, .weight{
     .copy{
         padding:20px 15px;
     }
+    .understand .text-detail p:first-of-type{
+        font-size:25px;
+    }
 
 
     /* Child account  */
@@ -24478,12 +24512,17 @@ span, .weight{
         margin-right: 0px;
         padding:20px 15px;
     }
-    
     .copy{
         padding:20px 15px;
     }
     .copy p{
         font-size:16px;
+    }
+    .understand .text-detail p:first-of-type{
+        font-size:21px;
+    }
+    .understand .text-detail{
+        padding:25px;
     }
 
 

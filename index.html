@@ -24,7 +24,7 @@
     <header>
         <nav>
             <div class="nav-top row">
-               <a href="index.html"><img src="./images/Header-logo.png" alt="Logo"></a>
+                <a href="index.html"><img src="./images/Header-logo.png" alt="Logo"></a>
                 <div class="menu row">
                     <i class="ri-menu-line"></i>
                     <div class="nav-link">
@@ -561,21 +561,19 @@
             });
         });
 
-
-
         function toggleDropdown(dropdownId) {
             const dropdown = document.getElementById(dropdownId);
-            const isVisible = dropdown.style.display === 'block';
+            const isVisible = dropdown.classList.contains('show');
             hideAllDropdowns();
             if (!isVisible) {
-                dropdown.style.display = 'block';
+                dropdown.classList.add('show');
             }
         }
 
         function hideAllDropdowns() {
             const dropdowns = document.querySelectorAll('.dropdown-content');
             dropdowns.forEach(dropdown => {
-                dropdown.style.display = 'none';
+                dropdown.classList.remove('show');
             });
         }
 
@@ -590,13 +588,8 @@
         document.addEventListener('DOMContentLoaded', function () {
             hideAllDropdowns();
         });
-
-
-
-
-
-
     </script>
+
 
 </body>
 

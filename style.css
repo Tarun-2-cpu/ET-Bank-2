@@ -334,7 +334,7 @@ nav img {
 }
 .hero-description{
     position:absolute;
-    top:40%;
+    top:37%;
     margin-left:56px;
 }
 .bank-beyond{
@@ -378,15 +378,12 @@ nav img {
     left:3%;
 }
 
-
-
 .next-gen-right-top{
     position:relative;
     z-index:1;
     background-color: #ffffffc2;
     border-radius:20px;
 }
-
 
 .next-gen-left-title{
     font-size:55px;
@@ -417,6 +414,14 @@ nav img {
 .next-gen-left-top img{
     width:100%;
     object-fit: cover;
+    border-radius: 20px;
+}
+.next-gen-left-top-text{
+    background-image: url(images/shadow.png);
+    background-size: cover;
+    width:100%;
+    padding-bottom:37px;
+    border-radius: 20px;
 }
 .next-gen-left-top p:first-of-type{
     font-size:35px;
@@ -429,7 +434,7 @@ nav img {
 .next-gen-left-top-text{
     position:absolute;
     top:70%;
-    margin-left:40px;
+    padding-left:20px;
 }
 .next-gen-left-bottom{
     background-color:#1B5962;
@@ -472,7 +477,6 @@ nav img {
     font-size:16px;
     color:#000000;
 }
-
 .next-gen-right-bottom{
   background-color:#B4F6DB;
   padding:0 40px;
@@ -497,6 +501,13 @@ nav img {
     height:fit-content;
     padding:15px;
 }
+.do-more {
+    background-image: url(images/do-more-bg.png);
+    background-blend-mode: color;
+    background-repeat: no-repeat;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
 .do-more-card p:first-of-type{
     font-size:24px;
     margin-bottom: 20px;
@@ -531,9 +542,6 @@ nav img {
 .card-1{
     padding-bottom:40px;
 }
-
-
-
 
 .product{
     padding:0px 46px;
@@ -579,6 +587,9 @@ nav img {
     width:100%;
     border-radius:16px;
 }
+.optimize-image img{
+    width:100%;
+}
 .optimize-section{
     padding-top:109px;
 }
@@ -594,9 +605,20 @@ nav img {
     margin-top:122px;
     padding-bottom:47px;
 }
+.optimize-top{
+    background-image: url(images/optimize-bg.png);
+    background-color:rgb(255,255,255,0.7);
+    background-repeat: no-repeat;
+}
 .optimize-top,
 .optimize-middle{
     gap:20px;
+}
+.optimize-middle{
+    background-image: url(images/explore-bg.png);
+    background-color:rgb(255,255,255,0.7);
+    background-repeat: no-repeat;
+    background-position: top;
 }
 .optimize-middle .optimize-top-title{
     font-size:60px;
@@ -636,7 +658,6 @@ nav img {
     left:-9%;
     z-index:-1;
 }
-
 .optimize-middle .optimize-text{
     margin-top:185px;
     margin-left:90px;
@@ -650,18 +671,25 @@ nav img {
     margin-top:126px;
     margin-bottom:150px;
 }
-
 .optimize-top,
 .optimize-middle,
 .optimize-bottom{
     justify-content: space-between;
 }
-
+.plan-full{
+    background-image: url(images/select-card-bg.png);
+    background-color: rgb(255,255,255,0.8);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position:bottom;
+}
 .plan-card{
     margin:0 auto;
     text-align: center;
 }
-
+.plan-card .description ul{
+    list-style-type: none;
+}
 .plan-card .grow{
     font-size:20px;
     letter-spacing: -3%;
@@ -672,14 +700,13 @@ nav img {
     background-color: #00D47E;
     color:#1B5962;
     font-size:12px;
-    padding:4px;
+    padding:4px;    
     border-radius:4px;
 }
 .plan-card .free{
     font-size:40px; 
     letter-spacing: -3%;
 }
-
 .plan-card .col-3{
     width:60%;
     margin:0 auto;
@@ -697,7 +724,6 @@ nav img {
     color:#000;
     margin:8px 0;
 }
-
 .plan-card .img{
     width:100%;
 }
@@ -714,7 +740,6 @@ nav img {
     margin: 0 20px;
     border-radius: 8px;
     padding: 0px;
-    background-image: url(images/banner-lines.png), url(images/Vector\ 2.png);
     background-repeat: no-repeat, no-repeat;
     background-size: cover, contain;
     background-position: center, center;
@@ -722,6 +747,8 @@ nav img {
     bottom: 0;
     right: 0;
     left: 0;
+    background-image: url(images/banner-bg.png);
+    background-repeat: no-repeat;
 }
 
 .banner-left .Are{
@@ -756,6 +783,11 @@ nav img {
 .footer{
     padding-top:75px;
     justify-content: space-between;
+}
+.footer-full{
+    background-image: url(images/footer-bg.png);
+    padding-bottom:80px;
+    background-color: rgb(255,255,255,0.8);
 }
 .footer-icon{
     gap:20px;
@@ -839,6 +871,7 @@ nav img {
 .swiper {
     width: 100%;
     height: 100%;
+    border-radius: 20px;
 }
 
 .swiper-slide {
@@ -855,11 +888,13 @@ nav img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 20px;
 }
 
 .swiper {
     margin-left: auto;
     margin-right: auto;
+    border-radius:20px;
 }
 
 .slider-title{
@@ -873,6 +908,10 @@ nav img {
 } 
 .swiper-slide{
     position:relative;
+    border-radius:20px;
+}
+.swiper-img{
+    border-radius: 20px;
 }
 .slider-text{
     position:absolute;
@@ -885,6 +924,7 @@ nav img {
     text-align:left;
     padding-left:30px;
     background: linear-gradient(rgba(255, 255, 255, 0.027) 60%, rgba(0, 0, 0, 0.87));
+    border-radius: 20px;
 }
 .slider-container{
     background-color: #F5F5F5;
@@ -917,43 +957,44 @@ nav img {
     font-size:25px;
     color:#000000b4;
 }
-.card-container{
-    display: flex;
-    justify-content: center;
-  }
-
-  .card-container {
-    position: absolute;
+.card-container {
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+    z-index: 9999;
     background-color: rgba(0, 0, 0, 0.8);
     display: none;
-    z-index: 9999;
-  }
-  .card {
+    align-items: center;
+    justify-content: space-evenly;
+    overflow: auto;
+}
+
+.card {
     background-color: #1B5962;
     color: #ffffff;
     border-radius: 10px;
     padding: 20px;
-    margin: 20px auto;
     text-align: center;
     max-width: 80%;
-  }
-  table {
+    max-height: 80%;
+    overflow: auto;
+}
+
+table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
-  }
-  th, td {
+}
+th, td {
     padding: 10px;
     border-bottom: 1px solid #fff;
-  }
-  th {
+}
+th {
     background-color: #00D47E;
-  }
-  .close-btn {
+}
+.close-btn {
     position: absolute;
     top: 10px;
     right: 10px;
@@ -3450,6 +3491,9 @@ span, .weight{
         margin: 0px;
         margin-right: 0px;
     }
+    .container{
+        padding:0 60px;
+    }
     nav{
         width:100%;
     }
@@ -3475,7 +3519,7 @@ span, .weight{
     }
     .hero-description{
         position:absolute;
-        top:42%;
+        top:34%;
         margin-left:56px;
     }
     .bank-beyond{
@@ -3559,6 +3603,11 @@ span, .weight{
     .next-gen-left-top img{
         width:100%;
         object-fit: cover;
+        border-radius:20px;
+    }
+    .next-gen-left-top-text{
+        padding-bottom:49px;
+        border-radius: 20px;
     }
     .next-gen-left-top p:first-of-type{
         font-size:30px;
@@ -3571,7 +3620,7 @@ span, .weight{
     .next-gen-left-top-text{
         position:absolute;
         top:70%;
-        margin-left:40px;
+        padding-bottom:30px;
     }
     .next-gen-left-bottom{
         background-color:#1B5962;
@@ -3616,9 +3665,9 @@ span, .weight{
     .next-gen-right-bottom{
         background-color:#B4F6DB;
         padding:0 40px;
-        padding-top:51px;
+        padding-top:33px;
         border-radius:20px;
-        padding-bottom:60px;
+        padding-bottom:45px;
         margin-top:15px;
         justify-content: space-between;
         align-items:center;
@@ -3700,6 +3749,10 @@ span, .weight{
     }
     .next-gen-top-right p{
         margin-bottom:16px;
+    }
+    .slider-container {
+        background-color: #fff;
+        border-radius: 20px;
     }
     .product-inner-bottom{
         padding:0 20px;
@@ -6275,7 +6328,7 @@ span, .weight{
         width:180px;
     }
     .hero-description{
-        top:38%;
+        top:31%;
     }
     .bank-beyond{
         font-size:48px;
@@ -6417,6 +6470,32 @@ span, .weight{
     .optimize-bottom{
         justify-content: space-between;
         margin-right:20px;
+    }
+    .card-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 9999;
+        background-color: rgba(0, 0, 0, 0.8);
+        display: none;
+        align-items: center;
+        flex-direction: column;
+        gap:50px;
+        justify-content: space-evenly;
+        overflow: auto;
+    }
+    
+    .card {
+        background-color: #1B5962;
+        color: #ffffff;
+        border-radius: 10px;
+        padding: 20px;
+        text-align: center;
+        width: 100%;
+        max-height: unset;
+        overflow: unset;
     }
     .plan{
         padding: 0 30px;
@@ -7528,7 +7607,7 @@ span, .weight{
     
     .hero-description {
         position: absolute;
-        top: 55%;
+        top: 32%;
         margin-left: 25px;
         margin-right: 10px;
         overflow-y: auto;
@@ -7537,12 +7616,10 @@ span, .weight{
         font-size:40px;
         color:#fff;
     }
-    
     .typewriter{
         font-size:40px;
         margin: 0;
     }
-    
     .subtitle{
         font-size:16px;
     }
@@ -9121,7 +9198,7 @@ span, .weight{
     }
     .hero-description {
         position: absolute;
-        top: 56%;
+        top: 44%;
         left:4%;
         margin-left:10px;
         margin-right:10px;
@@ -12584,7 +12661,13 @@ span, .weight{
     nav img {
         width: 150px;
     }
+    .radius {
+        border-radius:20px;
+    }
     
+    .hero-description{
+        top:45%;
+    }
     header {
         margin: 0;
     }
@@ -12597,15 +12680,6 @@ span, .weight{
         border: none;
         outline: none;
         cursor: pointer;
-    }
-    .linke {
-        display:flex;
-        flex-direction:column;
-        width:fit-content;
-        height:fit-content;
-    }
-    .linke .homee{
-        display:none;
     }
     .hero-section{
         width:100%;
@@ -12622,12 +12696,13 @@ span, .weight{
     .hero-section{
         position:relative;
     }
-    .hero-description {
+    .hero-description{
         position: absolute;
-        top: 65%;
         margin-left: 10px;
         margin-right: 10px;
         width:100%;
+        left:2%;
+        padding-right:20px;
         overflow-y: auto;
     }
     .bank-beyond{
@@ -12636,7 +12711,7 @@ span, .weight{
     }
     .card-desktop .typewriter,
     .typewriter{
-        font-size:30px;
+        font-size:27px;
         overflow:auto;
         margin:0;
         font-weight:600;
@@ -12699,6 +12774,7 @@ span, .weight{
     }
     .next-gen-left-top img{
         width:100%;
+        border-radius:20px;
     }
     .next-gen-left-top p:first-of-type{
         font-size:35px;
@@ -13306,9 +13382,6 @@ span, .weight{
     }
     .col-8,.col-6{
         width:100%;
-    }
-    .hero-description{
-        top:55%;
     }
     .typewriter{
         color:#00D47E;

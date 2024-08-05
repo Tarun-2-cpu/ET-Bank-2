@@ -981,7 +981,6 @@ nav img {
     max-height: 80%;
     overflow: auto;
 }
-
 table {
     width: 100%;
     border-collapse: collapse;
@@ -1342,7 +1341,7 @@ th {
     border-radius: 20px;
 }
 .questions{
-    padding-top:150px;
+    padding-top:100px;
 }
 .questions-title{
     font-size:66px;
@@ -1369,7 +1368,7 @@ th {
 }
 
 .products{
-    padding-top:200px;
+    padding-top:150px;
     border-radius:20px;
 }
 .product-dropdown{
@@ -1633,6 +1632,10 @@ span, .weight{
 
 /****************    Business Card       *********************/
 
+.business-card-hero img{
+    height:calc(100vh - 60px);
+    object-fit:cover;
+}
 .business-card .typewriter:first-of-type{
     font-size:28px;
 }
@@ -1806,7 +1809,10 @@ span, .weight{
 
 /**********  tap to pay    ************/
 
-
+.tap-hero img:first-of-type{
+    height:calc(100vh - 60px);
+    object-fit: cover;
+}
 .tap .hero-description{
     top:unset;
     bottom:0px;
@@ -1948,6 +1954,19 @@ span, .weight{
 
 /************ business account ***************/
 
+
+.bus-hero-section{
+    height:calc(100vh - 60px);
+    object-fit:cover;
+}
+.bus-hero-section .bus-ac-left{
+    width:50%;
+}
+.bus-hero-section .bus-ac-left img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
 .bus-ac-right,
 .bus-ac-left{
     padding:0px;
@@ -2002,9 +2021,18 @@ span, .weight{
 .bus-ac .benefit-text p{
     margin:0 auto;
 }
+.easier{
+    padding-top:100px;
+}
+.mastercard{
+    justify-content: space-between;
+}
 .benefit-des-bg{
     background-image: url(images/sol.png);
     background-size: cover;
+}
+.b-des-ad{
+    margin-top:40px;
 }
 .b-des-left{
     padding-left:66px;
@@ -2098,9 +2126,11 @@ span, .weight{
 }
 .ad-bg{
     background-color:#f0f0f0;
-    padding-top:93px;
-    padding-bottom:83px;
+    padding-top:50px;
+    padding-bottom:50px;
     border-radius: 20px;
+    margin-top:80px;
+    margin-bottom:60px;
 }
 .saved{
     padding:112px 0px;
@@ -2148,8 +2178,8 @@ span, .weight{
     margin:20px 0;
 }
 .review{
-    padding-top:40px;
-    padding-bottom:55px;
+    padding-top:70px;
+    padding-bottom:70px;
 }
 .review .review-left .title{
     font-size:50px;
@@ -2740,7 +2770,7 @@ span, .weight{
 /* Personal Loans*/
 
 .personal-loan .hero-description{
-    top:140px;
+    top:120px;
     left:103px;
 }
 .personal-loan .hero-section-text{
@@ -3009,7 +3039,7 @@ span, .weight{
 /* parent account */
 
 .parents .hero-description{
-    top:30%;
+    top:7%;
 }
 .parents .hero-description .hero-section-text{
     padding-top:70px;
@@ -3462,7 +3492,10 @@ span, .weight{
     width:100%;
 }
 .privacy .hero-description .hero-img{
-    width:38%;
+    width:31%;
+}
+.privacy .hero-description .hero-img img{
+    width:100%;
 }
 .privacy .hero-description .hero-section-text{
     width:62%;
@@ -4660,6 +4693,7 @@ span, .weight{
         width:100%;
         padding:0 30px;
     }
+    
     .tap .hero-description{
         top:unset;
         bottom:0px;
@@ -4839,8 +4873,8 @@ span, .weight{
         padding:0px;
         margin:0 auto;
     }
-    .bus-ac-right{
-        padding-top:140px;
+    .bus-ac-right {
+        padding-top: 89px;
     }
     .right-box{
         background:#fff;
@@ -4880,6 +4914,9 @@ span, .weight{
     .benefit-des-bg{
         background-image: url(images/sol.png);
         background-size: cover;
+    }
+    .business-card .benefit-text{
+        margin-bottom: 50px;
     }
     .b-des-left{
         padding-left:0px;
@@ -5524,8 +5561,9 @@ span, .weight{
 
     /* Personal Loans*/
 
+    
     .personal-loan .hero-description{
-        top:140px;
+        top:40px;
         left:103px;
     }
     .personal-loan .hero-section-text{
@@ -5535,10 +5573,10 @@ span, .weight{
         gap:25px;
     }
     .personal-loan .hero-section-text .typewriter{
-        font-size:48px;
+        font-size:44px;
     }
     .personal-loan .hero-section-text .subtitle{
-        font-size:24px;
+        font-size:21px;
     }
     .personal-loan .hero-text-right p:first-of-type{
         margin-bottom:17px;
@@ -5724,6 +5762,8 @@ span, .weight{
 
         /* child account */
 
+
+        
     .child .mastercard{
         justify-content: space-between;
     }
@@ -6331,7 +6371,7 @@ span, .weight{
     /* parent account */
 
     .parents .hero-description{
-        top:20%;
+        top:7%;
     }
 
 
@@ -10760,9 +10800,14 @@ span, .weight{
 
     /****************    Business Card       *********************/
 
+
+    .business-card-hero img{
+        height:calc(100vh - 60px);
+        object-fit:cover;
+    }
     .business .hero-description {
         position: absolute;
-        top: 65%;
+        top: 50%;
         margin-left: 13px;
         width:80%;
     }
@@ -10985,8 +11030,16 @@ span, .weight{
         width:100%;
         padding:0 30px;
     }
+    .tap-hero img:first-of-type{
+        height:unset;
+        object-fit:unset;
+    }
+    .tap-hero img{
+        height:calc(100vh - 60px);
+        object-fit:cover;
+    }
     .tap .hero-description{
-        top:unset;
+        top:12.5%;
         bottom:0px;
         flex-wrap:nowrap;
     }
@@ -11006,12 +11059,18 @@ span, .weight{
     }
     .tap .hero-img{
         width:50%;
+        display: flex;
+        align-items:baseline;
+        justify-content:center;
+    }
+    .tap .hero-img img{
+        width:100%;
     }
     .tap .benefit-swipper .card-2 p{
         margin-bottom:28px;
     }
     .hero-img{
-        margin-right:40px;
+        margin-right:0px;
     }
     .hero-img img{
         width:100%;
@@ -11170,7 +11229,7 @@ span, .weight{
         padding:0px;
         margin-top:40px;
     }
-
+    
 
 
     /************ business account ***************/
@@ -11310,6 +11369,7 @@ span, .weight{
     .master-2 .mastercard-right{
         margin-left:0px;
         padding-left:25px;
+        width:100%;
     }
     .bus-ac .mastercard{
         padding-right:0px;
@@ -11511,11 +11571,22 @@ span, .weight{
         padding-left: 15px;
         padding-right: 15px;
     }
-    /*  */
-
-    /*  Future Built */
-
     
+
+    /* Parent  */
+
+    .parents .hero-description{
+        flex-wrap:wrap-reverse;
+        top:1%;
+    }
+    .parents .hero-section-text{
+        width:100%;
+    }
+    .parents .hero-img{
+        width:100%;
+    }
+
+
     /*  Future Built */
 
     .future .hero-description {
@@ -11818,8 +11889,12 @@ span, .weight{
 
     /* Personal Loans*/
 
+    .personal-loan-hero img{
+        height:calc(100vh - 60px);
+        object-fit:cover;
+    }
     .personal-loan .hero-description{
-        top:50%;
+        top:37%;
         left:70px;
     }
     .personal-loan .hero-section-text{
@@ -12054,6 +12129,10 @@ span, .weight{
 
     /* child account */
 
+
+    .chill .subtitle{
+        font-size:17px;
+    }
     .child .mastercard{
         justify-content: unset;
     }
@@ -12416,6 +12495,10 @@ span, .weight{
         display: flex;
         align-items:flex-end;
         justify-content: flex-end;
+        top:30%;
+    }
+    .esim img{
+        height:calc(100vh - 60px);
     }
     .esim .hero-section-text {
         background-color: #071C004D;
@@ -12810,6 +12893,26 @@ span, .weight{
     .pri-cont{
         padding:0px 60px;
         padding-bottom:100px;
+    }
+
+
+    
+    /* Parent  */
+
+    .parents .hero-description{
+        flex-wrap:wrap-reverse;
+        top:1%;
+    }
+    .parents .hero-section-text{
+        width:100%;
+    }
+    .parents .hero-img{
+        width:370px;
+        margin:0 auto;
+    }
+    .parents .hero-img img{
+        width:100%;
+        height:100%;
     }
 }
 
@@ -14817,12 +14920,20 @@ span, .weight{
     .product-dropdown{
         border-radius:20px;
     }
+
+
+
     /*** BUsiness card**/
 
-    .business .hero-description{
-        top:55%;
+    .business-card-hero img{
+        height:calc(100vh - 60px);
+        object-fit:cover;
+    }
+    .business .hero-description {
+        position: absolute;
+        top: 40%;
+        margin-left: 13px;
         width:95%;
-        left:2%;
     }
 
 
@@ -14830,46 +14941,57 @@ span, .weight{
 
     .cont{
         width:100%;
-        padding:0 15px;
+        padding:0 30px;
+    }
+    .tap-hero{
+        height:100vh;
+        width:100%;
+    }
+    .tap-hero img:first-of-type{
+        height:calc(100vh - 60px);
+        object-fit:cover;
+        width:100%;
+    }
+    .tap-hero img{
+        object-fit:contain;
     }
     .tap .hero-description{
-        top:unset;
+        top:0%;
         bottom:0px;
-        flex-wrap:wrap;
+        left:0px;
+        flex-wrap:nowrap;
+        justify-content: space-evenly;    
     }
     .tap .hero-description .business-card .typewriter {
         padding: 0px;
-        font-size: 36px;
-        width: 86%;
+        font-size: 30px;
+        width: 100%;
+        margin-top:70px;
     }
     .tap .hero-description .subtitle{
-        font-size:16px;
+        font-size:14px;
         width:100%;
         padding-right:0px;
     }
     .tap .hero-section-text{
-        padding-top:90px;
-        width:90%;
-    }
-    .tap .hero-img{
-        width:100%;
-        display: flex;
-        align-items:center;
-        justify-content: center;
-        margin-left:45%;
+        padding-top:0px;
+        width:45%;
+        padding:0px;
+        padding-left:10px;
     }
     .tap .hero-img img{
         width:100%;
-        display: flex;
-        align-items:center;
-        justify-content:flex-end;
+        object-fit: cover;
+    }
+    .tap .hero-img{
+        width:55%;
+        margin-left:0px;
+        padding:0px;
     }
     .tap .benefit-swipper .card-2 p{
         margin-bottom:28px;
     }
-    .hero-img{
-        margin-right:0px;
-    }
+    
     .tap .benefit-text p{
         font-size:40px;
     }
@@ -15031,6 +15153,9 @@ span, .weight{
 
         /************ business account ***************/
 
+    .bus-hero-section .bus-ac-left{
+        width:100%;
+    }    
     .bus-ac-right,
     .bus-ac-left{
         padding:0px;
@@ -15099,12 +15224,16 @@ span, .weight{
         font-size:27px;
         padding:0;
     }
+    .benefit-des{
+        padding:0 15px;
+    }
     .benefit-des-bg{
         background-image: url(images/sol.png);
         background-size: cover;
     }
     .b-des-left{
         width:100%;
+        
     }
     .b-des-right{
         width:100%;
@@ -15119,6 +15248,7 @@ span, .weight{
     .b-des-left .subtitle{
         font-size:15px;
         margin-top:20px;
+        padding-right:0px;
     }
     .des-bottom{
         margin-top:41px;
@@ -15320,6 +15450,9 @@ span, .weight{
     }
     .join-right{
         margin:auto 0;
+        width:100%;
+    }
+    .join .join-inner img{
         width:100%;
     }
     .bus-acc .col-9{
@@ -15637,8 +15770,12 @@ span, .weight{
 
     /* Personal Loans*/
 
+    .personal-loan-hero img{
+        height:calc(100vh - 60px);
+        object-fit:cover;
+    }
     .personal-loan .hero-description{
-        top:45%;
+        top:32%;
         left:40px;
     }
     .personal-loan .hero-section-text{
@@ -15754,8 +15891,12 @@ span, .weight{
 
     /* Personal Loans*/
 
+    .personal-loan-hero img{
+        height:calc(100vh - 60px);
+        object-fit:cover;
+    }
     .personal-loan .hero-description{
-        top:45%;
+        top:34%;
         left:40px;
     }
     .personal-loan .hero-section-text{
@@ -15976,6 +16117,18 @@ span, .weight{
 
     /* child account */
 
+    .chill .hero-description{
+        top:20%;
+        left:2%;
+        display:unset;
+    }
+    .chill .hero-description .business-card .typewriter {
+        font-size:45px;
+    }
+    .chill .hero-description .subtitle{
+        font-size:20px;
+        width:100%;
+    }
     .stash .mastercard .mastercard-img .inside-img{
         position:absolute;
         bottom:30%;
@@ -16150,25 +16303,31 @@ span, .weight{
 
     .esim .hero-description{
         right:0px;
-        top:40%;
         left:unset;
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        top:33%;
+    }
+    .esim img{
+        height:calc(100vh - 60px);
     }
     .esim .hero-section-text {
         background-color: #071C004D;
         width: 100%;
-        margin-right: 20px;
+        margin-right: 0px;
         padding:15px 10px;
     }
     .esim .hero-section-text button{
         margin-top:0px;
     }
     .esim .hero-section-text p:first-of-type {
-        font-size: 35px;
+        font-size: 30px;
         padding-left: 0px;
         margin-bottom:15px;
     }
     .esim .hero-section-text .sub {
-        font-size: 17px;
+        font-size: 15px;
         margin-bottom:15px;
     }
     .esim .hero-section-text {
@@ -16493,6 +16652,30 @@ span, .weight{
     .pri-cont{
         padding:0px 60px;
         padding-bottom:100px;
+    }
+
+
+
+    /* Parent  */
+
+    .parents .hero-description{
+        flex-wrap:wrap-reverse;
+        top:1%;
+    }
+    .parents .hero-section-text{
+        width:100%;
+    }
+    .parents .hero-img{
+        width:410px;
+        margin:0 auto;
+    }
+    .parents .hero-img img{
+        width:100%;
+        height:100%;
+    }
+
+    .parents .hero-description .business-card .typewriter {
+        margin-top:0px;
     }
 }
 
@@ -18064,39 +18247,52 @@ span, .weight{
 
     .cont{
         width:100%;
-        padding:0 15px;
+        padding:0 30px;
+    }
+    .tap-hero{
+        height:100vh;
+        width:100%;
+    }
+    .tap-hero img:first-of-type{
+        height:calc(100vh - 60px);
+        object-fit:cover;
+        width:100%;
+    }
+    .tap-hero img{
+        object-fit:contain;
     }
     .tap .hero-description{
-        top:unset;
+        top:0%;
         bottom:0px;
-        flex-wrap:wrap;
+        left:0px;
+        flex-wrap:nowrap;
+        justify-content: space-evenly;    
     }
     .tap .hero-description .business-card .typewriter {
         padding: 0px;
-        font-size: 36px;
+        font-size: 30px;
         width: 100%;
+        margin-top:100px;
     }
     .tap .hero-description .subtitle{
-        font-size:16px;
+        font-size:12px;
         width:100%;
         padding-right:0px;
     }
     .tap .hero-section-text{
         padding-top:0px;
-        width:90%;
-    }
-    .tap .hero-img{
-        width:100%;
-        display: flex;
-        align-items:center;
-        justify-content: center;
-        margin-left:35%;
+        width:40%;
+        padding:0px;
+        padding-left:10px;
     }
     .tap .hero-img img{
         width:100%;
-        display: flex;
-        align-items:center;
-        justify-content:flex-end;
+        object-fit: cover;
+    }
+    .tap .hero-img{
+        width:60%;
+        margin-left:0px;
+        padding:0px;
     }
     .tap .benefit-swipper .card-2 p{
         margin-bottom:28px;
@@ -18594,17 +18790,21 @@ span, .weight{
 
     /* Personal Loans*/
 
+    .personal-loan-hero img{
+        height:calc(100vh - 60px);
+        object-fit:cover;
+    }
     .personal-loan .hero-description{
-        top:48%;
+        top:34%;
         left:40px;
     }
     .personal-loan .hero-section-text .typewriter{
         font-size:30px;
-        width:90%;
+        width:100%;
     }
     .personal-loan .hero-section-text .subtitle{
         font-size:20px;
-        width:90%;
+        width:100%;
     }
     .personal-loan .hero-text-right p:first-of-type{
         margin-bottom:17px;
@@ -18676,8 +18876,20 @@ span, .weight{
     }
 
 
-    /* Child account  */
+    /* child account */
 
+    .chill .hero-description{
+        top:20%;
+        left:2%;
+        display:unset;
+    }
+    .chill .hero-description .business-card .typewriter {
+        font-size:45px;
+    }
+    .chill .hero-description .subtitle{
+        font-size:20px;
+        width:100%;
+    }
     .stash .mastercard .mastercard-img .inside-img{
         position:absolute;
         bottom:30%;
@@ -18757,20 +18969,27 @@ span, .weight{
 
     .esim .hero-description{
         right:0px;
-        top:45%;
         left:unset;
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        top:33%;
+        padding:0px;
+    }
+    .esim img{
+        height:calc(100vh - 60px);
     }
     .esim .hero-section-text {
         background-color: #071C004D;
         width: 100%;
-        margin-right: 20px;
-        padding:15px;
+        margin-right: 0px;
+        padding:15px 10px;
     }
     .esim .hero-section-text button{
         margin-top:0px;
     }
     .esim .hero-section-text p:first-of-type {
-        font-size: 30px;
+        font-size: 27px;
         padding-left: 0px;
         margin-bottom:15px;
     }
@@ -18779,8 +18998,8 @@ span, .weight{
         margin-bottom:15px;
     }
     .esim .hero-section-text {
-        width: 100%;
-        padding:30px;
+        width: 90%;
+        padding:15px;
     }
     .set{
         padding-top:50px;
@@ -19118,6 +19337,45 @@ span, .weight{
     .ultra-rev{
         flex-wrap:wrap-reverse;
     }
+
+    /*** BUsiness card**/
+
+    .business-card-hero img{
+        height:calc(100vh - 60px);
+        object-fit:cover;
+    }
+    .business .hero-description {
+        position: absolute;
+        top: 40%;
+        margin-left:0px;
+        width:100%;
+    }
+
+
+
+    /* Parent  */
+
+    .parents .hero-description{
+        display:flex;
+        flex-wrap:wrap-reverse !important;
+        top:1%;
+    }
+    .parents .hero-section-text{
+        width:100%;
+    }
+    .parents .hero-img{
+        width:310px;
+        margin:0 auto;
+    }
+    .parents .hero-img img{
+        width:100%;
+        height:100%;
+    }
+    .parents .hero-description .business-card .typewriter {
+        margin-top:0px;
+        font-size:26px;
+    }
+
 }
 
 
@@ -21305,11 +21563,17 @@ span, .weight{
         width:90%;
     }
 
-/*** BUsiness card**/
+    /*** BUsiness card**/
 
-    .business .hero-description{
-        top:55%;
-        left:2%;
+    .business-card-hero img{
+        height:calc(100vh - 60px);
+        object-fit:cover;
+    }
+    .business .hero-description {
+        position: absolute;
+        top: 40%;
+        margin-left:0px;
+        width:100%;
     }
 
 
@@ -21318,39 +21582,46 @@ span, .weight{
 
     .cont{
         width:100%;
-        padding:0 15px;
+        padding:0 30px;
+    }
+    .tap-hero{
+        height:100vh;
+        width:100%;
+    }
+    .tap-hero img:first-of-type{
+        height:calc(100vh - 60px);
+        object-fit:cover;
+        width:100%;
+    }
+    .tap-hero img{
+        object-fit:contain;
     }
     .tap .hero-description{
-        top:unset;
+        top:50%; 
         bottom:0px;
-        flex-wrap:wrap;
+        left:0px;
+        flex-wrap:nowrap;
+        justify-content: space-evenly;    
     }
     .tap .hero-description .business-card .typewriter {
         padding: 0px;
-        font-size: 36px;
+        font-size: 35px;
         width: 100%;
+        margin-top:0px;
     }
     .tap .hero-description .subtitle{
-        font-size:16px;
+        font-size:14px;
         width:100%;
         padding-right:0px;
     }
     .tap .hero-section-text{
         padding-top:0px;
-        width:90%;
+        width:unset;
+        padding:0px;
+        padding-left:10px;
     }
     .tap .hero-img{
-        width:100%;
-        display: flex;
-        align-items:center;
-        justify-content: center;
-        margin-left:35%;
-    }
-    .tap .hero-img img{
-        width:100%;
-        display: flex;
-        align-items:center;
-        justify-content:flex-end;
+        display:none;
     }
     .tap .benefit-swipper .card-2 p{
         margin-bottom:28px;
@@ -21860,17 +22131,21 @@ span, .weight{
 
     /* Personal Loans*/
 
+    .personal-loan-hero img{
+        height:calc(100vh - 60px);
+        object-fit:cover;
+    }
     .personal-loan .hero-description{
-        top:48%;
-        left:20px;
+        top:40%;
+        left:0px;
     }
     .personal-loan .hero-section-text .typewriter{
         font-size:30px;
-        width:90%;
+        width:95%;
     }
     .personal-loan .hero-section-text .subtitle{
-        font-size:20px;
-        width:90%;
+        font-size:16px;
+        width:95%;
     }
     .surprise-title p:first-of-type{
         font-size:28px;
@@ -21943,6 +22218,19 @@ span, .weight{
 
 
     /* Child account  */
+
+    .chill .hero-description{
+        top:35%;
+        left:2%;
+        display:unset;
+    }
+    .chill .hero-description .business-card .typewriter {
+        font-size:40px;
+    }
+    .chill .hero-description .subtitle{
+        font-size:20px;
+        width:100%;
+    }
 
     .stash .mastercard .mastercard-img .inside-img{
         position:absolute;
@@ -22033,14 +22321,26 @@ span, .weight{
     /* E sim */
 
     .esim .hero-description{
-        top:50%;
+        right:0px;
+        left:unset;
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        top:33%;
+        padding:0px;
+        margin-right:0px;
+    }
+    .esim img{
+        height:calc(100vh - 60px);
     }
     .esim .hero-section-text {
+        background-color: #071C004D;
+        width: 95%;
         margin-right: 0px;
-        padding:15px;
+        padding:15px 10px;
     }
     .esim .hero-section-text p:first-of-type {
-        font-size: 30px;
+        font-size: 26px;
         margin-bottom:15px;
     }
     .esim .hero-section-text .sub {
@@ -22103,35 +22403,28 @@ span, .weight{
         padding-left: 15px;
     }
 
-    /* parent card */
-
-    /* parent account */
+    /* Parent  */
 
     .parents .hero-description{
-        top:10%;
-        left:1%;
-        flex-wrap:wrap-reverse;   
+        display:flex;
+        flex-wrap:wrap-reverse !important;
+        top:1%;
+        height:fit-content;
     }
-    .parents .hero-description .hero-section-text{
-        padding-top:10px;
+    .parents .hero-section-text{
         width:100%;
-        padding-right:30px;
     }
-    .parents .hero-description .hero-img{
-        display: block;
-        margin-left:0px;
+    .parents .hero-img{
+        width:250px;
+        margin:0 auto;
     }
-    .parents .hero-description button{
-        margin-top:15px;
+    .parents .hero-img img{
+        width:100%;
+        height:100%;
     }
     .parents .hero-description .business-card .typewriter {
-        padding: 0px;
-        font-size: 28px;
-        width: 100%;
-    }
-    .parents .hero-description .subtitle {
-        font-size: 14px;
-        width:100%;
+        margin-top:0px;
+        font-size:26px;
     }
     
     
@@ -22183,6 +22476,10 @@ span, .weight{
     /* privacy */
 
 
+    .privacy img{
+        width:100%;
+        height:calc(100vh - 60px);
+    }
     .privacy .hero-description{
         top:12%;
         left:0%;
@@ -22195,15 +22492,19 @@ span, .weight{
         width:100%;
     }
     .privacy .hero-description .hero-img{
-        width:340px;
+        width:232px;
     }
     .privacy .hero-description .hero-section-text{
         width:fit-content;
         padding-top:40px;
-        padding-left:30px;
+        padding-left:0px;
+        width:100%;
+    }
+    .pri-cont{
+        width:100%;
     }
     .privacy .hero-description .hero-section-text .typewriter{
-        font-size:42px;
+        font-size:4px;
     }
     .privacy-title{
         font-size: 28px;
@@ -22243,6 +22544,33 @@ span, .weight{
     }
     .ultra-rev{
         flex-wrap:wrap-reverse;
+    }
+
+
+    /* Parent  */
+
+    .parents .hero-description{
+        display: flex;
+        flex-wrap:wrap-reverse !important;
+        top:0%;
+    }
+    .parents .hero-section-text{
+        width:100%;
+    }
+    .parents .hero-img{
+        width:300px;
+        margin:0 auto;
+    }
+    .parents .hero-img img{
+        width:100%;
+        height:100%;
+    }
+    .parents .hero-description .business-card .subtitle {
+        font-size:14px;
+    }
+    .parents .hero-description .business-card .typewriter {
+        margin-top:0px;
+        font-size:26px;
     }
 
 }
@@ -23952,19 +24280,18 @@ span, .weight{
 
     /**********  tap to pay    ************/
 
-    .cont{
-        width:100%;
-        padding:0 15px;
-    }
     .tap .hero-description{
-        top:unset;
+        top:40%; 
         bottom:0px;
-        flex-wrap:wrap;
+        left:0px;
+        flex-wrap:nowrap;
+        justify-content: space-evenly;    
     }
     .tap .hero-description .business-card .typewriter {
         padding: 0px;
-        font-size: 29px;
+        font-size: 35px;
         width: 100%;
+        margin-top:0px;
     }
     .tap .hero-description .subtitle{
         font-size:14px;
@@ -23973,20 +24300,12 @@ span, .weight{
     }
     .tap .hero-section-text{
         padding-top:0px;
-        width:90%;
+        width:unset;
+        padding:0px;
+        padding-left:10px;
     }
     .tap .hero-img{
-        width:100%;
-        display: flex;
-        align-items:center;
-        justify-content: center;
-        margin-left:10%;
-    }
-    .tap .hero-img img{
-        width:100%;
-        display: flex;
-        align-items:center;
-        justify-content:flex-end;
+        display:none;
     }
     .tap .benefit-swipper .card-2 p{
         margin-bottom:28px;
@@ -24158,15 +24477,17 @@ span, .weight{
 
     /* business-account */
 
-
+    .bus-hero-section{
+        height:fit-content;
+    }
     .bus-ac .benefit-text .title {
         font-size: 21px;
         padding:0px;
     }
-        .b-des-left .typewriter {
+    .b-des-left .typewriter {
         font-size: 27px;
     }
-        .b-des-left .subtitle {
+    .b-des-left .subtitle {
         font-size: 14px;
         padding-right:0px;
     }
@@ -24543,9 +24864,13 @@ span, .weight{
 
     /* Personal Loans*/
 
+    .personal-loan-hero img{
+        height:calc(100vh - 60px);
+        object-fit:cover;
+    }
     .personal-loan .hero-description{
-        top:50%;
-        left:20px;
+        top:43%;
+        left:0px;
     }
     .personal-loan .hero-section-text .typewriter{
         font-size:25px;
@@ -24775,61 +25100,9 @@ span, .weight{
         font-size:28px;
     }
 
-
-
-
-    /* parent card  */
-
-
-    /* parent account */
-
-    .parents .hero-description{
-        top:10%;
-        left:1%;
-        flex-wrap:wrap-reverse;   
-    }
-    .parents .hero-description .hero-section-text{
-        padding-top:20px;
-        width:100%;
-        padding-right:30px;
-    }
-    .parents .hero-description .hero-img{
-        display: block;
-        margin-left:0px;
-    }
-    .parents .hero-description button{
-        margin-top:20px;
-    }
-    .parents .hero-description .business-card .typewriter {
-        padding: 0px;
-        font-size: 28px;
-        width: 100%;
-    }
-    .parents .hero-description .subtitle {
-        font-size: 12px;
-        width:100%;
-    }
-    .good-habit .image-text button{
-        width: 45%;
-    }
-    .good-habit .benefit-text .sub {
-        font-size:13px;
-        width:100%;
-        padding-right:10px;
-    }
-    .journey .revolut .subtitle {
-        font-size: 20px;
-        padding:0;
-    }
-    .journey .revolut .title {
-        font-size: 25px;
-    }
-    .journey .revolut .revolut-last {
-        font-size: 14px;
-    }
-    .journey  .rev-top{
-        padding-left: 8px;
-    }
+    
+    
+    
 
 
 
@@ -24894,8 +25167,8 @@ span, .weight{
     .privacy .hero-description .hero-img img {
         width:100%;
     }
-    .privacy .hero-description .hero-img{
-        width:340px;
+    .privacy .hero-description .hero-img {
+        width: 260px;
     }
     .privacy .hero-description .hero-section-text{
         width:fit-content;
@@ -24906,7 +25179,7 @@ span, .weight{
         font-size:35px;
     }
     .privacy-title{
-        font-size: 28px;
+        font-size: 34px;
         font-style: normal;
         margin-bottom:30px;
         margin-top:40px;
@@ -24933,16 +25206,32 @@ span, .weight{
         padding-bottom:100px;
     }
 
-        /* Child account  */
 
-        .stash .mastercard .mastercard-img .inside-img{
-            position:absolute;
-            bottom:30%;
-            left:0;
-            width:160px;
-            margin:0 auto;
-            transform: translate(42%,50%);
-        }
+
+    /* Child account  */
+
+    .chill .hero-description{
+        top:35%;
+        left:2%;
+        display:unset;
+    }
+    .chill .hero-description .business-card .typewriter {
+        font-size:40px;
+        width:100%;
+    }
+    .chill .hero-description .subtitle{
+        font-size:20px;
+        width:100%;
+    }    
+
+    .stash .mastercard .mastercard-img .inside-img{
+        position:absolute;
+        bottom:30%;
+        left:0;
+        width:160px;
+        margin:0 auto;
+        transform: translate(42%,50%);
+    }
         .chill .hero-description .business-card .typewriter {
             font-size: 27px;
             width:100%;
@@ -24962,6 +25251,67 @@ span, .weight{
     }
     .ultra-rev{
         flex-wrap:wrap-reverse;
+    }
+
+    /*** BUsiness card**/
+
+    .business-card-hero img{
+        height:calc(100vh - 60px);
+        object-fit:cover;
+    }
+    .business .hero-description {
+        position: absolute;
+        top: 45%;
+        margin-left:0px;
+        width:100%;
+    }
+
+
+    /* Parent  */
+
+    .parent-hero .hero-description{
+        display: flex;
+        flex-wrap:wrap-reverse;
+        top:0%;
+    }
+    .parents .hero-section-text{
+        width:100%;
+    }
+    .parents .hero-img{
+        width:300px;
+        margin:0 auto;
+    }
+    .parents .hero-img img{
+        width:100%;
+        height:100%;
+    }
+    .parents .hero-description .business-card .subtitle {
+        font-size:14px;
+    }
+    .parents .hero-description .business-card .typewriter {
+        margin-top:0px;
+        font-size:26px;
+    }
+    .good-habit .image-text button{
+        width: 45%;
+    }
+    .good-habit .benefit-text .sub {
+        font-size:13px;
+        width:100%;
+        padding-right:10px;
+    }
+    .journey .revolut .subtitle {
+        font-size: 20px;
+        padding:0;
+    }
+    .journey .revolut .title {
+        font-size: 25px;
+    }
+    .journey .revolut .revolut-last {
+        font-size: 14px;
+    }
+    .journey  .rev-top{
+        padding-left: 8px;
     }
 }
 

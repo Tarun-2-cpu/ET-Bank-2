@@ -297,62 +297,48 @@
         document.addEventListener('DOMContentLoaded', (event) => {
             const knowMoreButtons = document.querySelectorAll('.starteded');
             const cardContainer = document.querySelector('.card-container');
-
-                const menu = document.querySelector('.menu');
-                const navbar = document.querySelector('.navbar');
-                const navRight = document.querySelector('.nav-right');
-                const menuIcon = menu.querySelector('i');
-
-                menu.addEventListener('click', function () {
-                    navbar.classList.toggle('show');
-                    navRight.classList.toggle('show');
-
-                    if (navbar.classList.contains('show')) {
-                        menuIcon.classList.remove('ri-menu-line');
-                        menuIcon.classList.add('ri-close-line');
-                    } else {
-                        menuIcon.classList.remove('ri-close-line');
-                        menuIcon.classList.add('ri-menu-line');
-                    }
+        
+            knowMoreButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    cardContainer.style.display = 'flex ';
                 });
-
-
-
-                knowMoreButtons.forEach(button => {
-                    button.addEventListener('click', () => {
-                        cardContainer.style.display = 'block';
-                    });
-                });
-
-                const closeButtons = document.querySelectorAll('.close-btn');
-                closeButtons.forEach(button => {
-                    button.addEventListener('click', () => {
-                        cardContainer.style.display = 'none';
-                    });
-                });
-
-
             });
-
-            function toggleDropdown(id) {
-                document.querySelectorAll('.dropdown-content').forEach(dropdown => {
-                    if (dropdown.id === id) {
-                        dropdown.classList.toggle('show');
-                    } else {
-                        dropdown.classList.remove('show');
-                    }
+        
+            const closeButtons = document.querySelectorAll('.close-btn');
+            closeButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    cardContainer.style.display = 'none';
                 });
-            }
-
+            });
+        
+            const menu = document.querySelector('.menu');
+            const navbar = document.querySelector('.navbar');
+            const navRight = document.querySelector('.nav-right');
+            const menuIcon = menu.querySelector('i');
+        
+            menu.addEventListener('click', function () {
+                navbar.classList.toggle('show');
+                navRight.classList.toggle('show');
+        
+                if (navbar.classList.contains('show')) {
+                    menuIcon.classList.remove('ri-menu-line');
+                    menuIcon.classList.add('ri-close-line');
+                } else {
+                    menuIcon.classList.remove('ri-close-line');
+                    menuIcon.classList.add('ri-menu-line');
+                }
+            });
+        
             document.addEventListener('click', function (event) {
-                const isClickInside = event.target.closest('.nav-link');
-                if (!isClickInside) {
+                const isClickInsideNav = event.target.closest('.nav-link');
+                const isClickInsideMenu = event.target.closest('.menu');
+                if (!isClickInsideNav && !isClickInsideMenu) {
                     document.querySelectorAll('.dropdown-content').forEach(dropdown => {
                         dropdown.classList.remove('show');
                     });
                 }
             });
-
+        });
     </script>
 </body>
 

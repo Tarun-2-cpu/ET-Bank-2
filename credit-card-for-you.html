@@ -220,7 +220,7 @@
         <section>
             <div class="col-12">
                 <div class="ultraviolet cont">
-                    <div class="ultra row">
+                    <div class="ultra row ultra-rev">
                         <div class="ultra-left col-6">
                             <div class="ultra-top row">
                                 <p>Ultraviolet Black Card</p>
@@ -239,9 +239,8 @@
 
                             <button class="apply">Read More <i class="ri-arrow-right-line"></i> </button>
                         </div>
-                        <div class="ultra-right col-6">
-                            <img src="images/bene-1-1.jpeg" alt="">
-                            <img src="images/bene-1-2.png" alt="">
+                        <div class="ultra-right col-5">
+                            <img src="images/bene-1-1.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -252,7 +251,7 @@
             <div class="col-12">
                 <div class="ultraviolet cont">
                     <div class="ultra row">
-                        <div class="ultra-right col-7">
+                        <div class="ultra-right col-6">
                             <img src="images/bene-2.png" alt="">
                         </div>
 
@@ -288,7 +287,7 @@
         <section>
             <div class="col-12">
                 <div class="ultraviolet cont">
-                    <div class="ultra row">
+                    <div class="ultra row ultra-rev">
                         <div class="ultra-left col-5">
                             <div class="ultra-top row">
                                 <p>Global Account</p>
@@ -312,7 +311,7 @@
 
                             <button class="apply">Learn More <i class="ri-arrow-right-line"></i> </button>
                         </div>
-                        <div class="ultra-right col-7">
+                        <div class="ultra-right col-6">
                             <img src="images/bene-3.jpeg" alt="">
                         </div>
                     </div>
@@ -331,12 +330,12 @@
                         <p class="ultra-title light-text">Share the management of your household bills and share the
                             benefits of
                             being Ultraviolet with those you love.</p>
-                        <p class="ultra-subtitle">A dedicated space to facilitate your family's financial management,
+                        <p class="ultra-subtitle col-8">A dedicated space to facilitate your family's financial management,
                             without leaving the privacy and security of your personal finances aside, all in one place.
                         </p>
                     </div>
                     <div class="ultra row">
-                        <div class="ultra-right col-7">
+                        <div class="ultra-right col-6">
                             <img src="images/bene-4.jpeg" alt="">
                         </div>
                         <div class="ultra-left col-5">
@@ -368,7 +367,7 @@
                 <div class="ultraviolet cont">
                     <div class="ultra row">
 
-                        <div class="ultra-right col-7">
+                        <div class="ultra-right col-6">
                             <img src="images/bene-5.jpeg" alt="">
                         </div>
 
@@ -404,7 +403,7 @@
         <section>
             <div class="col-12">
                 <div class="ultraviolet cont">
-                    <div class="ultra row">
+                    <div class="ultra row ultra-rev">
                         <div class="ultra-left col-5">
                             <div class="ultra-top row">
                                 <p>Ultraviolet Services</p>
@@ -427,7 +426,7 @@
 
                             <button class="apply">Learn More <i class="ri-arrow-right-line"></i> </button>
                         </div>
-                        <div class="ultra-right col-7">
+                        <div class="ultra-right col-6">
                             <img src="images/bene-6.png" alt="">
                         </div>
                     </div>
@@ -510,62 +509,48 @@
             document.addEventListener('DOMContentLoaded', (event) => {
                 const knowMoreButtons = document.querySelectorAll('.starteded');
                 const cardContainer = document.querySelector('.card-container');
-    
-                    const menu = document.querySelector('.menu');
-                    const navbar = document.querySelector('.navbar');
-                    const navRight = document.querySelector('.nav-right');
-                    const menuIcon = menu.querySelector('i');
-    
-                    menu.addEventListener('click', function () {
-                        navbar.classList.toggle('show');
-                        navRight.classList.toggle('show');
-    
-                        if (navbar.classList.contains('show')) {
-                            menuIcon.classList.remove('ri-menu-line');
-                            menuIcon.classList.add('ri-close-line');
-                        } else {
-                            menuIcon.classList.remove('ri-close-line');
-                            menuIcon.classList.add('ri-menu-line');
-                        }
+            
+                knowMoreButtons.forEach(button => {
+                    button.addEventListener('click', () => {
+                        cardContainer.style.display = 'flex ';
                     });
-    
-    
-    
-                    knowMoreButtons.forEach(button => {
-                        button.addEventListener('click', () => {
-                            cardContainer.style.display = 'block';
-                        });
-                    });
-    
-                    const closeButtons = document.querySelectorAll('.close-btn');
-                    closeButtons.forEach(button => {
-                        button.addEventListener('click', () => {
-                            cardContainer.style.display = 'none';
-                        });
-                    });
-    
-    
                 });
-    
-                function toggleDropdown(id) {
-                    document.querySelectorAll('.dropdown-content').forEach(dropdown => {
-                        if (dropdown.id === id) {
-                            dropdown.classList.toggle('show');
-                        } else {
-                            dropdown.classList.remove('show');
-                        }
+            
+                const closeButtons = document.querySelectorAll('.close-btn');
+                closeButtons.forEach(button => {
+                    button.addEventListener('click', () => {
+                        cardContainer.style.display = 'none';
                     });
-                }
-    
+                });
+            
+                const menu = document.querySelector('.menu');
+                const navbar = document.querySelector('.navbar');
+                const navRight = document.querySelector('.nav-right');
+                const menuIcon = menu.querySelector('i');
+            
+                menu.addEventListener('click', function () {
+                    navbar.classList.toggle('show');
+                    navRight.classList.toggle('show');
+            
+                    if (navbar.classList.contains('show')) {
+                        menuIcon.classList.remove('ri-menu-line');
+                        menuIcon.classList.add('ri-close-line');
+                    } else {
+                        menuIcon.classList.remove('ri-close-line');
+                        menuIcon.classList.add('ri-menu-line');
+                    }
+                });
+            
                 document.addEventListener('click', function (event) {
-                    const isClickInside = event.target.closest('.nav-link');
-                    if (!isClickInside) {
+                    const isClickInsideNav = event.target.closest('.nav-link');
+                    const isClickInsideMenu = event.target.closest('.menu');
+                    if (!isClickInsideNav && !isClickInsideMenu) {
                         document.querySelectorAll('.dropdown-content').forEach(dropdown => {
                             dropdown.classList.remove('show');
                         });
                     }
                 });
-    
+            });
         </script>
     </main>
 

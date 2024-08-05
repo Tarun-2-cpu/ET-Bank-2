@@ -976,7 +976,7 @@ nav img {
     color: #ffffff;
     border-radius: 10px;
     padding: 20px;
-    text-align: center;
+    text-align: left;
     max-width: 80%;
     max-height: 80%;
     overflow: auto;
@@ -2543,6 +2543,14 @@ span, .weight{
     flex-direction:column;
     align-items:flex-end;
 }
+.benefit-text p {
+    font-size: 50px;
+    color: #1B5962;
+    font-weight: 700;
+    margin-top: 77px;
+    text-align: center;
+    margin-bottom:50px;
+}
 .live-this p{
     font-size:29px;
     font-weight: 700;
@@ -2651,6 +2659,9 @@ span, .weight{
 .vid-bottom{
     margin-top:53px;
 }
+.ultra{
+    justify-content: space-between;
+}
 .ultraviolet{
     margin:100px 0;
 }
@@ -2689,6 +2700,9 @@ span, .weight{
     padding:24px 23px;
     margin-bottom:20px;
 }
+.color-ultra{
+    padding:15px 0;
+}
 .color-ultra .ultraviolet .ultra-detail{
     background-color: #ffff;
     padding:24px 23px;
@@ -2726,7 +2740,7 @@ span, .weight{
 /* Personal Loans*/
 
 .personal-loan .hero-description{
-    top:181px;
+    top:140px;
     left:103px;
 }
 .personal-loan .hero-section-text{
@@ -2875,7 +2889,7 @@ span, .weight{
 /* mobile insurance */
 
 .ins .hero-description{
-    top:40%;
+    top:29%;
 }
 .ins .hero-section-text{
     background-color:#1B5962B2;
@@ -5626,8 +5640,9 @@ span, .weight{
     /* mobile insurance */
 
     .ins .hero-description{
-        top:40%;
+        top:25%;
     }
+    
     .ins .hero-section-text{
         background-color:#1B5962B2;
         border-radius:20px;
@@ -5836,6 +5851,10 @@ span, .weight{
 
     /* Credit card for You */
 
+    .cre img{
+        height:calc(100vh - 60px);
+        object-fit:cover;
+    }
     .credit-for-you .hero-description{
         right:67px;
         top:35%;
@@ -11922,7 +11941,11 @@ span, .weight{
     /* mobile insurance */
 
     .ins .hero-description{
-        top:45%;
+        top:40%;
+    }
+    .ins-hero img{
+        height:calc(100vh - 60px);
+        object-fit:cover;
     }
     .ins .hero-section-text{
         background-color:#1B5962B2;
@@ -11931,15 +11954,15 @@ span, .weight{
         padding:30px;
     }
     .ins .hero-section-text p:first-of-type{
-        font-size:40px;
+        font-size:35px;
         padding-left:0px;
     }
     .ins .hero-section-text .sub{
-        font-size:20px;
+        font-size:16px;
         padding-left:0px;
     }
     .ins .hero-section-text .sub-sub{
-        font-size:16px;
+        font-size:14px;
         padding-left:0px;
         margin-top:15px;
     }
@@ -12174,10 +12197,10 @@ span, .weight{
 
     .credit-for-you .hero-description{
         right:67px;
-        top:35%;
+        top:28%;
     }
     .credit-for-you .hero-description .title{
-        font-size:38px;
+        font-size:34px;
     }
     .credit-for-you .hero-description .subtitle{
         font-size:21px;
@@ -12304,6 +12327,9 @@ span, .weight{
     }
     .ultra{
         flex-wrap:wrap;
+    }
+    .ultra-rev{
+        flex-wrap:wrap-reverse;
     }
     .ultra-left,
     .ultra-right{
@@ -15846,16 +15872,17 @@ span, .weight{
     /* mobile insurance */
 
     .ins .hero-description{
-        top:55%;
-        left:0;
-        margin-left:10px;
+        top:40%;
+    }
+    .ins-hero img{
+        height:calc(100vh - 60px);
+        object-fit:cover;
     }
     .ins .hero-section-text{
         background-color:#1B5962B2;
         border-radius:20px;
         width:100%;
-        
-        padding:30px;
+        padding:15px;
     }
     .ins .hero-section-text p:first-of-type{
         font-size:30px;
@@ -16086,10 +16113,13 @@ span, .weight{
 
     /* credit card for you */
 
-
-
     .hero-bottom .input{
         width:60%;
+    }
+    .cre img{
+        height:calc(100vh - 60px);
+        object-fit:cover;
+        object-position: left;
     }
     .credit-for-you .hero-section-text {
         justify-content: flex-start;
@@ -18616,6 +18646,16 @@ span, .weight{
 
     /* mobile insurance */
 
+    .ins .hero-description{
+        top:40%;
+    }
+    .ins-hero img{
+        height:calc(100vh - 60px);
+        object-fit:cover;
+    }
+    .ins .hero-section-text{
+        padding:15px;
+    }
     .stress{
         padding-left:0px;
     }
@@ -19065,6 +19105,18 @@ span, .weight{
     .pri-cont{
         padding:0px 40px;
         padding-bottom:100px;
+    }
+
+    /* credit card for you */
+
+    .cre .hero-description{
+        top:40%;
+    }
+    .hero-bottom .input {
+        width: 100%;
+    }
+    .ultra-rev{
+        flex-wrap:wrap-reverse;
     }
 }
 
@@ -21843,6 +21895,13 @@ span, .weight{
    
     /* mobile insurance */
 
+    .ins .hero-description{
+        top:43%;
+    }
+    .ins-hero img{
+        height:calc(100vh - 60px);
+        object-fit:cover;
+    }
     .ins .hero-section-text {
         padding: 15px;
     }
@@ -21850,14 +21909,14 @@ span, .weight{
         left:0;
     }
     .ins .hero-section-text p:first-of-type {
-        font-size: 25px;
+        font-size: 24px;
         padding-left: 0px;
     }
     .ins .hero-section-text .sub{
-        font-size: 18px;
+        font-size: 15px;
     }
     .ins .hero-section-text .sub-sub{
-        font-size: 15px;
+        font-size: 13px;
     }
     .stress{
         padding-left:0px;
@@ -22172,6 +22231,18 @@ span, .weight{
     .pri-cont{
         padding:0px 40px;
         padding-bottom:100px;
+    }
+
+    /* credit card for you */
+
+    .cre .hero-description{
+        top:40%;
+    }
+    .hero-bottom .input {
+        width: 100%;
+    }
+    .ultra-rev{
+        flex-wrap:wrap-reverse;
     }
 
 }
@@ -24530,7 +24601,13 @@ span, .weight{
 
 
     /* mobile insurance */
-
+    .ins .hero-description{
+        top:40%;
+    }
+    .ins-hero img{
+        height:calc(100vh - 60px);
+        object-fit:cover;
+    }
     .ins .hero-section-text {
         padding: 15px;
     }
@@ -24873,5 +24950,18 @@ span, .weight{
         .chill .hero-description .hero-section-text{
             width:90%;
         }
+
+
+    /* credit card for you */
+
+    .cre .hero-description{
+        top:40%;
+    }
+    .hero-bottom .input {
+        width: 100%;
+    }
+    .ultra-rev{
+        flex-wrap:wrap-reverse;
+    }
 }
 

@@ -511,10 +511,11 @@ nav img {
 .do-more-card p:first-of-type{
     font-size:24px;
     margin-bottom: 20px;
+    font-weight:600;
     color:#000000;
 }
 .do-more-first-card .next-gen-left-title{
-    margin-bottom:20px;
+    margin-bottom:  20px;
 }
 
 .do-more-card p:last-of-type{
@@ -970,7 +971,6 @@ nav img {
     justify-content: space-evenly;
     overflow: auto;
 }
-
 .card {
     background-color: #1B5962;
     color: #ffffff;
@@ -1009,20 +1009,8 @@ th {
 
 /******************  DIGITAL ACCOUNT DESKTOP   **********************************/
 
-
-.benefit-text p{
-    font-size:55px;
-    color:#1B5962;
-    font-weight: 700;
-    margin-top:77px;
-    text-align: center;
-}
-.benefit-text{
-    padding:0 80px;
-    margin-bottom:118px;
-}
-.benefit{
-    padding-top:53px;
+.digital .hero-description{
+    top:30%;
 }
 .benefit-container-img{
     width:100%;
@@ -1102,6 +1090,13 @@ th {
     padding-top:150px;
     gap:90px;
 }
+.debit-outer{
+    background-image:url(images/instant.png);
+    background-position:bottom;
+    background-size:cover;
+    background-repeat:repeat;
+    background-color: rgb(255, 255, 255, 0.9);
+}
 .debit-img{
     width:100%;
     border-radius: 20px;
@@ -1146,6 +1141,8 @@ th {
 }
 .return{
     padding-top:150px;
+    background-image: url(images/return.png);
+    background-position:top; 
 }
 .return-description{
     padding-right:55px;
@@ -1220,39 +1217,54 @@ th {
 }
 
 .save{
-    padding-top:150px;
+    padding-top:133px;
     gap:100px;
+    position:relative;
 }
 .save-left .save-title{
     font-size:66px;
-    color:#1B5962;
+    color:#fff;
     margin-bottom:27px;
 }
 .save-left .save-subtitle{
     font-size: 20px;
-    color:#000000;
+    color:#fff;
+}
+.save-full{
+    padding:0px;
 }
 .save-left{
-    padding-top:200px;
+    padding-top:122px;
+    padding-bottom:215px;
+    padding-left:58px;
+    background-image: url(images/save-bg.png);
+    background-blend-mode: color;
 }
 .save-right{
     padding:0;
+    position:absolute;
+    right:0;
+    width:fit-content;
+    z-index:99;
+    transform:translate(-50%,-15%);
 }
 .save-right img{
-    width:100%;
+    width:420px;
 }
 .hidden-fees{
-    margin-top:120px;
+    margin-top:232px;
 }
 .hidden-title{
     font-size:66px;
     color:#1B5962;
     font-weight: 700;
+    margin-left:190px;
 }
 .hidden-subtitle{
     margin-top:26px;
     font-size:20px;
     color:#1B5962;
+    margin-left:190px;
 }
 .cost{
     padding-top:125px;
@@ -1489,8 +1501,12 @@ th {
 
 
 /*******************      Card Desktop                 *************************/
+
+.card-desk img{
+    height:calc(100vh - 58px);
+}
 .card-desktop{
-    top:45%;
+    top:44%;
 }
 .card-desktop .typewriter{
     margin: 0px;
@@ -2222,6 +2238,10 @@ span, .weight{
 
 /*  Future Built */
 
+.feature .feature-img{
+    height:calc(100vh - 60px);
+    object-fit:cover;
+}
 .future .hero-description {
     top: 35%;
     bottom: unset;
@@ -2335,6 +2355,10 @@ span, .weight{
 
     /* PIX */
 
+.pix-hero img{
+    height:calc(100vh - 60px);
+    object-fit:cover;
+}
 .pix .hero-text-right{
     padding:0;
     background-color:unset;
@@ -2496,6 +2520,8 @@ span, .weight{
 
 
 /* Credit card for You */
+
+
 
 .cre img{
     filter:brightness(70%);
@@ -3485,6 +3511,7 @@ span, .weight{
 
 
 
+
 @media(max-width:1366px){
 
     header {
@@ -3493,6 +3520,7 @@ span, .weight{
     }
     .container{
         padding:0 60px;
+        width:100%;
     }
     nav{
         width:100%;
@@ -3809,6 +3837,11 @@ span, .weight{
         padding-left:15px;
         padding-right:0px;
     }
+    .card {
+        max-width: 80%;
+        max-height: unset;
+        overflow: auto;
+    }
     .plan-top p:first-of-type{
         font-size:60px;
         color:#000000;
@@ -3870,7 +3903,6 @@ span, .weight{
         font-size:40px; 
         letter-spacing: -3%;
     }
-    
     .plan-card .col-3{
         width:60%;
         margin:0 auto;
@@ -3881,10 +3913,10 @@ span, .weight{
         padding-left:30px;
     }
     .plan-card .description-1{
-        padding-left:42px;
+        padding-left:35px;
     }
     .plan-card .description li{
-        font-size: 16px;
+        font-size: 14px;
         color:#000;
         margin:8px 0;
     }
@@ -3899,13 +3931,18 @@ span, .weight{
     }
     .plan{
         padding-bottom:126px;
+        padding-top:70px;
     }
-
+    .footer-full{
+        background-position:bottom;
+        padding-bottom:120px;
+        background-color:rgb(255,255,255,0.8) ;
+    }
 
     /******************  DIGITAL ACCOUNT DESKTOP   **********************************/
 
     .digital .hero-description{
-        top:40%;
+        top:30%;
     }
     .digital .typewriter{
         font-size:50px;
@@ -4118,28 +4155,41 @@ span, .weight{
     }
 
     .save{
-        padding:0 60px;
-        padding-top:150px;
+        padding:0px;
+        padding-top:133px;
         gap:100px;
+        position:relative;
     }
     .save-left .save-title{
-        font-size:66px;
-        color:#1B5962;
+        font-size:50px;
+        color:#fff;
         margin-bottom:27px;
     }
     .save-left .save-subtitle{
         font-size: 20px;
-        color:#000000;
+        color:#fff;
+    }
+    .save-full{
+        padding:0px;
     }
     .save-left{
-        padding-top:250px;
+        padding-top:80px;
+        padding-bottom:170px;
+        padding-left:58px;
+        background-image: url(images/save-bg.png);
+        background-blend-mode: color;
+        width:100%;
     }
     .save-right{
-        padding:0 60px;
-        padding-top:120px;
+        padding:0;
+        position:absolute;
+        right:0;
+        width:fit-content;
+        z-index:99;
+        transform:translate(-50%,-15%);
     }
     .save-right img{
-        width:100%;
+        width:300px;
     }
     .hidden-fees{
         margin-top:100px;
@@ -4227,7 +4277,9 @@ span, .weight{
     .priority-bottom-second{
         margin-top:60px;
     }
-
+    .digital .question-title{
+        margin-top:0px;
+    }
     .questions{
         padding:0 40px;
         padding-top:120px;
@@ -4244,9 +4296,6 @@ span, .weight{
         align-items: center;
         margin:15px 0px;
         border-radius:16px;
-    }
-    .questions-title{
-        margin-top:120px;
     }
     .questions .Learn-more{
         margin-top:35px;
@@ -4387,12 +4436,13 @@ span, .weight{
         /****************** Card Desktop   ***************************************/
 
     /*******************      Card Desktop                 *************************/
+    
     .card-desktop{
         top:34%;
     }
     .card-desktop .typewriter{
         margin: 0px;
-        font-size: 45px;
+        font-size: 42px;
     }
     span, .weight{
         font-weight:700;
@@ -4407,6 +4457,7 @@ span, .weight{
         background-color: #ffffffdc;
         margin-right:40px;
         border-radius: 15px;
+        width:27%;
     }
     .hero-text-right p:first-of-type{
         font-size:24px;
@@ -4561,7 +4612,7 @@ span, .weight{
     .business .save-right-most{
         margin-top: 140px;
     }
-    .save{
+    .business .save{
             padding: 0 50px;
     }
     .business .save-right{
@@ -6318,6 +6369,7 @@ span, .weight{
 
 
 @media (max-width:1280px){
+    
     .nav-link {
         display: flex;
         align-items: center;
@@ -6349,7 +6401,7 @@ span, .weight{
         margin-right:35px;
     }
     .slider-container {
-        background-color: #F5F5F5;
+        background-color: #FFF;
         border-radius: 20px;
         width: 100%;
     }
@@ -6499,6 +6551,7 @@ span, .weight{
     }
     .plan{
         padding: 0 30px;
+        padding-top:70px;
     }
     .plan-card{
         margin:0 auto;
@@ -6572,7 +6625,7 @@ span, .weight{
     /******************  DIGITAL ACCOUNT DESKTOP   **********************************/
 
     .digital .hero-description{
-        top:35%;
+        top:22%;
     }
     .benefint-container-img img{
         width:100%;
@@ -6790,27 +6843,40 @@ span, .weight{
 
 
     .save{
-        padding:0 60px;
-        padding-top:120px;
+        padding:0px;
+        padding-top:133px;
         gap:100px;
     }
     .save-left .save-title{
-        font-size:66px;
-        color:#1B5962;
+        font-size:50px;
+        color:#fff;
         margin-bottom:27px;
     }
     .save-left .save-subtitle{
-        font-size: 18px;
-        color:#000000;
+        font-size: 20px;
+        color:#fff;
+    }
+    .save-full{
+        padding:0px;
     }
     .save-left{
-        padding-top:100px;
+        padding-top:80px;
+        padding-bottom:170px;
+        padding-left:58px;
+        background-image: url(images/save-bg.png);
+        background-blend-mode: color;
+        width:100%;
     }
     .save-right{
-        padding:0 60px;
+        padding:0;
+        position:static;
+        right:0;
+        width:fit-content;
+        z-index:99;
+        transform:translate(-50%,-15%);
     }
     .save-right img{
-        width:100%;
+        width:300px;
     }
     .hidden-fees{
         margin-top:85px;
@@ -7066,11 +7132,11 @@ span, .weight{
     /**************** Card Desktop  **********************/
 
     .card-desktop{
-        top:29%;
+        top:33%;
     }
     .card-desktop .typewriter{
         margin: 0px;
-        font-size: 38px;
+        font-size: 30px;
     }
     span, .weight{
         font-weight:700;
@@ -7085,6 +7151,7 @@ span, .weight{
         background-color: #ffffffdc;
         margin-right:40px;
         border-radius: 15px;
+        width:30%;
     }
     .hero-text-right p:first-of-type{
         font-size:24px;
@@ -7180,7 +7247,7 @@ span, .weight{
         margin-top: 40px;
     }
     .card-desktop .typewriter{
-        font-size:52px;
+        font-size:44px;
     }
     .facilities{
         padding:30px;
@@ -7564,6 +7631,18 @@ span, .weight{
         font-size:50px;
     }
 
+
+
+    /*  Future Built */
+
+    .future .hero-description {
+        top: 30%;
+        bottom: unset;
+    }
+    .future .hero-section-text {
+        padding-top:0px;
+    }
+
 }
 
 
@@ -7635,7 +7714,8 @@ span, .weight{
         padding:12px;
         margin-right:8px;
         border-radius:8px;
-    }.subtitle{
+    }
+    .subtitle{
         font-size:16px;
         color:#fff;
     }
@@ -7675,7 +7755,6 @@ span, .weight{
         align-items:end;
         justify-content:space-between;
     }
-    
     .next-gen-left-section{
         margin-top:70px;
     }
@@ -7791,7 +7870,6 @@ span, .weight{
     .do-more-section{
         padding-bottom:110px;
     }
-    
     .card-1{
         padding-bottom:40px;
     }
@@ -7961,11 +8039,12 @@ span, .weight{
     .plan{
         padding-bottom:110px;
     }
+
     .banner{
         margin:0 15px;
         border-radius:8px;
         padding:15px;
-        background: url(images/banner-lines.png);
+        padding-bottom: 0px;
         background-repeat:no-repeat;
         bottom:0;
         right:0;
@@ -7973,31 +8052,42 @@ span, .weight{
         left:0;
         background-size: cover;
     }
+    .banner-inner{
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
     .banner-left .Are{
         font-size:21px;
         font-weight:600;
         margin:29px 0;
     }
     .banner-buttons{
-        gap:10px;
+        gap:60px;
     }
     .banner-buttons button{
         cursor:pointer;
     }
     .banner-buttons img{
-        width:100%;
+        width:150px;
     }
     .banner-right{
         margin-top:40px;
         margin-right:80px;
+        padding-left:100px;
     }
     .banner-right img{
         width:100%;
     }
     .banner-left{
+        width:80%;
         padding-top:75px;
         padding-left:90px;
         padding-right:55px;
+    }
+    .footer-full{
+        padding-bottom:50px;
+        background-position: left;
+        background-repeat: no-repeat;
     }
     .footer{
         padding-top:65px;
@@ -8077,7 +8167,11 @@ span, .weight{
 
 
     /******************  DIGITAL ACCOUNT DESKTOP   **********************************/
-
+    
+    
+    .digital .hero-description{
+        top:30%;
+    }   
     .digital .typewriter{
         font-size: 38px;
     }
@@ -9101,6 +9195,7 @@ span, .weight{
     }
     .container{
         width:100%;
+        padding:0 30px;
     }
     .row{
         flex-wrap:wrap;
@@ -9218,7 +9313,6 @@ span, .weight{
         font-size:16px;
         padding-right:40px;
     }
-    
     .hero-section-buttons{
         margin:12px 0;
     }
@@ -9281,12 +9375,13 @@ span, .weight{
         font-size:12px;
         color:#fff;
     }
-    .next-gen-left-top-text{
-        position:absolute;
-        top:50%;
-        margin-left:10px;
+    .next-gen-left-top-text {
+        position: absolute;
+        top: 60%;
+        margin-left: 0px;
         word-wrap: break-word;
-        padding-right:18px;
+        padding-right: 18px;
+        padding-bottom: 82px;
     }
     .next-gen-left-bottom{
         background-color:#1B5962;
@@ -9415,7 +9510,7 @@ span, .weight{
         background: linear-gradient(rgba(255, 255, 255, 0.027) 13%, rgba(0, 0, 0, 1));
     }
     .slider-container {
-        background-color: #F5F5F5;
+        background-color: #FFF;
         border-radius: 10px;
     }
     .slider-section {
@@ -9444,6 +9539,10 @@ span, .weight{
     .swiper-button-prev i {
         font-size: 20px; 
         color: #000000b4;
+    }
+    .do-more{
+        background-position:bottom; 
+        padding-top:30px;
     }
     .do-more-card p:first-of-type{
         font-size:25px;
@@ -9648,6 +9747,13 @@ span, .weight{
     .optimize-bottom .optimize-text p:first-of-type {
         font-size: 33px;
     }
+    .plan-full{
+        background-image: url(images/select-card-bg.png);
+        background-color: rgb(255, 255, 255, 0.8);
+        background-size: contain;
+        background-repeat: round;
+        background-position: top;
+    }
     .plan-top p:first-of-type{
         font-size:33px;
         color:#000000;
@@ -9691,9 +9797,10 @@ span, .weight{
         margin:0 auto;
         padding:0 33px;
     }
-    .plan-card .description{
-        margin:15px auto;
-        text-align:center;
+    .plan-card .description {
+        margin: 15px auto;
+        text-align: left;
+        width: 41%;
     }
     .plan-card button{
         margin-top:24px;
@@ -9866,8 +9973,15 @@ span, .weight{
 
     /******************  DIGITAL ACCOUNT DESKTOP   **********************************/
 
+    .digital .hero-description{
+        top:34%;
+    }
+    .digital-hero img{
+        filter:brightness(95%);
+        
+    }
     .digital .typewriter{
-        font-size: 40px;
+        font-size: 38px;
         width:80%;
     }
     .benefit-container-img img{
@@ -10105,28 +10219,45 @@ span, .weight{
     }
 
     .save{
-        padding:0 30px;
-        padding-top:80px;
+        padding:0px;
+        padding-top:50px;
+        margin-top:50px;
         gap:100px;
+        background-color:#1B5962;
+        padding-bottom: 30px;
     }
     .save-left .save-title{
-        font-size:47px;
-        color:#1B5962;
+        font-size:50px;
+        color:#fff;
         margin-bottom:27px;
+        width:90%;
     }
     .save-left .save-subtitle{
-        font-size: 18px;
-        color:#000000;
+        font-size: 20px;
+        color:#fff;
+        width:90%;
+    }
+    .save-full{
+        padding:0px;
     }
     .save-left{
-        padding-top:0px;
+        padding-top:30px;
+        padding-bottom:30px;
+        padding-left:58px;
+        background-image: url(images/save-bg.png);
+        background-blend-mode: color;
         width:100%;
     }
     .save-right{
-        width:100%;
+        padding:0;
+        position:static;
+        right:0;
+        width:fit-content;
+        z-index:99;
+        transform:unset;
     }
     .save-right img{
-        width:100%;
+        width:300px;
     }
     .hidden-fees{
         margin-top:90px;
@@ -10137,11 +10268,13 @@ span, .weight{
         font-size:43px;
         color:#1B5962;
         font-weight: 700;
+        margin-left:42px;
     }
     .hidden-subtitle{
         margin-top:18px;
         font-size:19px;
         color:#1B5962;
+        margin-left:42px;
     }
     .cost{
         padding:70px 30px;
@@ -10423,9 +10556,12 @@ span, .weight{
 
     /**************  Card Desktop     **********************/
 
+    .card-desk img{
+        height:calc(100vh - 60px);
+    }
     .card-desktop {
         position: absolute;
-        top: 50%;
+        top: 38%;
         margin-left: 15px;
         margin-right: 10px;
         overflow-y: auto;
@@ -10528,10 +10664,11 @@ span, .weight{
     .last .mastercard-right{
         margin-left:0px;
         margin-right:30px;
+        margin-top:30px;
         padding-right: 0px;
     }
     .last{
-        margin-bottom:120px;
+        margin-bottom:60px;
     }
     .digital-footer{
         padding-left:30px;
@@ -11359,9 +11496,15 @@ span, .weight{
 
     /*  Future Built */
 
+    
+    /*  Future Built */
+
     .future .hero-description {
         top: 45%;
         bottom: unset;
+    }
+    .future .hero-section-text {
+        padding-top:0px;
     }
     .future .hero-section-text {
         padding-top:0px;
@@ -11487,9 +11630,11 @@ span, .weight{
 
     /* PIX */
 
-    .pix .hero-description{
-        top:60%;
+    .pix-hero img{
+        height:calc(100vh - 60px);
+        object-fit:cover;
     }
+    
     .pix .hero-text-left .text{
         font-size:25px;
         width:80%;
@@ -12664,7 +12809,6 @@ span, .weight{
     .radius {
         border-radius:20px;
     }
-    
     .hero-description{
         top:45%;
     }
@@ -12720,7 +12864,6 @@ span, .weight{
         font-size:12px;
         width:100%;
     }
-    
     .hero-section-buttons{
         margin:12px 0;
     }
@@ -12763,7 +12906,6 @@ span, .weight{
         justify-content:space-between;
         width:100%;
     }
-    
     .next-gen-left-section{
         margin-top:24px;
         width:100%;
@@ -12788,7 +12930,8 @@ span, .weight{
     .next-gen-left-top-text{
         position:absolute;
         top:50%;
-        margin-left:10px;
+        padding-bottom:39px;
+        margin-left:0px;
         word-wrap: break-word;
         padding-right:18px;
     }
@@ -12879,14 +13022,12 @@ span, .weight{
     .swiper-slide .swiper-img{
         width:100%;
     }
-
     .swiper-slide img {
         display: block;
         max-width: 100%;
         height: auto;
         object-fit: cover;
     }
-    
     .swiper {
         margin-left: auto;
         margin-right: auto;
@@ -12905,16 +13046,17 @@ span, .weight{
     .slider-text {
         position: static;
         left: 0;
-        padding-top: 10px;
-        padding-bottom: 10px; 
+        padding-top: 71px;
+        padding-bottom: 13px;
         width: 100%;
         text-align: left;
         padding-left: 15px;
         background: linear-gradient(rgba(255, 255, 255, 0.027) 7%, rgba(0, 0, 0, 1));
     }
     .slider-container {
-        background-color: #F5F5F5;
+        background-color: #FFF;
         border-radius: 10px;
+        padding:0px;
     }
     
     .slider-section {
@@ -12926,7 +13068,6 @@ span, .weight{
     .swiper-button-prev::after {
         content: "";
     }
-    
     .swiper-button-next {
         background: #F5F5F5;
         border-radius: 50%;
@@ -12934,7 +13075,6 @@ span, .weight{
         width: 40px;
         padding: 8px;
     }
-    
     .swiper-button-prev {
         background: #F5F5F5;
         border-radius: 50%;
@@ -12952,7 +13092,6 @@ span, .weight{
         color:#000000;
         margin-top:15px;
     }
-    
     .do-more-card p:last-of-type{
         font-size:12px;
         color:#000000;
@@ -13068,6 +13207,9 @@ span, .weight{
         width:100%;
         border-radius:16px;
     }
+    .do-more{
+        background-repeat: no-repeat;
+    }
     .optimize-section{
         padding-top:9px;
     }
@@ -13167,7 +13309,6 @@ span, .weight{
         margin:35px auto;
         text-align: center;
     }
-    
     .plan-card .grow{
         font-size:20px;
         letter-spacing: -3%;
@@ -13193,7 +13334,8 @@ span, .weight{
     }
     .plan-card .description{
         margin:15px auto;
-        text-align:center;
+        text-align:left;
+        width:58%;
     }
     .plan-card button{
         margin-top:24px;
@@ -13228,6 +13370,7 @@ span, .weight{
     .banner{
         margin:0 5px;
         padding:20px;
+        padding-bottom:0px;
     }
     .banner-buttons{
         gap:10px;
@@ -13263,7 +13406,6 @@ span, .weight{
         font-weight:600;
         margin:29px 0;
     }
-
     .footer{
         padding-top:25px;
         justify-content: space-between;
@@ -13359,7 +13501,7 @@ span, .weight{
 
     /*******************    Digital Desktop      ***************************/
 
-
+    
     .hero-section{
         width:100%;
         height:100vh;
@@ -13375,6 +13517,12 @@ span, .weight{
     }
     .hero-section{
         position:relative;
+    }
+    .digital-hero img{
+        object-fit:400px 0px;
+    }
+    .digital .hero-description{
+        top:40%;
     }
     .typewriter,
     .everything{
@@ -13554,33 +13702,53 @@ span, .weight{
         font-size:16px;
         margin-top:50px;
     }
+
+
     .save{
-        padding-top:5px;
-        gap:10px;
-    }
-    .save-left{
-        width:100%;
+        padding:0px;
+        padding-top:50px;
+        margin-top:50px;
+        gap:50px;
+        background-color:#1B5962;
+        padding-bottom: 30px;
     }
     .save-left .save-title{
-        font-size:32px;
-        margin-bottom:20px;
+        font-size:40px;
+        color:#fff;
+        margin-bottom:27px;
+        width:90%;
     }
     .save-left .save-subtitle{
-        font-size: 14px;
-        color:#000000;
+        font-size: 18px;
+        color:#fff;
+        width:90%;
+    }
+    .save-full{
+        padding:0px;
     }
     .save-left{
-        padding-top:100px;
+        padding-top:30px;
+        padding-bottom:30px;
+        padding-left:58px;
+        background-image: url(images/save-bg.png);
+        background-blend-mode: color;
+        width:100%;
     }
     .save-right{
+        padding:0;
+        position:static;
+        right:0;
+        width:fit-content;
+        z-index:99;
+        transform:unset;
         width:100%;
-        margin-top:50px;
+        display:flex;
+        align-items:center;
+        justify-content:center;
     }
     .save-right img{
-        width:100%;
-    }
-    .save-right {
-        padding:0 80px;
+        width:300px;
+        margin:0 auto;
     }
 
     .hidden-fees{
@@ -13846,9 +14014,15 @@ span, .weight{
 
     /***************************   card-desktop       *********************************************/
 
+    .card-desk img{
+        height:calc(100vh - 60px);
+    }
     .card-desktop{
-        top:65%;
+        top:48%;
         width:90%;
+    }
+    .card-desk .hero-description .typewriter{
+        font-size:30px;
     }
     .card-desktop
     .hero-text-left
@@ -13861,7 +14035,7 @@ span, .weight{
     }
     .mastercard{
         padding:0px;
-        padding-top:100px;
+        padding-top:50px;
     }
     .mastercard-right{
         margin-top:30px;
@@ -13956,6 +14130,7 @@ span, .weight{
     .last .mastercard-right{
         margin-left:0px;
         margin-right:30px;
+        margin-top:30px;
         padding-right: 0px;
     }
     .last{
@@ -14412,32 +14587,6 @@ span, .weight{
         margin-top:88px;
     }
 
-    .save{
-        padding:0;
-        padding-top:80px;
-        gap:40px;
-    }
-    .save-left .save-title{
-        font-size:38px;
-        font-weight: 700;
-        color:#1B5962;
-        margin-bottom:27px;
-    }
-    .save-left .save-subtitle{
-        font-size: 15px;
-        color:#000000;
-    }
-    .save-left{
-        padding-top:0px;
-        width:100%;
-    }
-    .save-right{
-        width:100%;
-        padding:0 120px;
-    }
-    .save-right img{
-        width:100%;
-    }
     .hidden-fees{
         margin-top:90px;
         padding:0 30px;
@@ -15176,7 +15325,7 @@ span, .weight{
     }
     .future .hero-section-text {
         padding-top:0px;
-        width:70%;
+        width:80%;
     }
     .role{
         flex-wrap: wrap;
@@ -15310,13 +15459,18 @@ span, .weight{
 
     /* PIX */
 
+    .pix-hero img{
+        height:calc(100vh - 60px);
+        object-fit:cover;
+    }
+
     .pix .hero-description{
-        top:55%;
+        top:45%;
         left:2%;
     }
     .pix .hero-text-left .text{
         font-size:21px;
-        width:90%;
+        width:100%;
     }
     .pix .mastercard{
         padding: - 0px;
@@ -16329,7 +16483,6 @@ span, .weight{
     nav img {
         width: 32vw;
     }
-    
     header {
         margin: 0;
     }
@@ -16342,15 +16495,6 @@ span, .weight{
         border: none;
         outline: none;
         cursor: pointer;
-    }
-    .linke {
-        display:flex;
-        flex-direction:column;
-        width:fit-content;
-        height:fit-content;
-    }
-    .linke .homee{
-        display:none;
     }
     .hero-section{
         width:100%;
@@ -16369,7 +16513,7 @@ span, .weight{
     }
     .hero-description {
         position: absolute;
-        top: 53%;
+        top: 40%;
         margin-left: 1vw;
         margin-right: 1vw;
         width:100%;
@@ -16445,6 +16589,7 @@ span, .weight{
     }
     .next-gen-left-top img{
         width:100%;
+        height:400px;
     }
     .next-gen-left-top p:first-of-type{
         font-size:7.5vw;
@@ -16457,10 +16602,11 @@ span, .weight{
     }
     .next-gen-left-top-text{
         position:absolute;
-        top:50%;
-        margin-left:10px;
+        top:73%;
+        margin-left:0px;
         word-wrap: break-word;
         padding-right:18px;
+        padding-bottom:24px;
     }
     .next-gen-left-bottom{
         background-color:#1B5962;
@@ -16497,10 +16643,11 @@ span, .weight{
     .next-gen-left-bottom-img{
         margin-top:10px;
     }
-    .next-gen-left-bottom-img .subtitle{
-        margin-top:-18vw;
-        margin-left:40vw;
-        font-size:3vw;
+    .next-gen-left-bottom-img .subtitle {
+        margin-top: -18vw;
+        margin-left: 46vw;
+        padding-right: 0px;
+        font-size: 3vw;
     }
     .next-gen-right-top p:last-of-type{
         font-size:16px;
@@ -16538,6 +16685,7 @@ span, .weight{
         font-size: 3vw;
         background: #fff;
         width:100%;
+        height:250px;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -16573,7 +16721,7 @@ span, .weight{
     .slider-text {
         position: static;
         left: 0;
-        padding-top: 110px;
+        padding-top: 150px;
         padding-bottom: 10px; 
         width: 100%;
         text-align: left;
@@ -16718,9 +16866,10 @@ span, .weight{
     }
     .optimize-section{
         padding-top:9px;
+        gap:40px;
     }
     .optimize-top-title{
-        font-size:6vw;
+        font-size:5.5vw;
         padding:0px;
     }
     .optimize-top-title span{
@@ -16747,6 +16896,8 @@ span, .weight{
     .optimize-middle{
         flex-direction: column-reverse;
         width:100%;
+        margin:40px 0;
+
     }
     .optimize-middle .optimize-top-title{
         font-size:6vw;
@@ -16840,7 +16991,8 @@ span, .weight{
     }
     .plan-card .description{
         margin:15px auto;
-        text-align:center;
+        text-align:left;
+        margin-left:78px;
     }
     .plan-card button{
         margin-top:24px;
@@ -17025,6 +17177,9 @@ span, .weight{
     .hero-section{
         position:relative;
     }
+    .digital .hero-description{
+        top:40%;
+    }
     .digital .typewriter,
     .digital .everything{
         font-size:7vw;
@@ -17033,7 +17188,6 @@ span, .weight{
         width:100%;
     }
     .digital .hero-description{
-        top:55%;
         left:2%;
     }
     .typewriter{
@@ -17214,31 +17368,54 @@ span, .weight{
         font-size:3.7vw;
         margin-top:50px;
     }
+
+
+
     .save{
-        padding-top:5px;
-        gap:10px;
-    }
-    .save-left{
-        width:100%;
-        padding-top:80px;
+        padding:0px;
+        padding-top:50px;
+        margin-top:50px;
+        gap:50px;
+        background-color:#1B5962;
+        padding-bottom: 30px;
     }
     .save-left .save-title{
-        font-size:7.4vw;
-        margin-bottom:20px;
+        font-size:35px;
+        color:#fff;
+        margin-bottom:27px;
+        width:95%;
     }
     .save-left .save-subtitle{
-        font-size: 3.2vw;
-        color:#000000;
+        font-size: 18px;
+        color:#fff;
+        width:95%;
+    }
+    .save-full{
+        padding:0px;
+    }
+    .save-left{
+        padding-top:30px;
+        padding-bottom:30px;
+        padding-left:20px;
+        background-image: url(images/save-bg.png);
+        background-blend-mode: color;
+        width:100%;
     }
     .save-right{
+        padding:0;
+        position:static;
+        right:0;
+        width:fit-content;
+        z-index:99;
+        transform:unset;
         width:100%;
-        margin-top:50px;
+        display:flex;
+        align-items:center;
+        justify-content:center;
     }
     .save-right img{
-        width:100%;
-    }
-    .save-right {
-        padding:0 18.6vw;
+        width:300px;
+        margin:0 auto;
     }
 
     .hidden-fees{
@@ -17247,19 +17424,24 @@ span, .weight{
     }
     .hidden-title{
         font-size:7.4vw;
+        margin-left:15px;
     }
     .hidden-subtitle{
         margin-top:20px;
         font-size:4.6vw;
+        margin-left:15px;
     }
     .cost{
-        padding-top:100px;
+        padding-top:60px;
+    }
+    .cost .container{
+        padding:0px;
     }
     .cost-title{
         width:100%;
     }
     .cost-title p{
-        font-size:.5.5vw;
+        font-size:.4.8vw;
         text-align:left;
     }
     .cost-detail{
@@ -17294,7 +17476,7 @@ span, .weight{
         text-align:left;
     }
     .priority{
-        padding-top:100px;
+        padding-top:0px;
     }
     .priority-text{
         text-align:center;
@@ -17321,12 +17503,14 @@ span, .weight{
     }
     .priority-bottom{
         margin-top:60px;
+        padding:0px;
     }
     .priority-bottom-second{
         margin-top:60px;
     }
     .questions{
-        padding-top:100px;
+        padding:0px;
+        padding-top:50px;
         width:100%;
     }
     .questions-title{
@@ -17355,6 +17539,10 @@ span, .weight{
     }
     .question p{
         font-size:2.7vw;
+        width:90%;
+    }
+    .produ .container{
+        padding:0px;
     }
     .products{
         padding-top:80px;
@@ -17693,10 +17881,16 @@ span, .weight{
 
 
     /***************************   card-desktop       *********************************************/
-
+    
+    .card-desk img{
+        height:calc(100vh - 60px);
+    }
     .card-desktop{
-        top:65%;
+        top:49%;
         width:90%;
+    }
+    .card-desk .hero-section-text .typewriter{
+        font-size:27px;
     }
     .card-desktop .typewriter{
         font-size:28px;
@@ -17712,7 +17906,7 @@ span, .weight{
     }
     .mastercard{
         padding:0px;
-        padding-top:100px;
+        padding-top:50px;
     }
     .mastercard-right{
         margin-top:30px;
@@ -17724,6 +17918,7 @@ span, .weight{
     }
     .mastercard .typewriter{
         margin-bottom:15px;
+        font-size:6.8vw;
     }
     .card-title{
         font-size:24px;
@@ -17808,6 +18003,7 @@ span, .weight{
     .last .mastercard-right{
         margin-left:0px;
         margin-right:30px;
+        margin-top:30px;
         padding-right: 0px;
     }
     .last{
@@ -18085,7 +18281,7 @@ span, .weight{
     }
     .future .hero-section-text {
         padding-top:0px;
-        width:70%;
+        width:90%;
     }
     .role{
         flex-wrap: wrap;
@@ -18220,13 +18416,18 @@ span, .weight{
     
     /* PIX */
 
+    .pix-hero img{
+        height:calc(100vh - 60px);
+        object-fit:cover;
+    }
+
     .pix .hero-description{
-        top:55%;
+        top:48%;
         left:2%;
     }
     .pix .hero-text-left .text{
         font-size:20px;
-        width:95%;
+        width:100%;
     }
     .pix .mastercard{
         padding: - 0px;
@@ -18875,6 +19076,7 @@ span, .weight{
     .container{
         width:100%;
         height:auto;
+        padding:0 15px;
     }
     .logo i{
         font-size:20px;
@@ -18899,15 +19101,6 @@ span, .weight{
         outline: none;
         cursor: pointer;
     }
-    .linke {
-        display:flex;
-        flex-direction:column;
-        width:fit-content;
-        height:fit-content;
-    }
-    .linke .homee{
-        display:none;
-    }
     .hero-section{
         width:100%;
         height:100vh;
@@ -18925,8 +19118,8 @@ span, .weight{
     }
     .hero-description {
         position: absolute;
-        top: 55%;
-        margin-left: 10px;
+        top: 35%;
+        margin-left: 20px;
         margin-right: 10px;
         width:100%;
         overflow-y: auto;
@@ -18964,7 +19157,7 @@ span, .weight{
     }
     .next-gen{
         padding-top:42px;
-        padding-bottom:113px;
+        padding-bottom:50px;
         width:100%;
     }
     .next-gen-right-top{
@@ -19003,6 +19196,7 @@ span, .weight{
         position:relative;
         border-radius:20px;
     }
+    
     .next-gen-left-top img{
         width:100%;
     }
@@ -19016,11 +19210,11 @@ span, .weight{
         color:#fff;
     }
     .next-gen-left-top-text{
-        position:absolute;
-        top:50%;
-        margin-left:10px;
+        position: absolute;
+        top: 73%;
+        margin-left: 0px;
         word-wrap: break-word;
-        padding-right:18px;
+        padding-right: 18px;
     }
     .next-gen-left-bottom{
         background-color:#1B5962;
@@ -19044,6 +19238,7 @@ span, .weight{
     .next-gen-right-top img{
         width:100%;
         margin-top:30px;
+        height:180px;
     }
     
     .next-gen-right-top p:first-of-type{
@@ -19059,9 +19254,9 @@ span, .weight{
     .next-gen-left-bottom-img{
         margin-top:10px;
     }
-    .next-gen-left-bottom-img .subtitle{
-        margin-top:-74px;
-        margin-left:200px;
+    .next-gen-left-bottom-img .subtitle {
+        margin-top: -74px;
+        margin-left: 179px;
     }
     .next-gen-right-top p:last-of-type{
         font-size:16px;
@@ -19128,7 +19323,8 @@ span, .weight{
     .slider-title {
         color: #00D47E;
         font-size: 22px; 
-        margin-bottom: 15px; 
+        margin-bottom: 15px;
+        padding-top:120px; 
     }
     
     .slider-subtitle{
@@ -19146,7 +19342,7 @@ span, .weight{
         background: linear-gradient(rgba(255, 255, 255, 0.027) 7%, rgba(0, 0, 0, 1));
     }
     .slider-container {
-        background-color: #F5F5F5;
+        background-color: #FFF;
         border-radius: 10px;
     }
     
@@ -19243,6 +19439,9 @@ span, .weight{
     .product{
         padding:0px 16px;
     }
+    .product-inner-bottom {
+        padding: 0px;
+    }
     .product .col-4{
         width:100%;
         padding:0px;
@@ -19306,7 +19505,7 @@ span, .weight{
         padding-top:9px;
     }
     .optimize-top-title{
-        font-size:24px;
+        font-size:21px;
         padding:0px;
     }
     .optimize-top-title span{
@@ -19422,7 +19621,6 @@ span, .weight{
         font-size:40px; 
         letter-spacing: -3%;
     }
-    
     .plan-card .col-3{
         width:100%;
         margin:0 auto;
@@ -19430,7 +19628,8 @@ span, .weight{
     }
     .plan-card .description{
         margin:15px auto;
-        text-align:center;
+        text-align:left;
+        margin-left:55px;
     }
     .plan-card button{
         margin-top:24px;
@@ -19612,7 +19811,7 @@ span, .weight{
         object-fit:cover;
         position:left;
         display: flex;
-        align-items:    baseline;
+        align-items:baseline;
     }
     .hero-section{
         position:relative;
@@ -19624,8 +19823,8 @@ span, .weight{
     .col-8,.col-6{
         width:100%;
     }
-    .digital .hero-description{
-        top:50%;
+    .digital-hero .hero-description{
+        top:30%;
     }
     .digital .typewriter{
         color:#00D47E;
@@ -19799,33 +19998,52 @@ span, .weight{
         font-size:16px;
         margin-top:50px;
     }
+
     .save{
-        padding-top:5px;
-        gap:10px;
-    }
-    .save-left{
-        width:100%;
+        padding:0px;
+        padding-top:50px;
+        margin-top:50px;
+        gap:50px;
+        background-color:#1B5962;
+        padding-bottom: 30px;
     }
     .save-left .save-title{
-        font-size:32px;
-        margin-bottom:20px;
+        font-size:35px;
+        color:#fff;
+        margin-bottom:27px;
+        width:95%;
     }
     .save-left .save-subtitle{
-        font-size: 14px;
-        color:#000000;
+        font-size: 18px;
+        color:#fff;
+        width:95%;
+    }
+    .save-full{
+        padding:0px;
     }
     .save-left{
-        padding-top:100px;
+        padding-top:30px;
+        padding-bottom:30px;
+        padding-left:20px;
+        background-image: url(images/save-bg.png);
+        background-blend-mode: color;
+        width:100%;
     }
     .save-right{
+        padding:0;
+        position:static;
+        right:0;
+        width:fit-content;
+        z-index:99;
+        transform:unset;
         width:100%;
-        margin-top:50px;
+        display:flex;
+        align-items:center;
+        justify-content:center;
     }
     .save-right img{
-        width:100%;
-    }
-    .save-right {
-        padding:0 80px;
+        width:300px;
+        margin:0 auto;
     }
 
     .hidden-fees{
@@ -19854,13 +20072,18 @@ span, .weight{
         margin-top:25px;
     }
     .cost-detail p{
-        font-size:20px;
+        font-size:16px;
+    }
+    .cost .Learn-more p{
+        font-size:16px;
+        width:95%;
     }
     .Learn-more{
-        font-size:20px;
+        font-size:16px;
         font-weight: 600;
         color:#1B5962;
         margin-top:30px;
+        width:95%;
     }
     .top-priority{
         width:100%;
@@ -20088,12 +20311,17 @@ span, .weight{
 
     /***************************   card-desktop       *********************************************/
 
-    .card-desktop{
-        top:65%;
-        left:1%;
+    .card-desk img{
+        height:calc(100vh - 60px);
     }
-    .card-desktop .typewriter{
-        font-size:25px;
+    .card-desktop{
+        top:48%;
+        left:0%;
+    }
+    .card-desktop .hero-section-text .typewriter{
+        font-size:26px;
+        padding:0px;
+        font-weight:900;
     }
     .card-desktop
     .hero-text-left
@@ -20109,7 +20337,10 @@ span, .weight{
         padding-right:0px;
     }
     .mastercard{
-        padding-top:100px;
+        padding-top:50px;
+    }
+    .mastercard-right .typewriter{
+        font-size:28px;
     }
     .mastercard-right{
         margin-top:30px;
@@ -20139,7 +20370,7 @@ span, .weight{
         margin-bottom:30px;
     }
     .facilities{
-        padding-top:100px;
+        padding-top:50px;
     }
     .cards .col-4{
         width:100%;
@@ -20202,10 +20433,11 @@ span, .weight{
     .last .mastercard-right{
         margin-left:15px;
         margin-right:30px;
+        margin-top:30px;
         padding-right: 0px;
     }
     .last{
-        margin-bottom:100px;
+        margin-bottom:50px;
     }
      .master-right-1 .mastercard-right{
         margin-top:20px;
@@ -20409,10 +20641,21 @@ span, .weight{
     .digital .typewriter{
         font-size: 28px;
         width:100%;
+        color:#000;
     }
     .digital .hero-description{
-        left:2%;
-        top:60%;
+        left:0%;
+        top:40%;
+        margin-left:0px;
+        padding-left:0px;
+        margin-right:10px;
+    }
+    .digital .digital-hero-img {
+        width: 100%;
+        filter:brightness(110%);
+        object-fit: cover;
+        object-position: -400px 0px;
+        position:static;
     }
     .benefint-container{
         padding:0 15px;
@@ -20654,31 +20897,52 @@ span, .weight{
     }
 
     .save{
-        padding:0;
-        padding-top:40px;
-        gap:25px;
+        padding:0px;
+        padding-top:50px;
+        margin-top:50px;
+        gap:50px;
+        background-color:#1B5962;
+        padding-bottom: 30px;
     }
     .save-left .save-title{
-        font-size:32px;
-        font-weight: 700;
-        color:#1B5962;
+        font-size:30px;
+        color:#fff;
         margin-bottom:27px;
+        width:95%;
     }
     .save-left .save-subtitle{
-        font-size: 14px;
-        color:#000000;
+        font-size: 15px;
+        color:#fff;
+        width:95%;
+    }
+    .save-full{
+        padding:0px;
     }
     .save-left{
-        padding-top:0px;
+        padding-top:30px;
+        padding-bottom:30px;
+        padding-left:20px;
+        background-image: url(images/save-bg.png);
+        background-blend-mode: color;
         width:100%;
     }
     .save-right{
+        padding:0;
+        position:static;
+        right:0;
+        width:fit-content;
+        z-index:99;
+        transform:unset;
         width:100%;
-        padding:0 75px;
+        display:flex;
+        align-items:center;
+        justify-content:center;
     }
     .save-right img{
-        width:100%;
+        width:300px;
+        margin:0 auto;
     }
+
     .hidden-fees{
         margin-top:70px;
         padding:0 17px;
@@ -21264,7 +21528,7 @@ span, .weight{
     }
     .future .hero-section-text {
         padding-top:0px;
-        width:70%;
+        width:90%;
     }
     .role{
         flex-wrap: wrap;
@@ -21393,15 +21657,21 @@ span, .weight{
 
 
 
-    /* PIX */
 
+
+        /* PIX */
+
+    .pix-hero img{
+        height:calc(100vh - 60px);
+        object-fit:cover;
+    }
     .pix .hero-description{
-        top:55%;
+        top:45%;
         margin-left:10px;
     }
     .pix .hero-text-left .text{
         font-size:20px;
-        width:95%;
+        width:100%;
     }
     .pix .mastercard{
         padding: - 15px;
@@ -21945,10 +22215,13 @@ span, .weight{
     .hero-section{
         position:relative;
     }
+    .digital-hero{
+        width:100%;
+    }
     .hero-description {
         position: absolute;
-        top: 50%;
-        margin-left: 10px;
+        top: 31%;
+        margin-left: 20px;
         margin-right: 10px;
         width:100%;
         overflow-y: auto;
@@ -22023,6 +22296,7 @@ span, .weight{
     }
     .next-gen-left-top img{
         width:100%;
+        height:250px;
     }
     .next-gen-left-top p:first-of-type{
         font-size:25px;
@@ -22033,12 +22307,18 @@ span, .weight{
         font-size:12px;
         color:#fff;
     }
-    .next-gen-left-top-text{
-        position:absolute;
-        top:50%;
-        margin-left:10px;
+    .next-gen-left-top-text {
+        position: absolute;
+        top: 55%;
+        margin-left: 0px;
         word-wrap: break-word;
-        padding-right:18px;
+        padding-right: 18px;
+    }
+    .next-gen-left-bottom img{
+        width:100%;
+    }
+    .next-gen-left-bottom .subtitle{
+        padding-right:0px;
     }
     .next-gen-left-bottom{
         background-color:#1B5962;
@@ -22118,7 +22398,9 @@ span, .weight{
         width: 100%;
         height: auto;
     }
-    
+    .slider-title {
+        padding-top: 65px;
+    }
     .swiper-slide {
         text-align: center;
         font-size: 16px;
@@ -22325,7 +22607,7 @@ span, .weight{
         padding-top:9px;
     }
     .optimize-top-title {
-        font-size: 20px;
+        font-size: 18px;
         padding: 0px;
     }
     .optimize-top-title span{
@@ -22345,7 +22627,7 @@ span, .weight{
         gap:20px;
     }
     .optimize-bottom,
-    .optimize-top,
+    .optimize-top,  
     .optimize-middle{
         margin-right:0px;
     }
@@ -22401,7 +22683,7 @@ span, .weight{
         padding-right:0;
     }
     .optimize-bottom .optimize-text p:first-of-type {
-        font-size: 20px;
+        font-size: 18px;
     }
     .plan-top{
         padding:0px;
@@ -22449,7 +22731,8 @@ span, .weight{
     }
     .plan-card .description{
         margin:15px auto;
-        text-align:center;
+        text-align:left;
+        margin-left:30px;
     }
     .plan-card button{
         margin-top:24px;
@@ -22618,14 +22901,16 @@ span, .weight{
     .digital .typewriter{
         font-size: 28px;
         width:100%;
+        color:#000;
     }
     .digital .hero-description{
-        left:2%;
-        top:60%;
+        left:1%;
+        top:35%;
     }
-    .digital-hero-img{
+    .digital .digital-hero-img{
         width:100%;
-        object-fit: contain;
+        object-fit: cover;
+        object-position: -380px -60px;
     }
     
     .benefint-container{
@@ -22868,43 +23153,65 @@ span, .weight{
     }
 
     .save{
-        padding:0;
-        padding-top:40px;
-        gap:25px;
+        padding:0px;
+        padding-top:50px;
+        margin-top:50px;
+        gap:50px;
+        background-color:#1B5962;
+        padding-bottom: 30px;
     }
     .save-left .save-title{
-        font-size:32px;
-        font-weight: 700;
-        color:#1B5962;
+        font-size:25px;
+        color:#fff;
         margin-bottom:27px;
+        width:95%;
     }
     .save-left .save-subtitle{
         font-size: 14px;
-        color:#000000;
+        color:#fff;
+        width:95%;
+    }
+    .save-full{
+        padding:0px;
     }
     .save-left{
-        padding-top:0px;
+        padding-top:30px;
+        padding-bottom:30px;
+        padding-left:20px;
+        background-image: url(images/save-bg.png);
+        background-blend-mode: color;
         width:100%;
     }
     .save-right{
+        padding:0;
+        position:static;
+        right:0;
+        width:fit-content;
+        z-index:99;
+        transform:unset;
         width:100%;
-        padding:0 75px;
+        display:flex;
+        align-items:center;
+        justify-content:center;
     }
     .save-right img{
-        width:100%;
+        width:250px;
+        margin:0 auto;
     }
+
+    
     .hidden-fees{
         margin-top:70px;
         padding:0 17px;
         width:100%;
     }
     .hidden-title{
-        font-size:35px;
+        font-size:28px;
         color:#1B5962;
         font-weight: 700;
     }
     .hidden-subtitle{
-        margin-top:15px;
+        margin-top:14px;
         font-size:17px;
         color:#1B5962;
     }
@@ -22915,7 +23222,7 @@ span, .weight{
         width:100%;
     }
     .cost-title p{
-        font-size:25px;
+        font-size:22px;
         color:#1B5962;
         font-weight: 700;
         text-align:left;
@@ -22930,7 +23237,7 @@ span, .weight{
         margin-top:30px;
     }
     .cost-detail p{
-        font-size:18px;
+        font-size:16px;
         color:#1B5962;
     }
     .cost-detail p:first-of-type{
@@ -22947,13 +23254,13 @@ span, .weight{
         width:75%;
     }
     .priority-title{
-        font-size:30px;
+        font-size:24px;
         color:#1B5962;
         font-weight:700;
         margin:auto;
     }
     .priority-subtitle{
-        font-size:14px;
+        font-size:13px;
         color:#000000;
         margin:20px auto;
     }
@@ -22979,7 +23286,7 @@ span, .weight{
         padding:0px;
     }
     .priority-detail p:first-of-type{
-        font-size:21px;
+        font-size:16px;
         color:#000000;
         font-weight:600;
     }
@@ -22987,7 +23294,7 @@ span, .weight{
         width:100%;
     }
     .priority-detail p:last-of-type{
-        font-size:16px;
+        font-size:14px;
         color:#000000;
         margin-top:10px;
     }
@@ -23008,7 +23315,7 @@ span, .weight{
     }
     .priority-bottom-first,
     .priority-bottom-second{
-        gap:50px;
+        gap:0px;
     }
     .questions{
         padding:0px;
@@ -23406,13 +23713,17 @@ span, .weight{
 
     /***************************   card-desktop       *********************************************/
 
-    .card-desktop{
-        top:70%;
-        left:10px;
-        width:90%;
+    .card-desk img{
+        height:calc(100vh - 60px);
     }
-    .card-desktop .typewriter{
-        font-size:23px;
+    .card-desktop{
+        top:49%;
+        left:0%;
+    }
+    .card-desktop .hero-section-text .typewriter{
+        font-size:22px;
+        padding:0px;
+        font-weight:900;
     }
     .card-desktop
     .hero-text-left
@@ -23436,7 +23747,7 @@ span, .weight{
         padding-right:0px;
     }
     .mastercard{
-        padding-top:100px;
+        padding-top:50px;
     }
     .mastercard-right{
         margin-top:30px;
@@ -23447,10 +23758,10 @@ span, .weight{
         border-radius:20px;
     }
     .mastercard .ms-title{
-        font-size:24px;
+        font-size:21px;
     }
     .mastercard .ms-subtitle{
-        font-size:14px;
+        font-size:13px;
     }
     .mastercard .mastercard-shaded p{
         font-size:19px;
@@ -23476,7 +23787,7 @@ span, .weight{
         margin-bottom:30px;
     }
     .facilities{
-        padding-top:100px;
+        padding-top:50px;
     }
     .cards .col-4{
         width:100%;
@@ -23541,6 +23852,7 @@ span, .weight{
         margin-left:15px;
         margin-right:30px;
         padding-right: 0px;
+        margin-top:20px;
     }
     .last{
         margin-bottom:0px;
@@ -23824,12 +24136,25 @@ span, .weight{
     /*  Future Built */
 
     .future .hero-description {
-        top: 40%;
+        top: 45%;
         bottom: unset;
     }
     .future .hero-section-text {
         padding-top:0px;
-        width:70%;
+    }
+    .future .hero-section-text {
+        padding-top:0px;
+        width:90%;
+    }
+    .tap .hero-description .business-card .typewriter {
+        padding: 0px;
+        font-size: 38px;
+        width: 100%;
+    }
+    .tap .hero-description .subtitle {
+        font-size: 16px;
+        width: 100%;
+        padding-right: 0px;
     }
     .role{
         flex-wrap: wrap;
@@ -23979,6 +24304,10 @@ span, .weight{
 
     /* PIX */
 
+    .pix-hero img{
+        height:calc(100vh - 60px);
+        object-fit:cover;
+    }
     .pix .hero-description{
         top:55%;
         margin-left:10px;

@@ -1691,18 +1691,39 @@ span, .weight{
 .simple{
     margin-top:120px;
 }
-.business .save-right-most{
-    margin-top:200px;
+.bus-save .save-right-most{
+    padding-top:130px;
+    padding-bottom:130px;
+    padding-left:30px;
+    padding-right:30px;
 }
 .business .save .typewriter{
     font-size:60px;
 }
-.business
-.save-right img{
-    width:100%;
+.bus-save .save{
+    align-items: center;
+    gap:0px;
 }
-.business .save-left{
-    padding-top:100px;
+.bus-save .save-right{
+    width:24%;
+}
+
+.bus-save .save-left,
+.bus-save .save-right-most{
+    width:42%;
+}
+
+.bus-save .save-right{
+    position:static;
+    transform:unset;
+}
+.bus-save .save-right img{
+    width:100%;
+    height:100%;
+}
+.bus-save .save-left{
+    padding-top:60px;
+    padding-bottom:60px;
 }
 .business .questions-title{
     margin-top: 0;
@@ -3312,7 +3333,6 @@ span, .weight{
 .flag img{
     width:100%;
     border-radius: 50%;
-    height:215px;
 }
 .flag{
     border-radius: 50%;
@@ -3343,6 +3363,7 @@ span, .weight{
 }
 .dest .benefit-text button{
     margin-top:60px;
+    margin-bottom:60px;
     width:14%;
 }
 .dest{
@@ -4653,18 +4674,7 @@ span, .weight{
     .business .save .typewriter{
         font-size: 47px;
     }
-    .business .save-left {
-        padding-top: 67px;
-    }
-    .business .save-right-most{
-        margin-top: 140px;
-    }
-    .business .save{
-            padding: 0 50px;
-    }
-    .business .save-right{
-        padding:0px;
-    }
+    
     .purchase .typewriter{
         font-size: 50px;
     }
@@ -4686,6 +4696,43 @@ span, .weight{
     .tabb .container{
         width:100%;
     }
+
+    .bus-save .save-right-most{
+        padding-top:130px;
+        padding-bottom:130px;
+        padding-left:30px;
+        padding-right:30px;
+    }
+    .business .save .typewriter{
+        font-size:60px;
+    }
+    .bus-save .save{
+        align-items: center;
+        gap:0px;
+    }
+    .bus-save .save-right{
+        width:24%;
+    }
+    
+    .bus-save .save-left,
+    .bus-save .save-right-most{
+        width:42%;
+    }
+    
+    .bus-save .save-right{
+        position:static;
+        transform:unset;
+    }
+    .bus-save .save-right img{
+        width:100%;
+        height:100%;
+    }
+    .bus-save .save-left{
+        padding-top:60px;
+        padding-bottom:60px;
+    }
+
+
 
     /**********  tap to pay    ************/
 
@@ -5209,6 +5256,11 @@ span, .weight{
     .limit-card p{
         font-weight: 600;
         font-size: 20px;
+        margin-left:30px;
+    }
+    .l-card-2 p{
+        font-weight: 600;
+        font-size: 18px;
         margin-left:30px;
     }
     .limit-card  img{
@@ -6200,9 +6252,6 @@ span, .weight{
         font-size: 16px;
         text-align: center;
     }
-    .flag img{
-        height:152px;
-    }
     .flag{
         width:50%;
         margin:auto;
@@ -6229,6 +6278,7 @@ span, .weight{
     }
     .dest .benefit-text button{
         margin-top:60px;
+        margin-bottom:60px;
         width:14%;
     }
     .dest{
@@ -7398,18 +7448,12 @@ span, .weight{
         margin-top:120px;
     }
     .business .save-right-most{
-        margin-top:120px;
+        margin-top:0px;
     }
     .business .save .typewriter{
         font-size:45px;
     }
-    .business
-    .save-right img{
-        width:100%;
-    }
-    .business .save-left{
-        padding-top:80px;
-    }
+    
     .business .questions-title{
         margin-top: 0;
     }
@@ -7519,6 +7563,41 @@ span, .weight{
     }
     .tab-content .see-more{
         margin-top:40px;
+    }
+
+    .bus-save .save-right-most{
+        padding-top:130px;
+        padding-bottom:130px;
+        padding-left:30px;
+        padding-right:30px;
+    }
+    .business .save .typewriter{
+        font-size:60px;
+    }
+    .bus-save .save{
+        align-items: center;
+        gap:0px;
+    }
+    .bus-save .save-right{
+        width:24%;
+    }
+    
+    .bus-save .save-left,
+    .bus-save .save-right-most{
+        width:42%;
+    }
+    
+    .bus-save .save-right{
+        position:static;
+        transform:unset;
+    }
+    .bus-save .save-right img{
+        width:100%;
+        height:100%;
+    }
+    .bus-save .save-left{
+        padding-top:60px;
+        padding-bottom:60px;
     }
 
     /**********  tap to pay    ************/
@@ -10879,11 +10958,14 @@ span, .weight{
     .simple{
         margin-top:120px;
     }
+    .bus-save .save{
+        flex-wrap: nowrap;
+    }
     .business .save-right{
-        padding:0 90px;
+        padding:0px;
     }
     .business .save-right-most{
-        margin-top:50px;
+        margin-top:0px;
         width:100%;
     }
     .business .save .typewriter{
@@ -11022,6 +11104,46 @@ span, .weight{
     .business-product .products-text{
         padding:0px;
     }
+
+    .bus-save .save-right-most{
+        padding-top:60px;
+        padding-bottom:60px;
+        padding-left:30px;
+        padding-right:30px;
+    }
+    .business .save .typewriter{
+        font-size:30px;
+    }
+    .bus-save .save{
+        align-items: center;
+        gap:0px;
+        background-color: #fff;
+    }
+    .bus-save .save-right{
+        width:24%;
+    }
+    
+    .bus-save .save-left,
+    .bus-save .save-right-most{
+        width:42%;
+    }
+    
+    .bus-save .save-right{
+        position:static;
+        transform:unset;
+    }
+    .bus-save .save-right img{
+        width:100%;
+        height:100%;
+    }
+    .bus-save .save-left{
+        padding-top:60px;
+        padding-bottom:60px;
+    }
+
+
+
+
 
 
     /**********  tap to pay    ************/
@@ -11229,7 +11351,9 @@ span, .weight{
         padding:0px;
         margin-top:40px;
     }
-    
+    .tap-full .save-right-most .save-subtitle{
+        font-size:11px;
+    }
 
 
     /************ business account ***************/
@@ -12623,9 +12747,6 @@ span, .weight{
         width:80%;
         margin:0 auto;
     }
-    .flag img{
-        height:168px;
-    }
     .flag{
         width:40%;
         margin:auto;
@@ -12652,6 +12773,7 @@ span, .weight{
     }
     .dest .benefit-text button{
         margin-top:40px;
+        margin-bottom:40px;
         width:17%;
     }
     .dest{
@@ -12699,7 +12821,7 @@ span, .weight{
 
     .good-habit .image-text {
         background: linear-gradient(180deg, rgb(7 28 0 / 25%) 0%, rgb(4 14 0 / 55%) 100%);
-        height: 89%;
+        height: 84%;
         overflow: hidden;
         position: absolute;
         top: 73px;
@@ -14473,6 +14595,44 @@ span, .weight{
         width:90%;
     }
 
+    .bus-save .save-right-most{
+        padding-top:60px;
+        padding-bottom:60px;
+        padding-left:30px;
+        padding-right:30px;
+    }
+    .business .save .typewriter{
+        font-size:30px;
+    }
+    .bus-save .save{
+        flex-wrap:wrap;
+        align-items: center;
+        gap:30px;
+        background-color: #fff;
+    }
+    .bus-save .save-right{
+        width:100%;
+        padding:0 60px;
+    }
+    
+    .bus-save .save-left,
+    .bus-save .save-right-most{
+        width:100%;
+    }
+    
+    .bus-save .save-right{
+        position:static;
+        transform:unset;
+    }
+    .bus-save .save-right img{
+        width:100%;
+        height:100%;
+    }
+    .bus-save .save-left{
+        padding-top:60px;
+        padding-bottom:60px;
+    }
+
 
 
     /******************  DIGITAL ACCOUNT DESKTOP   **********************************/
@@ -15148,6 +15308,9 @@ span, .weight{
         width:100%;
         padding:0px;
         margin-top:40px;
+    }
+    .tap-full .save-right-most .save-subtitle{
+        font-size:15px;
     }
 
 
@@ -16308,8 +16471,9 @@ span, .weight{
         align-items:center;
         justify-content: center;
         top:33%;
+        padding:0px;
     }
-    .esim img{
+    .esim-hero .kk{
         height:calc(100vh - 60px);
     }
     .esim .hero-section-text {
@@ -16343,7 +16507,12 @@ span, .weight{
         gap:40px;
     }
     .image-section{
-        position:relative;
+        position:static;
+    }
+    .image-section img{
+        height:unset;
+        width:100%;
+        object-fit:cover;
     }
     .set .set-text p:first-of-type{
         font-size:37px;
@@ -16443,9 +16612,6 @@ span, .weight{
         margin:0 auto;
         padding:0 20px;
     }
-    .flag img{
-        height:112px;
-    }
     .flag{
         width:40%;
         margin:auto;
@@ -16472,6 +16638,7 @@ span, .weight{
     }
     .dest .benefit-text button{
         margin-top:40px;
+        margin-bottom:40px;
         width:30%;
     }
     .dest{
@@ -16503,9 +16670,6 @@ span, .weight{
     }
 
     /* parent card */
-
-
-    /* parent account */
 
     .parents .hero-description{
         top:10%;
@@ -18093,6 +18257,49 @@ span, .weight{
     }
 
 
+    .bus-save .save-right-most{
+        padding-top:60px;
+        padding-bottom:60px;
+        padding-left:30px;
+        padding-right:30px;
+    }
+    .business .save .typewriter{
+        font-size:30px;
+    }
+    .bus-save .save{
+        flex-wrap:wrap;
+        align-items: center;
+        gap:30px;
+        background-color: #fff;
+    }
+    .bus-save .save-right{
+        width:100%;
+        padding:0 60px;
+    }
+    
+    .bus-save .save-left,
+    .bus-save .save-right-most{
+        width:100%;
+    }
+    
+    .bus-save .save-right{
+        position:static;
+        transform:unset;
+    }
+    .bus-save .save-right img{
+        width:100%;
+        height:100%;
+    }
+    .bus-save .save-left{
+        padding-top:60px;
+        padding-bottom:60px;
+    }
+
+
+
+
+
+
     /***************************   card-desktop       *********************************************/
     
     .card-desk img{
@@ -18550,6 +18757,9 @@ span, .weight{
         padding-left:15px;
         width:100%;
     }
+    .limit .cont{
+        padding:0px;
+    }
     .limit-cards{
         margin-top:130px;
         margin-bottom:100px;
@@ -18976,7 +19186,7 @@ span, .weight{
         top:33%;
         padding:0px;
     }
-    .esim img{
+    .esim-hero .kk{
         height:calc(100vh - 60px);
     }
     .esim .hero-section-text {
@@ -19010,7 +19220,12 @@ span, .weight{
         gap:40px;
     }
     .image-section{
-        position:relative;
+        position:static;
+    }
+    .image-section img{
+        height:unset;
+        width:100%;
+        object-fit:cover;
     }
     .set .set-text p:first-of-type{
         font-size:37px;
@@ -19110,9 +19325,6 @@ span, .weight{
         margin:0 auto;
         padding:0px;
     }
-    .flag img{
-        height:112px;
-    }
     .flag{
         width:44%;
         margin:auto;
@@ -19139,6 +19351,7 @@ span, .weight{
     }
     .dest .benefit-text button{
         margin-top:40px;
+        margin-bottom:40px;
         width:30%;
     }
     .dest{
@@ -20810,6 +21023,7 @@ span, .weight{
     .simple{
         margin-top:100px;
     }
+    
     .business .save-right-most{
         margin-top:70px;
     }
@@ -20944,7 +21158,9 @@ span, .weight{
     .digital-footer, .digital-footer-middle, .digital-footer-bottom {
         padding: 0 15px;
     }
-
+    .bus-save .save-left{
+        padding-top:20px;
+    }
 
     /******************  DIGITAL ACCOUNT DESKTOP   **********************************/
 
@@ -22330,7 +22546,7 @@ span, .weight{
         padding:0px;
         margin-right:0px;
     }
-    .esim img{
+    .esim-hero .kk{
         height:calc(100vh - 60px);
     }
     .esim .hero-section-text {
@@ -22349,6 +22565,14 @@ span, .weight{
     }
     .esim .hero-section-text {
         padding:15px;
+    }
+    .image-section{
+        position:static;
+    }
+    .image-section img{
+        height:unset;
+        width:100%;
+        object-fit:cover;
     }
     .set .set-text p:first-of-type {
         font-size: 33px;
@@ -22374,9 +22598,6 @@ span, .weight{
     .flag{
         width:57%;
     }
-    .flag img{
-        height:128px;
-    }
     .flags .swipper-card{
         padding:25px 15px;
     }
@@ -22386,6 +22607,7 @@ span, .weight{
     }
     .dest .benefit-text button {
         margin-top: 33px;
+        margin-bottom: 33px;
         width: 40%;
     }
     .dest .benefit-text {
@@ -24108,6 +24330,9 @@ span, .weight{
         width:90%;
     }
 
+    .bus-save .save-left{
+        padding-top:20px;
+    }
 
 
     /***************************   card-desktop       *********************************************/
@@ -24592,6 +24817,9 @@ span, .weight{
         padding-left:15px;
         width:100%;
     }
+    .limit .cont{
+        padding:0px 10px;
+    }
     .limit-cards{
         margin-top:70px;
         margin-bottom:70px;
@@ -24986,6 +25214,9 @@ span, .weight{
 
     /* E sim */
 
+    .esim-hero .hero-description .hero-section-text{
+        padding-right:0px;
+    }
     .esim .hero-description{
         top:50%;
     }
@@ -25053,9 +25284,6 @@ span, .weight{
     .flag{
         width:63%;
     }
-    .flag img{
-        height:128px;
-    }
     .flags .swipper-card{
         padding:25px 15px;
     }
@@ -25070,6 +25298,7 @@ span, .weight{
     }
     .dest .benefit-text button {
         margin-top: 33px;
+        margin-bottom: 33px;
         width: 40%;
     }
     .dest .benefit-text{

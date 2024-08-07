@@ -12980,11 +12980,18 @@ span, .weight{
         left:0%;
         width:100%;
     }
+    .privacy-hero{
+        height:fit-content;
+    }
     .privacy .hero-description .hero-img img {
         width:100%;
     }
     .privacy .hero-description .hero-img{
-        width:41%;
+        width:30%;
+    }
+    .privacy img{
+        height:calc(100vh - 60px);
+        
     }
     .privacy .hero-description .hero-section-text{
         width:59%;
@@ -16180,6 +16187,9 @@ span, .weight{
     .ins .hero-description{
         top:40%;
     }
+    .ins-hero .hero-description{
+        margin-left:0px;
+    }
     .ins-hero img{
         height:calc(100vh - 60px);
         object-fit:cover;
@@ -16189,6 +16199,7 @@ span, .weight{
         border-radius:20px;
         width:100%;
         padding:15px;
+        right:1%;
     }
     .ins .hero-section-text p:first-of-type{
         font-size:30px;
@@ -16769,7 +16780,13 @@ span, .weight{
 
     /* privacy */
 
-
+    .privacy-hero{
+        height:fit-content;
+    }
+    .privacy img{
+        width:100%;
+        height:calc(100vh - 60px);
+    }
     .privacy .hero-description{
         top:12%;
         left:0%;
@@ -16782,7 +16799,8 @@ span, .weight{
         width:100%;
     }
     .privacy .hero-description .hero-img{
-        width:340px;
+        width:200px;
+        margin:0 auto;
     }
     .privacy .hero-description .hero-section-text{
         width:fit-content;
@@ -19490,7 +19508,13 @@ span, .weight{
 
     /* privacy */
 
-
+    .privacy-hero{
+        height:fit-content;
+    }
+    .privacy img{
+        width:100%;
+        height:calc(100vh - 60px);
+    }
     .privacy .hero-description{
         top:12%;
         left:0%;
@@ -19500,7 +19524,8 @@ span, .weight{
         justify-content: space-evenly;
     }
     .privacy .hero-description .hero-img img {
-        width:100%;
+        width:200px;
+        margin:0 auto;
     }
     .privacy .hero-description .hero-img{
         width:340px;
@@ -19510,8 +19535,8 @@ span, .weight{
         padding-top:40px;
         padding-left:50px;
     }
-    .privacy .hero-description .hero-section-text .typewriter{
-        font-size:42px;
+    .privacy .hero-description .business-card .typewriter {
+        font-size:40px !important;
     }
     .privacy-title{
         font-size: 28px;
@@ -22695,9 +22720,15 @@ span, .weight{
 
     /* privacy */
 
-
+    .privacy-hero{
+        height:fit-content;
+    }
     .privacy img{
         width:100%;
+        height:calc(100vh - 60px);
+    }
+    .privacy img{
+        width:160px;
         height:calc(100vh - 60px);
     }
     .privacy .hero-description{
@@ -22712,7 +22743,8 @@ span, .weight{
         width:100%;
     }
     .privacy .hero-description .hero-img{
-        width:232px;
+        width:200px;
+        margin:0 auto;
     }
     .privacy .hero-description .hero-section-text{
         width:fit-content;
@@ -25899,11 +25931,14 @@ span, .weight{
     /* privacy */
 
 
+    .privacy-hero{
+        height:fit-content;
+    }
     .privacy img{
-        width:100%;
+        width:140px;
         height:calc(100vh - 60px);
     }
-    .privacy .hero-description{
+    .privacy-hero .hero-description{
         top:12%;
         left:0%;
         width:100%;
@@ -25915,7 +25950,8 @@ span, .weight{
         width:100%;
     }
     .privacy .hero-description .hero-img{
-        width:232px;
+        width:180px;
+        margin:0 auto;
     }
     .privacy .hero-description .hero-section-text{
         width:fit-content;
@@ -28597,8 +28633,12 @@ span, .weight{
     .privacy .hero-description .hero-img img {
         width:100%;
     }
-    .privacy .hero-description .hero-img {
-        width: 260px;
+    .privacy-hero{
+        height:fit-content;
+    }
+    .privacy img{
+        width:100%;
+        height:calc(100vh - 60px);
     }
     .privacy .hero-description .hero-section-text{
         width:fit-content;
@@ -28606,7 +28646,7 @@ span, .weight{
         padding-left:30px;
     }
     .privacy .hero-description .hero-section-text .typewriter{
-        font-size:35px;
+        font-size:28px !important;
     }
     .privacy-title{
         font-size: 34px;

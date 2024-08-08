@@ -48,7 +48,7 @@
                     </div>
                     <div class="subnav">
                         <button class="subnavbtn">
-                            <div class="inner row"> Business <i class="fa fa-caret-down" style="margin-left:15px"></i>
+                            <div class="inner row">Business<i class="fa fa-caret-down" style="margin-left:15px"></i>
                             </div>
                         </button>
                         <div class="subnav-content">
@@ -59,7 +59,7 @@
                     </div>
                     <div class="subnav">
                         <button class="subnavbtn">
-                            <div class="inner row">Under 18 <i class="fa fa-caret-down" style="margin-left:15px"></i>
+                            <div class="inner row">Under 18<i class="fa fa-caret-down" style="margin-left:15px"></i>
                             </div>
                         </button>
                         <div class="subnav-content">
@@ -68,7 +68,6 @@
                         </div>
                     </div>
                     <a href="E-sim.html">eSim</a>
-
                     <div class="subnav">
                         <button class="subnavbtn">
                             <div class="inner row">Privacy policy<i class="fa fa-caret-down"
@@ -92,9 +91,11 @@
             </div>
         </nav>
     </header>
+    
+    
     <main>
-        <section class="hero-section tap tap-hero future feature">
-            <img class="feature-img" src="images/future-hero.jpeg" alt="">
+        <section class="hero-section tap tap-hero future feature future-hero">
+            <img class="feature-img" src="images/future-hero.jpg" alt="">
             <div class="hero-description row">
                 <div class="hero-section-text business-card col-9">
                     <p class="subtitle primary-color">Credit card</p>
@@ -289,29 +290,32 @@
         document.addEventListener('DOMContentLoaded', (event) => {
             const knowMoreButtons = document.querySelectorAll('.starteded');
             const cardContainer = document.querySelector('.card-container');
-        
+            var subnavButtons = document.querySelectorAll('.subnavbtn');
+
+
+
             knowMoreButtons.forEach(button => {
                 button.addEventListener('click', () => {
                     cardContainer.style.display = 'flex ';
                 });
             });
-        
+
             const closeButtons = document.querySelectorAll('.close-btn');
             closeButtons.forEach(button => {
                 button.addEventListener('click', () => {
                     cardContainer.style.display = 'none';
                 });
             });
-        
+
             const menu = document.querySelector('.menu');
             const navbar = document.querySelector('.navbar');
             const navRight = document.querySelector('.nav-right');
             const menuIcon = menu.querySelector('i');
-        
+
             menu.addEventListener('click', function () {
                 navbar.classList.toggle('show');
                 navRight.classList.toggle('show');
-        
+
                 if (navbar.classList.contains('show')) {
                     menuIcon.classList.remove('ri-menu-line');
                     menuIcon.classList.add('ri-close-line');
@@ -320,7 +324,7 @@
                     menuIcon.classList.add('ri-menu-line');
                 }
             });
-        
+
             document.addEventListener('click', function (event) {
                 const isClickInsideNav = event.target.closest('.nav-link');
                 const isClickInsideMenu = event.target.closest('.menu');
@@ -330,6 +334,33 @@
                     });
                 }
             });
+
+            subnavButtons.forEach(function (button) {
+                button.addEventListener('click', function () {
+                    var subnavContent = this.nextElementSibling;
+
+                    if (subnavContent.style.display === 'block') {
+                        subnavContent.style.display = 'none';
+                    } else {
+                        // Hide all subnav contents first
+                        document.querySelectorAll('.subnav-content').forEach(function (content) {
+                            content.style.display = 'none';
+                        });
+                        // Then show the current subnav content
+                        subnavContent.style.display = 'block';
+                    }
+                });
+            });
+
+            // Close the subnav content when clicking outside
+            document.addEventListener('click', function (e) {
+                if (!e.target.matches('.subnavbtn') && !e.target.closest('.subnav')) {
+                    document.querySelectorAll('.subnav-content').forEach(function (content) {
+                        content.style.display = 'none';
+                    });
+                }
+            });
+
         });
     </script>
 

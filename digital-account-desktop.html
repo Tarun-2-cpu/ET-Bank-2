@@ -48,7 +48,7 @@
                     </div>
                     <div class="subnav">
                         <button class="subnavbtn">
-                            <div class="inner row"> Business <i class="fa fa-caret-down" style="margin-left:15px"></i>
+                            <div class="inner row">Business<i class="fa fa-caret-down" style="margin-left:15px"></i>
                             </div>
                         </button>
                         <div class="subnav-content">
@@ -59,7 +59,7 @@
                     </div>
                     <div class="subnav">
                         <button class="subnavbtn">
-                            <div class="inner row">Under 18 <i class="fa fa-caret-down" style="margin-left:15px"></i>
+                            <div class="inner row">Under 18<i class="fa fa-caret-down" style="margin-left:15px"></i>
                             </div>
                         </button>
                         <div class="subnav-content">
@@ -68,7 +68,6 @@
                         </div>
                     </div>
                     <a href="E-sim.html">eSim</a>
-
                     <div class="subnav">
                         <button class="subnavbtn">
                             <div class="inner row">Privacy policy<i class="fa fa-caret-down"
@@ -92,6 +91,8 @@
             </div>
         </nav>
     </header>
+
+
     <main>
         <section class="hero-section digital digital-hero">
             <img class="digital-hero-img" src="images/Digital-Account-hero.jpg" alt="">
@@ -103,7 +104,7 @@
             </div>
         </section>
         <section>
-            <div class="benefit">
+            <div class="benefit  ben-full">
                 <div class="benefint-container container">
                     <div class="benefit-container-img col-12">
                         <img src="images/medai-frame.jpg" alt="">
@@ -115,7 +116,7 @@
                 <div class="benefit-swipper row">
                     <div class="col-4">
                         <div class="swipper-card">
-                            <img src="images/intrest.jpg" alt="">
+                            <img src="images/intrest.png" alt="">
                             <p class="swipper-title">Earn Interest while holding
                                 money in your account</p>
                             <p class="swipper-subtitle">You choose how to save your funds and when to reclaim your
@@ -124,7 +125,7 @@
                     </div>
                     <div class="col-4">
                         <div class="swipper-card card-2">
-                            <img src="images/salary.jpg" alt="">
+                            <img src="images/salary.png" alt="">
                             <p class="swipper-title">Digital Salary Portability</p>
                             <p class="swipper-subtitle">Request salary portability to receive it directly in your ET
                                 Bank account every month.</p>
@@ -132,7 +133,7 @@
                     </div>
                     <div class="col-4">
                         <div class="swipper-card card-3">
-                            <img src="images/recharge.jpg" alt="">
+                            <img src="images/recharge.png" alt="">
                             <p class="swipper-title">Easy mobile recharges</p>
                             <p class="swipper-subtitle">Recharge your mobile phone paying with a card or account
                                 balance, and get your credits instantly</p>
@@ -168,7 +169,7 @@
                 <div class="debit-outer">
                     <div class="debit">
                         <div class="debit-img">
-                            <img src="images/debit-card.jpg" alt="">
+                            <img src="images/debit-card (2).png" alt="">
                         </div>
                         <p class="title">Get the full experience with the debit card</p>
                         <p class="subtitle">You’re in control of your daily purchase in an easy and transparent way</p>
@@ -314,7 +315,7 @@
                     <div class="priority">
                         <div class="top-priority col-12">
                             <div class="top-priority-img">
-                                <img src="images/priority.jpg" alt="">
+                                <img src="images/priority.png" alt="">
                             </div>
                             <div class="priority-text col-12">
                                 <p class="priority-title weight-700">We know security is your top priority</p>
@@ -325,12 +326,12 @@
                         <div class="priority-bottom">
                             <div class="priority-bottom-first row">
                                 <div class="priority-detail priority-left col-6">
-                                    <img src="images/bell.jpg" alt="">
+                                    <img src="images/bell.png" alt="">
                                     <p>Real-time push notifications</p>
                                     <p>Keep track of every transaction that comes in and out of your bank account</p>
                                 </div>
                                 <div class="priority-detail priority-right col-6">
-                                    <img src="images/protect.jpg" alt="">
+                                    <img src="images/protect.png" alt="">
                                     <p>Protect your information</p>
                                     <p>An additional layer of security to keep your access safe with touch ID, face
                                         recognition or password</p>
@@ -338,13 +339,13 @@
                             </div>
                             <div class="priority-bottom-second row">
                                 <div class="priority-detail priority-left col-6">
-                                    <img src="images/card.jpg" alt="">
+                                    <img src="images/card (3).png" alt="">
                                     <p>Your card under control</p>
                                     <p>Lost or stolen card? Lock and unlock the card through the app how many times you
                                         need.</p>
                                 </div>
                                 <div class="priority-detail priority-right col-6">
-                                    <img src="images/safe.jpg" alt="">
+                                    <img src="images/safe.png" alt="">
                                     <p>Safe transactions</p>
                                     <p>Enter your password to confirm and report any unauthorized transactions on you
                                         account</p>
@@ -592,29 +593,32 @@
         document.addEventListener('DOMContentLoaded', (event) => {
             const knowMoreButtons = document.querySelectorAll('.starteded');
             const cardContainer = document.querySelector('.card-container');
-        
+            var subnavButtons = document.querySelectorAll('.subnavbtn');
+
+
+
             knowMoreButtons.forEach(button => {
                 button.addEventListener('click', () => {
                     cardContainer.style.display = 'flex ';
                 });
             });
-        
+
             const closeButtons = document.querySelectorAll('.close-btn');
             closeButtons.forEach(button => {
                 button.addEventListener('click', () => {
                     cardContainer.style.display = 'none';
                 });
             });
-        
+
             const menu = document.querySelector('.menu');
             const navbar = document.querySelector('.navbar');
             const navRight = document.querySelector('.nav-right');
             const menuIcon = menu.querySelector('i');
-        
+
             menu.addEventListener('click', function () {
                 navbar.classList.toggle('show');
                 navRight.classList.toggle('show');
-        
+
                 if (navbar.classList.contains('show')) {
                     menuIcon.classList.remove('ri-menu-line');
                     menuIcon.classList.add('ri-close-line');
@@ -623,7 +627,7 @@
                     menuIcon.classList.add('ri-menu-line');
                 }
             });
-        
+
             document.addEventListener('click', function (event) {
                 const isClickInsideNav = event.target.closest('.nav-link');
                 const isClickInsideMenu = event.target.closest('.menu');
@@ -633,6 +637,33 @@
                     });
                 }
             });
+
+            subnavButtons.forEach(function (button) {
+                button.addEventListener('click', function () {
+                    var subnavContent = this.nextElementSibling;
+
+                    if (subnavContent.style.display === 'block') {
+                        subnavContent.style.display = 'none';
+                    } else {
+                        // Hide all subnav contents first
+                        document.querySelectorAll('.subnav-content').forEach(function (content) {
+                            content.style.display = 'none';
+                        });
+                        // Then show the current subnav content
+                        subnavContent.style.display = 'block';
+                    }
+                });
+            });
+
+            // Close the subnav content when clicking outside
+            document.addEventListener('click', function (e) {
+                if (!e.target.matches('.subnavbtn') && !e.target.closest('.subnav')) {
+                    document.querySelectorAll('.subnav-content').forEach(function (content) {
+                        content.style.display = 'none';
+                    });
+                }
+            });
+
         });
     </script>
 </body>

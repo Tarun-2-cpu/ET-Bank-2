@@ -48,7 +48,7 @@
                     </div>
                     <div class="subnav">
                         <button class="subnavbtn">
-                            <div class="inner row"> Business <i class="fa fa-caret-down" style="margin-left:15px"></i>
+                            <div class="inner row">Business<i class="fa fa-caret-down" style="margin-left:15px"></i>
                             </div>
                         </button>
                         <div class="subnav-content">
@@ -59,7 +59,7 @@
                     </div>
                     <div class="subnav">
                         <button class="subnavbtn">
-                            <div class="inner row">Under 18 <i class="fa fa-caret-down" style="margin-left:15px"></i>
+                            <div class="inner row">Under 18<i class="fa fa-caret-down" style="margin-left:15px"></i>
                             </div>
                         </button>
                         <div class="subnav-content">
@@ -68,7 +68,6 @@
                         </div>
                     </div>
                     <a href="E-sim.html">eSim</a>
-
                     <div class="subnav">
                         <button class="subnavbtn">
                             <div class="inner row">Privacy policy<i class="fa fa-caret-down"
@@ -92,6 +91,7 @@
             </div>
         </nav>
     </header>
+    
     <main>
         <section class="hero-section credit-for-you cre invest">
             <img class="" src="images/invest.jpeg" alt="">
@@ -406,92 +406,120 @@
             </div>
         </section>
 
-
-
-        <footer>
-            <div class="footer-full col-12">
-                <div class="footer row container">
-                    <div class="footer-icon row col-3">
-                        <i class="ri-reddit-line"></i>
-                        <i class="ri-instagram-line"></i>
-                        <i class="ri-linkedin-box-line"></i>
-                        <i class="ri-telegram-line"></i>
-                        <i class="ri-twitter-line"></i>
-                        <i class="ri-whatsapp-line"></i>
+    </main>
+    <footer>
+        <div class="footer-full col-12">
+            <div class="footer row container">
+                <div class="footer-icon row col-3">
+                    <i class="ri-reddit-line"></i>
+                    <i class="ri-instagram-line"></i>
+                    <i class="ri-linkedin-box-line"></i>
+                    <i class="ri-telegram-line"></i>
+                    <i class="ri-twitter-line"></i>
+                    <i class="ri-whatsapp-line"></i>
+                </div>
+                <div class="footer-menu col-5">
+                    <div class="footer-nav">
+                        <a href="index.html">HOME</a>
+                        <a href="digital-account-desktop.html">Digital Account</a>
+                        <a href="business-card-desktop.html">Business Card</a>
+                        <a href="card-desktop.html">Credit Card</a>
                     </div>
-                    <div class="footer-menu col-5">
-                        <div class="footer-nav">
-                            <a href="index.html">HOME</a>
-                            <a href="digital-account-desktop.html">Digital Account</a>
-                            <a href="business-card-desktop.html">Business Card</a>
-                            <a href="card-desktop.html">Credit Card</a>
-                        </div>
-                        <div class="footer-description col-4">
-                            <p>At ET Bank, we're redefining the way you bank. With cutting-edge technology, innovative
-                                solutions, and a customer-centric approach, we're transforming the banking experience for the
-                                modern world.</p>
-                        </div>
+                    <div class="footer-description col-4">
+                        <p>At ET Bank, we're redefining the way you bank. With cutting-edge technology, innovative
+                            solutions, and a customer-centric approach, we're transforming the banking experience for the
+                            modern world.</p>
                     </div>
-                    <div class="footer-subscribe col-3">
-                        <p class="weight-700">Subscribe to our newsletter</p>
-                        <div class="footer-input row">
-                            <input type="text" placeholder="Enter email address">
-                            <img src="images/arrow.png" alt="">
-                        </div>
+                </div>
+                <div class="footer-subscribe col-3">
+                    <p class="weight-700">Subscribe to our newsletter</p>
+                    <div class="footer-input row">
+                        <input type="text" placeholder="Enter email address">
+                        <img src="images/arrow.png" alt="">
                     </div>
                 </div>
             </div>
-        </footer>
+        </div>
+    </footer>
 
 
-        <script>
-            document.addEventListener('DOMContentLoaded', (event) => {
-                const knowMoreButtons = document.querySelectorAll('.starteded');
-                const cardContainer = document.querySelector('.card-container');
-            
-                knowMoreButtons.forEach(button => {
-                    button.addEventListener('click', () => {
-                        cardContainer.style.display = 'flex ';
-                    });
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const knowMoreButtons = document.querySelectorAll('.starteded');
+            const cardContainer = document.querySelector('.card-container');
+            var subnavButtons = document.querySelectorAll('.subnavbtn');
+
+
+
+            knowMoreButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    cardContainer.style.display = 'flex ';
                 });
-            
-                const closeButtons = document.querySelectorAll('.close-btn');
-                closeButtons.forEach(button => {
-                    button.addEventListener('click', () => {
-                        cardContainer.style.display = 'none';
-                    });
+            });
+
+            const closeButtons = document.querySelectorAll('.close-btn');
+            closeButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    cardContainer.style.display = 'none';
                 });
-            
-                const menu = document.querySelector('.menu');
-                const navbar = document.querySelector('.navbar');
-                const navRight = document.querySelector('.nav-right');
-                const menuIcon = menu.querySelector('i');
-            
-                menu.addEventListener('click', function () {
-                    navbar.classList.toggle('show');
-                    navRight.classList.toggle('show');
-            
-                    if (navbar.classList.contains('show')) {
-                        menuIcon.classList.remove('ri-menu-line');
-                        menuIcon.classList.add('ri-close-line');
+            });
+
+            const menu = document.querySelector('.menu');
+            const navbar = document.querySelector('.navbar');
+            const navRight = document.querySelector('.nav-right');
+            const menuIcon = menu.querySelector('i');
+
+            menu.addEventListener('click', function () {
+                navbar.classList.toggle('show');
+                navRight.classList.toggle('show');
+
+                if (navbar.classList.contains('show')) {
+                    menuIcon.classList.remove('ri-menu-line');
+                    menuIcon.classList.add('ri-close-line');
+                } else {
+                    menuIcon.classList.remove('ri-close-line');
+                    menuIcon.classList.add('ri-menu-line');
+                }
+            });
+
+            document.addEventListener('click', function (event) {
+                const isClickInsideNav = event.target.closest('.nav-link');
+                const isClickInsideMenu = event.target.closest('.menu');
+                if (!isClickInsideNav && !isClickInsideMenu) {
+                    document.querySelectorAll('.dropdown-content').forEach(dropdown => {
+                        dropdown.classList.remove('show');
+                    });
+                }
+            });
+
+            subnavButtons.forEach(function (button) {
+                button.addEventListener('click', function () {
+                    var subnavContent = this.nextElementSibling;
+
+                    if (subnavContent.style.display === 'block') {
+                        subnavContent.style.display = 'none';
                     } else {
-                        menuIcon.classList.remove('ri-close-line');
-                        menuIcon.classList.add('ri-menu-line');
-                    }
-                });
-            
-                document.addEventListener('click', function (event) {
-                    const isClickInsideNav = event.target.closest('.nav-link');
-                    const isClickInsideMenu = event.target.closest('.menu');
-                    if (!isClickInsideNav && !isClickInsideMenu) {
-                        document.querySelectorAll('.dropdown-content').forEach(dropdown => {
-                            dropdown.classList.remove('show');
+                        // Hide all subnav contents first
+                        document.querySelectorAll('.subnav-content').forEach(function (content) {
+                            content.style.display = 'none';
                         });
+                        // Then show the current subnav content
+                        subnavContent.style.display = 'block';
                     }
                 });
             });
-        </script>
-    </main>
+
+            // Close the subnav content when clicking outside
+            document.addEventListener('click', function (e) {
+                if (!e.target.matches('.subnavbtn') && !e.target.closest('.subnav')) {
+                    document.querySelectorAll('.subnav-content').forEach(function (content) {
+                        content.style.display = 'none';
+                    });
+                }
+            });
+
+        });
+    </script>
 
 </body>
 

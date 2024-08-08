@@ -141,6 +141,12 @@ nav {
     transition: height 0.3s ease;
 } */
 
+nav {
+    padding: 15px 39px;
+    background: #ffffffb2;
+    transition: height 0.3s ease;
+}
+
 .nav-top {
     width: 100%;
     display: flex;
@@ -183,70 +189,72 @@ nav img {
 }
 
 .navbar {
-  overflow: hidden;
-  background-color:#fff; 
+    overflow: hidden;
+    background-color: #fff;
 }
 
 .navbar a {
-  float: left;
-  font-size: 16px;
-  color: #000;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  cursor:pointer;
+    float: left;
+    font-size: 16px;
+    color: #000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .subnav {
-  float: left;
-  overflow: hidden;
+    float: left;
+    overflow: hidden;
 }
 
 .subnav .subnavbtn {
-  font-size: 16px;  
-  border: none;
-  outline: none;
-  color: #000;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
-  cursor:pointer;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: #000;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    cursor: pointer;
 }
 
-.navbar a:hover, .subnav:hover .subnavbtn {
-  background-color: #cccbcb88;
+.navbar a:hover,
+.subnav:hover .subnavbtn {
+    background-color: #cccbcb88;
 }
 .subnav-content {
-  display: none;
-  position: absolute;
-  left: 0;
-  background-color: #fff;
-  width: 100%;
-  z-index: 1;
-  padding-left:72px;
-  padding-top:30px;
-  padding-bottom:30px;
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: #fff;
+    width: 100%;
+    z-index: 1;
+    padding-left: 72px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .subnav-content a {
-  float: left;
-  color: #000;
-  text-decoration: none;
-  font-weight:600;
-  font-size:16px;
-  padding:12px 16px;
-  width:33%;
-  text-align: left;
+    float: left;
+    color: #000;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 12px 16px;
+    width: 33%;
+    text-align: left;
 }
 .subnav-content a:hover {
-  background-color: #e2e0e065;
-  color: #1B5962;
+    background-color: #e2e0e065;
+    color: #1B5962;
 }
-.subnavbtn .inner{
-    align-items:baseline;
+.subnavbtn .inner {
+    align-items: baseline;
     justify-content: center;
 }
+
 .subnav:hover .subnav-content {
   display: block;
 }
@@ -447,11 +455,19 @@ nav img {
     font-size:35px;
     color:#00D47E;
 }
+.next-gen-img-div{
+    margin-top:45px;
+}
 .next-gen-right-top{
-    padding:0 60px;
-    padding-top:80px;
-    background-position: left 100%, bottom 100%;
-    background-repeat: no-repeat;
+    width:100%;
+    padding-top:40px;
+    padding-left:30px;
+}
+.next-gen-right-top .next-gen-img-div img{
+    width:100%;
+    height:540px;
+    object-fit:contain;
+    border-radius:20px;
 }
 
 .next-gen-right-top p:first-of-type{
@@ -464,6 +480,9 @@ nav img {
 }
 .next-gen-left-bottom-img{
     margin-top:60px;
+}
+.next-gen-left-bottom-img img{
+    width:260px;
 }
 
 .next-gen-left-bottom-img .subtitle{
@@ -508,6 +527,9 @@ nav img {
     background-color: rgba(255, 255, 255, 0.7);
 }
 
+.do-more-card img{
+    width:80px;
+}
 .do-more-card p:first-of-type{
     font-size:24px;
     margin-bottom: 20px;
@@ -1011,6 +1033,11 @@ th {
 .digital .hero-description{
     top:30%;
 }
+.digital-hero img{
+    width:100%;
+    /* height:calc(100vh - 60px);
+    object-fit: cover; */
+}
 .benefit-container-img{
     width:100%;
     border-radius:20px;
@@ -1019,6 +1046,9 @@ th {
 .benefit-container-img img{
     width:100%;
     border-radius:20px;
+}
+.ben-full{
+    margin-top:60px;    
 }
 .swipper-title{
     font-size:24px;
@@ -1031,6 +1061,9 @@ th {
     font-size:16px;
     color:#000000;
     padding-bottom:10px;
+}
+.benefit-swipper img{
+    width:100px;
 }
 .benefit-swipper{
     justify-content: space-between;
@@ -1308,6 +1341,9 @@ th {
 .priority-text{
     text-align:center;
     margin-top:75px;
+}
+.priority-detail img{
+    width:80px;
 }
 .priority-detail p:first-of-type{
     font-size:24px;
@@ -1642,7 +1678,9 @@ span, .weight{
 .business .hero-description{
     top:50%;
 }
-
+.bussss .swipper-card img{
+    width:15%;
+}
 .business-card .typewriter:last-of-type{
     font-size:56px;
 }
@@ -1830,6 +1868,19 @@ span, .weight{
 
 /**********  tap to pay    ************/
 
+
+.tap-hero .hero-img{
+    width:65%;
+}
+.tap-hero .hero-img img{
+    object-fit:contain;
+    width:100%;
+}
+.tap .hero-description .business-card .typewriter{
+    padding:0px;
+    font-size:55px;
+    width:75%;
+}
 .tap-hero img:first-of-type{
     height:calc(100vh - 60px);
     object-fit: cover;
@@ -1837,10 +1888,6 @@ span, .weight{
 .tap .hero-description{
     top:unset;
     bottom:0px;
-}
-.tap .hero-description .business-card .typewriter{
-    padding:0px;
-    font-size:55px;
 }
 .tap .hero-description .subtitle{
     font-size:24px;
@@ -2493,6 +2540,19 @@ span, .weight{
 .key-register .register-text{
     font-size:23px;
 }
+.key-bottom .keys-inner-img img{
+    width:40%;
+    margin:0 auto;
+}
+.key-bottom .keys-inner-img{
+    width:40%;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+}
+.keys-abs .keys-inner{
+    justify-content: space-evenly;
+}
 .key-register .key-1{
     width:100%;
     justify-content:space-around;
@@ -2648,12 +2708,6 @@ span, .weight{
     align-items: center;
     justify-content: center;
 }
-.c-card .swipper-card .img-div i {
-    font-size:30px;
-}
-.c-card .swipper-1 .img-div{
-    background:crimson;
-}
 .c-card .swipper-1 {
     padding-bottom:30px;
 }
@@ -2662,6 +2716,20 @@ span, .weight{
 }
 .c-card .card-3 .img-div{
     background:#00D47E;
+}
+.et-et .img-div{
+    margin:0 auto;
+    margin-bottom:15px;
+    width:100px;
+}
+.et-et .img-div img{
+    width:100%;
+}
+.et-et .benefit-swipper .card-2 p {
+    margin-bottom: 5px;
+}
+.et-et .benefit-swipper .card-3 p {
+    font-size:19px;
 }
 .vid img{
     width:100%;
@@ -3085,6 +3153,13 @@ span, .weight{
 
 /* child account */
 
+.childd .hero-description {
+    left:100px;
+    top:50%;
+}
+.childd .hero-description .subtitle{
+    color:#fff !important;
+}
 .child .mastercard .mastercard-img > img{
     width:400px;
     height:unset;
@@ -3729,7 +3804,7 @@ span, .weight{
         color:#00D47E;
     }
     .next-gen-right-top{
-        padding:0 60px;
+        padding:0 40px;
         padding-top:78px;
         background-position: left 100%, bottom 100%;
         background-repeat: no-repeat;
@@ -3781,6 +3856,12 @@ span, .weight{
         width:fit-content;
         height:fit-content;
         padding:15px;
+    }
+    .next-gen-right-top .next-gen-img-div img {
+        width: 100%;
+        height: 480px;
+        object-fit: contain;
+        border-radius: 20px;
     }
     .do-more-card p:first-of-type{
         font-size:24px;
@@ -3899,7 +3980,7 @@ span, .weight{
         font-size:52px;
     }
     .optimize-bottom .optimize-top-title{
-        font-size:52px;
+        font-size:47px;
     }
     .optimize-bottom .col-6{
         padding-left:15px;
@@ -4261,17 +4342,19 @@ span, .weight{
     }
     .hidden-fees{
         margin-top:100px;
-        padding:0 60px;
+        padding:0px;
     }
     .hidden-title{
-        font-size:66px;
+        font-size:56px;
         color:#1B5962;
         font-weight: 700;
+        margin-left:125px;
     }
     .hidden-subtitle{
         margin-top:26px;
         font-size:20px;
         color:#1B5962;
+        margin-left:125px;
     }
     .cost{
         padding:0 60px;
@@ -5393,6 +5476,16 @@ span, .weight{
         padding-bottom:49px;
         padding-right:120px;
     }
+    .key-bottom .keys-inner-img img{
+        width:60%;
+        margin:0 auto;
+    }
+    .key-bottom .keys-inner-img{
+        width:40%;
+        display:flex;
+        align-items: center;
+        justify-content:center;
+    }
     .keys-right .title{
         font-size:48px;
     }
@@ -5815,7 +5908,10 @@ span, .weight{
         /* child account */
 
 
-        
+    .childd .hero-description {
+        left:70px;
+        top:50%;
+    }
     .child .mastercard{
         justify-content: space-between;
     }
@@ -6027,6 +6123,25 @@ span, .weight{
     .c-card .card-3 .img-div{
         background:#00D47E;
     }
+
+    .et-et .img-div{
+        margin:0 auto;
+        margin-bottom:15px;
+        width:100px;
+    }
+    .et-et .img-div img{
+        width:100%;
+    }
+    .et-et .benefit-swipper .card-2 p {
+        margin-bottom: 5px;
+    }
+    .et-et .benefit-swipper .card-3 p {
+        font-size:16px;
+    }
+
+
+
+
     .vid img{
         width:100%;
     }
@@ -8942,7 +9057,7 @@ span, .weight{
     }
     .mastercard{
         padding-right:40px;
-        padding-top:110px;
+        padding-top:70px;
         padding-left:40px;
     }
     .mastercard-right{
@@ -9529,7 +9644,7 @@ span, .weight{
     .next-gen-left-bottom{
         background-color:#1B5962;
         border-radius:20px;
-        padding:40px 15px;
+        padding:40px;
         padding-top:41px;
         padding-bottom:10px;
         margin-top:15px;
@@ -9541,9 +9656,10 @@ span, .weight{
     .next-gen-bottom{
         width:100%;
         gap:40px;
+        justify-content:center;
     }
     .next-gen-img-div{
-        padding:0 90px;
+        padding:0 40px;
         width:100%;
     }
     .next-gen-right-top{
@@ -9839,7 +9955,7 @@ span, .weight{
         margin-right:0px;
     }
     .optimize-middle{
-        flex-direction: column-reverse;
+        flex-direction: column;
         width:100%;
     }
     .optimize-middle .optimize-top-title{
@@ -10116,6 +10232,11 @@ span, .weight{
 
     /******************  DIGITAL ACCOUNT DESKTOP   **********************************/
 
+    .digital-hero img{
+        width:100%;
+        height:calc(100vh - 60px);
+        object-fit: cover;
+    }
     .digital .hero-description{
         top:34%;
     }
@@ -10137,7 +10258,7 @@ span, .weight{
         border-radius:20px;
     }
     .benefit-text p{
-        font-size:45px;
+        font-size:40px;
         color:#1B5962;
         font-weight: 700;
         margin-top:77px;
@@ -10720,7 +10841,9 @@ span, .weight{
         font-size:20px;
         margin:15px 0;
     }
-    
+    .card-desktop .hero-section-text .typewriter{
+        width:86%;
+    }
     .subtitle{
         font-size:16px;
     }
@@ -10782,6 +10905,9 @@ span, .weight{
     }
     .mastercard p{
         line-height:normal;
+    }
+    .mastercard{
+        padding-top:70px;
     }
     .last-2 .mastercard-right{
         margin-top:0;
@@ -10851,7 +10977,7 @@ span, .weight{
     }
     .mastercard{
         padding-right:20px;
-        padding-top:110px;
+        padding-top:70px;
         padding-left:20px;
     }
     .mastercard-right{
@@ -10891,7 +11017,7 @@ span, .weight{
     }
     .business .hero-description {
         position: absolute;
-        top: 50%;
+        top: 53%;
         margin-left: 13px;
         width:80%;
     }
@@ -11166,7 +11292,7 @@ span, .weight{
         object-fit:cover;
     }
     .tap .hero-description{
-        top:12.5%;
+        top:31%;
         bottom:0px;
         flex-wrap:nowrap;
     }
@@ -11718,8 +11844,19 @@ span, .weight{
 
     /*  Future Built */
 
+    .tap .hero-description .business-card .typewriter,
+    .tap .hero-description .subtitle{
+        color:#073D44 !important;
+    }
+
+    .future.hero{
+        height:calc(100vh - 60px);
+    }
+    .future.hero img{
+        height:calc(100vh - 60px);
+    }
     .future .hero-description {
-        top: 45%;
+        top: 40%;
         bottom: unset;
     }
     .future .hero-section-text {
@@ -11733,7 +11870,8 @@ span, .weight{
         flex-wrap: wrap;
     }
     .role img{
-        width:100%;
+        width:50%;
+        margin:0 auto;
     }
     .role .role-right{
         width:100%;
@@ -11743,7 +11881,7 @@ span, .weight{
         margin-bottom:30px;
     }
     .role-right{
-        padding-top:100px;
+        padding-top:40px;
         padding-bottom:100px;
     }
     .role-bottom{
@@ -11854,10 +11992,13 @@ span, .weight{
         object-fit:cover;
     }
     
+    .pix-hero .hero-description{
+        top:48%;
+    }
     .pix .hero-text-left .text{
         font-size:25px;
-        width:80%;
-        color:black;
+        width:85%;
+        color:white;
     }
     .pix .cpf input{
         border-bottom:1px solid black;
@@ -11948,6 +12089,16 @@ span, .weight{
         width:100%;
         justify-content:space-around;
         gap:24px 0;
+    }
+    .key-bottom .keys-inner-img img{
+        width:100%;
+        margin:0 auto;
+    }
+    .key-bottom .keys-inner-img{
+        width:40%;
+        display:flex;
+        align-items: center;
+        justify-content:center;
     }
     .key-register .key-1 p{
         width:50%;
@@ -12258,7 +12409,16 @@ span, .weight{
 
     /* child account */
 
-
+    .childd .hero-description .hero-section-text .typewriter{
+        color: #00D47E !important;
+    }
+    .childd .hero-description .subtitle{
+        color:#fff !important;
+    }
+    .childd .hero-description {
+        top:48%;
+        width:90%;
+    }
     .chill .subtitle{
         font-size:17px;
     }
@@ -12486,6 +12646,21 @@ span, .weight{
     .c-card .card-3 .img-div{
         background:#00D47E;
     }
+    .ulti .ultra-right{
+        width:60%;
+        margin:0 auto;
+        display: flex;
+        align-items:center;
+        justify-content:center;
+    }
+    .ulti .ultra-right img{
+        object-fit: contain;
+        width:10%;
+        margin:0 auto;
+    }
+
+
+
     .vid img{
         width:100%;
     }
@@ -13053,9 +13228,17 @@ span, .weight{
 
 
 @media (max-width:480px){
-    
+    body{
+        overflow-x: hidden;
+        margin:0;
+        padding:0;
+    }
+    *{
+        box-sizing:border-box !important;
+    }
     .container{
         width:100%;
+        box-sizing: border-box;
     }
     .logo i{
         font-size:20px;
@@ -13077,6 +13260,7 @@ span, .weight{
     }
     header {
         margin: 0;
+        box-sizing: border-box;
     }
     .started {
         font-size: 16px;
@@ -13087,18 +13271,20 @@ span, .weight{
         border: none;
         outline: none;
         cursor: pointer;
+        
     }
     .hero-section{
         width:100%;
-        height:100vh;
-        overflow:auto;
+        height: 100vh;
+        box-sizing: border-box;
     }
     .hero-section img{
-        height:100%;
+        height:calc(100vh - 60px);
         object-fit:cover;
         position:left;
         display: flex;
         align-items: baseline;
+        width:100%;
     }
     .hero-section{
         position:relative;
@@ -13111,6 +13297,9 @@ span, .weight{
     .bank-beyond{
         font-size:29px;
         font-weight:600;
+    }
+    .index > .hero-description .typewriter{
+        font-size:28px !important;
     }
     .card-desktop .typewriter,
     .typewriter{
@@ -13138,7 +13327,7 @@ span, .weight{
         padding-left:0px;
         padding-right:0px;
         padding-top:42px;
-        padding-bottom:113px;
+        padding-bottom:80px;
         width:100%;
     }
     .next-gen-right-top{
@@ -13216,7 +13405,12 @@ span, .weight{
         width:100%;
         margin-top:30px;
     }
-    
+    .next-gen-right-top .next-gen-img-div img {
+        width: 100%;
+        height: 248px;
+        object-fit: cover;
+        border-radius: 20px;
+    }
     .next-gen-right-top p:first-of-type{
         font-size:25px;
         color:#1B5962;
@@ -13266,7 +13460,10 @@ span, .weight{
         width: 100%;
         height: auto;
     }
-    
+    .next-gen-img-div {
+        padding: 0 90px;
+        width: 100%;
+    }
     .swiper-slide {
         text-align: center;
         font-size: 16px;
@@ -13277,6 +13474,7 @@ span, .weight{
         justify-content: center;
         align-items: center;
         position: relative;
+        height:190px;
     }
     .swiper-slide .swiper-img{
         width:100%;
@@ -13380,7 +13578,7 @@ span, .weight{
     .do-more-first-card{
         width:100%;
         margin-bottom:50px;
-        margin-top:25px;
+        margin-top:50px;
     }
     .do-more-card{
         width:100%;
@@ -13498,7 +13696,7 @@ span, .weight{
         margin-right:0px;
     }
     .optimize-middle{
-        flex-direction: column-reverse;
+        flex-direction: column;
         width:100%;
     }
     .optimize-middle .optimize-top-title{
@@ -13821,6 +14019,7 @@ span, .weight{
     }
     .benefint-container img{
         width:100%;
+        height:300px;
     }
     .benefit .col-4{
         width:100%;
@@ -13896,6 +14095,10 @@ span, .weight{
         font-size:16px;
         color:#000000;
     }
+    .debit-outer img{
+        height:300px;
+        object-fit:cover;
+    } 
     .debit-outer{
         padding-top:100px;
     }
@@ -14051,6 +14254,10 @@ span, .weight{
     .top-priority img{
         width:100%;
     }
+    .top-priority-img img{
+        height:250px;
+        object-fit:cover;
+    }
     .priority-title{
         font-size:32px;
         color:#1B5962;
@@ -14136,6 +14343,10 @@ span, .weight{
     .products img{
         width:100%;
     }
+    .top-priority-img img{
+        height:250px;
+        object-fit:cover;
+    }
     .product-title p{
         font-size:20px;
         color:#1B5962;
@@ -14181,7 +14392,10 @@ span, .weight{
     .product-title{
         margin-top:15px;
     }
-
+    .products-img img{
+        height:250px;
+        object-fit:cover;
+    }
     .digital-footer{
         margin-top:20px;
     }
@@ -14282,7 +14496,7 @@ span, .weight{
         width:90%;
     }
     .card-desk .hero-description .typewriter{
-        font-size:30px;
+        font-size:32px;
     }
     .card-desktop
     .hero-text-left
@@ -14402,7 +14616,7 @@ span, .weight{
         margin-bottom:40px;
     }
     .master-right-2 .mastercard-img{
-        padding-top:40px;
+        padding-top:0px;
         margin-bottom:40px;
     }
     .master-right-1,
@@ -14646,6 +14860,14 @@ span, .weight{
 
     /******************  DIGITAL ACCOUNT DESKTOP   **********************************/
 
+    .digital-hero img{
+        width:100%;
+        height:calc(100vh - 60px);
+        object-fit: cover;
+    }
+    .digital-hero .typewriter{
+        text-shadow: 1px 0px 1px #000;
+    }
     .digital .typewriter{
         font-size: 34px;
         width:100%;
@@ -14752,7 +14974,7 @@ span, .weight{
         width:100%;
     }
     .instant-payment{
-        padding-top:120px;
+        padding-top:40px !important;
         gap:40px;
     }
     .debit{
@@ -14925,6 +15147,15 @@ span, .weight{
         font-size:20px;
         color:#1B5962;
     }
+    .priority-detail img{
+        width:45px;
+    }
+    .benefit-swipper img{
+        width:60px;
+    }
+    .ben-full{
+        margin-top:0px;
+    }
     .questions .Learn-more,
     .cost .Learn-more{
         font-size:20px;
@@ -14984,7 +15215,7 @@ span, .weight{
     }
     .priority-bottom{
         margin-top:60px;
-        padding:0 40px;
+        padding:0px;
     }
     .priority-bottom-second{
         margin-top:60px;
@@ -15042,7 +15273,7 @@ span, .weight{
         background-color: #ffffff88;
     }
     .product-title p{
-        font-size:30px;
+        font-size:26px;
         color:#1B5962;
         font-weight:700;
     }
@@ -15089,7 +15320,10 @@ span, .weight{
     .product-dropdown{
         border-radius:20px;
     }
-
+    .products img{
+        height:240px;
+        object-fit:cover;
+    }
 
 
     /*** BUsiness card**/
@@ -15098,9 +15332,12 @@ span, .weight{
         height:calc(100vh - 60px);
         object-fit:cover;
     }
+    .business .hero-description .typewriter{
+        margin-bottom:20px;
+    }
     .business .hero-description {
         position: absolute;
-        top: 40%;
+        top: 48%;
         margin-left: 13px;
         width:95%;
     }
@@ -15113,7 +15350,7 @@ span, .weight{
         padding:0 30px;
     }
     .tap-hero{
-        height:100vh;
+        height:calc(100vh - 60px);
         width:100%;
     }
     .tap-hero img:first-of-type{
@@ -15128,8 +15365,8 @@ span, .weight{
         top:0%;
         bottom:0px;
         left:0px;
-        flex-wrap:nowrap;
-        justify-content: space-evenly;    
+        flex-direction: column;
+        justify-content: space-between;
     }
     .tap .hero-description .business-card .typewriter {
         padding: 0px;
@@ -15144,16 +15381,17 @@ span, .weight{
     }
     .tap .hero-section-text{
         padding-top:0px;
-        width:45%;
+        width:100%;
         padding:0px;
         padding-left:10px;
     }
     .tap .hero-img img{
         width:100%;
-        object-fit: cover;
+        height:275px;
+        object-fit: contain;
     }
     .tap .hero-img{
-        width:55%;
+        width:100%;
         margin-left:0px;
         padding:0px;
     }
@@ -15557,6 +15795,11 @@ span, .weight{
     }
     .ratings{
         margin-top:40px;
+        flex-wrap:wrap;
+        gap:30px;
+    }
+    .ratings .col-4{
+        width:45%;
     }
     .rate{
         border:1px solid #D9D9D9;
@@ -15646,14 +15889,30 @@ span, .weight{
         padding-left: 15px;
         padding-right: 15px;
     }
-
-
+    .ad-bc .benefit-des .b-des-left-detail img{
+        height:fit-content !important;
+    }
+    .bus-ac .b-des-ad .b-des-right img{
+        object-fit:cover;
+    }
+    .master-cont{
+        padding:0 10px;
+    }
     /*  Future Built */
+
+    .tap .hero-description .business-card .typewriter{
+        font-size:35px;
+    }
+    .tap .hero-description .subtitle{
+        font-size:20px;
+    }
 
     .future .hero-description {
         top: 45%;
         bottom: unset;
+        width:100%;
     }
+    
     .future .hero-section-text {
         padding-top:0px;
         width:80%;
@@ -15662,7 +15921,8 @@ span, .weight{
         flex-wrap: wrap;
     }
     .role img{
-        width:100%;
+        width:70%;
+        margin-top:30px;
     }
     .role .role-right{
         width:100%;
@@ -15675,7 +15935,7 @@ span, .weight{
         margin-bottom:30px;
     }
     .role-right{
-        padding-top:80px;
+        padding-top:30px;
         padding-bottom:80px;
     }
     .role-bottom{
@@ -15796,8 +16056,8 @@ span, .weight{
     }
 
     .pix .hero-description{
-        top:45%;
-        left:2%;
+        top:52%;
+        left:1%;
     }
     .pix .hero-text-left .text{
         font-size:21px;
@@ -15815,7 +16075,7 @@ span, .weight{
         margin-bottom:40px;
     }
     .pix-card .cont{
-        padding:25px 0px;
+        padding:0px 0px;
     }
     .pix-card-bottom{
         background:#C6F8E380;
@@ -15864,8 +16124,18 @@ span, .weight{
         font-size:23px;
         margin-bottom:30px;
     }
+    .key-bottom .keys-inner-img img{
+        width:100%;
+        margin:0 auto;
+    }
+    .key-bottom .keys-inner-img{
+        width:90%;
+        display:flex;
+        align-items: center;
+        justify-content:center;
+    }
     .key-register .register-text{
-        font-size:21px;
+        font-size:17px;
     }
     .key-register .key-1{
         width:100%;
@@ -15875,6 +16145,23 @@ span, .weight{
     .key-register .key-1 p{
         width:50%;
     }
+    .key-bottom .keys{
+        padding-top:30px;
+    }
+    .key-bottom .keys-inner-img img{
+        width:50%;
+        margin:0 auto;
+    }
+    .key-bottom .keys-right .title {
+        font-size:30px;
+    }
+
+    .keys-right .sub-1 {
+        font-size: 17px;
+        margin-top: 30px;
+    }
+
+
     .key-register .key-last{
         margin-top:24px;
     }
@@ -15910,6 +16197,7 @@ span, .weight{
     }
     .pix .questions{
         margin:0 auto;
+        padding-top:0px;
     }
 
     .meet-pix{
@@ -16180,6 +16468,18 @@ span, .weight{
         color:#fff;
     }
 
+    .mastercard-img img{
+        height:270px;
+        object-fit: cover;
+    }
+
+    .cre-rev-rev{
+        flex-wrap:wrap-reverse !important;
+    }
+    .ques-img img{
+        height:260px;
+        object-fit:cover;
+    }
 
 
     /* mobile insurance */
@@ -16248,13 +16548,7 @@ span, .weight{
         margin-top:0px;
         padding-left:20px;
     }
-    .st-b{
-        margin-top:56px;
-        margin-bottom:50px;
-    }
-    .stress-outer{
-        padding-top:56px;
-    }
+    
     .stress-subtitle{
         font-size:20px;
         font-weight:600;
@@ -16263,6 +16557,17 @@ span, .weight{
         text-align:left;
         margin-top:20px;
         padding-left:15px;
+    }
+    .st-b{
+        margin-top:56px;
+        margin-bottom:0px;
+    }
+    .stress-outer{
+        padding-top:56px;
+        padding-bottom:40px;
+    }
+    .cre-rev{
+        flex-wrap:wrap !important;
     }
     .watch{
         padding-bottom:90px;
@@ -16279,37 +16584,42 @@ span, .weight{
     .waitlist-bottom img{
         width:100%;
     }
-    .waitlist-bottom .hero-text-right{
-        width:100%;
-    }
     .waitlist-bottom .hero-text-right {
         width: 100%;
+        margin-top:40px;
     }
     .understand .text-detail p:first-of-type{
         font-size:34px;
     }
-
+    .waitlist .hero-text-right{
+        margin-right:0px;
+        width:100%;
+    }
 
 
     /* child account */
 
     .chill .hero-description{
-        top:20%;
+        top:40%;
         left:2%;
         display:unset;
     }
     .chill .hero-description .business-card .typewriter {
-        font-size:45px;
+        font-size:35px;
     }
     .chill .hero-description .subtitle{
-        font-size:20px;
+        font-size:17px;
         width:100%;
+    }
+    .stash .mastercard .mastercard-img .inside-img img{
+        height:unset;
     }
     .stash .mastercard .mastercard-img .inside-img{
         position:absolute;
         bottom:30%;
         left:0;
-        width:250px;
+        width:250px !important;
+        height:auto !important;
         margin:0 auto;
         transform: translate(42%,50%);
     }
@@ -16468,11 +16778,35 @@ span, .weight{
         right:unset;
         top:50%;
     }
-
+    .credit-c .benefit-text p {
+        font-size: 28px;
+    }
+    .ultraviolet{
+        margin:40px 0px;
+    }
+    .ultraviolet .ultra-title{
+        font-size:25px;
+    }
+    .ultraviolet .ultra-right img{
+        height:270px;
+        object-fit:cover;
+    }
     
-    
-    
-    
+    .ulti .ultra-right{
+        width:80%;
+        margin:0 auto;
+        display: flex;
+        align-items:center;
+        justify-content:center;
+    }
+    .ulti .ultra-right img{
+        object-fit: contain;
+        width:100%;
+        margin:0 auto;
+    }
+    .contain .mastercard-img img{
+        object-fit:contain;
+    }
     
     
     /* E sim */
@@ -16642,6 +16976,9 @@ span, .weight{
         width:40%;
         margin-left:100px;
     }
+    .flags .benefit-swipper img{
+        width:100px;
+    }
     .mid{
         margin:0 auto;
         display:flex;
@@ -16650,9 +16987,9 @@ span, .weight{
         flex-direction:column;
     }
     .dest .benefit-text button{
-        margin-top:40px;
+        margin-top:0px;
         margin-bottom:40px;
-        width:30%;
+        width:40%;
     }
     .dest{
         padding:0px;
@@ -16680,6 +17017,9 @@ span, .weight{
         .what button {
         margin: 0px;
         width: fit-content;
+    }
+    .equestion{
+        margin-top:50px;
     }
 
     /* parent card */
@@ -16956,6 +17296,12 @@ span, .weight{
         z-index:2;
         background-color: #FFFFFF;
     }
+    .next-gen-right-top .next-gen-img-div img {
+        width: 100%;
+        height: 270px;
+        object-fit: contain;
+        border-radius: 20px;
+    }
     .next-gen-left-title{
         font-size:7vw;
         padding-right:0;
@@ -17072,6 +17418,10 @@ span, .weight{
         width:fit-content;
         height:fit-content;
         padding:15px;
+    }
+    .next-gen-img-div {
+        padding: 0 40px;
+        width: 100%;
     }
     .swiper {
         width: 100%;
@@ -17291,7 +17641,7 @@ span, .weight{
         margin-right:0px;
     }
     .optimize-middle{
-        flex-direction: column-reverse;
+        flex-direction: column;
         width:100%;
         margin:40px 0;
 
@@ -18144,7 +18494,7 @@ span, .weight{
     }
     .business .questions-title{
         margin-top: 0;
-        font-size:29px;
+        font-size:28px;
     }
     .business .col-4,
     .business .col-3{
@@ -18330,7 +18680,7 @@ span, .weight{
         width:90%;
     }
     .card-desk .hero-section-text .typewriter{
-        font-size:27px;
+        font-size:28px;
     }
     .card-desktop .typewriter{
         font-size:28px;
@@ -18455,7 +18805,7 @@ span, .weight{
         margin-bottom:40px;
     }
     .master-right-2 .mastercard-img{
-        padding-top:40px;
+        padding-top:0px;
         margin-bottom:40px;
     }
     .master-right-1,
@@ -18477,7 +18827,7 @@ span, .weight{
         padding:0 30px;
     }
     .tap-hero{
-        height:100vh;
+        height:calc(100vh - 60px);
         width:100%;
     }
     .tap-hero img:first-of-type{
@@ -18492,9 +18842,26 @@ span, .weight{
         top:0%;
         bottom:0px;
         left:0px;
-        flex-wrap:nowrap;
-        justify-content: space-evenly;    
+        flex-direction: column;
+        justify-content: space-between;
     }
+    .tap .hero-section-text{
+        padding-top:0px;
+        width:100%;
+        padding:0px;
+        padding-left:10px;
+    }
+    .tap .hero-img img{
+        width:100%;
+        height:250px;
+        object-fit: contain;
+    }
+    .tap .hero-img{
+        width:100%;
+        margin-left:0px;
+        padding:0px;
+    }
+
     .tap .hero-description .business-card .typewriter {
         padding: 0px;
         font-size: 30px;
@@ -18507,17 +18874,16 @@ span, .weight{
         padding-right:0px;
     }
     .tap .hero-section-text{
-        padding-top:0px;
-        width:40%;
+        padding-top:30px !important;
+        width:100%;
         padding:0px;
         padding-left:10px;
     }
     .tap .hero-img img{
         width:100%;
-        object-fit: cover;
     }
     .tap .hero-img{
-        width:60%;
+        width:100%;
         margin-left:0px;
         padding:0px;
     }
@@ -18528,7 +18894,7 @@ span, .weight{
         margin-right:0px;
     }
     .tap .benefit-text p{
-        font-size:36px;
+        font-size:30px;
         padding:0 15px;
     }
     .vis{
@@ -18728,6 +19094,13 @@ span, .weight{
 
     /*  Future Built */
 
+    
+    .tap .hero-description .business-card .typewriter{
+        font-size:35px;
+    }
+    .tap .hero-description .subtitle{
+        font-size:20px;
+    }
     .future .hero-description {
         top: 45%;
         bottom: unset;
@@ -18740,7 +19113,7 @@ span, .weight{
         flex-wrap: wrap;
     }
     .role img{
-        width:100%;
+        width:60%;
     }
     .role .role-right{
         width:100%;
@@ -18753,8 +19126,8 @@ span, .weight{
         margin-bottom:30px;
     }
     .role-right{
-        padding-top:80px;
-        padding-bottom:80px;
+        padding-top:40px;
+        padding-bottom:40px;
     }
     .role-bottom{
         margin-top:60px;
@@ -18878,8 +19251,8 @@ span, .weight{
     }
 
     .pix .hero-description{
-        top:48%;
-        left:2%;
+        top:49%;
+        left:1%;
     }
     .pix .hero-text-left .text{
         font-size:20px;
@@ -18946,8 +19319,12 @@ span, .weight{
         font-size:23px;
         margin-bottom:30px;
     }
+    .key-bottom .keys-inner-img img{
+        width:50%;
+        margin:0 auto;
+    }
     .key-register .register-text{
-        font-size:21px;
+        font-size:16px;
     }
     .key-register .key-1{
         width:100%;
@@ -18959,6 +19336,19 @@ span, .weight{
     }
     .key-register .key-last{
         margin-top:24px;
+    }
+    .key-bottom .keys{
+        padding-top:30px;
+    }
+    .key-bottom .keys-inner-img img{
+        width:50%;
+        margin:0 auto;
+    }
+    .key-bottom .keys-right .sub-1{
+        font-size:17px;
+    }
+    .key-bottom .keys-right .title {
+        font-size:30px;
     }
     .pix-master .mastercard-right .typewriter {
         font-size: 30px;
@@ -19020,6 +19410,9 @@ span, .weight{
 
     /* Personal Loans*/
 
+    .business .mastercard {
+        padding-top:40px;
+    }
     .personal-loan-hero img{
         height:calc(100vh - 60px);
         object-fit:cover;
@@ -19068,9 +19461,11 @@ span, .weight{
         text-align:left;
         color:#fff;
     }
-
-
-
+    .mastercard-img img{
+        height:270px;
+        object-fit: cover;
+    }
+    
 
 
 
@@ -19078,6 +19473,8 @@ span, .weight{
 
     .ins .hero-description{
         top:40%;
+        width:98%;
+        left:0px;
     }
     .ins-hero img{
         height:calc(100vh - 60px);
@@ -19085,6 +19482,8 @@ span, .weight{
     }
     .ins .hero-section-text{
         padding:15px;
+        width:98%;
+        margin:0 auto;
     }
     .stress{
         padding-left:0px;
@@ -19104,20 +19503,25 @@ span, .weight{
     .understand .text-detail p:first-of-type{
         font-size:29px;
     }
-
+    .cre-rev{
+        flex-wrap: wrap !important;
+    }
 
     /* child account */
 
+    .childd img{
+        object-fit:-400px 0px !important;
+    }
     .chill .hero-description{
-        top:20%;
+        top:47%;
         left:2%;
         display:unset;
     }
     .chill .hero-description .business-card .typewriter {
-        font-size:45px;
+        font-size:35px;
     }
     .chill .hero-description .subtitle{
-        font-size:20px;
+        font-size:17px;
         width:100%;
     }
     .stash .mastercard .mastercard-img .inside-img{
@@ -19126,7 +19530,7 @@ span, .weight{
         left:0;
         width:220px;
         margin:0 auto;
-        transform: translate(42%,50%);
+        transform: translate(30%,50%);
     }    
     
     .revolut-card p:first-of-type{
@@ -19195,6 +19599,19 @@ span, .weight{
         padding:0 20px;
     }
 
+    .st-b{
+        margin-top:56px;
+        margin-bottom:0px;
+    }
+    .stress-outer{
+        padding-top:56px;
+        padding-bottom:40px;
+    }
+    .cre-rev{
+        flex-wrap:wrap !important;
+    }
+
+
     /* E sim */
 
     .esim .hero-description{
@@ -19211,7 +19628,7 @@ span, .weight{
     }
     .esim .hero-section-text {
         background-color: #071C004D;
-        width: 100%;
+        width: 97%;
         margin-right: 0px;
         padding:15px 10px;
     }
@@ -19228,7 +19645,7 @@ span, .weight{
         margin-bottom:15px;
     }
     .esim .hero-section-text {
-        width: 90%;
+        width: 97%;
         padding:15px;
     }
     .set{
@@ -19370,7 +19787,7 @@ span, .weight{
         flex-direction:column;
     }
     .dest .benefit-text button{
-        margin-top:40px;
+        margin-top:0px;
         margin-bottom:40px;
         width:30%;
     }
@@ -19578,15 +19995,31 @@ span, .weight{
         flex-wrap:wrap-reverse;
     }
 
+    .ulti .ultra-right{
+        width:60%;
+        margin:0 auto;
+        display: flex;
+        align-items:center;
+        justify-content:center;
+    }
+    .ulti .ultra-right img{
+        object-fit: contain;
+        width:100%;
+        margin:0 auto;
+    }
+
     /*** BUsiness card**/
 
     .business-card-hero img{
         height:calc(100vh - 60px);
         object-fit:cover;
     }
+    .business .hero-description .typewriter{
+        font-size:26px;
+    }
     .business .hero-description {
         position: absolute;
-        top: 40%;
+        top: 48%;
         margin-left:0px;
         width:100%;
     }
@@ -19614,6 +20047,40 @@ span, .weight{
     .parents .hero-description .business-card .typewriter {
         margin-top:0px;
         font-size:26px;
+    }
+
+    /* credit card for you */
+
+    .credit-for-you .hero-description{
+        top:50%;
+    }
+    .credit-for-you .hero-description .title {
+        font-size: 25px;
+        margin-left: 0px;
+    }
+    .credit-c .benefit-text p {
+        font-size: 24px;
+    }
+    .ultraviolet{
+        margin:40px 0px;
+        padding-left:0px;
+        padding-right:0px;
+    }
+    .ultraviolet .ultra-title{
+        font-size:25px;
+    }
+
+    .ulti .ultra-right{
+        width:80%;
+        margin:0 auto;
+        display: flex;
+        align-items:center;
+        justify-content:center;
+    }
+    .ulti .ultra-right img{
+        object-fit: contain;
+        width:100%;
+        margin:0 auto;
     }
 
 }
@@ -19729,7 +20196,7 @@ span, .weight{
     .next-gen-heading{
         align-items:end;
         justify-content:space-between;
-        width:100%;
+        width:100%; 
         padding:0 8px;
     }
     
@@ -19834,6 +20301,15 @@ span, .weight{
         height:fit-content;
         padding:15px;
     }
+    .next-gen-img-div {
+        padding: 0 0px;
+        width: 100%;
+    }
+    .next-gen-img-div img{
+        width: 100%;
+        height:270px;
+        object-fit:contain;
+    }
     .swiper {
         width: 100%;
         height: auto;
@@ -19849,6 +20325,7 @@ span, .weight{
         justify-content: center;
         align-items: center;
         position: relative;
+        height:270px;
     }
     .swiper-slide .swiper-img{
         width:100%;
@@ -19856,14 +20333,14 @@ span, .weight{
 
     .swiper-slide img {
         display: block;
-        max-width: 100%;
+        width: 100%;
         height: auto;
         object-fit: cover;
     }
     
     .swiper {
-        margin-left: auto;
-        margin-right: auto;
+        margin:0;
+        width:100%;
     }
     
     .slider-title {
@@ -19880,8 +20357,8 @@ span, .weight{
     .slider-text {
         position: static;
         left: 0;
-        padding-top: 10px;
-        padding-bottom: 10px; 
+        padding-top: 0px;
+        padding-bottom: 0px; 
         width: 100%;
         text-align: left;
         padding-left: 15px;
@@ -19890,38 +20367,25 @@ span, .weight{
     .slider-container {
         background-color: #FFF;
         border-radius: 10px;
+        width:100%;
     }
-    
     .slider-section {
         padding-top: 20px;
-        padding-bottom: 30px; 
+        padding-bottom: 30px;
+        width:100%; 
     }
-    
     .swiper-button-next::after, 
     .swiper-button-prev::after {
         content: "";
     }
     
-    .swiper-button-next {
-        background: #F5F5F5;
-        border-radius: 50%;
-        height: 40px;
-        width: 40px;
-        padding: 8px;
-    }
-    
-    .swiper-button-prev {
-        background: #F5F5F5;
-        border-radius: 50%;
-        height: 40px;
-        width: 40px;
-        padding: 8px;
-    }
     .swiper-button-next i,
     .swiper-button-prev i {
         font-size: 20px; 
         color: #000000b4;
     }
+
+
     .do-more-card p:first-of-type{
         font-size:22px;
         color:#000000;
@@ -20076,7 +20540,7 @@ span, .weight{
         margin-right:0px;
     }
     .optimize-middle{
-        flex-direction: column-reverse;
+        flex-direction: column;
         width:100%;
     }
     .optimize-middle .optimize-top-title{
@@ -20991,7 +21455,7 @@ span, .weight{
         margin-bottom:40px;
     }
     .master-right-2 .mastercard-img{
-        padding-top:40px;
+        padding-top:0px;
         margin-bottom:40px;
     }
     .master-right-1,
@@ -21186,6 +21650,12 @@ span, .weight{
     }
 
     /******************  DIGITAL ACCOUNT DESKTOP   **********************************/
+
+    .digital-hero img{
+        width:100%;
+        height:calc(100vh - 60px);
+        object-fit: cover;
+    }
 
     .digital .typewriter{
         font-size: 28px;
@@ -21816,7 +22286,6 @@ span, .weight{
     }
 
 
-
     /**********  tap to pay    ************/
 
     .cont{
@@ -21824,7 +22293,7 @@ span, .weight{
         padding:0 30px;
     }
     .tap-hero{
-        height:100vh;
+        height:calc(100vh - 60px);
         width:100%;
     }
     .tap-hero img:first-of-type{
@@ -21836,37 +22305,62 @@ span, .weight{
         object-fit:contain;
     }
     .tap .hero-description{
-        top:50%; 
+        top:0%;
         bottom:0px;
         left:0px;
-        flex-wrap:nowrap;
-        justify-content: space-evenly;    
-    }
-    .tap .hero-description .business-card .typewriter {
-        padding: 0px;
-        font-size: 35px;
-        width: 100%;
-        margin-top:0px;
-    }
-    .tap .hero-description .subtitle{
-        font-size:14px;
-        width:100%;
-        padding-right:0px;
+        flex-direction: column;
+        justify-content: space-between;
     }
     .tap .hero-section-text{
         padding-top:0px;
-        width:unset;
+        width:100%;
         padding:0px;
         padding-left:10px;
     }
+    .tap .hero-img img{
+        width:100%;
+        height:240px;
+        object-fit: contain;
+    }
     .tap .hero-img{
-        display:none;
+        width:100%;
+        margin-left:0px;
+        padding:0px;
+    }
+    .tap .hero-description .business-card .typewriter {
+        padding: 0px;
+        font-size: 30px;
+        width: 100%;
+        margin-top:10px;
+    }
+    .tap .hero-description .subtitle{
+        font-size:12px;
+        width:90% !important;
+        padding-right:0px;
+    }
+    .tap .hero-section-text{
+        padding-top:30px !important;
+        width:100%;
+        padding:0px;
+        padding-left:10px;
+    }
+    .tap .hero-img img{
+        width:100%;
+    }
+    .tap .hero-img{
+        width:100%;
+        margin-left:0px;
+        padding:0px;
     }
     .tap .benefit-swipper .card-2 p{
         margin-bottom:28px;
     }
     .hero-img{
         margin-right:0px;
+    }
+    .tap .benefit-text p{
+        font-size:30px;
+        padding:0 15px;
     }
     .tap .benefit-text p{
         font-size:28px;
@@ -22084,6 +22578,14 @@ span, .weight{
 
     /*  Future Built */
 
+    
+    .tap .hero-description .business-card .typewriter{
+        font-size:32px;
+    }
+    .tap .hero-description .subtitle{
+        font-size:18px;
+    }
+
     .future .hero-description {
         top: 45%;
         bottom: unset;
@@ -22096,7 +22598,7 @@ span, .weight{
         flex-wrap: wrap;
     }
     .role img{
-        width:100%;
+        width:60%;
     }
     .role .role-right{
         width:100%;
@@ -22109,8 +22611,8 @@ span, .weight{
         margin-bottom:30px;
     }
     .role-right{
-        padding-top:80px;
-        padding-bottom:80px;
+        padding-top:40px;
+        padding-bottom:40px;
     }
     .role-bottom{
         margin-top:60px;
@@ -22228,8 +22730,9 @@ span, .weight{
         object-fit:cover;
     }
     .pix .hero-description{
-        top:45%;
+        top:47%;
         margin-left:10px;
+        left:1%;
     }
     .pix .hero-text-left .text{
         font-size:20px;
@@ -22287,6 +22790,23 @@ span, .weight{
     .keys-right .title{
         font-size:28px;
     }
+    .key-bottom .keys-inner-img img{
+        width:50%;
+        margin:0 auto;
+    }
+    .key-bottom .keys{
+        padding-top:30px;
+    }
+    .key-bottom .keys-inner-img img{
+        width:50%;
+        margin:0 auto;
+    }
+    .key-bottom .keys-right .sub-1{
+        font-size:17px;
+    }
+    .key-bottom .keys-right .title {
+        font-size:30px;
+    }
     .keys-right .sub{
         font-size:16px;
         margin-top:30px;
@@ -22297,7 +22817,7 @@ span, .weight{
         margin-bottom:30px;
     }
     .key-register .register-text{
-        font-size:20px;
+        font-size:15px;
     }
     .key-register .key-1{
         width:100%;
@@ -22459,12 +22979,12 @@ span, .weight{
     /* Child account  */
 
     .chill .hero-description{
-        top:35%;
-        left:2%;
+        top:43%;
+        left:1%;
         display:unset;
     }
     .chill .hero-description .business-card .typewriter {
-        font-size:40px;
+        font-size:36px;
     }
     .chill .hero-description .subtitle{
         font-size:20px;
@@ -22477,7 +22997,7 @@ span, .weight{
         left:0;
         width:190px;
         margin:0 auto;
-        transform: translate(42%,50%);
+        transform: translate(29%,50%);
     }
 
     .chill .hero-description .business-card .typewriter {
@@ -22574,9 +23094,10 @@ span, .weight{
     }
     .esim .hero-section-text {
         background-color: #071C004D;
-        width: 95%;
+        width: 98%;
         margin-right: 0px;
         padding:15px 10px;
+        margin:0 auto;
     }
     .esim .hero-section-text p:first-of-type {
         font-size: 26px;
@@ -22629,7 +23150,7 @@ span, .weight{
         margin-left: 77px;
     }
     .dest .benefit-text button {
-        margin-top: 33px;
+        margin-top: 0px;
         margin-bottom: 33px;
         width: 40%;
     }
@@ -22788,8 +23309,12 @@ span, .weight{
 
     /* credit card for you */
 
-    .cre .hero-description{
-        top:40%;
+    .credit-for-you .hero-description{
+        top:50%;
+    }
+    .credit-for-you .hero-description .title {
+        font-size: 23px;
+        margin-left: 0px;
     }
     .hero-bottom .input {
         width: 100%;
@@ -22913,7 +23438,7 @@ span, .weight{
     }
     .next-gen{
         padding-top:42px;
-        padding-bottom:50px;
+        padding-bottom:70px;
         width:100%;
     }
     .next-gen-right-top{
@@ -23044,11 +23569,13 @@ span, .weight{
         height:fit-content;
         padding:15px;
     }
+    .next-gen-right-top img{
+        height:200px;
+    }
     .swiper {
         width: 100%;
         height: auto;
     }
-    
     .swiper-slide {
         text-align: center;
         font-size: 16px;
@@ -23286,7 +23813,7 @@ span, .weight{
         margin-right:0px;
     }
     .optimize-middle{
-        flex-direction: column-reverse;
+        flex-direction: column;
         width:100%;
     }
     .optimize-middle .optimize-top-title{
@@ -23831,8 +24358,8 @@ span, .weight{
         font-size:16px;
     }
     .cost .Learn-more p{
-        font-size:16px;
-        width:95%;
+        font-size:12px;
+        width:100%;
     }
     .Learn-more{
         font-size:16px;
@@ -24069,15 +24596,25 @@ span, .weight{
 
     .card-desk img{
         height:calc(100vh - 60px);
+        width:100%;
     }
     .card-desktop{
-        top:48%;
+        top:52%;
         left:0%;
     }
+    .card-desktop .hero-description{
+        width:100%;
+        margin:0px;
+    }
+    .card-desktop .hero-section-text{
+        width:100%;
+        margin:0px;
+    }
     .card-desktop .hero-section-text .typewriter{
-        font-size:26px;
+        font-size:24px;
         padding:0px;
         font-weight:900;
+        width:100%;
     }
     .card-desktop
     .hero-text-left
@@ -24201,7 +24738,7 @@ span, .weight{
         margin-bottom:40px;
     }
     .master-right-2 .mastercard-img{
-        padding-top:40px;
+        padding-top:0px;
         margin-bottom:40px;
     }
     .master-right-1,
@@ -24397,14 +24934,22 @@ span, .weight{
 
     /******************  DIGITAL ACCOUNT DESKTOP   **********************************/
 
+    .digital-hero img{
+        width:100%;
+        height:calc(100vh - 60px);
+        object-fit: cover;
+    }
+
     .digital .typewriter{
         font-size: 28px;
         width:100%;
-        color:#000;
+    }
+    .bene-full .benefit-text p{
+        font-size:23px;
     }
     .digital .hero-description{
         left:0%;
-        top:40%;
+        top:48%;
         margin-left:0px;
         padding-left:0px;
         margin-right:10px;
@@ -24413,7 +24958,7 @@ span, .weight{
         width: 100%;
         filter:brightness(110%);
         object-fit: cover;
-        object-position: -400px 0px;
+        object-position: -360px 0px;
         position:static;
     }
     .benefint-container{
@@ -24776,6 +25321,7 @@ span, .weight{
         width:100%;
         object-fit: cover;
         border-radius:20px;
+        height:210px;
     }
     .priority{
         padding-top:20px;
@@ -25018,9 +25564,12 @@ span, .weight{
         height:calc(100vh - 60px);
         object-fit:cover;
     }
+    .business .hero-description .typewriter{
+        font-size:25px;
+    }
     .business .hero-description {
         position: absolute;
-        top: 40%;
+        top: 44%;
         margin-left:0px;
         width:100%;
     }
@@ -25034,7 +25583,7 @@ span, .weight{
         padding:0 30px;
     }
     .tap-hero{
-        height:100vh;
+        height:calc(100vh - 60px);
         width:100%;
     }
     .tap-hero img:first-of-type{
@@ -25046,37 +25595,62 @@ span, .weight{
         object-fit:contain;
     }
     .tap .hero-description{
-        top:50%; 
+        top:0%;
         bottom:0px;
         left:0px;
-        flex-wrap:nowrap;
-        justify-content: space-evenly;    
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .tap .hero-section-text{
+        padding-top:0px;
+        width:100%;
+        padding:0px;
+        padding-left:10px;
+    }
+    .tap .hero-img img{
+        width:100%;
+        height:240px;
+        object-fit: contain;
+    }
+    .tap .hero-img{
+        width:100%;
+        margin-left:0px;
+        padding:0px;
     }
     .tap .hero-description .business-card .typewriter {
         padding: 0px;
-        font-size: 35px;
+        font-size: 30px;
         width: 100%;
-        margin-top:0px;
+        margin-top:10px;
     }
     .tap .hero-description .subtitle{
-        font-size:14px;
+        font-size:12px;
         width:100%;
         padding-right:0px;
     }
     .tap .hero-section-text{
-        padding-top:0px;
-        width:unset;
+        padding-top:30px !important;
+        width:100%;
         padding:0px;
         padding-left:10px;
     }
+    .tap .hero-img img{
+        width:100%;
+    }
     .tap .hero-img{
-        display:none;
+        width:100%;
+        margin-left:0px;
+        padding:0px;
     }
     .tap .benefit-swipper .card-2 p{
         margin-bottom:28px;
     }
     .hero-img{
         margin-right:0px;
+    }
+    .tap .benefit-text p{
+        font-size:30px;
+        padding:0 15px;
     }
     .tap .benefit-text p{
         font-size:28px;
@@ -25294,6 +25868,14 @@ span, .weight{
 
     /*  Future Built */
 
+    
+    .tap .hero-description .business-card .typewriter{
+        font-size:32px;
+    }
+    .tap .hero-description .subtitle{
+        font-size:18px;
+    }
+
     .future .hero-description {
         top: 45%;
         bottom: unset;
@@ -25306,7 +25888,7 @@ span, .weight{
         flex-wrap: wrap;
     }
     .role img{
-        width:100%;
+        width:60%;
     }
     .role .role-right{
         width:100%;
@@ -25319,8 +25901,8 @@ span, .weight{
         margin-bottom:30px;
     }
     .role-right{
-        padding-top:80px;
-        padding-bottom:80px;
+        padding-top:20px;
+        padding-bottom:40px;
     }
     .role-bottom{
         margin-top:60px;
@@ -25438,7 +26020,7 @@ span, .weight{
         object-fit:cover;
     }
     .pix .hero-description{
-        top:45%;
+        top:48%;
         margin-left:10px;
     }
     .pix .hero-text-left .text{
@@ -25507,12 +26089,29 @@ span, .weight{
         margin-bottom:30px;
     }
     .key-register .register-text{
-        font-size:20px;
+        font-size:15px;
     }
     .key-register .key-1{
         width:100%;
         justify-content:space-around;
         gap:24px 0;
+    }
+    .key-bottom .keys-inner-img img{
+        width:60%;
+        margin:0 auto;
+    }
+    .key-bottom .keys{
+        padding-top:30px;
+    }
+    .key-bottom .keys-inner-img img{
+        width:50%;
+        margin:0 auto;
+    }
+    .key-bottom .keys-right .sub-1{
+        font-size:17px;
+    }
+    .key-bottom .keys-right .title {
+        font-size:30px;
     }
     .key-register .key-1 p{
         width:50%;
@@ -25579,6 +26178,10 @@ span, .weight{
 
 
     /* Personal Loans*/
+
+    .cont{
+        padding:0 15px;
+    }
 
     .personal-loan-hero img{
         height:calc(100vh - 60px);
@@ -25664,17 +26267,22 @@ span, .weight{
     .understand .text-detail p:first-of-type{
         font-size:25px;
     }
-
+    .card-full .cont{
+        padding:15px;
+    }
 
     /* Child account  */
 
     .chill .hero-description{
-        top:35%;
-        left:2%;
+        top:43%;
+        left:1%;
         display:unset;
+        width:100%;
     }
     .chill .hero-description .business-card .typewriter {
-        font-size:40px;
+        font-size:45px;
+        width:100%;
+        text-shadow: 1px 1px 0px #000;
     }
     .chill .hero-description .subtitle{
         font-size:20px;
@@ -25687,7 +26295,7 @@ span, .weight{
         left:0;
         width:190px;
         margin:0 auto;
-        transform: translate(42%,50%);
+        transform: translate(16%,50%);
     }
 
     .chill .hero-description .business-card .typewriter {
@@ -25787,6 +26395,7 @@ span, .weight{
         width: 95%;
         margin-right: 0px;
         padding:15px 10px;
+        margin:0 auto ;
     }
     .esim .hero-section-text p:first-of-type {
         font-size: 26px;
@@ -25839,7 +26448,7 @@ span, .weight{
         margin-left: 77px;
     }
     .dest .benefit-text button {
-        margin-top: 33px;
+        margin-top: 0px;
         margin-bottom: 33px;
         width: 40%;
     }
@@ -25995,8 +26604,18 @@ span, .weight{
 
     /* credit card for you */
 
-    .cre .hero-description{
-        top:40%;
+
+    .credit-for-you .hero-description{
+        top:58%;
+    }
+    .credit-for-you .hero-description .title {
+        font-size: 23px;
+        margin-left: 0px;
+    }
+    .credit-for-you .hero-description .subtitle {
+        font-size: 15px;
+        margin-top: 12px;
+        padding-left: 17px;
     }
     .hero-bottom .input {
         width: 100%;
@@ -26032,6 +26651,21 @@ span, .weight{
         font-size:26px;
     }
 
+    /* credit card for you */
+
+
+    .credit-c .benefit-text p {
+        font-size: 21px;
+    }
+    .ultraviolet{
+        margin:40px 0px;
+        padding-left:10px;
+        padding-right:10px;
+    }
+    .ultraviolet .ultra-title{
+        font-size:22px;
+    }
+
 }
 
 
@@ -26060,7 +26694,7 @@ span, .weight{
     
     .hero-section{
         width:100%;
-        height:100vh;
+        height: calc(100vh - 60px);
         overflow:auto;
     }
     .hero-section img{
@@ -26078,14 +26712,14 @@ span, .weight{
     }
     .hero-description {
         position: absolute;
-        top: 31%;
-        margin-left: 20px;
+        top: 52%;
+        margin-left: 10px;
         margin-right: 10px;
         width:100%;
         overflow-y: auto;
     }
     .bank-beyond,  .typewriter{
-        font-size:27px;
+        font-size:18px;
     }
     .typewriter{
         margin:7px 0;
@@ -26113,7 +26747,7 @@ span, .weight{
     }
     .next-gen{
         padding-top:42px;
-        padding-bottom:113px;
+        padding-bottom:50px;
         width:100%;
     }
     .next-gen-right-top{
@@ -26167,7 +26801,7 @@ span, .weight{
     }
     .next-gen-left-top-text {
         position: absolute;
-        top: 55%;
+        top: 54.5%;
         margin-left: 0px;
         word-wrap: break-word;
         padding-right: 18px;
@@ -26202,7 +26836,7 @@ span, .weight{
         margin-top:30px;
     }
     .next-gen-img-div{
-        padding:0 30px;
+        padding:0px;
         width:100%;
     }
     .next-gen-right-top p:first-of-type{
@@ -26273,25 +26907,21 @@ span, .weight{
     .swiper-slide .swiper-img{
         width:100%;
     }
-
     .swiper-slide img {
         display: block;
         max-width: 100%;
         height: auto;
         object-fit: cover;
     }
-    
     .swiper {
         margin-left: auto;
         margin-right: auto;
     }
-    
     .slider-title {
         color: #00D47E;
         font-size: 19px; 
         margin-bottom: 7px; 
     }
-    
     .slider-subtitle{
         color: #fff;
         font-size: 11px; 
@@ -26307,7 +26937,7 @@ span, .weight{
         background: linear-gradient(rgba(255, 255, 255, 0.027) 7%, rgba(0, 0, 0, 1));
     }
     .slider-container {
-        background-color: #F5F5F5;
+        background-color: #FFF;
         border-radius: 10px;
     }
     .slider-section {
@@ -26490,7 +27120,7 @@ span, .weight{
         margin-right:0px;
     }
     .optimize-middle{
-        flex-direction: column-reverse;
+        flex-direction: column;
         width:100%;
     }
     .optimize-middle .optimize-top-title {
@@ -26756,19 +27386,27 @@ span, .weight{
 
     /******************  DIGITAL ACCOUNT DESKTOP   **********************************/
 
-    .digital .typewriter{
-        font-size: 28px;
+    .digital-hero img{
         width:100%;
-        color:#000;
+        height:calc(100vh - 60px);
+        object-fit: cover;
+    }
+    .digital-hero .typewriter{
+        text-shadow: 1px 0px 1px #000;
+    }
+    .digital .typewriter{
+        font-size: 23px;
+        width:100%;
+
     }
     .digital .hero-description{
         left:1%;
-        top:35%;
+        top:48%;
     }
     .digital .digital-hero-img{
         width:100%;
         object-fit: cover;
-        object-position: -380px -60px;
+        object-position: -380px 0px;
     }
     
     .benefint-container{
@@ -27576,13 +28214,14 @@ span, .weight{
 
     .card-desk img{
         height:calc(100vh - 60px);
+        object-fit:cover;
     }
     .card-desktop{
-        top:49%;
+        top:62%;
         left:0%;
     }
     .card-desktop .hero-section-text .typewriter{
-        font-size:22px;
+        font-size:23px;
         padding:0px;
         font-weight:900;
     }
@@ -27724,7 +28363,7 @@ span, .weight{
         margin-bottom:40px;
     }
     .master-right-2 .mastercard-img{
-        padding-top:40px;
+        padding-top:0px;
         margin-bottom:40px;
     }
     .master-right-1,
@@ -27742,38 +28381,79 @@ span, .weight{
 
     /**********  tap to pay    ************/
 
+    .cont{
+        width:100%;
+        padding:0 30px;
+    }
+    .tap-hero{
+        height:calc(100vh - 60px);
+        width:100%;
+    }
+    .tap-hero img:first-of-type{
+        height:calc(100vh - 60px);
+        object-fit:cover;
+        width:100%;
+    }
+    .tap-hero img{
+        object-fit:contain;
+    }
     .tap .hero-description{
-        top:40%; 
+        top:0%;
         bottom:0px;
         left:0px;
-        flex-wrap:nowrap;
-        justify-content: space-evenly;    
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .tap .hero-section-text{
+        padding-top:0px;
+        width:100%;
+        padding:0px;
+        padding-left:10px;
+    }
+    .tap .hero-img img{
+        width:100%;
+        height:240px;
+        object-fit: contain;
+    }
+    .tap .hero-img{
+        width:100%;
+        margin-left:0px;
+        padding:0px;
     }
     .tap .hero-description .business-card .typewriter {
         padding: 0px;
-        font-size: 35px;
+        font-size: 25px !important;
         width: 100%;
-        margin-top:0px;
+        margin-top:10px;
     }
     .tap .hero-description .subtitle{
-        font-size:14px;
+        font-size:11px;
         width:100%;
         padding-right:0px;
     }
     .tap .hero-section-text{
-        padding-top:0px;
-        width:unset;
+        padding-top:30px !important;
+        width:100%;
         padding:0px;
         padding-left:10px;
     }
+    .tap .hero-img img{
+        width:100%;
+    }
     .tap .hero-img{
-        display:none;
+        width:100%;
+        margin-left:0px;
+        padding:0px;
     }
     .tap .benefit-swipper .card-2 p{
         margin-bottom:28px;
     }
     .hero-img{
         margin-right:0px;
+    }
+    .tap .benefit-text p{
+        font-size:30px;
+        padding:0 15px;
     }
     .tap .benefit-text p{
         font-size:21px;
@@ -27989,6 +28669,14 @@ span, .weight{
 
     /*  Future Built */
 
+    
+    .tap .hero-description .business-card .typewriter{
+        font-size:32px;
+    }
+    .tap .hero-description .subtitle{
+        font-size:16px;
+    }
+
     .future .hero-description {
         top: 45%;
         bottom: unset;
@@ -28014,7 +28702,7 @@ span, .weight{
         flex-wrap: wrap;
     }
     .role img{
-        width:100%;
+        width:70%;
     }
     .role .role-right{
         width:100%;
@@ -28027,8 +28715,8 @@ span, .weight{
         margin-bottom:30px;
     }
     .role-right{
-        padding-top:80px;
-        padding-bottom:80px;
+        padding-top:40px;
+        padding-bottom:40px;
     }
     .role-bottom{
         margin-top:60px;
@@ -28166,12 +28854,12 @@ span, .weight{
         object-fit:cover;
     }
     .pix .hero-description{
-        top:55%;
-        margin-left:10px;
+        top:58%;
+        left:1%;
     }
     .pix .hero-text-left .text{
         font-size:20px;
-        width:95%;
+        width:98%;
     }
     .pix .mastercard{
         padding: - 15px;
@@ -28235,15 +28923,32 @@ span, .weight{
         margin-bottom:30px;
     }
     .key-register .register-text{
-        font-size:20px;
+        font-size:14px;
+    }
+    .key-bottom .keys-inner-img img{
+        width:60%;
+        margin:0 auto;
     }
 
+    .key-bottom .keys{
+        padding-top:30px;
+    }
+    .key-bottom .keys-inner-img img{
+        width:50%;
+        margin:0 auto;
+    }
+    .key-bottom .keys-right .sub-1{
+        font-size:14px;
+    }
+    .key-bottom .keys-right .title {
+        font-size:21px;
+    }
 
     /* PIX */
 
     .pix .hero-description{
-        top:50%;
-        margin-left:10px;
+        top:59%;
+        left:1%;
     }
     .pix .hero-text-left .text{
         font-size:18px;
@@ -28311,7 +29016,7 @@ span, .weight{
         margin-bottom:30px;
     }
     .key-register .register-text{
-        font-size:20px;
+        font-size:14px;
     }
     .key-1{
         flex-wrap:wrap;
@@ -28434,6 +29139,7 @@ span, .weight{
     .waitlist-bottom .hero-text-right {
         margin-right: 0px;
         padding:20px 15px;
+        margin-top:40px;
     }
     .copy{
         padding:20px 15px;
@@ -28447,15 +29153,21 @@ span, .weight{
     .understand .text-detail{
         padding:25px;
     }
-
+    .ins .mastercard .mas-right{
+        padding-right:0px;
+    }
+    .master-right-2 .mastercard-img img{
+        height:250px;
+        object-fit:cover;
+    }
 
     /* E sim */
 
     .esim-hero .hero-description .hero-section-text{
         padding-right:0px;
     }
-    .esim .hero-description{
-        top:50%;
+    .esim-hero .hero-description{
+        top:45% !important;
     }
     .esim .hero-section-text {
         padding:15px 10px;
@@ -28534,7 +29246,7 @@ span, .weight{
         margin-left: 77px;
     }
     .dest .benefit-text button {
-        margin-top: 33px;
+        margin-top: 0px;
         margin-bottom: 33px;
         width: 40%;
     }
@@ -28565,7 +29277,9 @@ span, .weight{
     .cho .benefit-text p{
         font-size:28px;
     }
-
+    .equestion .questions .questions-title{
+        font-size: 25px;
+    }
     
     
     
@@ -28680,18 +29394,23 @@ span, .weight{
 
     /* Child account  */
 
+    .chill .hero-description .hero-section-text{
+        width:100%;
+    }
     .chill .hero-description{
-        top:35%;
-        left:2%;
+        top:40%;
+        left:1%;
         display:unset;
+        width:100%;
     }
     .chill .hero-description .business-card .typewriter {
-        font-size:40px;
+        font-size:45px;
         width:100%;
     }
     .chill .hero-description .subtitle{
-        font-size:20px;
+        font-size:16px;
         width:100%;
+        padding-right:0px;
     }    
 
     .stash .mastercard .mastercard-img .inside-img{
@@ -28700,7 +29419,7 @@ span, .weight{
         left:0;
         width:160px;
         margin:0 auto;
-        transform: translate(42%,50%);
+        transform: translate(6%,50%);
     }
         .chill .hero-description .business-card .typewriter {
             font-size: 27px;
@@ -28729,9 +29448,16 @@ span, .weight{
         height:calc(100vh - 60px);
         object-fit:cover;
     }
+    .business .hero-description .typewriter:first-of-type{
+        font-size:18px;
+        margin-bottom:0px;
+    }
+    .business .hero-description .typewriter{
+        font-size:25px;
+    }
     .business .hero-description {
         position: absolute;
-        top: 45%;
+        top: 55%;
         margin-left:0px;
         width:100%;
     }
@@ -28783,5 +29509,49 @@ span, .weight{
     .journey  .rev-top{
         padding-left: 8px;
     }
+    .journey .cont{
+        padding:0 0px;
+    }
+
+    /* credit card for you */
+
+    /* credit card for you */
+
+    .live-this p {
+        font-size: 21px;
+        width: 100%;
+    }
+    .credit-for-you .hero-description{
+        top:58%;
+    }
+    .credit-for-you .hero-description .title {
+        font-size: 22px;
+        margin-left: 0px;
+    }
+    .cre img{
+        object-fit:-600px 0px;
+        width:100%;
+    }
+    .credit-for-you .hero-description .subtitle {
+        font-size: 15px;
+        margin-top: 12px;
+        padding-left: 17px;
+    }
+    .credit-c .benefit-text p {
+        font-size: 21px;
+    }
+    .ultraviolet{
+        margin:40px 0px;
+        padding-left:0px;
+        padding-right:0px;
+    }
+    .ultraviolet .ultra-title{
+        font-size:22px;
+    }
+
+    .contain .mastercard-img img{
+        object-fit:contain;
+    }
+
 }
 

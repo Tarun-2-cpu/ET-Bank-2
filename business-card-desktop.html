@@ -48,7 +48,7 @@
                         </div>
                         <div class="subnav">
                             <button class="subnavbtn">
-                                <div class="inner row"> Business <i class="fa fa-caret-down" style="margin-left:15px"></i>
+                                <div class="inner row">Business<i class="fa fa-caret-down" style="margin-left:15px"></i>
                                 </div>
                             </button>
                             <div class="subnav-content">
@@ -59,7 +59,7 @@
                         </div>
                         <div class="subnav">
                             <button class="subnavbtn">
-                                <div class="inner row">Under 18 <i class="fa fa-caret-down" style="margin-left:15px"></i>
+                                <div class="inner row">Under 18<i class="fa fa-caret-down" style="margin-left:15px"></i>
                                 </div>
                             </button>
                             <div class="subnav-content">
@@ -68,7 +68,6 @@
                             </div>
                         </div>
                         <a href="E-sim.html">eSim</a>
-    
                         <div class="subnav">
                             <button class="subnavbtn">
                                 <div class="inner row">Privacy policy<i class="fa fa-caret-down"
@@ -92,18 +91,20 @@
                 </div>
             </nav>
         </header>
+
+
         <main>
             <section class="hero-section business  business-card-hero">
-                <img class="" src="images/business-card-hero.png" alt="">
+                <img class="" src="images/business-card-hero.jpg" alt="">
                 <div class="hero-description">
                     <div class="hero-section-text business-card">
                         <p class="typewriter col-6">ET Bank for companies: Business credit card</p>
-                        <p class="typewriter col-6" style="color:#000;">More than a Business credit card, your new business card.</p>
+                        <p class="typewriter col-6 primary-color">More than a Business credit card, your new business card.</p>
                     </div>
                 </div>
             </section>
             <section>
-                <div class="benefit business-card">
+                <div class="benefit business-card bussss">
                     <div class="benefint-container container">
                         <div class="benefit-text">
                             <p>The right card to keep your business going</p>
@@ -112,20 +113,20 @@
                     <div class="benefit-swipper  row">
                         <div class="col-4">
                             <div class="swipper-card swipper-1">
-                                <img src="images/smiley.jpg" alt="">
+                                <img src="images/smiley.png" alt="">
                                 <p class="swipper-title">Free of charge, no annual or hidden fees</p>
                             </div>
                         </div>
                         <div class="col-4">
                             <div class="swipper-card card-2 swipper-2">
-                                <img src="images/belll.jpg" alt="">
+                                <img src="images/belll.png" alt="">
                                 <p class="swipper-title">Real-time notifications of your purchases to give you safety.
                                 </p>
                             </div>
                         </div>
                         <div class="col-4">
                             <div class="swipper-card card-3 swipper-3">
-                                <img src="images/plane.jpg" alt="">
+                                <img src="images/plane.png" alt="">
                                 <p class="swipper-title">International combo: pay by debit/credit in Brazil & abroad.</p>
                             </div>
                         </div>
@@ -474,29 +475,32 @@
             document.addEventListener('DOMContentLoaded', (event) => {
                 const knowMoreButtons = document.querySelectorAll('.starteded');
                 const cardContainer = document.querySelector('.card-container');
-            
+                var subnavButtons = document.querySelectorAll('.subnavbtn');
+    
+    
+    
                 knowMoreButtons.forEach(button => {
                     button.addEventListener('click', () => {
                         cardContainer.style.display = 'flex ';
                     });
                 });
-            
+    
                 const closeButtons = document.querySelectorAll('.close-btn');
                 closeButtons.forEach(button => {
                     button.addEventListener('click', () => {
                         cardContainer.style.display = 'none';
                     });
                 });
-            
+    
                 const menu = document.querySelector('.menu');
                 const navbar = document.querySelector('.navbar');
                 const navRight = document.querySelector('.nav-right');
                 const menuIcon = menu.querySelector('i');
-            
+    
                 menu.addEventListener('click', function () {
                     navbar.classList.toggle('show');
                     navRight.classList.toggle('show');
-            
+    
                     if (navbar.classList.contains('show')) {
                         menuIcon.classList.remove('ri-menu-line');
                         menuIcon.classList.add('ri-close-line');
@@ -505,7 +509,7 @@
                         menuIcon.classList.add('ri-menu-line');
                     }
                 });
-            
+    
                 document.addEventListener('click', function (event) {
                     const isClickInsideNav = event.target.closest('.nav-link');
                     const isClickInsideMenu = event.target.closest('.menu');
@@ -515,6 +519,33 @@
                         });
                     }
                 });
+    
+                subnavButtons.forEach(function (button) {
+                    button.addEventListener('click', function () {
+                        var subnavContent = this.nextElementSibling;
+    
+                        if (subnavContent.style.display === 'block') {
+                            subnavContent.style.display = 'none';
+                        } else {
+                            // Hide all subnav contents first
+                            document.querySelectorAll('.subnav-content').forEach(function (content) {
+                                content.style.display = 'none';
+                            });
+                            // Then show the current subnav content
+                            subnavContent.style.display = 'block';
+                        }
+                    });
+                });
+    
+                // Close the subnav content when clicking outside
+                document.addEventListener('click', function (e) {
+                    if (!e.target.matches('.subnavbtn') && !e.target.closest('.subnav')) {
+                        document.querySelectorAll('.subnav-content').forEach(function (content) {
+                            content.style.display = 'none';
+                        });
+                    }
+                });
+    
             });
         </script>
 

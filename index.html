@@ -48,7 +48,7 @@
                     </div>
                     <div class="subnav">
                         <button class="subnavbtn">
-                            <div class="inner row"> Business <i class="fa fa-caret-down" style="margin-left:15px"></i>
+                            <div class="inner row">Business<i class="fa fa-caret-down" style="margin-left:15px"></i>
                             </div>
                         </button>
                         <div class="subnav-content">
@@ -59,7 +59,7 @@
                     </div>
                     <div class="subnav">
                         <button class="subnavbtn">
-                            <div class="inner row">Under 18 <i class="fa fa-caret-down" style="margin-left:15px"></i>
+                            <div class="inner row">Under 18<i class="fa fa-caret-down" style="margin-left:15px"></i>
                             </div>
                         </button>
                         <div class="subnav-content">
@@ -68,7 +68,6 @@
                         </div>
                     </div>
                     <a href="E-sim.html">eSim</a>
-
                     <div class="subnav">
                         <button class="subnavbtn">
                             <div class="inner row">Privacy policy<i class="fa fa-caret-down"
@@ -93,12 +92,8 @@
         </nav>
     </header>
 
-
-
-
-
     <main>
-        <section class="hero-section">
+        <section class="hero-section index">
             <img src="images/Hero-section-1.png" alt="">
             <div class="hero-description">
                 <div class="hero-section-text">
@@ -147,9 +142,8 @@
                             <p class="weight-700">Global E-SIM Services</p>
                             <p>Travel Without Borders: Get E-SIMs for Multiple Countries with ET Bank</p>
                             <div class="next-gen-img-div">
-                                <img src="images/nex-gen-right.png" alt="">
+                                <img src="images/next-gen-right.png" alt="">
                             </div>
-                            <div class="vector-1"> <img src="images/Vector 1.png" alt=""></div>
                         </div>
                         <div class="row next-gen-right-bottom">
                             <p><a style="text-decoration:none; color:#000;"
@@ -170,7 +164,7 @@
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="swiper-img">
-                                <img src="images/swiper-image.jpg" alt="">
+                                <img src="images/swiper-image.png" alt="">
                             </div>
                             <div class="slider-text">
                                 <p class="slider-title" style="font-weight: 700;">Discover Our Credit Card</p>
@@ -193,7 +187,7 @@
                                     class="ri-arrow-right-line" style="margin-left:10px;"></i></a></button>
                     </div>
                     <div class="do-more-card card-1 col-6">
-                        <img src="images/pay.jpg" alt="">
+                        <img src="images/pay.png" alt="">
                         <p class="col-4">Effortless PIX Payments:
                             Seamlessly Utilize Your Credit</p>
                         <p>Leverage the Power of Your Credit Card for PIX Payments: Enjoy the Flexibility of Installment
@@ -202,14 +196,14 @@
                 </div>
                 <div class="do-more-row row" style="justify-content: space-between; margin-top:70px;">
                     <div class="do-more-card do-more-3-card card-1 col-6">
-                        <img src="images/shopping.jpg" alt="">
+                        <img src="images/shopping.png" alt="">
                         <p class="col-5">Revolutionize Your Shopping Experience:
                             Enjoy Purchase Installement!</p>
                         <p>Experience Convenience: ET Bank Splits Your Purchase for You!</p>
                     </div>
 
                     <div class="do-more-card card-1 last-card col-6">
-                        <img src="images/credit.jpg" alt="">
+                        <img src="images/credit.png" alt="">
                         <p class="col-4 effort">Effortless Bill Settlement:
                             Simplify with your Credit Card</p>
                         <p>Empower Your Finances: Pay Your Bills with Ease, Enjoy Up to 12 Installments</p>
@@ -265,7 +259,7 @@
         </section>
         <section class="optimize-section">
             <div class="optimize container">
-                <div class="optimize-top row">
+                <div class="optimize-top row  cre-rev-rev">
                     <div class="optimize-text col-6">
                         <p class="next-gen-left-title optimize-top-title" style="font-weight: 700;">
                             Optimize Your Finances: Explore Smart Investment Opportunities
@@ -279,7 +273,7 @@
                         <img src="images/optimize-top.png" alt="">
                     </div>
                 </div>
-                <div class="optimize-middle row">
+                <div class="optimize-middle row cre-rev-rev">
                     <div class="optimize-image col-6">
                         <img src="images/Optimize-middle.jpg" alt="">
                         <!-- <div class="vector-3"><img src="Vector 3.png" alt=""></div> -->
@@ -295,7 +289,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="optimize-bottom row">
+                <div class="optimize-bottom row cre-rev-rev">
                     <div class="optimize-text col-6">
                         <p style="font-weight: 700;" class="next-gen-left-title optimize-top-title">
                             Explore Our Emergency Information Center:
@@ -524,6 +518,7 @@
             </div>
         </section>
     </main>
+    
     <footer>
         <div class="footer-full col-12">
             <div class="footer row container">
@@ -544,7 +539,8 @@
                     </div>
                     <div class="footer-description col-4">
                         <p>At ET Bank, we're redefining the way you bank. With cutting-edge technology, innovative
-                            solutions, and a customer-centric approach, we're transforming the banking experience for the
+                            solutions, and a customer-centric approach, we're transforming the banking experience for
+                            the
                             modern world.</p>
                     </div>
                 </div>
@@ -558,34 +554,37 @@
             </div>
         </div>
     </footer>
-    
+
     <script>
         document.addEventListener('DOMContentLoaded', (event) => {
             const knowMoreButtons = document.querySelectorAll('.starteded');
             const cardContainer = document.querySelector('.card-container');
-        
+            var subnavButtons = document.querySelectorAll('.subnavbtn');
+
+
+
             knowMoreButtons.forEach(button => {
                 button.addEventListener('click', () => {
                     cardContainer.style.display = 'flex ';
                 });
             });
-        
+
             const closeButtons = document.querySelectorAll('.close-btn');
             closeButtons.forEach(button => {
                 button.addEventListener('click', () => {
                     cardContainer.style.display = 'none';
                 });
             });
-        
+
             const menu = document.querySelector('.menu');
             const navbar = document.querySelector('.navbar');
             const navRight = document.querySelector('.nav-right');
             const menuIcon = menu.querySelector('i');
-        
+
             menu.addEventListener('click', function () {
                 navbar.classList.toggle('show');
                 navRight.classList.toggle('show');
-        
+
                 if (navbar.classList.contains('show')) {
                     menuIcon.classList.remove('ri-menu-line');
                     menuIcon.classList.add('ri-close-line');
@@ -594,7 +593,7 @@
                     menuIcon.classList.add('ri-menu-line');
                 }
             });
-        
+
             document.addEventListener('click', function (event) {
                 const isClickInsideNav = event.target.closest('.nav-link');
                 const isClickInsideMenu = event.target.closest('.menu');
@@ -604,6 +603,33 @@
                     });
                 }
             });
+
+            subnavButtons.forEach(function (button) {
+                button.addEventListener('click', function () {
+                    var subnavContent = this.nextElementSibling;
+
+                    if (subnavContent.style.display === 'block') {
+                        subnavContent.style.display = 'none';
+                    } else {
+                        // Hide all subnav contents first
+                        document.querySelectorAll('.subnav-content').forEach(function (content) {
+                            content.style.display = 'none';
+                        });
+                        // Then show the current subnav content
+                        subnavContent.style.display = 'block';
+                    }
+                });
+            });
+
+            // Close the subnav content when clicking outside
+            document.addEventListener('click', function (e) {
+                if (!e.target.matches('.subnavbtn') && !e.target.closest('.subnav')) {
+                    document.querySelectorAll('.subnav-content').forEach(function (content) {
+                        content.style.display = 'none';
+                    });
+                }
+            });
+
         });
     </script>
 

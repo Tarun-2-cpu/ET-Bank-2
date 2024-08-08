@@ -790,6 +790,7 @@ nav img {
     border-radius:20px;
 }
 .banner-right{
+    height:fit-content;
     margin-top:52px;
     margin-right:111px;
 }
@@ -802,6 +803,7 @@ nav img {
 .banner-inner{
     justify-content:space-evenly;
     position:relative;
+    align-items:flex-start;
 }
 .footer{
     padding-top:75px;
@@ -1897,6 +1899,9 @@ span, .weight{
 }
 .tap .benefit-swipper .card-2 p{
     margin-bottom:40px;
+}
+.tap .swipper-card img{
+    width:50px;
 }
 .hero-img{
     margin-right:40px;

@@ -24447,7 +24447,7 @@ span,
         font-size: 28px;
         width: 100%;
     }
-
+     
     .bene-full .benefit-text p {
         font-size: 23px;
     }
@@ -24470,6 +24470,10 @@ span,
 
     .benefint-container {
         padding: 0 15px;
+    }
+
+    .position img{
+        object-position: 25% !important;
     }
 
     /* card desktop */
@@ -24589,6 +24593,11 @@ span,
 
 
 @media(max-width:400px) {
+
+    .position img{
+        object-position: 25% !important;
+    }
+
     .container {
         width: 100%;
         height: auto;
@@ -27578,7 +27587,7 @@ span,
 
 
     .tap .hero-description .business-card .typewriter {
-        font-size: 32px;
+        font-size: 26px;
     }
 
     .tap .hero-description .subtitle {
@@ -27586,7 +27595,7 @@ span,
     }
 
     .future .hero-description {
-        top: 45%;
+        top: 8%;
         bottom: unset;
     }
 
@@ -28587,6 +28596,11 @@ span,
 
 
 @media(max-width:380px) {
+
+    .position img{
+        object-position: 25% !important;
+    }
+
     .container {
         width: 100%;
         height: auto;
@@ -32661,6 +32675,10 @@ span,
 
 @media(max-width:360px){
 
+    .position img{
+        object-position: 25% !important;
+    }
+
     .containn img{
         object-fit:contain;
     }    
@@ -32930,6 +32948,10 @@ span,
 
 
 @media(max-width:320px) {
+
+    .position img{
+        object-position: 25% !important;
+    }
 
     nav img {
         width: 100px;

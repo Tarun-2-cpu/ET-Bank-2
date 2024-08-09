@@ -2717,6 +2717,7 @@ span,
     background: #FFFFFF;
 }
 
+
 .rate p:first-of-type {
     font-size: 48px;
 }
@@ -2740,7 +2741,15 @@ span,
 .review-right img {
     margin-top: 35px;
 }
-
+.rate img{
+    width:57px;
+}
+.rate-2 img{
+    width:65px;
+}
+.review-right img{
+    width:120px;
+}
 .review-right .subtitle {
     font-size: 18px;
     padding-right: 102px;
@@ -6299,6 +6308,16 @@ span,
 
     .r-1 img {
         margin-bottom: 8px;
+    }
+
+    .rate img{
+        width:57px;
+    }
+    .rate-2 img{
+        width:65px;
+    }
+    .review-right img{
+        width:120px;
     }
 
     .review-left {
@@ -18584,7 +18603,8 @@ span,
 
     .business .hero-description {
         position: absolute;
-        top: 48%;
+        top: unset !important;
+        bottom:0px;
         margin-left: 13px;
         width: 95%;
     }
@@ -19832,12 +19852,14 @@ span,
     .personal-loan .hero-description {
         top: 34%;
         left: 40px;
+        width:100%;
     }
 
     .personal-loan .hero-section-text {
         justify-content: flex-start;
         align-items: flex-start;
         gap: 25px;
+        width:100%;
     }
 
     .personal-loan .hero-section-text .typewriter {
@@ -23547,8 +23569,12 @@ span,
     .personal-loan .hero-description {
         top: 34%;
         left: 40px;
+        width:100%;
     }
 
+    .personal-loan .hero-section-text{
+        width:100%;
+    }
     .personal-loan .hero-section-text .typewriter {
         font-size: 30px;
         width: 100%;
@@ -23663,7 +23689,7 @@ span,
     /* child account */
 
     .childd img {
-        object-fit: -400px 0px !important;
+        object-fit: 40% !important;
     }
 
     .chill .hero-description {
@@ -24275,7 +24301,8 @@ span,
 
     .business .hero-description {
         position: absolute;
-        top: 48%;
+        top: unset !important;
+        bottom:0px;
         margin-left: 0px;
         width: 100%;
     }
@@ -24366,6 +24393,7 @@ span,
 @media(max-width:414px){
 
 
+  
     .containn img{
         object-fit:contain;
     }
@@ -24584,6 +24612,13 @@ span,
     .privacy-hero .hero-description .hero-img{
         width:60%;
     }
+
+      /* child account */
+
+      .childd img {
+        object-position: 45% !important;
+    }
+
 
 }
 
@@ -27246,7 +27281,8 @@ span,
 
     .business .hero-description {
         position: absolute;
-        top: 40%;
+        top:unset !important;
+        bottom:0px;
         margin-left: 0px;
         width: 100%;
     }
@@ -27980,8 +28016,12 @@ span,
     .personal-loan .hero-description {
         top: 40%;
         left: 0px;
+        width:100%;
     }
 
+    .personal-loan .hero-section-text{
+        width:100%;
+    }
     .personal-loan .hero-section-text .typewriter {
         font-size: 30px;
         width: 95%;
@@ -31277,9 +31317,10 @@ span,
 
     .business .hero-description {
         position: absolute;
-        top: 44%;
+        top: unset !important;
         margin-left: 0px;
         width: 100%;
+        bottom:0px;
     }
 
 
@@ -32040,8 +32081,12 @@ span,
     .personal-loan .hero-description {
         top: 40%;
         left: 0px;
+        width:100%;
     }
 
+    .personal-loan .hero-section-text{
+        width:100%;
+    }
     .personal-loan .hero-section-text .typewriter {
         font-size: 30px;
         width: 95%;
@@ -35846,8 +35891,12 @@ span,
     .personal-loan .hero-description {
         top: 43%;
         left: 0px;
+        width:100%;
     }
 
+    .personal-loan .hero-section-text{
+        width:100%;
+    }
     .personal-loan .hero-section-text .typewriter {
         font-size: 25px;
         width: 95%;
@@ -36297,7 +36346,7 @@ span,
     }
 
     .chill .hero-description {
-        top: 40%;
+        top: 0%;
         left: 1%;
         display: unset;
         width: 100%;
@@ -36372,9 +36421,10 @@ span,
 
     .business .hero-description {
         position: absolute;
-        top: 55%;
+        top: unset !important;
         margin-left: 0px;
         width: 100%;
+        bottom:0px;
     }
 
 

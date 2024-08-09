@@ -7769,11 +7769,15 @@ span,
 
     /* investment */
 
+    .invest-hero img{
+        height:calc(100vh - 60px);
+        object-position: 0px 10%;
+    }
     .invest .hero-description {
         top: 150px;
         width: 40%;
     }
-
+    .invest
     .invest .hero-description p:first-of-type {
         font-size: 22px;
     }
@@ -15794,13 +15798,18 @@ span,
 
     /* investment */
 
+    .invest-hero img{
+        height:calc(100vh - 60px);
+        object-position: 0px 10%;
+    }
     .invest .hero-description {
-        top: 45%;
+        top: 30%;
         width: 80%;
     }
 
     .invest .hero-description p:first-of-type {
         font-size: 22px;
+        color:#fff !important;
     }
 
     .invest .hero-description .title {
@@ -15811,6 +15820,7 @@ span,
         font-size: 21px;
         margin-top: 0px;
         padding: 0px;
+        color:#fff !important;
     }
 
     .in-card .typewriter {
@@ -20744,11 +20754,14 @@ span,
 
     /* investment */
 
-
+    .invest-hero img{
+        height:calc(100vh - 60px);
+        object-position: 0px 10%;
+    }
     .invest .hero-description {
-        top: 45%;
+        top: 30%;
         width: 80%;
-        left: 1%;
+        padding-left:20px;
     }
 
     .invest .limit-cards .col-4 {
@@ -24146,13 +24159,15 @@ span,
 
     /* investment */
 
-
-    .invest .hero-description {
-        top: 45%;
-        width: 95%;
-        left: 2%;
+    .invest-hero img{
+        height:calc(100vh - 60px);
+        object-position: 0px 10%;
     }
-
+    .invest .hero-description {
+        top: 25% !important;
+        width: 90%;
+        padding-left:20px;
+    }
     .invest .limit-cards .col-4 {
         padding: 0px;
     }
@@ -24619,6 +24634,18 @@ span,
         object-position: 45% !important;
     }
 
+    /* investment */
+
+    .invest-hero img{
+        height:calc(100vh - 60px);
+        object-position: 0px 10%;
+    }
+    .invest .hero-description {
+        top: 30% !important;
+        width: 90%;
+        padding-left:20px;
+    }
+
 
 }
 
@@ -24628,6 +24655,20 @@ span,
 
 
 @media(max-width:400px) {
+
+    /* investment */
+
+    .invest-hero img{
+        height:calc(100vh - 60px);
+        object-position: 0px 10%;
+    }
+    .invest .hero-description {
+        top: 29% !important;
+        width: 90% !important;
+        padding-left:0px;
+        left:0 !important;
+    }
+
 
     .position img{
         object-position: 25% !important;
@@ -28634,8 +28675,26 @@ span,
 
 
 
+@media (max-width:380px){
 
-@media(max-width:380px) {
+     /* investment */
+
+      .invest-hero img{
+        height:calc(100vh - 60px);
+        object-position: 0px 10%;
+    }
+    .invest .hero-description p:first-of-type,
+    .invest .hero-description .subtitle{
+        padding-left:0px !important;
+        margin-left:0px !important;
+    }
+    .invest .hero-description {
+        top: 34% !important;
+        width: 90% !important;
+        padding-left:0px;
+        left:0 !important;
+    }
+
 
     .position img{
         object-position: 25% !important;
@@ -32720,6 +32779,15 @@ span,
 
 @media(max-width:360px){
 
+    /* investment */
+
+    .invest .hero-description p:first-of-type,
+    .invest .hero-description .subtitle{
+        padding-left:0px;
+        margin-left:0px;
+    }
+
+
     .position img{
         object-position: 25% !important;
     }
@@ -36618,6 +36686,25 @@ span,
         margin: 0 auto;
         overflow:hidden;
         height:unset !important;
+    }
+
+
+      /* investment */
+
+      .invest-hero img{
+        height:calc(100vh - 60px);
+        object-position: 0px 10%;
+    }
+    .invest .hero-description p:first-of-type,
+    .invest .hero-description .subtitle{
+        padding-left:0px;
+        margin-left:0px;
+    }
+    .invest .hero-description {
+        top: 40% !important;
+        width: 90% !important;
+        padding-left:0px;
+        left:0 !important;
     }
 
 }
